@@ -50,7 +50,7 @@ int main(int Argc, char *Argv[]) {
     Methods.TxData = Serial_WriteBytes;
     Methods.RxData = Serial_ReadBytes;
 
-    Status = Serial_Open(Argv[1], &SerialContext.Fd, 115200);
+    Status = Serial_Open(Argv[1], &SerialContext.Fd, 230400);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
 
@@ -119,13 +119,12 @@ int main(int Argc, char *Argv[]) {
     
     ftime(&start);
     
-    
+    //Null terminate the Rx buffer
+    RxBuf[RxBufSize] = '\0';
     printf("RxBuf = Received %u bytes = %s\n", RxBufSize, RxBuf);
-    
-    char tx_buf[5000]; tx_buf[0]='\0';
-    
-    
-    strcat(tx_buf, "python /Users/rmg/Desktop/EzLinkProject-FinallyNew/JMET.py '");
+    // clear buf
+    char tx_buf[5000] = {0};
+    strcat(tx_buf, "python /vault/JMET.py '");
     strcat(tx_buf, (char *)RxBuf);
     strcat(tx_buf, "'\0");
     
@@ -192,7 +191,7 @@ int main(int Argc, char *Argv[]) {
     
     tx_buf[0]='\0';
     
-    strcat(tx_buf, "python /Users/rmg/Desktop/EzLinkProject-FinallyNew/JMET.py '");
+    strcat(tx_buf, "python /vault/JMET.py '");
     strcat(tx_buf, (char *)RxBuf);
     strcat(tx_buf, "'\0");
     
