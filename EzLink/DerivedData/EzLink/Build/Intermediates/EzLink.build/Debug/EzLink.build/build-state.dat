@@ -1,0 +1,993 @@
+TEzLink
+v3
+r1
+cCheck dependencies
+cCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/serial.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cLd /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c000000005351CC03000000000000044C
+t1397869571
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005351CC0300000000000001DE
+t1397869571
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+c000000005351CC0F00000000000022C4
+t1397869583
+s8900
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c000000005351CC0F000000000000681C
+t1397869583
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+c000000005351CC0F000000000006E8B0
+t1397869583
+s452784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c000000005351CC0F0000000000004734
+t1397869583
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c000000005351CC0F000000000000FC6C
+t1397869583
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c000000005351CC0F000000000000F6A0
+t1397869583
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c000000005351CC0F0000000000006254
+t1397869583
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c000000005351CC0F000000000000E0F8
+t1397869583
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c000000005351CC0F000000000000D6DC
+t1397869583
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c000000005351CC0F0000000000006308
+t1397869583
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c000000005351CC0F0000000000004050
+t1397869583
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c000000005351CC0F0000000000008570
+t1397869583
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c000000005351CC0F0000000000005EA0
+t1397869583
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c000000005351CC0F0000000000005FAC
+t1397869583
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c000000005351CC0F0000000000004440
+t1397869583
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c000000005351CC0F000000000000AA28
+t1397869583
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c000000005351CC0F0000000000003E2C
+t1397869583
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c000000005351CC0F0000000000030B04
+t1397869583
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c000000005351CC0F0000000000005E54
+t1397869583
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c000000005351CC0F0000000000006A90
+t1397869583
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c000000005351CC0F00000000000178AC
+t1397869583
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c000000005351CC0F000000000001ADC8
+t1397869583
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c000000005351CC0F000000000001028C
+t1397869583
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c000000005351CC0F0000000000008800
+t1397869583
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c000000005351CC0F0000000000011090
+t1397869583
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c000000005351CC0F000000000000882C
+t1397869583
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c000000005351CC0F00000000000067AC
+t1397869583
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c000000005351CC0F0000000000008DEC
+t1397869583
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c000000005351CC0F0000000000004C08
+t1397869583
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c000000005351CC0F0000000000002428
+t1397869583
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c000000005351CC0F000000000000439C
+t1397869583
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c000000005351CC0F0000000000006768
+t1397869583
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c000000005351CC0F00000000000172F4
+t1397869583
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c000000005351CC3A0000000000000ADC
+t1397869626
+s2780
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c000000005351CC3A0000000000001770
+t1397869626
+s6000
+
+N/Developer/SDKs/MacOSX10.7.sdk
+c000000004E1106D400000000000000EE
+t1309738708
+s238
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/errno.h
+c000000004E05497A00000000000003EB
+t1308969338
+s1003
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/fcntl.h
+c000000004E05497A00000000000003EA
+t1308969338
+s1002
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/stdint.h
+c000000004E05497A00000000000018EF
+t1308969338
+s6383
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/stdio.h
+c000000004E05497C0000000000004763
+t1308969340
+s18275
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/stdlib.h
+c000000004E05497C00000000000030A7
+t1308969340
+s12455
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/string.h
+c000000004E05497C0000000000001A3A
+t1308969340
+s6714
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/sys/ioctl.h
+c000000004DFD01C9000000000000116C
+t1308426697
+s4460
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/sys/time.h
+c000000004DFD01DD0000000000001E64
+t1308426717
+s7780
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/termios.h
+c000000004E05497A00000000000004D4
+t1308969338
+s1236
+
+N/Developer/SDKs/MacOSX10.7.sdk/usr/include/unistd.h
+c000000004E05497C0000000000006662
+t1308969340
+s26210
+
+N/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/stdbool.h
+c000000004DD0AF080000000000000644
+t1305521928
+s1604
+
+N/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c00000000536DE2C10000000000000110
+t1399710401
+s272
+
+N/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1400814631
+s27280
+
+N/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp
+c0000000053806D0A0000000000001547
+t1400925450
+s5447
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"ezlink-host.h"
+i"serial.h"
+i<fstream>
+i<iostream>
+
+N/Users/Chay/Desktop/EzLinkProject-/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+i<stdlib.h>
+i<stdint.h>
+
+N/Users/Chay/Desktop/EzLinkProject-/libezlink.a
+c0000000053600D6F0000000000001AB0
+t1398803823
+s6832
+
+N/Users/Chay/Desktop/EzLinkProject-/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"serial.h"
+
+N/Users/Chay/Desktop/EzLinkProject-/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+i<stdint.h>
+
+N/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c000000005366E079000000000000010E
+t1399251065
+s270
+
+N/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t1399251066
+s64504
+
+N/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1399251068
+s27280
+
+N/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp
+c000000005366E0CE0000000000001549
+t1399251150
+s5449
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"ezlink-host.h"
+i"serial.h"
+i<fstream>
+i<iostream>
+
+N/Users/Chay/Desktop/EzLinkProject/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+i<stdlib.h>
+i<stdint.h>
+
+N/Users/Chay/Desktop/EzLinkProject/libezlink.a
+c0000000053600D6F0000000000001AB0
+t1398803823
+s6832
+
+N/Users/Chay/Desktop/EzLinkProject/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"serial.h"
+
+N/Users/Chay/Desktop/EzLinkProject/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+i<stdint.h>
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c000000005397F37F0000000000000166
+t1402467199
+s358
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t1401095152
+s35480
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1402467202
+s27016
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp
+c00000000538303EE0000000000000F86
+t1401095150
+s3974
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"ezlink-host.h"
+i"serial.h"
+i<fstream>
+i<iostream>
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+i<stdlib.h>
+i<stdint.h>
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/libezlink.a
+c0000000053600D6F0000000000001AB0
+t1398803823
+s6832
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"serial.h"
+
+N/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+i<stdint.h>
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c000000005382E0DC0000000000000142
+t1401086172
+s322
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t1401088169
+s35448
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1401088169
+s26984
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp
+c00000000538303EE0000000000000F86
+t1401095150
+s3974
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"ezlink-host.h"
+i"serial.h"
+i<fstream>
+i<iostream>
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+i<stdlib.h>
+i<stdint.h>
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/libezlink.a
+c0000000053600D6F0000000000001AB0
+t1398803823
+s6832
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+i<sys/time.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdint.h>
+i<fcntl.h>
+i<errno.h>
+i<termios.h>
+i<stdio.h>
+i<string.h>
+i<stdbool.h>
+i<unistd.h>
+i<sys/ioctl.h>
+i"serial.h"
+
+N/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+i<stdint.h>
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c000000005356F7040000000000000158
+t1398208260
+s344
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t1398285437
+s8948
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1398285437
+s20004
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+c000000005358247D000000000000153F
+t1398285437
+s5439
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/libezlink.a
+c00000000535301C80000000000001AB0
+t1397948872
+s6832
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+
+N/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+c0000000053530B610000000000000142
+t1397951329
+s322
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+t1398114653
+s9736
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+t1397951329
+s9232
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink
+t1398114653
+s23932
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+c000000005355895B00000000000012B5
+t1398114651
+s4789
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/ezlink-host.h
+c00000000534E8EE2000000000000182F
+t1397657314
+s6191
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/libezlink.a
+c00000000535301C80000000000001AB0
+t1397948872
+s6832
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp
+c00000000534E8F460000000000000E19
+t1397657414
+s3609
+
+N/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.h
+c00000000534E8F2200000000000001F7
+t1397657378
+s503
+
+CBuild AST from /Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/EzLinkProject-/serial.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/EzLinkProject/serial.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/serial.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/serial.cpp
+r0
+
+CBuild AST from /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/serial.cpp
+r0
+
+CBuild AST from /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp
+r0
+
+CBuild AST from /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/serial.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies8d2a97222e48b941^ee3db8222e48b941^---0#1#0#--18"Check dependencies
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s422618251.607269
+e422618252.841402
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+x/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp: In function 'int main(int, char**)':
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:71: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:101: warning: format not a string literal and no format arguments
+o/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:101: warning: format not a string literal and no format arguments
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/Chay/Desktop/EzLinkProject-/EzLink/main.cppb5dd9c8ba430b941^925bd78ca430b941^-1039"/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp: In function 'int main(int, char**)':/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:71: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:101: warning: format not a string literal and no format arguments/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp:101: warning: format not a string literal and no format arguments8(21%IDEActivityLogMessage2@53"Deprecated conversion from string constant to 'char*'-422618251#0#118#-1#-23%DVTTextDocumentLocation3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-422618251#118#118#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-422618251#236#118#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-422618251#354#118#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-422618251#472#118#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-422618252#679#126#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^70#18446744073709551615#70#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@51"Format not a string literal and no format arguments-422618252#805#117#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^100#18446744073709551615#100#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--2@51"Format not a string literal and no format arguments-422618252#922#117#-1#-3@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^100#18446744073709551615#100#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--0#0#0#-19%DVTDocumentLocation4@66"file://localhost/Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp0000000000000000^1715"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/Chay/Desktop/EzLinkProject-    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/include -I/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug -c /Users/Chay/Desktop/EzLinkProject-/EzLink/main.cpp -o /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s420943954.088986
+e420943954.396143
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+x/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp: In function 'int main(int, char**)':
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:71: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:101: warning: format not a string literal and no format arguments
+o/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:101: warning: format not a string literal and no format arguments
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp26e516521817b941^b66865521817b941^-1030"/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:38: warning: deprecated conversion from string constant to 'char*'/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp: In function 'int main(int, char**)':/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:71: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:101: warning: format not a string literal and no format arguments/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp:101: warning: format not a string literal and no format arguments8(21%IDEActivityLogMessage2@53"Deprecated conversion from string constant to 'char*'-420943954#0#117#-1#-23%DVTTextDocumentLocation3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-420943954#117#117#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-420943954#234#117#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-420943954#351#117#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@53"Deprecated conversion from string constant to 'char*'-420943954#468#117#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^37#18446744073709551615#37#18446744073709551615#18446744073709551615#0#49"Deprecated conversion from string constant to '*'--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-420943954#673#125#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^70#18446744073709551615#70#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@51"Format not a string literal and no format arguments-420943954#798#116#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^100#18446744073709551615#100#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--2@51"Format not a string literal and no format arguments-420943954#914#116#-1#-3@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^100#18446744073709551615#100#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--0#0#0#-19%DVTDocumentLocation4@65"file://localhost/Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp0000000000000000^1704"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/Chay/Desktop/EzLinkProject    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/include -I/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug -c /Users/Chay/Desktop/EzLinkProject/EzLink/main.cpp -o /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s422787951.271178
+e422787952.374485
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+x/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+o/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp: In function 'int main(int, char**)':
+o/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp:65: warning: format not a string literal and no format arguments
+o/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp:65: warning: format not a string literal and no format arguments
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp3789456f3b33b941^6edf5f703b33b941^-396"/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp: In function 'int main(int, char**)':/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp:65: warning: format not a string literal and no format arguments/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp:65: warning: format not a string literal and no format arguments2(21%IDEActivityLogMessage2@51"Format not a string literal and no format arguments-422787952#114#141#-1#-23%DVTTextDocumentLocation3@91"file://localhost/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp0000000000000000^64#18446744073709551615#64#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--2@51"Format not a string literal and no format arguments-422787952#255#141#-1#-3@91"file://localhost/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp0000000000000000^64#18446744073709551615#64#18446744073709551615#18446744073709551615#0#51"Format not a string literal and no format arguments--0#0#0#-19%DVTDocumentLocation4@91"file://localhost/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp0000000000000000^1990"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/include -I/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug -c /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/EzLink/main.cpp -o /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s419978237.788550
+e419978237.828073
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+x/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/ezlink-host.h
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/serial.h
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:28:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "ver\n",
+o    ^
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:29:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "sn\n",
+o    ^
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:30:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "consolerouter --add --src Tallaght --dest ramlog\n",
+o    ^
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:31:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "tristar --prov_status\n"
+o    ^
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:64:26: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    Status = Serial_Open("/dev/cu.usbserial-alcdut3", &SerialContext.Fd, 115200);
+o                         ^
+o/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:76:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o        printf(ReadBuf);
+o               ^~~~~~~
+o6 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp186"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6ff4c9fd5b08b941^01fcd3fd5b08b941^-1456"/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:28:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "ver\n",    ^/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:29:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "sn\n",    ^/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:30:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "consolerouter --add --src Tallaght --dest ramlog\n",    ^/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:31:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "tristar --prov_status\n"    ^/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:64:26: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    Status = Serial_Open("/dev/cu.usbserial-alcdut3", &SerialContext.Fd, 115200);                         ^/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:76:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]        printf(ReadBuf);               ^~~~~~~6 warnings generated.6(36%IDEClangDiagnosticActivityLogMessage2@56"Conversion from string literal to 'char *' is deprecated-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^27#4#27#4#701#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^28#4#28#4#714#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^29#4#29#4#726#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^30#4#30#4#784#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^63#25#63#25#2271#0#14"Semantic Issue--2@60"Format string is not a string literal (potentially insecure)-419978237#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^75#15#75#15#2693#0#19"Format String Issue1(3@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^75#15#75#22#2693#0#-0#0#1#-19%DVTDocumentLocation4@101"file:///Users/autsw/Desktop/LAISHIDONG/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^3618"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -MMD -MT dependencies -MF /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.dia -c /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp -o /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o36"F9CAB2B1-9EBD-49C0-9063-16FFE8538E79-
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s419807452.946181
+e419807453.054438
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+x/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/ezlink-host.h
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.h
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:28:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "ver\n",
+o    ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:29:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "sn\n",
+o    ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:30:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "consolerouter --add --src Tallaght --dest ramlog\n",
+o    ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:31:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    "tristar --prov_status\n"
+o    ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:59:26: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    Status = Serial_Open("/dev/cu.usbserial-alcdut3", &SerialContext.Fd, 115200);
+o                         ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:72:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o        printf(ReadBuf);
+o               ^~~~~~~
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:76:18: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o    char * cmd = "tristar --provision\r\n";
+o                 ^
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:79:12: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o    printf(ReadBuf);
+o           ^~~~~~~
+o8 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp186"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler3353f2dcc005b941^35ee0dddc005b941^-1847"/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:28:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "ver\n",    ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:29:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "sn\n",    ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:30:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "consolerouter --add --src Tallaght --dest ramlog\n",    ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:31:5: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    "tristar --prov_status\n"    ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:59:26: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    Status = Serial_Open("/dev/cu.usbserial-alcdut3", &SerialContext.Fd, 115200);                         ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:72:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]        printf(ReadBuf);               ^~~~~~~/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:76:18: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]    char * cmd = "tristar --provision\r\n";                 ^/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/EzLink/main.cpp:79:12: warning: format string is not a string literal (potentially insecure) [-Wformat-security]    printf(ReadBuf);           ^~~~~~~8 warnings generated.8(36%IDEClangDiagnosticActivityLogMessage2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^27#4#27#4#701#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^28#4#28#4#714#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^29#4#29#4#726#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^30#4#30#4#784#0#14"Semantic Issue--2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^58#25#58#25#2279#0#14"Semantic Issue--2@60"Format string is not a string literal (potentially insecure)-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^71#15#71#15#2706#0#19"Format String Issue1(3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^71#15#71#22#2706#0#-2@56"Conversion from string literal to 'char *' is deprecated-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^75#17#75#17#2765#0#14"Semantic Issue--2@60"Format string is not a string literal (potentially insecure)-419807453#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^78#11#78#11#2890#0#19"Format String Issue1(3@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^78#11#78#18#2890#0#-0#0#1#-19%DVTDocumentLocation4@90"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/EzLink/main.cpp0000000000000000^3464"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o EzLink/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -MMD -MT dependencies -MF /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.dia -c /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/EzLink/main.cpp -o /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o36"29D91510-F48D-4320-8376-F77E9883A093-
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/Chay/Desktop/EzLinkProject-/serial.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/Chay/Desktop/EzLinkProject/serial.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/serial.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/serial.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/serial.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/serial.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s419644129.159974
+e419644129.222522
+r1
+xCompileC
+xDerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+x/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.h
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:37:15: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+o        ret = read(filedes, buf, nbytes);
+o            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:125:15: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+o        Ret = _Serial_Read(SerialContext->Fd, Ptr, NumBytes, TimeOutInMs);
+o            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:166:12: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+o    return write(SerialContext->Fd, Buf, NumBytes);
+o    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp183"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o serial.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler040229e14203b941^01f738e14203b941^-914"/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:37:15: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]        ret = read(filedes, buf, nbytes);            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:125:15: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]        Ret = _Serial_Read(SerialContext->Fd, Ptr, NumBytes, TimeOutInMs);            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/serial.cpp:166:12: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]    return write(SerialContext->Fd, Buf, NumBytes);    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-419644129#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^36#14#36#14#803#0#22"Value Conversion Issue2(3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^36#14#36#40#803#25#3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^36#12#36#13#801#0#-2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-419644129#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^124#14#124#14#2808#0#22"Value Conversion Issue2(3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^124#14#124#73#2808#58#3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^124#12#124#13#2806#0#-2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-419644129#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^165#11#165#11#3566#0#22"Value Conversion Issue2(3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^165#11#165#50#3566#38#3@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^165#4#165#10#3559#0#-0#0#1#-19%DVTDocumentLocation4@85"file:///Users/autsw/Desktop/QT0%20Provisioning%20Folder%20OK/EzLink%20copy/serial.cpp0000000000000000^3462"CompileC DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o serial.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-generated-files.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-own-target-headers.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-all-target-headers.hmap -iquote /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/EzLink-project-headers.hmap -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources/x86_64 -I/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/DerivedSources -F/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -MMD -MT dependencies -MF /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.d --serialize-diagnostics /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.dia -c /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/serial.cpp -o /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o36"E27E8212-31FA-4DE5-AF39-123909BD78B6-
+
+CLd /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s422618252.856993
+e422618253.882360
+r1
+xLd
+x/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Link /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/EzLinkb073db8ca430b941^71e4e18da430b941^---0#0#0#--706"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd /Users/Chay/Desktop/EzLinkProject-    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/llvm-g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug -L/Users/Chay/Desktop/EzLinkProject- -F/Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug -filelist /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -lezlink -o /Users/Chay/Desktop/EzLinkProject-/DerivedData/EzLink/Build/Products/Debug/EzLink
+
+CLd /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s420943954.403043
+e420943954.424362
+r1
+xLd
+x/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Link /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/EzLinkc03d67521817b941^fd306e521817b941^---0#0#0#--700"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd /Users/Chay/Desktop/EzLinkProject    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/llvm-g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug -L/Users/Chay/Desktop/EzLinkProject -F/Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug -filelist /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -lezlink -o /Users/Chay/Desktop/EzLinkProject/DerivedData/EzLink/Build/Products/Debug/EzLink
+
+CLd /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s424159999.283081
+e424160002.817290
+r1
+xLd
+x/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Link /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLinkb49048ff2a48b941^4339d1022b48b941^---0#0#0#--964"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/llvm-g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug -L/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally -F/Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug -filelist /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -lezlink -o /Users/Chay/Desktop/History/important/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+
+CLd /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s422787952.381505
+e422787953.198734
+r1
+xLd
+x/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLinke4ba61703b33b941^72df32713b33b941^---0#0#0#--856"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/llvm-g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug -L/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally -F/Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug -filelist /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -lezlink -o /Users/Chay/Desktop/Provision_finally/EzLinkProject-Finally/DerivedData/EzLink/Build/Products/Debug/EzLink
+
+CLd /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s419978237.829040
+e419978237.846490
+r1
+xLd
+x/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+d/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/libezlink.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Link /Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink63"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_642848d4fd5b08b941^39b4d8fd5b08b941^---0#0#1#--1320"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd "/Users/autsw/Desktop/LAISHIDONG/QT0 Provisioning Folder OK/EzLink copy"    export MACOSX_DEPLOYMENT_TARGET=10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -L/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy -F/Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -filelist /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -stdlib=libc++ -lezlink -Xlinker -dependency_info -Xlinker /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink_dependency_info.dat -o /Users/autsw/Desktop/LAISHIDONG/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/EzLink36"14813C5C-8C57-4337-83CA-546B65A8C499-
+
+CLd /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64
+s419807453.055656
+e419807453.132506
+r1
+xLd
+x/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink
+xnormal
+xx86_64
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/main.o
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/serial.o
+d/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/libezlink.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy/DerivedData/EzLink/Build/Products/Debug/EzLink63"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64f94c0eddc005b941^b3ec21ddc005b941^---0#0#1#--1243"Ld DerivedData/EzLink/Build/Products/Debug/EzLink normal x86_64    cd "/Users/autsw/Desktop/QT0 Provisioning Folder OK/EzLink copy"    export MACOSX_DEPLOYMENT_TARGET=10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -L/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy -F/Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug -filelist /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink.LinkFileList -mmacosx-version-min=10.7 -stdlib=libc++ -lezlink -Xlinker -dependency_info -Xlinker /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Intermediates/EzLink.build/Debug/EzLink.build/Objects-normal/x86_64/EzLink_dependency_info.dat -o /Users/autsw/Desktop/QT0\ Provisioning\ Folder\ OK/EzLink\ copy/DerivedData/EzLink/Build/Products/Debug/EzLink36"D5219130-BEB7-4276-BF19-771C31AFBB5D-
+

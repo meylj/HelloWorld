@@ -43,8 +43,7 @@ static ssize_t _Serial_Read (
 }
 
 
-int Serial_Open
-(
+int Serial_Open (
     char            *Port,
     int             *Fd,
     int             BaudRate
