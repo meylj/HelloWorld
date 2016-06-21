@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FunnyZoneTests' target in the 'FunnyZoneTests' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif

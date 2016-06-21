@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleGetPath\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleGetPath\bin\Debug\ConsoleGetPath.exe
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleGetPath\bin\Debug\ConsoleGetPath.pdb
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleGetPath\obj\Debug\ConsoleGetPath.exe
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleGetPath\obj\Debug\ConsoleGetPath.pdb

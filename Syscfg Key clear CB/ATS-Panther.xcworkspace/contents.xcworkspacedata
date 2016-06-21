@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Muifa/Muifa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FunnyZone/FunnyZone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestPudding/TestPudding.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PEGA_ATS_UART/PEGA_ATS_UART.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InstrumentTest/InstrumentTest.xcodeproj">
+   </FileRef>
+</Workspace>

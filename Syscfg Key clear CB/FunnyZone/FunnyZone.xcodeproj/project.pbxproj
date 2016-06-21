@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0136108A19B7112C004B7967 /* QT0-NED.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0136108919B7112C004B7967 /* QT0-NED.plist */; };
+		01863B581A159C390050278F /* CG-SENSOR.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01863B571A159C390050278F /* CG-SENSOR.plist */; };
+		01E8EB0619B6BF580034A3BC /* QT2-POSTBURN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01E8EB0519B6BF580034A3BC /* QT2-POSTBURN.plist */; };
+		01ED7F7E19EBB6C100C9B33C /* QT0-DEVBOARD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01ED7F7D19EBB6C100C9B33C /* QT0-DEVBOARD.plist */; };
+		0A2C2EC9169EDED000DCAC62 /* PuddingPDCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2C2EC6169EDED000DCAC62 /* PuddingPDCA.framework */; };
+		0A2DB8011366BB4600BE383E /* IADevice_Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2DB7FC1366BB4600BE383E /* IADevice_Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A2DB8021366BB4600BE383E /* IADevice_TestingCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2DB7FD1366BB4600BE383E /* IADevice_TestingCommands.h */; };
+		0A335A021A28490A000E6237 /* IQC-DEV6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A335A011A28490A000E6237 /* IQC-DEV6.plist */; };
+		0A3850701ACADBE800F3C8E3 /* CppOrbPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A38506D1ACADBE800F3C8E3 /* CppOrbPost.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A3850711ACADBE800F3C8E3 /* FTK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A38506E1ACADBE800F3C8E3 /* FTK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A3850721ACADBE800F3C8E3 /* VectorUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A38506F1ACADBE800F3C8E3 /* VectorUtils.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A3850731ACADC2F00F3C8E3 /* IADevice_CPlusPlus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A9FC3F91AC0C8DE00D37624 /* IADevice_CPlusPlus.mm */; };
+		0A3850741ACADCE500F3C8E3 /* InstrumentLibrary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A62504E1AC35969004C66CB /* InstrumentLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A3850751ACADCE500F3C8E3 /* PuddingPDCA.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A2C2EC6169EDED000DCAC62 /* PuddingPDCA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A3850761ACADCE500F3C8E3 /* PEGA_ATS_UART.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 135EC1C2186286BB001AA741 /* PEGA_ATS_UART.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A389D201887AA0600E53926 /* HSG-BUTTONFLEX.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A389D1C1887AA0600E53926 /* HSG-BUTTONFLEX.plist */; };
+		0A5409C51A333B01009E894C /* Columns FW Load.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A5409C41A333B01009E894C /* Columns FW Load.plist */; };
+		0A589D121888CCD600B96F77 /* CG-INSTALL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A589D111888CCD600B96F77 /* CG-INSTALL.plist */; };
+		0A62504F1AC35969004C66CB /* InstrumentLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62504E1AC35969004C66CB /* InstrumentLibrary.framework */; };
+		0A6250501AC35977004C66CB /* IADevice_Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = D96AF2CC14976E9500BDDC1D /* IADevice_Instrument.m */; };
+		0A711CC7188E5AEE00E27D60 /* UNIT-SHUTDOWN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A711CC6188E5AEE00E27D60 /* UNIT-SHUTDOWN.plist */; };
+		0A711CCD188E5C4000E27D60 /* GATEKEEPER-PREBURN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A711CCC188E5C4000E27D60 /* GATEKEEPER-PREBURN.plist */; };
+		0A711CD1188E5E4600E27D60 /* QT1-PREBURN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A711CD0188E5E4600E27D60 /* QT1-PREBURN.plist */; };
+		0A82F93719BFACCA0096DF0D /* GATEKEEPER-NED.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A82F93619BFACCA0096DF0D /* GATEKEEPER-NED.plist */; };
+		0A8E1AC51373DBDA007A41F8 /* IADevice_ALS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1AB31373DBDA007A41F8 /* IADevice_ALS.h */; };
+		0A8E1AC61373DBDA007A41F8 /* IADevice_ALS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1AB41373DBDA007A41F8 /* IADevice_ALS.m */; };
+		0A8E1AC71373DBDA007A41F8 /* IADevice_Battery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1AB51373DBDA007A41F8 /* IADevice_Battery.h */; };
+		0A8E1AC81373DBDA007A41F8 /* IADevice_Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1AB61373DBDA007A41F8 /* IADevice_Battery.m */; };
+		0A8E1ACB1373DBDA007A41F8 /* IADevice_CB.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1AB91373DBDA007A41F8 /* IADevice_CB.h */; };
+		0A8E1ACC1373DBDA007A41F8 /* IADevice_CB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1ABA1373DBDA007A41F8 /* IADevice_CB.m */; };
+		0A8E1ACD1373DBDA007A41F8 /* IADevice_Compass.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1ABB1373DBDA007A41F8 /* IADevice_Compass.h */; };
+		0A8E1ACE1373DBDA007A41F8 /* IADevice_Compass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1ABC1373DBDA007A41F8 /* IADevice_Compass.m */; };
+		0A8E1AD11373DBDA007A41F8 /* IADevice_Gyro.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1ABF1373DBDA007A41F8 /* IADevice_Gyro.h */; };
+		0A8E1AD21373DBDA007A41F8 /* IADevice_Gyro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1AC01373DBDA007A41F8 /* IADevice_Gyro.m */; };
+		0A8E1AD31373DBDA007A41F8 /* IADevice_Operation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1AC11373DBDA007A41F8 /* IADevice_Operation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8E1AD41373DBDA007A41F8 /* IADevice_Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1AC21373DBDA007A41F8 /* IADevice_Operation.m */; };
+		0A8E1AD51373DBDA007A41F8 /* IADevice_Other.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8E1AC31373DBDA007A41F8 /* IADevice_Other.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8E1AD61373DBDA007A41F8 /* IADevice_Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1AC41373DBDA007A41F8 /* IADevice_Other.m */; };
+		0A9FC3FA1AC0C8DE00D37624 /* IADevice_CPlusPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9FC3F81AC0C8DE00D37624 /* IADevice_CPlusPlus.h */; };
+		0A9FC9EB187D406D00E54C72 /* QT0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9FC9EA187D406D00E54C72 /* QT0.plist */; };
+		0ACF9501135D263A0089869D /* IALogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACF94FF135D263A0089869D /* IALogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ACF9502135D263A0089869D /* IALogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF9500135D263A0089869D /* IALogs.m */; };
+		0ACF950D135D28F80089869D /* IANet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACF950B135D28F80089869D /* IANet.h */; };
+		0ACF950E135D28F80089869D /* IANet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF950C135D28F80089869D /* IANet.m */; };
+		0ACFEE8F134D66BD00223FA0 /* TestProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFEE8D134D66BD00223FA0 /* TestProgress.m */; };
+		0ACFEE91134D66F400223FA0 /* TestProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACFEE8C134D66BD00223FA0 /* TestProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ACFEE94134D66F400223FA0 /* MathLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD1743613432842000131B6 /* MathLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AD174031343274A000131B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD174021343274A000131B6 /* Cocoa.framework */; };
+		0AD1740D1343274A000131B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AD1740B1343274A000131B6 /* InfoPlist.strings */; };
+		0AD1743913432842000131B6 /* MathLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1743713432842000131B6 /* MathLibrary.m */; };
+		0F62F2291AA5881D0047D674 /* QT0_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2271AA5881D0047D674 /* QT0_Limit_Malta.plist */; };
+		0F62F22A1AA5881D0047D674 /* QT0_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2281AA5881D0047D674 /* QT0_Limit_Maui.plist */; };
+		0F62F2411AA58D0D0047D674 /* CG-INSTALL_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F22B1AA58D0D0047D674 /* CG-INSTALL_Limit_Malta.plist */; };
+		0F62F2421AA58D0D0047D674 /* CG-INSTALL_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F22C1AA58D0D0047D674 /* CG-INSTALL_Limit_Maui.plist */; };
+		0F62F2431AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F22D1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Malta.plist */; };
+		0F62F2441AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F22E1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Maui.plist */; };
+		0F62F2451AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F22F1AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Malta.plist */; };
+		0F62F2461AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2301AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Maui.plist */; };
+		0F62F2471AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2311AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Malta.plist */; };
+		0F62F2481AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2321AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Maui.plist */; };
+		0F62F2491AA58D0D0047D674 /* GATEKEEPER_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2331AA58D0D0047D674 /* GATEKEEPER_Limit_Malta.plist */; };
+		0F62F24A1AA58D0D0047D674 /* GATEKEEPER_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2341AA58D0D0047D674 /* GATEKEEPER_Limit_Maui.plist */; };
+		0F62F24B1AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2351AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Malta.plist */; };
+		0F62F24C1AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2361AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Maui.plist */; };
+		0F62F24D1AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2371AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Malta.plist */; };
+		0F62F24E1AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2381AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Maui.plist */; };
+		0F62F24F1AA58D0D0047D674 /* QT1-PREBURN_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2391AA58D0D0047D674 /* QT1-PREBURN_Limit_Malta.plist */; };
+		0F62F2501AA58D0D0047D674 /* QT1-PREBURN_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23A1AA58D0D0047D674 /* QT1-PREBURN_Limit_Maui.plist */; };
+		0F62F2511AA58D0D0047D674 /* QT2-POSTBURN_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23B1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Malta.plist */; };
+		0F62F2521AA58D0D0047D674 /* QT2-POSTBURN_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23C1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Maui.plist */; };
+		0F62F2531AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23D1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Malta.plist */; };
+		0F62F2541AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23E1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Maui.plist */; };
+		0F62F2551AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F23F1AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Malta.plist */; };
+		0F62F2561AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F62F2401AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Maui.plist */; };
+		13271388188E6A2B008B37BA /* publicParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 13271386188E6A2B008B37BA /* publicParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13271389188E6A2B008B37BA /* publicParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 13271387188E6A2B008B37BA /* publicParams.m */; };
+		1327138B188E72D4008B37BA /* IADevice_Pressure.h in Headers */ = {isa = PBXBuildFile; fileRef = 1327138A188E72D3008B37BA /* IADevice_Pressure.h */; };
+		1327138D188E72E0008B37BA /* IADevice_Pressure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1327138C188E72E0008B37BA /* IADevice_Pressure.m */; };
+		132F19F3173A2FE600D9DA44 /* IADevice_TestingCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 132F19F2173A2FE600D9DA44 /* IADevice_TestingCommands.m */; };
+		135EC1C3186286BB001AA741 /* PEGA_ATS_UART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135EC1C2186286BB001AA741 /* PEGA_ATS_UART.framework */; };
+		2A3A48C11890B1F500D7C921 /* CONNECTIVITY-TEST.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A48C01890B1F500D7C921 /* CONNECTIVITY-TEST.plist */; };
+		2A700F661AB1D6E2004324C1 /* IQC-DEV8.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A700F651AB1D6E2004324C1 /* IQC-DEV8.plist */; };
+		2A845DA61AFD8D8B0092A9A6 /* gyro-sanity-test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A845DA51AFD8D8B0092A9A6 /* gyro-sanity-test.plist */; };
+		2AAD8CA01AFE1DCC007972B0 /* FATP_FA_PRE_QT0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AAD8C9F1AFE1DCC007972B0 /* FATP_FA_PRE_QT0.plist */; };
+		2AC1C3E61A44F7600086959A /* GATEKEEPER_Charging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AC1C3E51A44F7600086959A /* GATEKEEPER_Charging.plist */; };
+		2AD7B7B91A5B6C740095413F /* LIVE_QT0_DEFAULT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD7B7B81A5B6C740095413F /* LIVE_QT0_DEFAULT.plist */; };
+		2AE648CD1AF3F009009F88B0 /* CG-SENSOR_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AE648CB1AF3F009009F88B0 /* CG-SENSOR_Limit_Malta.plist */; };
+		2AE648CE1AF3F009009F88B0 /* CG-SENSOR_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AE648CC1AF3F009009F88B0 /* CG-SENSOR_Limit_Maui.plist */; };
+		2AF101A11AB2F0CA00FF4BC0 /* LIVE_QT0-NED_DEFAULT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AF101A01AB2F0CA00FF4BC0 /* LIVE_QT0-NED_DEFAULT.plist */; };
+		403342CF1475E845002F83E2 /* IADevice_Current.h in Headers */ = {isa = PBXBuildFile; fileRef = 403342CD1475E845002F83E2 /* IADevice_Current.h */; };
+		403342D01475E845002F83E2 /* IADevice_Current.m in Sources */ = {isa = PBXBuildFile; fileRef = 403342CE1475E845002F83E2 /* IADevice_Current.m */; };
+		60097D321467B82100071B2A /* IADevice_LightMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60097D301467B82100071B2A /* IADevice_LightMeter.h */; };
+		60097D331467B82100071B2A /* IADevice_LightMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 60097D311467B82100071B2A /* IADevice_LightMeter.m */; };
+		60C18F7F145A99F000A55F8B /* IADevice_ButtonTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C18F7D145A99EF00A55F8B /* IADevice_ButtonTest.h */; };
+		60C18F80145A99F000A55F8B /* IADevice_ButtonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C18F7E145A99F000A55F8B /* IADevice_ButtonTest.m */; };
+		60F00B2C145003B3009A1693 /* IADevice_ReadFirstSampleFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F00B2A145003B3009A1693 /* IADevice_ReadFirstSampleFunction.m */; };
+		60F00B2D145003B3009A1693 /* IADevice_ReadFirstSampleFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F00B2B145003B3009A1693 /* IADevice_ReadFirstSampleFunction.h */; };
+		651583D615B97AC100268E6E /* SDPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 651583D415B97AC100268E6E /* SDPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651583D715B97AC100268E6E /* SDPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 651583D515B97AC100268E6E /* SDPanel.m */; };
+		65B70F4314AC79D1006C0EBD /* PTDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B70F4214AC79D1006C0EBD /* PTDrawing.m */; };
+		65B70F4514AC79D9006C0EBD /* PTDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B70F4414AC79D9006C0EBD /* PTDrawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844ECD321AB43F0E00FF703B /* CG-INSTALL-NED.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844ECD311AB43F0E00FF703B /* CG-INSTALL-NED.plist */; };
+		84C1F02619BEEAF400552B60 /* GATEKEEPER.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84C1F02519BEEAF400552B60 /* GATEKEEPER.plist */; };
+		D33AB174135C6A59009F85B9 /* publicDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D33AB173135C6A59009F85B9 /* publicDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4322F611A771DC700F3D8D3 /* DEVELOPMENT37.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4322F601A771DC700F3D8D3 /* DEVELOPMENT37.plist */; };
+		D464703F1A32599E0050CA2B /* SA-SENSORFLEX_AN.plist in Resources */ = {isa = PBXBuildFile; fileRef = D464703D1A32599E0050CA2B /* SA-SENSORFLEX_AN.plist */; };
+		D46470401A32599E0050CA2B /* SA-SENSORFLEX_DP.plist in Resources */ = {isa = PBXBuildFile; fileRef = D464703E1A32599E0050CA2B /* SA-SENSORFLEX_DP.plist */; };
+		D4800DB51A2E4304002842BB /* QT2-POSTBURN-NED.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4800DB41A2E4304002842BB /* QT2-POSTBURN-NED.plist */; };
+		D9470BFA145E6C510003FC6D /* IADevice_SFIS.h in Headers */ = {isa = PBXBuildFile; fileRef = D9470BF8145E6C510003FC6D /* IADevice_SFIS.h */; };
+		D9470BFB145E6C510003FC6D /* IADevice_SFIS.m in Sources */ = {isa = PBXBuildFile; fileRef = D9470BF9145E6C510003FC6D /* IADevice_SFIS.m */; };
+		D947532C143087A6008CB3D0 /* CBTestBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D9475329143087A6008CB3D0 /* CBTestBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D947532D143087A6008CB3D0 /* CBTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D947532A143087A6008CB3D0 /* CBTestBase.m */; };
+		D947532E143087A6008CB3D0 /* CBAuth_API.h in Headers */ = {isa = PBXBuildFile; fileRef = D947532B143087A6008CB3D0 /* CBAuth_API.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94F45FF14A1CDC300C26F73 /* IADevice_Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = D94F45FD14A1CDC300C26F73 /* IADevice_Camera.h */; };
+		D94F460014A1CDC300C26F73 /* IADevice_Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = D94F45FE14A1CDC300C26F73 /* IADevice_Camera.m */; };
+		D96AF2CD14976E9500BDDC1D /* IADevice_Instrument.h in Headers */ = {isa = PBXBuildFile; fileRef = D96AF2CB14976E9500BDDC1D /* IADevice_Instrument.h */; };
+		D9DC68D4144D46CB0027D310 /* IADevice_DetectPort.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DC68D2144D46CB0027D310 /* IADevice_DetectPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9DC68D5144D46CB0027D310 /* IADevice_DetectPort.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC68D3144D46CB0027D310 /* IADevice_DetectPort.m */; };
+		E3594DBC14AC63F9009A288F /* NSStringCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = E3594DBA14AC63F9009A288F /* NSStringCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3594DBD14AC63F9009A288F /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E3594DBB14AC63F9009A288F /* NSStringCategory.m */; };
+		E4551C081AAF3679005CF27E /* QT0-NED_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C061AAF3679005CF27E /* QT0-NED_Limit_Malta.plist */; };
+		E4551C091AAF3679005CF27E /* QT0-NED_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C071AAF3679005CF27E /* QT0-NED_Limit_Maui.plist */; };
+		E4551C0C1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C0A1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Malta.plist */; };
+		E4551C0D1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C0B1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Maui.plist */; };
+		E4551C101AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Malta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C0E1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Malta.plist */; };
+		E4551C111AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Maui.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4551C0F1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Maui.plist */; };
+		E4E551511B670EEA0061708C /* DEVELOPMENT43.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E551501B670EEA0061708C /* DEVELOPMENT43.plist */; };
+		EDA7F26E14A4911D00043BD6 /* judgePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA7F26C14A4911D00043BD6 /* judgePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA7F26F14A4911D00043BD6 /* judgePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA7F26D14A4911D00043BD6 /* judgePanel.m */; };
+		EDA7F27114A4919200043BD6 /* panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA7F27014A4919200043BD6 /* panel.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AC2F4B413446D96000B0005 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A3850741ACADCE500F3C8E3 /* InstrumentLibrary.framework in CopyFiles */,
+				0A3850751ACADCE500F3C8E3 /* PuddingPDCA.framework in CopyFiles */,
+				0A3850761ACADCE500F3C8E3 /* PEGA_ATS_UART.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0136108919B7112C004B7967 /* QT0-NED.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT0-NED.plist"; sourceTree = "<group>"; };
+		01863B571A159C390050278F /* CG-SENSOR.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-SENSOR.plist"; sourceTree = "<group>"; };
+		01E8EB0519B6BF580034A3BC /* QT2-POSTBURN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN.plist"; sourceTree = "<group>"; };
+		01ED7F7D19EBB6C100C9B33C /* QT0-DEVBOARD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT0-DEVBOARD.plist"; sourceTree = "<group>"; };
+		0A2C2EC6169EDED000DCAC62 /* PuddingPDCA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PuddingPDCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2DB7FC1366BB4600BE383E /* IADevice_Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Define.h; sourceTree = "<group>"; };
+		0A2DB7FD1366BB4600BE383E /* IADevice_TestingCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_TestingCommands.h; sourceTree = "<group>"; };
+		0A335A011A28490A000E6237 /* IQC-DEV6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IQC-DEV6.plist"; sourceTree = "<group>"; };
+		0A38506D1ACADBE800F3C8E3 /* CppOrbPost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CppOrbPost.framework; sourceTree = "<group>"; };
+		0A38506E1ACADBE800F3C8E3 /* FTK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FTK.framework; sourceTree = "<group>"; };
+		0A38506F1ACADBE800F3C8E3 /* VectorUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VectorUtils.framework; sourceTree = "<group>"; };
+		0A389D1C1887AA0600E53926 /* HSG-BUTTONFLEX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HSG-BUTTONFLEX.plist"; sourceTree = "<group>"; };
+		0A5409C41A333B01009E894C /* Columns FW Load.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Columns FW Load.plist"; sourceTree = "<group>"; };
+		0A589D111888CCD600B96F77 /* CG-INSTALL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-INSTALL.plist"; sourceTree = "<group>"; };
+		0A62504E1AC35969004C66CB /* InstrumentLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InstrumentLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A711CC6188E5AEE00E27D60 /* UNIT-SHUTDOWN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UNIT-SHUTDOWN.plist"; sourceTree = "<group>"; };
+		0A711CCC188E5C4000E27D60 /* GATEKEEPER-PREBURN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-PREBURN.plist"; sourceTree = "<group>"; };
+		0A711CD0188E5E4600E27D60 /* QT1-PREBURN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT1-PREBURN.plist"; sourceTree = "<group>"; };
+		0A82F93619BFACCA0096DF0D /* GATEKEEPER-NED.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-NED.plist"; sourceTree = "<group>"; };
+		0A8E1AB31373DBDA007A41F8 /* IADevice_ALS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_ALS.h; sourceTree = "<group>"; };
+		0A8E1AB41373DBDA007A41F8 /* IADevice_ALS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_ALS.m; sourceTree = "<group>"; };
+		0A8E1AB51373DBDA007A41F8 /* IADevice_Battery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Battery.h; sourceTree = "<group>"; };
+		0A8E1AB61373DBDA007A41F8 /* IADevice_Battery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Battery.m; sourceTree = "<group>"; };
+		0A8E1AB91373DBDA007A41F8 /* IADevice_CB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_CB.h; sourceTree = "<group>"; };
+		0A8E1ABA1373DBDA007A41F8 /* IADevice_CB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_CB.m; sourceTree = "<group>"; };
+		0A8E1ABB1373DBDA007A41F8 /* IADevice_Compass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Compass.h; sourceTree = "<group>"; };
+		0A8E1ABC1373DBDA007A41F8 /* IADevice_Compass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Compass.m; sourceTree = "<group>"; };
+		0A8E1ABF1373DBDA007A41F8 /* IADevice_Gyro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Gyro.h; sourceTree = "<group>"; };
+		0A8E1AC01373DBDA007A41F8 /* IADevice_Gyro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Gyro.m; sourceTree = "<group>"; };
+		0A8E1AC11373DBDA007A41F8 /* IADevice_Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Operation.h; sourceTree = "<group>"; };
+		0A8E1AC21373DBDA007A41F8 /* IADevice_Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Operation.m; sourceTree = "<group>"; };
+		0A8E1AC31373DBDA007A41F8 /* IADevice_Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Other.h; sourceTree = "<group>"; };
+		0A8E1AC41373DBDA007A41F8 /* IADevice_Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Other.m; sourceTree = "<group>"; };
+		0A9FC3F81AC0C8DE00D37624 /* IADevice_CPlusPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_CPlusPlus.h; sourceTree = "<group>"; };
+		0A9FC3F91AC0C8DE00D37624 /* IADevice_CPlusPlus.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IADevice_CPlusPlus.mm; sourceTree = "<group>"; };
+		0A9FC9EA187D406D00E54C72 /* QT0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QT0.plist; sourceTree = "<group>"; };
+		0ACF94FF135D263A0089869D /* IALogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IALogs.h; path = FunnyZone/IALogs.h; sourceTree = "<group>"; };
+		0ACF9500135D263A0089869D /* IALogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IALogs.m; path = FunnyZone/IALogs.m; sourceTree = "<group>"; };
+		0ACF950B135D28F80089869D /* IANet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IANet.h; sourceTree = "<group>"; };
+		0ACF950C135D28F80089869D /* IANet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IANet.m; sourceTree = "<group>"; };
+		0ACFEE8C134D66BD00223FA0 /* TestProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProgress.h; sourceTree = "<group>"; };
+		0ACFEE8D134D66BD00223FA0 /* TestProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProgress.m; sourceTree = "<group>"; };
+		0AD173FF1343274A000131B6 /* FunnyZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunnyZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD174021343274A000131B6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0AD174051343274A000131B6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0AD174061343274A000131B6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0AD174071343274A000131B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AD1740A1343274A000131B6 /* FunnyZone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunnyZone-Info.plist"; sourceTree = "<group>"; };
+		0AD1740C1343274A000131B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AD1740E1343274A000131B6 /* FunnyZone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunnyZone-Prefix.pch"; sourceTree = "<group>"; };
+		0AD1743613432842000131B6 /* MathLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathLibrary.h; sourceTree = "<group>"; };
+		0AD1743713432842000131B6 /* MathLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathLibrary.m; sourceTree = "<group>"; };
+		0F62F2271AA5881D0047D674 /* QT0_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QT0_Limit_Malta.plist; sourceTree = "<group>"; };
+		0F62F2281AA5881D0047D674 /* QT0_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QT0_Limit_Maui.plist; sourceTree = "<group>"; };
+		0F62F22B1AA58D0D0047D674 /* CG-INSTALL_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-INSTALL_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F22C1AA58D0D0047D674 /* CG-INSTALL_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-INSTALL_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F22D1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-O-TEST_AN_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F22E1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-O-TEST_AN_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F22F1AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-O-TEST_DP_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F2301AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-O-TEST_DP_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F2311AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CONNECTIVITY-TEST_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F2321AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CONNECTIVITY-TEST_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F2331AA58D0D0047D674 /* GATEKEEPER_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GATEKEEPER_Limit_Malta.plist; sourceTree = "<group>"; };
+		0F62F2341AA58D0D0047D674 /* GATEKEEPER_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GATEKEEPER_Limit_Maui.plist; sourceTree = "<group>"; };
+		0F62F2351AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-PREBURN_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F2361AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-PREBURN_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F2371AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HSG-BUTTONFLEX_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F2381AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HSG-BUTTONFLEX_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F2391AA58D0D0047D674 /* QT1-PREBURN_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT1-PREBURN_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F23A1AA58D0D0047D674 /* QT1-PREBURN_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT1-PREBURN_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F23B1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F23C1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F23D1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_AN_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F23E1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_AN_Limit_Maui.plist"; sourceTree = "<group>"; };
+		0F62F23F1AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_DP_Limit_Malta.plist"; sourceTree = "<group>"; };
+		0F62F2401AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_DP_Limit_Maui.plist"; sourceTree = "<group>"; };
+		13271386188E6A2B008B37BA /* publicParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publicParams.h; path = FunnyZone/publicParams.h; sourceTree = "<group>"; };
+		13271387188E6A2B008B37BA /* publicParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = publicParams.m; path = FunnyZone/publicParams.m; sourceTree = "<group>"; };
+		1327138A188E72D3008B37BA /* IADevice_Pressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Pressure.h; sourceTree = "<group>"; };
+		1327138C188E72E0008B37BA /* IADevice_Pressure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Pressure.m; sourceTree = "<group>"; };
+		132F19F2173A2FE600D9DA44 /* IADevice_TestingCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_TestingCommands.m; sourceTree = "<group>"; };
+		135EC1C2186286BB001AA741 /* PEGA_ATS_UART.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PEGA_ATS_UART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3A48C01890B1F500D7C921 /* CONNECTIVITY-TEST.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CONNECTIVITY-TEST.plist"; sourceTree = "<group>"; };
+		2A700F651AB1D6E2004324C1 /* IQC-DEV8.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IQC-DEV8.plist"; sourceTree = "<group>"; };
+		2A845DA51AFD8D8B0092A9A6 /* gyro-sanity-test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "gyro-sanity-test.plist"; sourceTree = "<group>"; };
+		2AAD8C9F1AFE1DCC007972B0 /* FATP_FA_PRE_QT0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FATP_FA_PRE_QT0.plist; sourceTree = "<group>"; };
+		2AC1C3E51A44F7600086959A /* GATEKEEPER_Charging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GATEKEEPER_Charging.plist; sourceTree = "<group>"; };
+		2AD7B7B81A5B6C740095413F /* LIVE_QT0_DEFAULT.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LIVE_QT0_DEFAULT.plist; sourceTree = "<group>"; };
+		2AE648CB1AF3F009009F88B0 /* CG-SENSOR_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-SENSOR_Limit_Malta.plist"; sourceTree = "<group>"; };
+		2AE648CC1AF3F009009F88B0 /* CG-SENSOR_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-SENSOR_Limit_Maui.plist"; sourceTree = "<group>"; };
+		2AF101A01AB2F0CA00FF4BC0 /* LIVE_QT0-NED_DEFAULT.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LIVE_QT0-NED_DEFAULT.plist"; sourceTree = "<group>"; };
+		403342CD1475E845002F83E2 /* IADevice_Current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Current.h; sourceTree = "<group>"; };
+		403342CE1475E845002F83E2 /* IADevice_Current.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Current.m; sourceTree = "<group>"; };
+		60097D301467B82100071B2A /* IADevice_LightMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_LightMeter.h; sourceTree = "<group>"; };
+		60097D311467B82100071B2A /* IADevice_LightMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_LightMeter.m; sourceTree = "<group>"; };
+		60C18F7D145A99EF00A55F8B /* IADevice_ButtonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_ButtonTest.h; sourceTree = "<group>"; };
+		60C18F7E145A99F000A55F8B /* IADevice_ButtonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_ButtonTest.m; sourceTree = "<group>"; };
+		60F00B2A145003B3009A1693 /* IADevice_ReadFirstSampleFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_ReadFirstSampleFunction.m; sourceTree = "<group>"; };
+		60F00B2B145003B3009A1693 /* IADevice_ReadFirstSampleFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_ReadFirstSampleFunction.h; sourceTree = "<group>"; };
+		651583D415B97AC100268E6E /* SDPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDPanel.h; path = FunnyZone/SDPanel.h; sourceTree = "<group>"; };
+		651583D515B97AC100268E6E /* SDPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDPanel.m; path = FunnyZone/SDPanel.m; sourceTree = "<group>"; };
+		65B70F4214AC79D1006C0EBD /* PTDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTDrawing.m; path = FunnyZone/PTDrawing.m; sourceTree = "<group>"; };
+		65B70F4414AC79D9006C0EBD /* PTDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDrawing.h; path = FunnyZone/PTDrawing.h; sourceTree = "<group>"; };
+		844ECD311AB43F0E00FF703B /* CG-INSTALL-NED.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CG-INSTALL-NED.plist"; sourceTree = "<group>"; };
+		84C1F02519BEEAF400552B60 /* GATEKEEPER.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GATEKEEPER.plist; sourceTree = "<group>"; };
+		D33AB173135C6A59009F85B9 /* publicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publicDefine.h; path = FunnyZone/publicDefine.h; sourceTree = "<group>"; };
+		D4322F601A771DC700F3D8D3 /* DEVELOPMENT37.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DEVELOPMENT37.plist; sourceTree = "<group>"; };
+		D464703D1A32599E0050CA2B /* SA-SENSORFLEX_AN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_AN.plist"; sourceTree = "<group>"; };
+		D464703E1A32599E0050CA2B /* SA-SENSORFLEX_DP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SA-SENSORFLEX_DP.plist"; sourceTree = "<group>"; };
+		D4800DB41A2E4304002842BB /* QT2-POSTBURN-NED.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN-NED.plist"; sourceTree = "<group>"; };
+		D9470BF8145E6C510003FC6D /* IADevice_SFIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_SFIS.h; sourceTree = "<group>"; };
+		D9470BF9145E6C510003FC6D /* IADevice_SFIS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_SFIS.m; sourceTree = "<group>"; };
+		D9475329143087A6008CB3D0 /* CBTestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBTestBase.h; path = FunnyZone/CBTestBase.h; sourceTree = "<group>"; };
+		D947532A143087A6008CB3D0 /* CBTestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBTestBase.m; path = FunnyZone/CBTestBase.m; sourceTree = "<group>"; };
+		D947532B143087A6008CB3D0 /* CBAuth_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBAuth_API.h; path = FunnyZone/CBAuth_API.h; sourceTree = "<group>"; };
+		D94F45FD14A1CDC300C26F73 /* IADevice_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Camera.h; sourceTree = "<group>"; };
+		D94F45FE14A1CDC300C26F73 /* IADevice_Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Camera.m; sourceTree = "<group>"; };
+		D96AF2CB14976E9500BDDC1D /* IADevice_Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_Instrument.h; sourceTree = "<group>"; };
+		D96AF2CC14976E9500BDDC1D /* IADevice_Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_Instrument.m; sourceTree = "<group>"; };
+		D9DC68D2144D46CB0027D310 /* IADevice_DetectPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_DetectPort.h; sourceTree = "<group>"; };
+		D9DC68D3144D46CB0027D310 /* IADevice_DetectPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_DetectPort.m; sourceTree = "<group>"; };
+		E3594DBA14AC63F9009A288F /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringCategory.h; path = FunnyZone/NSStringCategory.h; sourceTree = "<group>"; };
+		E3594DBB14AC63F9009A288F /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringCategory.m; path = FunnyZone/NSStringCategory.m; sourceTree = "<group>"; };
+		E4551C061AAF3679005CF27E /* QT0-NED_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT0-NED_Limit_Malta.plist"; sourceTree = "<group>"; };
+		E4551C071AAF3679005CF27E /* QT0-NED_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT0-NED_Limit_Maui.plist"; sourceTree = "<group>"; };
+		E4551C0A1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN-NED_Limit_Malta.plist"; sourceTree = "<group>"; };
+		E4551C0B1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QT2-POSTBURN-NED_Limit_Maui.plist"; sourceTree = "<group>"; };
+		E4551C0E1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Malta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-NED_Limit_Malta.plist"; sourceTree = "<group>"; };
+		E4551C0F1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Maui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GATEKEEPER-NED_Limit_Maui.plist"; sourceTree = "<group>"; };
+		E4E551501B670EEA0061708C /* DEVELOPMENT43.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DEVELOPMENT43.plist; sourceTree = "<group>"; };
+		EDA7F26C14A4911D00043BD6 /* judgePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = judgePanel.h; path = FunnyZone/judgePanel.h; sourceTree = "<group>"; };
+		EDA7F26D14A4911D00043BD6 /* judgePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = judgePanel.m; path = FunnyZone/judgePanel.m; sourceTree = "<group>"; };
+		EDA7F27014A4919200043BD6 /* panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = panel.xib; path = FunnyZone/panel.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AD173FB1343274A000131B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3850711ACADBE800F3C8E3 /* FTK.framework in Frameworks */,
+				0AD174031343274A000131B6 /* Cocoa.framework in Frameworks */,
+				0A62504F1AC35969004C66CB /* InstrumentLibrary.framework in Frameworks */,
+				0A2C2EC9169EDED000DCAC62 /* PuddingPDCA.framework in Frameworks */,
+				0A3850701ACADBE800F3C8E3 /* CppOrbPost.framework in Frameworks */,
+				0A3850721ACADBE800F3C8E3 /* VectorUtils.framework in Frameworks */,
+				135EC1C3186286BB001AA741 /* PEGA_ATS_UART.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0248A91AC09FC300B3A730 /* ATS Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A62504E1AC35969004C66CB /* InstrumentLibrary.framework */,
+				0A2C2EC6169EDED000DCAC62 /* PuddingPDCA.framework */,
+				135EC1C2186286BB001AA741 /* PEGA_ATS_UART.framework */,
+			);
+			name = "ATS Frameworks";
+			sourceTree = "<group>";
+		};
+		0A0248AA1AC09FE300B3A730 /* 3rd Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A38506D1ACADBE800F3C8E3 /* CppOrbPost.framework */,
+				0A38506E1ACADBE800F3C8E3 /* FTK.framework */,
+				0A38506F1ACADBE800F3C8E3 /* VectorUtils.framework */,
+			);
+			name = "3rd Frameworks";
+			sourceTree = "<group>";
+		};
+		0A2C2ECD169EDF8A00DCAC62 /* StationScripts */ = {
+			isa = PBXGroup;
+			children = (
+				0F62F2261AA5881D0047D674 /* SocLimits */,
+				2AD7B7B71A5B6C410095413F /* LiveScript */,
+				0A2C2F0A169EE07400DCAC62 /* IQC */,
+				0A2C2F06169EDFE000DCAC62 /* SMT */,
+				0A2C2F07169EDFED00DCAC62 /* SUB */,
+				0A2C2F05169EDFC900DCAC62 /* FATP */,
+				0A2C2F09169EE02700DCAC62 /* NEDLine */,
+				0A2C2F08169EDFF900DCAC62 /* Offline */,
+				D49DBFB8179929F400AD5DC6 /* CSD */,
+			);
+			name = StationScripts;
+			path = FunnyZone/StationScripts;
+			sourceTree = "<group>";
+		};
+		0A2C2F05169EDFC900DCAC62 /* FATP */ = {
+			isa = PBXGroup;
+			children = (
+				D4322F601A771DC700F3D8D3 /* DEVELOPMENT37.plist */,
+				2A3A48C01890B1F500D7C921 /* CONNECTIVITY-TEST.plist */,
+				0A711CC6188E5AEE00E27D60 /* UNIT-SHUTDOWN.plist */,
+				0A589D111888CCD600B96F77 /* CG-INSTALL.plist */,
+				0A9FC9EA187D406D00E54C72 /* QT0.plist */,
+				84C1F02519BEEAF400552B60 /* GATEKEEPER.plist */,
+				0A711CD0188E5E4600E27D60 /* QT1-PREBURN.plist */,
+				01E8EB0519B6BF580034A3BC /* QT2-POSTBURN.plist */,
+			);
+			name = FATP;
+			sourceTree = "<group>";
+		};
+		0A2C2F06169EDFE000DCAC62 /* SMT */ = {
+			isa = PBXGroup;
+			children = (
+				D464703D1A32599E0050CA2B /* SA-SENSORFLEX_AN.plist */,
+				D464703E1A32599E0050CA2B /* SA-SENSORFLEX_DP.plist */,
+				0A711CCC188E5C4000E27D60 /* GATEKEEPER-PREBURN.plist */,
+			);
+			name = SMT;
+			sourceTree = "<group>";
+		};
+		0A2C2F07169EDFED00DCAC62 /* SUB */ = {
+			isa = PBXGroup;
+			children = (
+				01863B571A159C390050278F /* CG-SENSOR.plist */,
+				0A389D1C1887AA0600E53926 /* HSG-BUTTONFLEX.plist */,
+			);
+			name = SUB;
+			sourceTree = "<group>";
+		};
+		0A2C2F08169EDFF900DCAC62 /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+				2AAD8C9F1AFE1DCC007972B0 /* FATP_FA_PRE_QT0.plist */,
+				2A845DA51AFD8D8B0092A9A6 /* gyro-sanity-test.plist */,
+				E4E551501B670EEA0061708C /* DEVELOPMENT43.plist */,
+				2AC1C3E51A44F7600086959A /* GATEKEEPER_Charging.plist */,
+				0A5409C41A333B01009E894C /* Columns FW Load.plist */,
+				01ED7F7D19EBB6C100C9B33C /* QT0-DEVBOARD.plist */,
+			);
+			name = Offline;
+			sourceTree = "<group>";
+		};
+		0A2C2F09169EE02700DCAC62 /* NEDLine */ = {
+			isa = PBXGroup;
+			children = (
+				D4800DB41A2E4304002842BB /* QT2-POSTBURN-NED.plist */,
+				844ECD311AB43F0E00FF703B /* CG-INSTALL-NED.plist */,
+				0136108919B7112C004B7967 /* QT0-NED.plist */,
+				0A82F93619BFACCA0096DF0D /* GATEKEEPER-NED.plist */,
+			);
+			name = NEDLine;
+			sourceTree = "<group>";
+		};
+		0A2C2F0A169EE07400DCAC62 /* IQC */ = {
+			isa = PBXGroup;
+			children = (
+				2A700F651AB1D6E2004324C1 /* IQC-DEV8.plist */,
+				0A335A011A28490A000E6237 /* IQC-DEV6.plist */,
+			);
+			name = IQC;
+			sourceTree = "<group>";
+		};
+		0ACF9399134578BF001FAD1F /* LogsManager */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF94FF135D263A0089869D /* IALogs.h */,
+				0ACF9500135D263A0089869D /* IALogs.m */,
+			);
+			name = LogsManager;
+			sourceTree = "<group>";
+		};
+		0AD173F31343274A000131B6 = {
+			isa = PBXGroup;
+			children = (
+				E3594D8D14AC04AC009A288F /* CocoaCategory */,
+				D94F45D014A1BB4700C26F73 /* JudgePanel */,
+				D9475327143086E1008CB3D0 /* CBPudding */,
+				0A2C2ECD169EDF8A00DCAC62 /* StationScripts */,
+				D33AB173135C6A59009F85B9 /* publicDefine.h */,
+				13271386188E6A2B008B37BA /* publicParams.h */,
+				13271387188E6A2B008B37BA /* publicParams.m */,
+				0AD17431134327EE000131B6 /* TestProgress */,
+				0ACF9399134578BF001FAD1F /* LogsManager */,
+				0AD1742D1343279B000131B6 /* Device */,
+				0AD1742F134327D2000131B6 /* MathLibrary */,
+				0AD1742E134327BB000131B6 /* NetService */,
+				0AD174081343274A000131B6 /* FunnyZone */,
+				0AD174011343274A000131B6 /* Frameworks */,
+				0AD174001343274A000131B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AD174001343274A000131B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AD173FF1343274A000131B6 /* FunnyZone.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AD174011343274A000131B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A0248AA1AC09FE300B3A730 /* 3rd Frameworks */,
+				0A0248A91AC09FC300B3A730 /* ATS Frameworks */,
+				0AD174041343274A000131B6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AD174041343274A000131B6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD174021343274A000131B6 /* Cocoa.framework */,
+				0AD174051343274A000131B6 /* AppKit.framework */,
+				0AD174061343274A000131B6 /* CoreData.framework */,
+				0AD174071343274A000131B6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0AD174081343274A000131B6 /* FunnyZone */ = {
+			isa = PBXGroup;
+			children = (
+				0AD174091343274A000131B6 /* Supporting Files */,
+			);
+			path = FunnyZone;
+			sourceTree = "<group>";
+		};
+		0AD174091343274A000131B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AD1740A1343274A000131B6 /* FunnyZone-Info.plist */,
+				0AD1740B1343274A000131B6 /* InfoPlist.strings */,
+				0AD1740E1343274A000131B6 /* FunnyZone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AD1742D1343279B000131B6 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				0A2DB7FD1366BB4600BE383E /* IADevice_TestingCommands.h */,
+				132F19F2173A2FE600D9DA44 /* IADevice_TestingCommands.m */,
+				D9DC68D2144D46CB0027D310 /* IADevice_DetectPort.h */,
+				D9DC68D3144D46CB0027D310 /* IADevice_DetectPort.m */,
+				D96AF2CB14976E9500BDDC1D /* IADevice_Instrument.h */,
+				D96AF2CC14976E9500BDDC1D /* IADevice_Instrument.m */,
+				0A8E1AC11373DBDA007A41F8 /* IADevice_Operation.h */,
+				0A8E1AC21373DBDA007A41F8 /* IADevice_Operation.m */,
+				0A8E1AB91373DBDA007A41F8 /* IADevice_CB.h */,
+				0A8E1ABA1373DBDA007A41F8 /* IADevice_CB.m */,
+				D9470BF8145E6C510003FC6D /* IADevice_SFIS.h */,
+				D9470BF9145E6C510003FC6D /* IADevice_SFIS.m */,
+				D94F45FD14A1CDC300C26F73 /* IADevice_Camera.h */,
+				D94F45FE14A1CDC300C26F73 /* IADevice_Camera.m */,
+				403342CD1475E845002F83E2 /* IADevice_Current.h */,
+				403342CE1475E845002F83E2 /* IADevice_Current.m */,
+				60F00B2B145003B3009A1693 /* IADevice_ReadFirstSampleFunction.h */,
+				60F00B2A145003B3009A1693 /* IADevice_ReadFirstSampleFunction.m */,
+				0A9FC3F81AC0C8DE00D37624 /* IADevice_CPlusPlus.h */,
+				0A9FC3F91AC0C8DE00D37624 /* IADevice_CPlusPlus.mm */,
+				0A8E1AB31373DBDA007A41F8 /* IADevice_ALS.h */,
+				0A8E1AB41373DBDA007A41F8 /* IADevice_ALS.m */,
+				0A8E1AB51373DBDA007A41F8 /* IADevice_Battery.h */,
+				0A8E1AB61373DBDA007A41F8 /* IADevice_Battery.m */,
+				0A8E1ABB1373DBDA007A41F8 /* IADevice_Compass.h */,
+				0A8E1ABC1373DBDA007A41F8 /* IADevice_Compass.m */,
+				0A8E1ABF1373DBDA007A41F8 /* IADevice_Gyro.h */,
+				0A8E1AC01373DBDA007A41F8 /* IADevice_Gyro.m */,
+				0A8E1AC31373DBDA007A41F8 /* IADevice_Other.h */,
+				0A8E1AC41373DBDA007A41F8 /* IADevice_Other.m */,
+				60C18F7D145A99EF00A55F8B /* IADevice_ButtonTest.h */,
+				60C18F7E145A99F000A55F8B /* IADevice_ButtonTest.m */,
+				60097D301467B82100071B2A /* IADevice_LightMeter.h */,
+				60097D311467B82100071B2A /* IADevice_LightMeter.m */,
+				1327138A188E72D3008B37BA /* IADevice_Pressure.h */,
+				1327138C188E72E0008B37BA /* IADevice_Pressure.m */,
+			);
+			name = Device;
+			path = FunnyZone;
+			sourceTree = "<group>";
+		};
+		0AD1742E134327BB000131B6 /* NetService */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF950B135D28F80089869D /* IANet.h */,
+				0ACF950C135D28F80089869D /* IANet.m */,
+			);
+			name = NetService;
+			path = FunnyZone;
+			sourceTree = "<group>";
+		};
+		0AD1742F134327D2000131B6 /* MathLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				0AD1743613432842000131B6 /* MathLibrary.h */,
+				0AD1743713432842000131B6 /* MathLibrary.m */,
+			);
+			name = MathLibrary;
+			path = FunnyZone;
+			sourceTree = "<group>";
+		};
+		0AD17431134327EE000131B6 /* TestProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0A2DB7FC1366BB4600BE383E /* IADevice_Define.h */,
+				0ACFEE8C134D66BD00223FA0 /* TestProgress.h */,
+				0ACFEE8D134D66BD00223FA0 /* TestProgress.m */,
+			);
+			name = TestProgress;
+			path = FunnyZone;
+			sourceTree = "<group>";
+		};
+		0F62F2261AA5881D0047D674 /* SocLimits */ = {
+			isa = PBXGroup;
+			children = (
+				2AE648CB1AF3F009009F88B0 /* CG-SENSOR_Limit_Malta.plist */,
+				2AE648CC1AF3F009009F88B0 /* CG-SENSOR_Limit_Maui.plist */,
+				0F62F22B1AA58D0D0047D674 /* CG-INSTALL_Limit_Malta.plist */,
+				0F62F22C1AA58D0D0047D674 /* CG-INSTALL_Limit_Maui.plist */,
+				0F62F22D1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Malta.plist */,
+				0F62F22E1AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Maui.plist */,
+				0F62F22F1AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Malta.plist */,
+				0F62F2301AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Maui.plist */,
+				0F62F2311AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Malta.plist */,
+				0F62F2321AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Maui.plist */,
+				0F62F2331AA58D0D0047D674 /* GATEKEEPER_Limit_Malta.plist */,
+				0F62F2341AA58D0D0047D674 /* GATEKEEPER_Limit_Maui.plist */,
+				E4551C0E1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Malta.plist */,
+				E4551C0F1AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Maui.plist */,
+				0F62F2351AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Malta.plist */,
+				0F62F2361AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Maui.plist */,
+				0F62F2371AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Malta.plist */,
+				0F62F2381AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Maui.plist */,
+				0F62F2391AA58D0D0047D674 /* QT1-PREBURN_Limit_Malta.plist */,
+				0F62F23A1AA58D0D0047D674 /* QT1-PREBURN_Limit_Maui.plist */,
+				0F62F23B1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Malta.plist */,
+				0F62F23C1AA58D0D0047D674 /* QT2-POSTBURN_Limit_Maui.plist */,
+				E4551C0A1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Malta.plist */,
+				E4551C0B1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Maui.plist */,
+				0F62F23D1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Malta.plist */,
+				0F62F23E1AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Maui.plist */,
+				0F62F23F1AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Malta.plist */,
+				0F62F2401AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Maui.plist */,
+				0F62F2271AA5881D0047D674 /* QT0_Limit_Malta.plist */,
+				0F62F2281AA5881D0047D674 /* QT0_Limit_Maui.plist */,
+				E4551C061AAF3679005CF27E /* QT0-NED_Limit_Malta.plist */,
+				E4551C071AAF3679005CF27E /* QT0-NED_Limit_Maui.plist */,
+			);
+			path = SocLimits;
+			sourceTree = "<group>";
+		};
+		2AD7B7B71A5B6C410095413F /* LiveScript */ = {
+			isa = PBXGroup;
+			children = (
+				2AF101A01AB2F0CA00FF4BC0 /* LIVE_QT0-NED_DEFAULT.plist */,
+				2AD7B7B81A5B6C740095413F /* LIVE_QT0_DEFAULT.plist */,
+			);
+			name = LiveScript;
+			sourceTree = "<group>";
+		};
+		D49DBFB8179929F400AD5DC6 /* CSD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CSD;
+			sourceTree = "<group>";
+		};
+		D9475327143086E1008CB3D0 /* CBPudding */ = {
+			isa = PBXGroup;
+			children = (
+				D947532B143087A6008CB3D0 /* CBAuth_API.h */,
+				D9475329143087A6008CB3D0 /* CBTestBase.h */,
+				D947532A143087A6008CB3D0 /* CBTestBase.m */,
+			);
+			name = CBPudding;
+			sourceTree = "<group>";
+		};
+		D94F45D014A1BB4700C26F73 /* JudgePanel */ = {
+			isa = PBXGroup;
+			children = (
+				651583D415B97AC100268E6E /* SDPanel.h */,
+				651583D515B97AC100268E6E /* SDPanel.m */,
+				65B70F4414AC79D9006C0EBD /* PTDrawing.h */,
+				65B70F4214AC79D1006C0EBD /* PTDrawing.m */,
+				EDA7F26C14A4911D00043BD6 /* judgePanel.h */,
+				EDA7F26D14A4911D00043BD6 /* judgePanel.m */,
+				EDA7F27014A4919200043BD6 /* panel.xib */,
+			);
+			name = JudgePanel;
+			sourceTree = "<group>";
+		};
+		E3594D8D14AC04AC009A288F /* CocoaCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E3594DBA14AC63F9009A288F /* NSStringCategory.h */,
+				E3594DBB14AC63F9009A288F /* NSStringCategory.m */,
+			);
+			name = CocoaCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AD173FC1343274A000131B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACFEE91134D66F400223FA0 /* TestProgress.h in Headers */,
+				D9DC68D4144D46CB0027D310 /* IADevice_DetectPort.h in Headers */,
+				E3594DBC14AC63F9009A288F /* NSStringCategory.h in Headers */,
+				0A8E1AD31373DBDA007A41F8 /* IADevice_Operation.h in Headers */,
+				EDA7F26E14A4911D00043BD6 /* judgePanel.h in Headers */,
+				651583D615B97AC100268E6E /* SDPanel.h in Headers */,
+				65B70F4514AC79D9006C0EBD /* PTDrawing.h in Headers */,
+				D33AB174135C6A59009F85B9 /* publicDefine.h in Headers */,
+				13271388188E6A2B008B37BA /* publicParams.h in Headers */,
+				0ACFEE94134D66F400223FA0 /* MathLibrary.h in Headers */,
+				D947532C143087A6008CB3D0 /* CBTestBase.h in Headers */,
+				D947532E143087A6008CB3D0 /* CBAuth_API.h in Headers */,
+				0A9FC3FA1AC0C8DE00D37624 /* IADevice_CPlusPlus.h in Headers */,
+				0A8E1AD51373DBDA007A41F8 /* IADevice_Other.h in Headers */,
+				0A2DB8011366BB4600BE383E /* IADevice_Define.h in Headers */,
+				0ACF9501135D263A0089869D /* IALogs.h in Headers */,
+				0ACF950D135D28F80089869D /* IANet.h in Headers */,
+				0A2DB8021366BB4600BE383E /* IADevice_TestingCommands.h in Headers */,
+				0A8E1AC51373DBDA007A41F8 /* IADevice_ALS.h in Headers */,
+				0A8E1AC71373DBDA007A41F8 /* IADevice_Battery.h in Headers */,
+				0A8E1ACB1373DBDA007A41F8 /* IADevice_CB.h in Headers */,
+				0A8E1ACD1373DBDA007A41F8 /* IADevice_Compass.h in Headers */,
+				0A8E1AD11373DBDA007A41F8 /* IADevice_Gyro.h in Headers */,
+				60F00B2D145003B3009A1693 /* IADevice_ReadFirstSampleFunction.h in Headers */,
+				D9470BFA145E6C510003FC6D /* IADevice_SFIS.h in Headers */,
+				60C18F7F145A99F000A55F8B /* IADevice_ButtonTest.h in Headers */,
+				60097D321467B82100071B2A /* IADevice_LightMeter.h in Headers */,
+				403342CF1475E845002F83E2 /* IADevice_Current.h in Headers */,
+				D96AF2CD14976E9500BDDC1D /* IADevice_Instrument.h in Headers */,
+				D94F45FF14A1CDC300C26F73 /* IADevice_Camera.h in Headers */,
+				1327138B188E72D4008B37BA /* IADevice_Pressure.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AD173FE1343274A000131B6 /* FunnyZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD174261343274A000131B6 /* Build configuration list for PBXNativeTarget "FunnyZone" */;
+			buildPhases = (
+				0AD173FA1343274A000131B6 /* Sources */,
+				0AD173FB1343274A000131B6 /* Frameworks */,
+				0AD173FC1343274A000131B6 /* Headers */,
+				0AD173FD1343274A000131B6 /* Resources */,
+				0AC2F4B413446D96000B0005 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunnyZone;
+			productName = FunnyZone;
+			productReference = 0AD173FF1343274A000131B6 /* FunnyZone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AD173F51343274A000131B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = PEGATRON;
+			};
+			buildConfigurationList = 0AD173F81343274A000131B6 /* Build configuration list for PBXProject "FunnyZone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AD173F31343274A000131B6;
+			productRefGroup = 0AD174001343274A000131B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AD173FE1343274A000131B6 /* FunnyZone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AD173FD1343274A000131B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F62F24E1AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Maui.plist in Resources */,
+				0F62F22A1AA5881D0047D674 /* QT0_Limit_Maui.plist in Resources */,
+				0A389D201887AA0600E53926 /* HSG-BUTTONFLEX.plist in Resources */,
+				2A700F661AB1D6E2004324C1 /* IQC-DEV8.plist in Resources */,
+				2AE648CD1AF3F009009F88B0 /* CG-SENSOR_Limit_Malta.plist in Resources */,
+				0A711CCD188E5C4000E27D60 /* GATEKEEPER-PREBURN.plist in Resources */,
+				0F62F2431AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Malta.plist in Resources */,
+				E4551C0D1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Maui.plist in Resources */,
+				0A5409C51A333B01009E894C /* Columns FW Load.plist in Resources */,
+				0F62F2491AA58D0D0047D674 /* GATEKEEPER_Limit_Malta.plist in Resources */,
+				0136108A19B7112C004B7967 /* QT0-NED.plist in Resources */,
+				2AE648CE1AF3F009009F88B0 /* CG-SENSOR_Limit_Maui.plist in Resources */,
+				0F62F2421AA58D0D0047D674 /* CG-INSTALL_Limit_Maui.plist in Resources */,
+				2AC1C3E61A44F7600086959A /* GATEKEEPER_Charging.plist in Resources */,
+				0AD1740D1343274A000131B6 /* InfoPlist.strings in Resources */,
+				D464703F1A32599E0050CA2B /* SA-SENSORFLEX_AN.plist in Resources */,
+				0F62F24A1AA58D0D0047D674 /* GATEKEEPER_Limit_Maui.plist in Resources */,
+				0F62F2551AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Malta.plist in Resources */,
+				0F62F2411AA58D0D0047D674 /* CG-INSTALL_Limit_Malta.plist in Resources */,
+				0F62F2471AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Malta.plist in Resources */,
+				0A589D121888CCD600B96F77 /* CG-INSTALL.plist in Resources */,
+				2AAD8CA01AFE1DCC007972B0 /* FATP_FA_PRE_QT0.plist in Resources */,
+				D4322F611A771DC700F3D8D3 /* DEVELOPMENT37.plist in Resources */,
+				0F62F24D1AA58D0D0047D674 /* HSG-BUTTONFLEX_Limit_Malta.plist in Resources */,
+				0F62F24F1AA58D0D0047D674 /* QT1-PREBURN_Limit_Malta.plist in Resources */,
+				01ED7F7E19EBB6C100C9B33C /* QT0-DEVBOARD.plist in Resources */,
+				0F62F2461AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Maui.plist in Resources */,
+				0F62F2561AA58D0D0047D674 /* SA-SENSORFLEX_DP_Limit_Maui.plist in Resources */,
+				E4E551511B670EEA0061708C /* DEVELOPMENT43.plist in Resources */,
+				E4551C0C1AAF3752005CF27E /* QT2-POSTBURN-NED_Limit_Malta.plist in Resources */,
+				0A9FC9EB187D406D00E54C72 /* QT0.plist in Resources */,
+				D46470401A32599E0050CA2B /* SA-SENSORFLEX_DP.plist in Resources */,
+				0F62F2451AA58D0D0047D674 /* CG-O-TEST_DP_Limit_Malta.plist in Resources */,
+				0F62F2481AA58D0D0047D674 /* CONNECTIVITY-TEST_Limit_Maui.plist in Resources */,
+				0A711CC7188E5AEE00E27D60 /* UNIT-SHUTDOWN.plist in Resources */,
+				0A711CD1188E5E4600E27D60 /* QT1-PREBURN.plist in Resources */,
+				0A82F93719BFACCA0096DF0D /* GATEKEEPER-NED.plist in Resources */,
+				EDA7F27114A4919200043BD6 /* panel.xib in Resources */,
+				0F62F2531AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Malta.plist in Resources */,
+				01E8EB0619B6BF580034A3BC /* QT2-POSTBURN.plist in Resources */,
+				E4551C101AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Malta.plist in Resources */,
+				0F62F2511AA58D0D0047D674 /* QT2-POSTBURN_Limit_Malta.plist in Resources */,
+				D4800DB51A2E4304002842BB /* QT2-POSTBURN-NED.plist in Resources */,
+				E4551C091AAF3679005CF27E /* QT0-NED_Limit_Maui.plist in Resources */,
+				0F62F2501AA58D0D0047D674 /* QT1-PREBURN_Limit_Maui.plist in Resources */,
+				0F62F2541AA58D0D0047D674 /* SA-SENSORFLEX_AN_Limit_Maui.plist in Resources */,
+				E4551C081AAF3679005CF27E /* QT0-NED_Limit_Malta.plist in Resources */,
+				0F62F24C1AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Maui.plist in Resources */,
+				844ECD321AB43F0E00FF703B /* CG-INSTALL-NED.plist in Resources */,
+				84C1F02619BEEAF400552B60 /* GATEKEEPER.plist in Resources */,
+				2AD7B7B91A5B6C740095413F /* LIVE_QT0_DEFAULT.plist in Resources */,
+				0F62F24B1AA58D0D0047D674 /* GATEKEEPER-PREBURN_Limit_Malta.plist in Resources */,
+				0F62F2291AA5881D0047D674 /* QT0_Limit_Malta.plist in Resources */,
+				0F62F2521AA58D0D0047D674 /* QT2-POSTBURN_Limit_Maui.plist in Resources */,
+				2A3A48C11890B1F500D7C921 /* CONNECTIVITY-TEST.plist in Resources */,
+				0F62F2441AA58D0D0047D674 /* CG-O-TEST_AN_Limit_Maui.plist in Resources */,
+				2AF101A11AB2F0CA00FF4BC0 /* LIVE_QT0-NED_DEFAULT.plist in Resources */,
+				01863B581A159C390050278F /* CG-SENSOR.plist in Resources */,
+				2A845DA61AFD8D8B0092A9A6 /* gyro-sanity-test.plist in Resources */,
+				0A335A021A28490A000E6237 /* IQC-DEV6.plist in Resources */,
+				E4551C111AB0A6A4005CF27E /* GATEKEEPER-NED_Limit_Maui.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AD173FA1343274A000131B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3850731ACADC2F00F3C8E3 /* IADevice_CPlusPlus.mm in Sources */,
+				0A6250501AC35977004C66CB /* IADevice_Instrument.m in Sources */,
+				0AD1743913432842000131B6 /* MathLibrary.m in Sources */,
+				0ACFEE8F134D66BD00223FA0 /* TestProgress.m in Sources */,
+				0ACF9502135D263A0089869D /* IALogs.m in Sources */,
+				0ACF950E135D28F80089869D /* IANet.m in Sources */,
+				0A8E1AC61373DBDA007A41F8 /* IADevice_ALS.m in Sources */,
+				0A8E1AC81373DBDA007A41F8 /* IADevice_Battery.m in Sources */,
+				0A8E1ACC1373DBDA007A41F8 /* IADevice_CB.m in Sources */,
+				0A8E1ACE1373DBDA007A41F8 /* IADevice_Compass.m in Sources */,
+				0A8E1AD21373DBDA007A41F8 /* IADevice_Gyro.m in Sources */,
+				0A8E1AD41373DBDA007A41F8 /* IADevice_Operation.m in Sources */,
+				0A8E1AD61373DBDA007A41F8 /* IADevice_Other.m in Sources */,
+				D947532D143087A6008CB3D0 /* CBTestBase.m in Sources */,
+				D9DC68D5144D46CB0027D310 /* IADevice_DetectPort.m in Sources */,
+				60F00B2C145003B3009A1693 /* IADevice_ReadFirstSampleFunction.m in Sources */,
+				D9470BFB145E6C510003FC6D /* IADevice_SFIS.m in Sources */,
+				60C18F80145A99F000A55F8B /* IADevice_ButtonTest.m in Sources */,
+				60097D331467B82100071B2A /* IADevice_LightMeter.m in Sources */,
+				403342D01475E845002F83E2 /* IADevice_Current.m in Sources */,
+				D94F460014A1CDC300C26F73 /* IADevice_Camera.m in Sources */,
+				EDA7F26F14A4911D00043BD6 /* judgePanel.m in Sources */,
+				E3594DBD14AC63F9009A288F /* NSStringCategory.m in Sources */,
+				65B70F4314AC79D1006C0EBD /* PTDrawing.m in Sources */,
+				651583D715B97AC100268E6E /* SDPanel.m in Sources */,
+				132F19F3173A2FE600D9DA44 /* IADevice_TestingCommands.m in Sources */,
+				13271389188E6A2B008B37BA /* publicParams.m in Sources */,
+				1327138D188E72E0008B37BA /* IADevice_Pressure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AD1740B1343274A000131B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AD1740C1343274A000131B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AD174241343274A000131B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		0AD174251343274A000131B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		0AD174271343274A000131B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Frameworks,
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunnyZone/FunnyZone-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "FunnyZone/FunnyZone-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/FunnyZone\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0AD174281343274A000131B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Frameworks,
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunnyZone/FunnyZone-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "FunnyZone/FunnyZone-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/FunnyZone\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AD173F81343274A000131B6 /* Build configuration list for PBXProject "FunnyZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD174241343274A000131B6 /* Debug */,
+				0AD174251343274A000131B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD174261343274A000131B6 /* Build configuration list for PBXNativeTarget "FunnyZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD174271343274A000131B6 /* Debug */,
+				0AD174281343274A000131B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AD173F51343274A000131B6 /* Project object */;
+}

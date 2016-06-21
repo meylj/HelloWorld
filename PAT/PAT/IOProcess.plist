@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1.StartTest</key>
+	<dict>
+		<key>0.CONNECT</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+		</dict>
+		<key>1.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>SH1</string>
+		</dict>
+		<key>2.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>*RST</string>
+		</dict>
+		<key>3.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>*IDN?</string>
+		</dict>
+		<key>4.RECEIVE_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>MEMORY</key>
+			<string>DeviceName</string>
+			<key>SUB_REGEX</key>
+			<string>(.+?),</string>
+		</dict>
+		<key>5.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>WAIT</key>
+			<integer>300000</integer>
+			<key>COMMAND</key>
+			<array>
+				<string>INIT;IMM;*OPC?</string>
+				<string>SYST:PRES:USER ON</string>
+				<string>SYST:LOG:REM ON</string>
+				<string>DISP:WIND:TRAC:FEED &apos;CH1Tr1&apos;</string>
+				<string>DISP:WIND:STAT ON</string>
+				<string>SYST:PRES:USER:NAME &apos;C:\\Rohde&amp;Schwarz\\Nwa\\RecallSets\\123.zvx&apos;</string>
+				<string>MMEM:LOAD:STAT 1, &apos;C:\\Rohde&amp;Schwarz\\Nwa\\RecallSets\\123.zvx&apos;</string>
+				<string>MEM:SEL &apos;123&apos;</string>
+				<string>CALC1:PAR:SDEF &apos;Ch1Tr1&apos;,&apos;S11&apos;</string>
+				<string>CALC1:PAR:MEAS  &apos;Trc1&apos;,&apos;S11&apos;</string>
+				<string>CONF:CHAN1:STAT ON</string>
+				<string>FREQ:STAR 450MHz</string>
+				<string>FREQ:STOP 3GHz</string>
+			</array>
+		</dict>
+	</dict>
+	<key>2.GetMagnitude</key>
+	<dict>
+		<key>0.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>SENS1:SWE:POIN 201</string>
+		</dict>
+		<key>1.WAIT</key>
+		<dict>
+			<key>TIME</key>
+			<integer>1000000</integer>
+		</dict>
+		<key>2.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>INIT:CONT OFF</string>
+		</dict>
+		<key>3.WAIT</key>
+		<dict>
+			<key>TIME</key>
+			<integer>1000000</integer>
+		</dict>
+		<key>4.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>CALC1:FORM MLIN</string>
+		</dict>
+		<key>5.WAIT</key>
+		<dict>
+			<key>TIME</key>
+			<integer>1000000</integer>
+		</dict>
+		<key>6.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>CALC1:DATA? FDAT</string>
+		</dict>
+		<key>7.RECEIVE_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>MEMORY</key>
+			<string>MagnitudeData</string>
+			<key>SUB_REGEX</key>
+			<string>([-\d\.]+)</string>
+			<key>SUB_NAMES</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>3.GetPhase</key>
+	<dict>
+		<key>0.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>CALC1:FORM PHAS</string>
+		</dict>
+		<key>1.WAIT</key>
+		<dict>
+			<key>TIME</key>
+			<integer>1000000</integer>
+		</dict>
+		<key>2.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>CALC1:DATA? FDAT</string>
+		</dict>
+		<key>3.RECEIVE_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>MEMORY</key>
+			<string>PhaseData</string>
+			<key>SUB_REGEX</key>
+			<string>([-\d\.]+)</string>
+			<key>SUB_NAMES</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>5.EndTest</key>
+	<dict>
+		<key>0.SEND_COMMAND</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+			<key>COMMAND</key>
+			<string>*CLR</string>
+		</dict>
+		<key>1.DISCONNECT</key>
+		<dict>
+			<key>TARGET</key>
+			<string>ZVB8</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

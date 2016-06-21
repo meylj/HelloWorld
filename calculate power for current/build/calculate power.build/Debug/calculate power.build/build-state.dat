@@ -1,0 +1,416 @@
+Tcalculate power
+v3
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Info.plist" "calculate power/calculate power-Info.plist"
+cProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power" normal i386
+cCopyStringsFile "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings" "calculate power/en.lproj/InfoPlist.strings"
+cCpResource "calculate power/en.lproj/Credits.rtf" "build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf"
+cCompileXIB "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib"
+cTouch "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004E57237E00000000000000EE
+t1314333566
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004D5B2E240000000000003430
+t1297821220
+s13360
+
+N/Developer/SDKs/MacOSX10.7.sdk
+c000000004E0BFE7D00000000000000EE
+t1309408893
+s238
+
+N/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E0BFE760000000000002470
+t1309408886
+s9328
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app
+t1334824619
+s102
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Info.plist
+t1334581031
+s1444
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power
+t1334824619
+s28904
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/PkgInfo
+t1334581031
+s8
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf
+t1334581035
+s436
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1334581035
+s92
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/MainMenu.nib
+t1334824619
+s33845
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate power.LinkFileList
+c000000004F8E7199000000000000013E
+t1334735257
+s318
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o
+t1334824619
+s39100
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o
+t1334735265
+s2184
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate power.LinkFileList
+c000000004F8C17270000000000000104
+t1334581031
+s260
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o
+t1334584776
+s33476
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o
+t1334581033
+s2360
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate power-Prefix.pch
+c000000004F8C04B000000000000000A1
+t1334576304
+s161
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.h
+c000000004F8FCD9A0000000000000469
+t1334824346
+s1129
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m
+c000000004F8FCE910000000000002395
+t1334824593
+s9109
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/Credits.rtf
+c000000004F8C04B000000000000001B4
+t1334576304
+s436
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/InfoPlist.strings
+c000000004F8C04B0000000000000002D
+t1334576304
+s45
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib
+c000000004F8FCEA9000000000002DEE1
+t1334824617
+s188129
+
+N/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m
+c000000004F8C04B000000000000000FA
+t1334576304
+s250
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app
+t1334584776
+s102
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Info.plist
+t1334581031
+s1444
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power
+t1334584776
+s20400
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/PkgInfo
+t1334581031
+s8
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf
+t1334581035
+s436
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1334581035
+s92
+
+N/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/MainMenu.nib
+t1334581036
+s26626
+
+N/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate power.LinkFileList
+c000000004F8C17270000000000000104
+t1334581031
+s260
+
+N/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o
+t1334584776
+s33476
+
+N/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o
+t1334581033
+s2360
+
+N/Users/cqq/my app/calculate power/calculate power/calculate power-Prefix.pch
+c000000004F8C04B000000000000000A1
+t1334576304
+s161
+
+N/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cqq/my app/calculate power/calculate power/en.lproj/Credits.rtf
+c000000004F8C04B000000000000001B4
+t1334576304
+s436
+
+N/Users/cqq/my app/calculate power/calculate power/en.lproj/InfoPlist.strings
+c000000004F8C04B0000000000000002D
+t1334576304
+s45
+
+N/Users/cqq/my app/calculate power/calculate power/en.lproj/MainMenu.xib
+c000000004F8C04B0000000000003ACA4
+t1334576304
+s240804
+
+N/Users/cqq/my app/calculate power/calculate power/main.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.pth
+t1334581033
+s12463216
+
+N/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth
+t1334735264
+s12407924
+
+N/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-exqyoxpuzuogqwchysjyaaxkrovj/calculate power-Prefix.pch.pth
+t2
+s0
+
+Ncalculate power/calculate power-Info.plist
+c000000004F8C04B00000000000000456
+t1334576304
+s1110
+
+CBuild AST from "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m"
+r0
+
+CBuild AST from "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m"
+r0
+
+CBuild AST from "/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.m"
+r0
+
+CBuild AST from "/Users/cqq/my app/calculate power/calculate power/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies27dccf460640b541^a69dd2460640b541^---0#1#0#--18"Check dependencies
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356517419.118615
+e356517419.350382
+r1
+xCompileC
+xbuild/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o
+x/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m55891e2b0640b541^79b0592b0640b541^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/cqq/Desktop/new%20tool/source%20code%20and%20file/calculate%20power/calculate%20power/calculate_powerAppDelegate.m0000000000000000^2745"CompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o" "calculate power/calculate_powerAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/include" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/i386" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug" -include "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch" -MMD -MT dependencies -MF "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.d" -c "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m" -o "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate_powerAppDelegate.o"
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356428064.931046
+e356428065.306364
+r1
+xCompileC
+xbuild/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o
+x/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m9373ee20a93eb541^db6a4e21a93eb541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/cqq/Desktop/new%20tool/source%20code%20and%20file/calculate%20power/calculate%20power/main.m0000000000000000^2635"CompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o" "calculate power/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/include" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/i386" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug" -include "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch" -MMD -MT dependencies -MF "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.d" -c "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m" -o "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/main.o"
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate_powerAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o" "/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356277576.171994
+e356277576.294063
+r1
+xCompileC
+xbuild/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o
+x/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.mc0212c485d3cb541^c8434b485d3cb541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/calculate_powerAppDelegate.m0000000000000000^2385"CompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o" "calculate power/calculate_powerAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/my app/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/my app/calculate power/build/Debug/include" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/x86_64" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/my app/calculate power/build/Debug" -include "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch" -MMD -MT dependencies -MF "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.d" -c "/Users/cqq/my app/calculate power/calculate power/calculate_powerAppDelegate.m" -o "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate_powerAppDelegate.o"
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o" "/Users/cqq/my app/calculate power/calculate power/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356273833.608465
+e356273833.951890
+r1
+xCompileC
+xbuild/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o
+x/Users/cqq/my app/calculate power/calculate power/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/cqq/my app/calculate power/calculate power/main.m863a9ca94e3cb541^f7acf3a94e3cb541^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/main.m0000000000000000^2275"CompileC "build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o" "calculate power/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/my app/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/my app/calculate power/build/Debug/include" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/x86_64" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/my app/calculate power/build/Debug" -include "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch" -MMD -MT dependencies -MF "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.d" -c "/Users/cqq/my app/calculate power/calculate power/main.m" -o "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/main.o"
+
+CCompileXIB "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib"
+s356517419.518947
+e356517419.650506
+r1
+xCompileXIB
+x/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compiling /Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib55fb842b0640b541^a5bcaa2b0640b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/cqq/Desktop/new%20tool/source%20code%20and%20file/calculate%20power/calculate%20power/en.lproj/MainMenu.xib0000000000000000^571"CompileXIB "calculate power/en.lproj/MainMenu.xib"    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/MainMenu.nib" "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/en.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk
+
+CCompileXIB "/Users/cqq/my app/calculate power/calculate power/en.lproj/MainMenu.xib"
+s356273835.600883
+e356273836.355693
+r1
+xCompileXIB
+x/Users/cqq/my app/calculate power/calculate power/en.lproj/MainMenu.xib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compiling /Users/cqq/my app/calculate power/calculate power/en.lproj/MainMenu.xib34f299ab4e3cb541^630d5bac4e3cb541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/en.lproj/MainMenu.xib0000000000000000^478"CompileXIB "calculate power/en.lproj/MainMenu.xib"    cd "/Users/cqq/my app/calculate power"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/MainMenu.nib" "/Users/cqq/my app/calculate power/calculate power/en.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.7.sdk
+
+CCopyStringsFile "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings" "calculate power/en.lproj/InfoPlist.strings"
+r0
+
+CCopyStringsFile "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings" "calculate power/en.lproj/InfoPlist.strings"
+s356273835.600854
+e356273835.606536
+r1
+xCopyStringsFile
+x/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings
+xcalculate power/en.lproj/InfoPlist.strings
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy calculate power/en.lproj/InfoPlist.stringscbf299ab4e3cb541^78429bab4e3cb541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/en.lproj/InfoPlist.strings0000000000000000^418"CopyStringsFile "build/Debug/calculate power.app/Contents/Resources/en.lproj/InfoPlist.strings" "calculate power/en.lproj/InfoPlist.strings"    cd "/Users/cqq/my app/calculate power"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj" -- "calculate power/en.lproj/InfoPlist.strings"
+
+CCpResource "calculate power/en.lproj/Credits.rtf" "build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf"
+s356273835.600883
+e356273835.606580
+r1
+xCpResource
+xcalculate power/en.lproj/Credits.rtf
+xbuild/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf56f299ab4e3cb541^a54b9bab4e3cb541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/cqq/my%20app/calculate%20power/build/Debug/calculate%20power.app/Contents/Resources/en.lproj/Credits.rtf00f4fc50deffdf42^435"CpResource "calculate power/en.lproj/Credits.rtf" "build/Debug/calculate power.app/Contents/Resources/en.lproj/Credits.rtf"    cd "/Users/cqq/my app/calculate power"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/cqq/my app/calculate power/calculate power/en.lproj/Credits.rtf" "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Resources/en.lproj"
+
+CLd "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power" normal i386
+s356517419.357363
+e356517419.509881
+r1
+xLd
+x/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Link /Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power4c8e5b2b0640b541^b686822b0640b541^---0#0#0#--796"Ld "build/Debug/calculate power.app/Contents/MacOS/calculate power" normal i386    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug" "-F/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug" -filelist "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/i386/calculate power.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -o "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power"
+
+CLd "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power" normal x86_64
+r0
+
+CLd "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power" normal x86_64
+s356277576.302020
+e356277576.470280
+r1
+xLd
+x/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power7a6e4d485d3cb541^d46278485d3cb541^---0#0#0#--647"Ld "build/Debug/calculate power.app/Contents/MacOS/calculate power" normal x86_64    cd "/Users/cqq/my app/calculate power"    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk "-L/Users/cqq/my app/calculate power/build/Debug" "-F/Users/cqq/my app/calculate power/build/Debug" -filelist "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/Objects-normal/x86_64/calculate power.LinkFileList" -mmacosx-version-min=10.7 -framework Cocoa -o "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/MacOS/calculate power"
+
+CProcessInfoPlistFile "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app/Contents/Info.plist" "calculate power/calculate power-Info.plist"
+r0
+
+CProcessInfoPlistFile "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Info.plist" "calculate power/calculate power-Info.plist"
+s356273831.665514
+e356273831.670353
+r1
+xProcessInfoPlistFile
+x/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Info.plist
+xcalculate power/calculate power-Info.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Process calculate power/calculate power-Info.plist4980aaa74e3cb541^289aaba74e3cb541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/calculate%20power-Info.plist0000000000000000^463"ProcessInfoPlistFile "build/Debug/calculate power.app/Contents/Info.plist" "calculate power/calculate power-Info.plist"    cd "/Users/cqq/my app/calculate power"    builtin-infoPlistUtility "calculate power/calculate power-Info.plist" -genpkginfo "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/cqq/my app/calculate power/build/Debug/calculate power.app/Contents/Info.plist"
+
+CProcessPCH "/Users/cqq/Library/Developer/Xcode/DerivedData/calculate_power-acnapsnyknedebhguaiavdidmbpl/Index/PrecompiledHeaders/calculate power-Prefix-buqqhqjtawfgpmelelhddmbqkjel_ast/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/cqq/Library/Developer/Xcode/DerivedData/calculate_power-enlhidzhdsybkufuscnpmipcuwit/Index/PrecompiledHeaders/calculate power-Prefix-aojkooassvpaaefuruxyhrzabqoq_ast/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/cqq/Library/Developer/Xcode/DerivedData/calculate_power-enlhidzhdsybkufuscnpmipcuwit/Index/PrecompiledHeaders/calculate power-Prefix-ghixcpgknqyyvheokzlvhlxozlyb_ast/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356273831.678631
+e356273833.600508
+r1
+xProcessPCH
+x/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.pth
+xcalculate power/calculate power-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile calculate power/calculate power-Prefix.pch10e7ada74e3cb541^3bab99a94e3cb541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/cqq/my%20app/calculate%20power/calculate%20power/calculate%20power-Prefix.pch0000000000000000^2346"ProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/my app/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/my app/calculate power/build/Debug/include" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/x86_64" "-I/Users/cqq/my app/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/my app/calculate power/build/Debug" -c "/Users/cqq/my app/calculate power/calculate power/calculate power-Prefix.pch" -o "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-cxzjddnwiichfvbwtfbpcwupnobb/calculate power-Prefix.pch.d"
+
+CProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356428057.301891
+e356428064.923451
+r1
+xProcessPCH
+x/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth
+xcalculate power/calculate power-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile calculate power/calculate power-Prefix.pch6c955c19a93eb541^4165ec20a93eb541^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/cqq/Desktop/new%20tool/source%20code%20and%20file/calculate%20power/calculate%20power/calculate%20power-Prefix.pch0000000000000000^2650"ProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-generated-files.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-own-target-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-all-target-headers.hmap" -iquote "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/calculate power-project-headers.hmap" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/include" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources/i386" "-I/Users/cqq/Desktop/new tool/source code and file/calculate power/build/calculate power.build/Debug/calculate power.build/DerivedSources" "-F/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug" -c "/Users/cqq/Desktop/new tool/source code and file/calculate power/calculate power/calculate power-Prefix.pch" -o "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-czcnifzfpribqeetwkwfqhjysvul/calculate power-Prefix.pch.d"
+
+CProcessPCH "/var/folders/vx/znh5nq_x0gbg480vj7nhhd940000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/calculate power-Prefix-exqyoxpuzuogqwchysjyaaxkrovj/calculate power-Prefix.pch.pth" "calculate power/calculate power-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app"
+s356517419.784610
+e356517419.812717
+r1
+xTouch
+x/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Touch /Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app5ef1c82b0640b541^1b0dd02b0640b541^---0#0#0#--235"Touch "build/Debug/calculate power.app"    cd "/Users/cqq/Desktop/new tool/source code and file/calculate power"    /usr/bin/touch -c "/Users/cqq/Desktop/new tool/source code and file/calculate power/build/Debug/calculate power.app"
+
+CTouch "/Users/cqq/my app/calculate power/build/Debug/calculate power.app"
+s356277576.488570
+e356277576.511443
+r1
+xTouch
+x/Users/cqq/my app/calculate power/build/Debug/calculate power.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Touch /Users/cqq/my app/calculate power/build/Debug/calculate power.appa6267d485d3cb541^9eec82485d3cb541^---0#0#0#--173"Touch "build/Debug/calculate power.app"    cd "/Users/cqq/my app/calculate power"    /usr/bin/touch -c "/Users/cqq/my app/calculate power/build/Debug/calculate power.app"
+

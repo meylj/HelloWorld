@@ -1,0 +1,23 @@
+REVISON HISTORY - eTravelerRF
+
+This serves as a quick reference to changes.
+------------------------------------------------------------------------------
+Version 1.1.2.2
+Brice 20150623
+- Removed eTraveler_FixtureReadyKey
+
+------------------------------------------------------------------------------
+Version 1.1.2.1
+Brice 20150617
+- Added eTraveler_TestFailuresKey
+- Added eTraveler_FixtureReadyKey
+
+------------------------------------------------------------------------------
+Version 1.0.2.1
+BL 20150324
+- Added eTraveler_InstrumentFailResult (e.g. lost connection with RF signal analyzer)
+
+------------------------------------------------------------------------------
+Version 1.0.2.0
+BL 20150311
+- Initial Release (merged eTraveler and eTravelerOsaka)

@@ -1,0 +1,288 @@
+TcontrolPrinter
+v3
+r1
+cCheck dependencies
+cSymLink /Frameworks/controlPrinter.framework/Versions/Current A
+cSymLink /Frameworks/controlPrinter.framework/Resources Versions/Current/Resources
+cSymLink /Frameworks/controlPrinter.framework/controlPrinter Versions/Current/controlPrinter
+cSymLink /Frameworks/controlPrinter.framework/Headers Versions/Current/Headers
+cProcessInfoPlistFile /Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist Info.plist
+cCpHeader controlPrint.h /Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h
+cCopyStringsFile /Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cProcessPCH /var/folders/Ld/Ld+3KNZ1FwG9qPO3Y6DPME+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/controlPrinter_Prefix-gmevtioxizeplwbdtgzakxltzllb/controlPrinter_Prefix.pch.gch controlPrinter_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o /Users/user/Desktop/controlPrinter/controlPrint.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cLd /Frameworks/controlPrinter.framework/Versions/A/controlPrinter normal i386
+cTouch /Frameworks/controlPrinter.framework
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D66164C00000000000000EE
+t1298536012
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOBSD.h
+c000000004CC3DE6600000000000006C2
+t1287904870
+s1730
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h
+c000000004CC3E9840000000000012048
+t1287907716
+s73800
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/serial/IOSerialKeys.h
+c000000004CC3E8120000000000000B28
+t1287907346
+s2856
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004D661644000000000003CE34
+t1298536004
+s249396
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/errno.h
+c000000004BBD2CE900000000000003EB
+t1270689001
+s1003
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/fcntl.h
+c000000004BBD2CE900000000000003EA
+t1270689001
+s1002
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/stat.h
+c000000004CC3DE680000000000004A1D
+t1287904872
+s18973
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
+c000000004CC3DE680000000000002905
+t1287904872
+s10501
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/termios.h
+c000000004BBD2CE900000000000004D4
+t1270689001
+s1236
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h
+c000000004BBD2CE9000000000000563E
+t1270689001
+s22078
+
+N/Frameworks/controlPrinter.framework
+t1322841339
+s204
+
+N/Frameworks/controlPrinter.framework/Headers
+t3
+s24
+
+N/Frameworks/controlPrinter.framework/Resources
+t3
+s26
+
+N/Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h
+t1322835732
+s929
+
+N/Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1322835732
+s92
+
+N/Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist
+t1322835732
+s1071
+
+N/Frameworks/controlPrinter.framework/Versions/A/controlPrinter
+t1322841339
+s24900
+
+N/Frameworks/controlPrinter.framework/Versions/Current
+t3
+s1
+
+N/Frameworks/controlPrinter.framework/controlPrinter
+t3
+s31
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/user/Desktop/controlPrinter/English.lproj/InfoPlist.strings
+c000000004C84A19D000000000000005C
+t1283760541
+s92
+
+N/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o
+t1322841339
+s28484
+
+N/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrinter.LinkFileList
+c000000004ED8DF14000000000000007C
+t1322835732
+s124
+
+N/Users/user/Desktop/controlPrinter/controlPrint.h
+c000000004C89CB8A00000000000003A1
+t1284098954
+s929
+i<Cocoa/Cocoa.h>
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<sys/types.h>
+i<sys/stat.h>
+i<fcntl.h>
+i<termios.h>
+i<errno.h>
+i<IOKit/IOBSD.h>
+i<IOKit/IOKitLib.h>
+i<IOKit/serial/IOSerialKeys.h>
+
+N/Users/user/Desktop/controlPrinter/controlPrint.m
+c000000004ED8F4F10000000000002EE4
+t1322841329
+s12004
+i"controlPrint.h"
+
+N/Users/user/Desktop/controlPrinter/controlPrinter_Prefix.pch
+c000000004C84A19D00000000000000A0
+t1283760541
+s160
+i<Cocoa/Cocoa.h>
+
+N/var/folders/Ld/Ld+3KNZ1FwG9qPO3Y6DPME+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/controlPrinter_Prefix-gmevtioxizeplwbdtgzakxltzllb/controlPrinter_Prefix.pch.gch
+t1322036371
+s42522416
+
+NInfo.plist
+c000000004C84A19D0000000000000315
+t1283760541
+s789
+
+CBuild AST from /Users/user/Desktop/controlPrinter/controlPrint.m
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0f46a0852c89b441^c9e9a3852c89b441^---0#1#0#--18"Check dependencies
+
+CCompileC build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o /Users/user/Desktop/controlPrinter/controlPrint.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s344534139.524835
+e344534139.861828
+r1
+xCompileC
+xbuild/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o
+x/Users/user/Desktop/controlPrinter/controlPrint.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+o/Users/user/Desktop/controlPrinter/controlPrint.m: In function 'FindUSB':
+o/Users/user/Desktop/controlPrinter/controlPrint.m:142: warning: control reaches end of non-void function
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/user/Desktop/controlPrinter/controlPrint.mfa7a867b2c89b441^8ca1dc7b2c89b441^-179"/Users/user/Desktop/controlPrinter/controlPrint.m: In function 'FindUSB':/Users/user/Desktop/controlPrinter/controlPrint.m:142: warning: control reaches end of non-void function1(21%IDEActivityLogMessage2@40"Control reaches end of non-void function-344534139#74#105#-1#-23%DVTTextDocumentLocation3@65"file://localhost/Users/user/Desktop/controlPrinter/controlPrint.m0000000000000000^141#18446744073709551615#141#18446744073709551615#18446744073709551615#0#40"Control reaches end of non-void function--0#0#0#-19%DVTDocumentLocation4@65"file://localhost/Users/user/Desktop/controlPrinter/controlPrint.m0000000000000000^1637"CompileC build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o controlPrint.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/user/Desktop/controlPrinter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/controlPrinter-generated-files.hmap -I/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/controlPrinter-own-target-headers.hmap -I/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/controlPrinter-all-target-headers.hmap -iquote /Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/controlPrinter-project-headers.hmap -I/Frameworks/include -I/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/DerivedSources/i386 -I/Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/DerivedSources -F/Frameworks -include /var/folders/Ld/Ld+3KNZ1FwG9qPO3Y6DPME+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/controlPrinter_Prefix-gmevtioxizeplwbdtgzakxltzllb/controlPrinter_Prefix.pch -c /Users/user/Desktop/controlPrinter/controlPrint.m -o /Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrint.o
+
+CCopyStringsFile /Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s344528532.992497
+e344528532.995495
+r1
+xCopyStringsFile
+x/Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.stringsb725fe941689b441^dae2fe941689b441^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/user/Desktop/controlPrinter/English.lproj/InfoPlist.strings0000000000000000^378"CopyStringsFile /Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/user/Desktop/controlPrinter    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir /Frameworks/controlPrinter.framework/Versions/A/Resources/English.lproj -- English.lproj/InfoPlist.strings
+
+CCpHeader controlPrint.h /Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h
+s344528532.983444
+e344528532.989722
+r1
+xCpHeader
+xcontrolPrint.h
+x/Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy /Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h4ed3fb941689b441^446ffd941689b441^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h000020442305f041^342"CpHeader controlPrint.h /Frameworks/controlPrinter.framework/Versions/A/Headers/controlPrint.h    cd /Users/user/Desktop/controlPrinter    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/user/Desktop/controlPrinter/controlPrint.h /Frameworks/controlPrinter.framework/Versions/A/Headers
+
+CLd /Frameworks/controlPrinter.framework/Versions/A/controlPrinter normal i386
+s344534139.863874
+e344534139.968798
+r1
+xLd
+x/Frameworks/controlPrinter.framework/Versions/A/controlPrinter
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Link /Frameworks/controlPrinter.framework/Versions/A/controlPrinter1c42dd7b2c89b441^6005f87b2c89b441^---0#0#0#--717"Ld /Frameworks/controlPrinter.framework/Versions/A/controlPrinter normal i386    cd /Users/user/Desktop/controlPrinter    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch i386 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Frameworks -F/Frameworks -filelist /Users/user/Desktop/controlPrinter/build/controlPrinter.build/Debug/controlPrinter.build/Objects-normal/i386/controlPrinter.LinkFileList -install_name @executable_path/../Frameworks/controlPrinter.framework/Versions/A/controlPrinter -mmacosx-version-min=10.6 -framework Cocoa -framework IOKit -single_module -compatibility_version 1 -current_version 1 -o /Frameworks/controlPrinter.framework/Versions/A/controlPrinter
+
+CProcessInfoPlistFile /Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist Info.plist
+s344528532.977919
+e344528532.980941
+r1
+xProcessInfoPlistFile
+x/Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist876efa941689b441^151ffb941689b441^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/user/Desktop/controlPrinter/Info.plist0000000000000000^293"ProcessInfoPlistFile /Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist Info.plist    cd /Users/user/Desktop/controlPrinter    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Frameworks/controlPrinter.framework/Versions/A/Resources/Info.plist
+
+CProcessPCH /Users/user/Library/Developer/Xcode/DerivedData/controlPrinter-fodzkbasbrtxpsecgcklcpgtmrrq/Index/PrecompiledHeaders/controlPrinter_Prefix-avuxmzgvvtoxcxgksnddgddtjcku_ast/controlPrinter_Prefix.pch.pth controlPrinter_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/Ld/Ld+3KNZ1FwG9qPO3Y6DPME+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/controlPrinter_Prefix-gmevtioxizeplwbdtgzakxltzllb/controlPrinter_Prefix.pch.gch controlPrinter_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+r0
+
+CSymLink /Frameworks/controlPrinter.framework/Headers Versions/Current/Headers
+s344528532.962107
+e344528532.974819
+r1
+xSymLink
+x/Frameworks/controlPrinter.framework/Headers
+xVersions/Current/Headers
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Process /Frameworks/controlPrinter.framework/Headers475af6941689b441^2d97f9941689b441^---0#0#0#--206"SymLink /Frameworks/controlPrinter.framework/Headers Versions/Current/Headers    cd /Users/user/Desktop/controlPrinter    /bin/ln -sf Versions/Current/Headers /Frameworks/controlPrinter.framework/Headers
+
+CSymLink /Frameworks/controlPrinter.framework/Resources Versions/Current/Resources
+s344528532.907844
+e344528532.959483
+r1
+xSymLink
+x/Frameworks/controlPrinter.framework/Resources
+xVersions/Current/Resources
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Process /Frameworks/controlPrinter.framework/Resourcesf871e8941689b441^c39ff5941689b441^---0#0#0#--214"SymLink /Frameworks/controlPrinter.framework/Resources Versions/Current/Resources    cd /Users/user/Desktop/controlPrinter    /bin/ln -sf Versions/Current/Resources /Frameworks/controlPrinter.framework/Resources
+
+CSymLink /Frameworks/controlPrinter.framework/Versions/Current A
+s344528532.907206
+e344528532.959288
+r1
+xSymLink
+x/Frameworks/controlPrinter.framework/Versions/Current
+xA
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Process /Frameworks/controlPrinter.framework/Versions/Current9a60e8941689b441^f298f5941689b441^---0#0#0#--178"SymLink /Frameworks/controlPrinter.framework/Versions/Current A    cd /Users/user/Desktop/controlPrinter    /bin/ln -sf A /Frameworks/controlPrinter.framework/Versions/Current
+
+CSymLink /Frameworks/controlPrinter.framework/controlPrinter Versions/Current/controlPrinter
+s344528532.960584
+e344528532.967859
+r1
+xSymLink
+x/Frameworks/controlPrinter.framework/controlPrinter
+xVersions/Current/controlPrinter
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Process /Frameworks/controlPrinter.framework/controlPrinterecf6f5941689b441^7dd0f7941689b441^---0#0#0#--234"SymLink /Frameworks/controlPrinter.framework/controlPrinter Versions/Current/controlPrinter    cd /Users/user/Desktop/controlPrinter    /bin/ln -sf Versions/Current/controlPrinter /Frameworks/controlPrinter.framework/controlPrinter
+
+CTouch /Frameworks/controlPrinter.framework
+s344534139.971753
+e344534139.980550
+r1
+xTouch
+x/Frameworks/controlPrinter.framework
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Touch /Frameworks/controlPrinter.framework91d2f87b2c89b441^6d54fb7b2c89b441^---0#0#0#--144"Touch /Frameworks/controlPrinter.framework    cd /Users/user/Desktop/controlPrinter    /usr/bin/touch -c /Frameworks/controlPrinter.framework
+

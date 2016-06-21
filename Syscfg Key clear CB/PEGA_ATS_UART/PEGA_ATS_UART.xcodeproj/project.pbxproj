@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9D29850136658170087C22C /* SearchSerialPorts.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D2984E136658170087C22C /* SearchSerialPorts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D29851136658170087C22C /* SearchSerialPorts.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D2984F136658170087C22C /* SearchSerialPorts.m */; };
+		D9D5E63F135594E00035067B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D5E63E135594E00035067B /* Cocoa.framework */; };
+		D9D5E649135594E00035067B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9D5E647135594E00035067B /* InfoPlist.strings */; };
+		D9D5E65B135596BA0035067B /* PEGA_ATS_UART.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D5E659135596BA0035067B /* PEGA_ATS_UART.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D5E65C135596BA0035067B /* PEGA_ATS_UART.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D5E65A135596BA0035067B /* PEGA_ATS_UART.m */; };
+		D9F236951366D211002B2461 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F236941366D211002B2461 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9D2984E136658170087C22C /* SearchSerialPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSerialPorts.h; sourceTree = "<group>"; };
+		D9D2984F136658170087C22C /* SearchSerialPorts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSerialPorts.m; sourceTree = "<group>"; };
+		D9D5E63B135594E00035067B /* PEGA_ATS_UART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PEGA_ATS_UART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D5E63E135594E00035067B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D9D5E641135594E00035067B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D9D5E642135594E00035067B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D9D5E643135594E00035067B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9D5E646135594E00035067B /* PEGA_ATS_UART-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PEGA_ATS_UART-Info.plist"; sourceTree = "<group>"; };
+		D9D5E648135594E00035067B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9D5E64A135594E00035067B /* PEGA_ATS_UART-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PEGA_ATS_UART-Prefix.pch"; sourceTree = "<group>"; };
+		D9D5E659135596BA0035067B /* PEGA_ATS_UART.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEGA_ATS_UART.h; sourceTree = "<group>"; };
+		D9D5E65A135596BA0035067B /* PEGA_ATS_UART.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEGA_ATS_UART.m; sourceTree = "<group>"; };
+		D9F236941366D211002B2461 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9D5E637135594E00035067B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F236951366D211002B2461 /* IOKit.framework in Frameworks */,
+				D9D5E63F135594E00035067B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9D5E62F135594E00035067B = {
+			isa = PBXGroup;
+			children = (
+				D9D5E644135594E00035067B /* PEGA_ATS_UART */,
+				D9D5E63D135594E00035067B /* Frameworks */,
+				D9D5E63C135594E00035067B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9D5E63C135594E00035067B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9D5E63B135594E00035067B /* PEGA_ATS_UART.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9D5E63D135594E00035067B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F236941366D211002B2461 /* IOKit.framework */,
+				D9D5E63E135594E00035067B /* Cocoa.framework */,
+				D9D5E640135594E00035067B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9D5E640135594E00035067B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D5E641135594E00035067B /* AppKit.framework */,
+				D9D5E642135594E00035067B /* CoreData.framework */,
+				D9D5E643135594E00035067B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D9D5E644135594E00035067B /* PEGA_ATS_UART */ = {
+			isa = PBXGroup;
+			children = (
+				D9D5E658135595FD0035067B /* Classes */,
+				D9D5E645135594E00035067B /* Supporting Files */,
+			);
+			path = PEGA_ATS_UART;
+			sourceTree = "<group>";
+		};
+		D9D5E645135594E00035067B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9D5E646135594E00035067B /* PEGA_ATS_UART-Info.plist */,
+				D9D5E647135594E00035067B /* InfoPlist.strings */,
+				D9D5E64A135594E00035067B /* PEGA_ATS_UART-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D5E658135595FD0035067B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D9D2984E136658170087C22C /* SearchSerialPorts.h */,
+				D9D2984F136658170087C22C /* SearchSerialPorts.m */,
+				D9D5E659135596BA0035067B /* PEGA_ATS_UART.h */,
+				D9D5E65A135596BA0035067B /* PEGA_ATS_UART.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D9D5E638135594E00035067B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D5E65B135596BA0035067B /* PEGA_ATS_UART.h in Headers */,
+				D9D29850136658170087C22C /* SearchSerialPorts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D9D5E63A135594E00035067B /* PEGA_ATS_UART */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D5E64D135594E00035067B /* Build configuration list for PBXNativeTarget "PEGA_ATS_UART" */;
+			buildPhases = (
+				D9D5E636135594E00035067B /* Sources */,
+				D9D5E637135594E00035067B /* Frameworks */,
+				D9D5E638135594E00035067B /* Headers */,
+				D9D5E639135594E00035067B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PEGA_ATS_UART;
+			productName = PEGA_ATS_UART;
+			productReference = D9D5E63B135594E00035067B /* PEGA_ATS_UART.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9D5E631135594E00035067B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = D9D5E634135594E00035067B /* Build configuration list for PBXProject "PEGA_ATS_UART" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9D5E62F135594E00035067B;
+			productRefGroup = D9D5E63C135594E00035067B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9D5E63A135594E00035067B /* PEGA_ATS_UART */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9D5E639135594E00035067B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D5E649135594E00035067B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9D5E636135594E00035067B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D5E65C135596BA0035067B /* PEGA_ATS_UART.m in Sources */,
+				D9D29851136658170087C22C /* SearchSerialPorts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9D5E647135594E00035067B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9D5E648135594E00035067B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9D5E64B135594E00035067B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		D9D5E64C135594E00035067B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		D9D5E64E135594E00035067B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEGA_ATS_UART/PEGA_ATS_UART-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PEGA_ATS_UART/PEGA_ATS_UART-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D9D5E64F135594E00035067B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Frameworks/;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEGA_ATS_UART/PEGA_ATS_UART-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PEGA_ATS_UART/PEGA_ATS_UART-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9D5E634135594E00035067B /* Build configuration list for PBXProject "PEGA_ATS_UART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D5E64B135594E00035067B /* Debug */,
+				D9D5E64C135594E00035067B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D5E64D135594E00035067B /* Build configuration list for PBXNativeTarget "PEGA_ATS_UART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D5E64E135594E00035067B /* Debug */,
+				D9D5E64F135594E00035067B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9D5E631135594E00035067B /* Project object */;
+}

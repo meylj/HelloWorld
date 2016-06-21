@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0140D414849E1C007B00CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0140D314849E1C007B00CE /* Cocoa.framework */; };
+		8B0140DE14849E1C007B00CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B0140DC14849E1C007B00CE /* InfoPlist.strings */; };
+		8B0140E014849E1C007B00CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0140DF14849E1C007B00CE /* main.m */; };
+		8B0140E414849E1C007B00CE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8B0140E214849E1C007B00CE /* Credits.rtf */; };
+		8B0140E714849E1C007B00CE /* PATApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0140E614849E1C007B00CE /* PATApp.m */; };
+		8B0140EA14849E1D007B00CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0140E814849E1D007B00CE /* MainMenu.xib */; };
+		8B0140F214849E1D007B00CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0140F114849E1D007B00CE /* SenTestingKit.framework */; };
+		8B0140F314849E1D007B00CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0140D314849E1C007B00CE /* Cocoa.framework */; };
+		8B0140FB14849E1D007B00CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B0140F914849E1D007B00CE /* InfoPlist.strings */; };
+		8B0140FD14849E1D007B00CE /* PATTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B0140FC14849E1D007B00CE /* PATTests.h */; };
+		8B0140FF14849E1D007B00CE /* PATTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0140FE14849E1D007B00CE /* PATTests.m */; };
+		8B01410B14849E9D007B00CE /* IADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01410A14849E9D007B00CE /* IADevice.m */; };
+		8B01410E14849F53007B00CE /* IADeviceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01410D14849F53007B00CE /* IADeviceMonitor.m */; };
+		8B07ED0D1490A06000F21D84 /* NSImage_IA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07ED0C1490A06000F21D84 /* NSImage_IA.m */; };
+		8B0C75F51499BDFF00461152 /* IAKernel_Station_PATWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C75F41499BDFF00461152 /* IAKernel_Station_PATWifi.m */; };
+		8B0C75FB1499F87000461152 /* 11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C75FA1499F87000461152 /* 11.txt */; };
+		8B0E4014148DE2990087CC05 /* Bean_Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E4013148DE2990087CC05 /* Bean_Result.m */; };
+		8B0E4021148DF6660087CC05 /* IAKernel_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E4020148DF6660087CC05 /* IAKernel_UI.m */; };
+		8B10CDD6148E1F8E00F45C95 /* PAT.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8B10CDD5148E1F8E00F45C95 /* PAT.icns */; };
+		8B16952A1487547B0073A21F /* IOProcess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B1695291487547B0073A21F /* IOProcess.plist */; };
+		8B16952D148754880073A21F /* CalProcess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B16952C148754880073A21F /* CalProcess.plist */; };
+		8B1857CE149829B600DD402C /* NI4882.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1857CD149829B600DD402C /* NI4882.framework */; };
+		8B1B3C3414907EFE004C24F4 /* FAIL.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1B3C3214907EFE004C24F4 /* FAIL.gif */; };
+		8B1B3C3514907EFE004C24F4 /* PASS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1B3C3314907EFE004C24F4 /* PASS.gif */; };
+		8B26824C14A4145000549E6B /* Limits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B26824B14A4145000549E6B /* Limits.plist */; };
+		8B2A64CC14A98FF60053CCA0 /* MemoryDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A64C914A98FF60053CCA0 /* MemoryDraw.m */; };
+		8B2A64CD14A98FF60053CCA0 /* SingleView_Wifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A64CB14A98FF60053CCA0 /* SingleView_Wifi.m */; };
+		8B380A8214A8054F005B3126 /* IAKernel_Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B380A8114A8054F005B3126 /* IAKernel_Network.m */; };
+		8B380A8614A8083B005B3126 /* IAKernel_Limits.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B380A8514A8083B005B3126 /* IAKernel_Limits.m */; };
+		8B409C4314A32EB50059AE50 /* PATApp_Station_PATWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B409C4214A32EB40059AE50 /* PATApp_Station_PATWifi.m */; };
+		8B557CEC1495C8D600DA09B0 /* IAKernel_LogRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B557CEB1495C8D600DA09B0 /* IAKernel_LogRecord.m */; };
+		8BBEA82B148F37D600230E60 /* PATApp_Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBEA82A148F37D600230E60 /* PATApp_Progress.m */; };
+		8BBEA82F148F3DBE00230E60 /* PATApp_Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBEA82E148F3DBE00230E60 /* PATApp_Configuration.m */; };
+		8BC9353C148CB4D10033B274 /* IAKernel_FlowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9353B148CB4D10033B274 /* IAKernel_FlowControl.m */; };
+		8BC93540148CB6F60033B274 /* IAKernel_LinkMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9353F148CB6F60033B274 /* IAKernel_LinkMemory.m */; };
+		8BFAC0E4148631BD0051C7AD /* IAKernel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFAC0E3148631BD0051C7AD /* IAKernel.m */; };
+		8BFC23DC1484B48C001493D0 /* IADevice_GPIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC23DB1484B48C001493D0 /* IADevice_GPIB.m */; };
+		8BFC23E91484C104001493D0 /* PAT.Wifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BFC23E81484C104001493D0 /* PAT.Wifi.plist */; };
+		8BFC23EC1484C797001493D0 /* NSString_IA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC23EB1484C797001493D0 /* NSString_IA.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B0140F414849E1D007B00CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0140C614849E1C007B00CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0140CE14849E1C007B00CE;
+			remoteInfo = PAT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B0140CF14849E1C007B00CE /* PAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0140D314849E1C007B00CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8B0140D614849E1C007B00CE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8B0140D714849E1C007B00CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8B0140D814849E1C007B00CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B0140DB14849E1C007B00CE /* PAT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PAT-Info.plist"; sourceTree = "<group>"; };
+		8B0140DD14849E1C007B00CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B0140DF14849E1C007B00CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B0140E114849E1C007B00CE /* PAT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAT-Prefix.pch"; sourceTree = "<group>"; };
+		8B0140E314849E1C007B00CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8B0140E514849E1C007B00CE /* PATApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PATApp.h; sourceTree = "<group>"; };
+		8B0140E614849E1C007B00CE /* PATApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PATApp.m; sourceTree = "<group>"; };
+		8B0140E914849E1D007B00CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8B0140F014849E1D007B00CE /* PATTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PATTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0140F114849E1D007B00CE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8B0140F814849E1D007B00CE /* PATTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PATTests-Info.plist"; sourceTree = "<group>"; };
+		8B0140FA14849E1D007B00CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B0140FC14849E1D007B00CE /* PATTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PATTests.h; sourceTree = "<group>"; };
+		8B0140FE14849E1D007B00CE /* PATTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PATTests.m; sourceTree = "<group>"; };
+		8B01410914849E9D007B00CE /* IADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice.h; sourceTree = "<group>"; };
+		8B01410A14849E9D007B00CE /* IADevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice.m; sourceTree = "<group>"; };
+		8B01410C14849F53007B00CE /* IADeviceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADeviceMonitor.h; sourceTree = "<group>"; };
+		8B01410D14849F53007B00CE /* IADeviceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADeviceMonitor.m; sourceTree = "<group>"; };
+		8B07ED0B1490A06000F21D84 /* NSImage_IA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImage_IA.h; sourceTree = "<group>"; };
+		8B07ED0C1490A06000F21D84 /* NSImage_IA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSImage_IA.m; sourceTree = "<group>"; };
+		8B0C75F31499BDFF00461152 /* IAKernel_Station_PATWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_Station_PATWifi.h; sourceTree = "<group>"; };
+		8B0C75F41499BDFF00461152 /* IAKernel_Station_PATWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_Station_PATWifi.m; sourceTree = "<group>"; };
+		8B0C75FA1499F87000461152 /* 11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 11.txt; sourceTree = "<group>"; };
+		8B0E4012148DE2990087CC05 /* Bean_Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bean_Result.h; sourceTree = "<group>"; };
+		8B0E4013148DE2990087CC05 /* Bean_Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bean_Result.m; sourceTree = "<group>"; };
+		8B0E401F148DF6660087CC05 /* IAKernel_UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_UI.h; sourceTree = "<group>"; };
+		8B0E4020148DF6660087CC05 /* IAKernel_UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_UI.m; sourceTree = "<group>"; };
+		8B10CDD5148E1F8E00F45C95 /* PAT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PAT.icns; sourceTree = "<group>"; };
+		8B1695291487547B0073A21F /* IOProcess.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IOProcess.plist; sourceTree = "<group>"; };
+		8B16952C148754880073A21F /* CalProcess.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CalProcess.plist; sourceTree = "<group>"; };
+		8B1857CD149829B600DD402C /* NI4882.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NI4882.framework; sourceTree = "<group>"; };
+		8B1B3C3214907EFE004C24F4 /* FAIL.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FAIL.gif; sourceTree = "<group>"; };
+		8B1B3C3314907EFE004C24F4 /* PASS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PASS.gif; sourceTree = "<group>"; };
+		8B26824B14A4145000549E6B /* Limits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Limits.plist; sourceTree = "<group>"; };
+		8B2A64C814A98FF60053CCA0 /* MemoryDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryDraw.h; sourceTree = "<group>"; };
+		8B2A64C914A98FF60053CCA0 /* MemoryDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryDraw.m; sourceTree = "<group>"; };
+		8B2A64CA14A98FF60053CCA0 /* SingleView_Wifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleView_Wifi.h; sourceTree = "<group>"; };
+		8B2A64CB14A98FF60053CCA0 /* SingleView_Wifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleView_Wifi.m; sourceTree = "<group>"; };
+		8B380A8014A8054F005B3126 /* IAKernel_Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_Network.h; sourceTree = "<group>"; };
+		8B380A8114A8054F005B3126 /* IAKernel_Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_Network.m; sourceTree = "<group>"; };
+		8B380A8414A8083A005B3126 /* IAKernel_Limits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_Limits.h; sourceTree = "<group>"; };
+		8B380A8514A8083B005B3126 /* IAKernel_Limits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_Limits.m; sourceTree = "<group>"; };
+		8B409C4114A32EB40059AE50 /* PATApp_Station_PATWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATApp_Station_PATWifi.h; sourceTree = "<group>"; };
+		8B409C4214A32EB40059AE50 /* PATApp_Station_PATWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATApp_Station_PATWifi.m; sourceTree = "<group>"; };
+		8B557CEA1495C8D600DA09B0 /* IAKernel_LogRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_LogRecord.h; sourceTree = "<group>"; };
+		8B557CEB1495C8D600DA09B0 /* IAKernel_LogRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_LogRecord.m; sourceTree = "<group>"; };
+		8BBEA829148F37D600230E60 /* PATApp_Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATApp_Progress.h; sourceTree = "<group>"; };
+		8BBEA82A148F37D600230E60 /* PATApp_Progress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATApp_Progress.m; sourceTree = "<group>"; };
+		8BBEA82D148F3DBE00230E60 /* PATApp_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATApp_Configuration.h; sourceTree = "<group>"; };
+		8BBEA82E148F3DBE00230E60 /* PATApp_Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATApp_Configuration.m; sourceTree = "<group>"; };
+		8BC9353A148CB4D10033B274 /* IAKernel_FlowControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_FlowControl.h; sourceTree = "<group>"; };
+		8BC9353B148CB4D10033B274 /* IAKernel_FlowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_FlowControl.m; sourceTree = "<group>"; };
+		8BC9353E148CB6F60033B274 /* IAKernel_LinkMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel_LinkMemory.h; sourceTree = "<group>"; };
+		8BC9353F148CB6F60033B274 /* IAKernel_LinkMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel_LinkMemory.m; sourceTree = "<group>"; };
+		8BFAC0E2148631BD0051C7AD /* IAKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAKernel.h; sourceTree = "<group>"; };
+		8BFAC0E3148631BD0051C7AD /* IAKernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAKernel.m; sourceTree = "<group>"; };
+		8BFC23DA1484B48C001493D0 /* IADevice_GPIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADevice_GPIB.h; sourceTree = "<group>"; };
+		8BFC23DB1484B48C001493D0 /* IADevice_GPIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADevice_GPIB.m; sourceTree = "<group>"; };
+		8BFC23E81484C104001493D0 /* PAT.Wifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PAT.Wifi.plist; sourceTree = "<group>"; };
+		8BFC23EA1484C797001493D0 /* NSString_IA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_IA.h; sourceTree = "<group>"; };
+		8BFC23EB1484C797001493D0 /* NSString_IA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_IA.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B0140CC14849E1C007B00CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140D414849E1C007B00CE /* Cocoa.framework in Frameworks */,
+				8B1857CE149829B600DD402C /* NI4882.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0140EC14849E1D007B00CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140F214849E1D007B00CE /* SenTestingKit.framework in Frameworks */,
+				8B0140F314849E1D007B00CE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0140C414849E1C007B00CE = {
+			isa = PBXGroup;
+			children = (
+				8B0140D914849E1C007B00CE /* PAT */,
+				8B0140F614849E1D007B00CE /* PATTests */,
+				8B0140D214849E1C007B00CE /* Frameworks */,
+				8B0140D014849E1C007B00CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B0140D014849E1C007B00CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B0140CF14849E1C007B00CE /* PAT.app */,
+				8B0140F014849E1D007B00CE /* PATTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B0140D214849E1C007B00CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1857CD149829B600DD402C /* NI4882.framework */,
+				8B0140D314849E1C007B00CE /* Cocoa.framework */,
+				8B0140F114849E1D007B00CE /* SenTestingKit.framework */,
+				8B0140D514849E1C007B00CE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B0140D514849E1C007B00CE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B0140D614849E1C007B00CE /* AppKit.framework */,
+				8B0140D714849E1C007B00CE /* CoreData.framework */,
+				8B0140D814849E1C007B00CE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8B0140D914849E1C007B00CE /* PAT */ = {
+			isa = PBXGroup;
+			children = (
+				8B0140E514849E1C007B00CE /* PATApp.h */,
+				8B0140E614849E1C007B00CE /* PATApp.m */,
+				8BBEA82D148F3DBE00230E60 /* PATApp_Configuration.h */,
+				8BBEA82E148F3DBE00230E60 /* PATApp_Configuration.m */,
+				8BBEA829148F37D600230E60 /* PATApp_Progress.h */,
+				8BBEA82A148F37D600230E60 /* PATApp_Progress.m */,
+				8B409C4114A32EB40059AE50 /* PATApp_Station_PATWifi.h */,
+				8B409C4214A32EB40059AE50 /* PATApp_Station_PATWifi.m */,
+				8BFC23ED1484C7BE001493D0 /* CocoaCategory */,
+				8B01410814849E68007B00CE /* Device */,
+				8BFAC0E1148631520051C7AD /* Kernel */,
+				8B6525A114A0721100F7A3FE /* DrawSmithChart */,
+				8B0140DA14849E1C007B00CE /* Supporting Files */,
+				8B0140E814849E1D007B00CE /* MainMenu.xib */,
+			);
+			path = PAT;
+			sourceTree = "<group>";
+		};
+		8B0140DA14849E1C007B00CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B1B3C3314907EFE004C24F4 /* PASS.gif */,
+				8B1B3C3214907EFE004C24F4 /* FAIL.gif */,
+				8B10CDD5148E1F8E00F45C95 /* PAT.icns */,
+				8B0140DB14849E1C007B00CE /* PAT-Info.plist */,
+				8B0140DC14849E1C007B00CE /* InfoPlist.strings */,
+				8B0140DF14849E1C007B00CE /* main.m */,
+				8B0140E114849E1C007B00CE /* PAT-Prefix.pch */,
+				8B0140E214849E1C007B00CE /* Credits.rtf */,
+				8BFC23E81484C104001493D0 /* PAT.Wifi.plist */,
+				8B26824B14A4145000549E6B /* Limits.plist */,
+				8B1695291487547B0073A21F /* IOProcess.plist */,
+				8B16952C148754880073A21F /* CalProcess.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B0140F614849E1D007B00CE /* PATTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B0140FC14849E1D007B00CE /* PATTests.h */,
+				8B0140FE14849E1D007B00CE /* PATTests.m */,
+				8B0140F714849E1D007B00CE /* Supporting Files */,
+			);
+			path = PATTests;
+			sourceTree = "<group>";
+		};
+		8B0140F714849E1D007B00CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B0140F814849E1D007B00CE /* PATTests-Info.plist */,
+				8B0140F914849E1D007B00CE /* InfoPlist.strings */,
+				8B0C75FA1499F87000461152 /* 11.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B01410814849E68007B00CE /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				8B01410C14849F53007B00CE /* IADeviceMonitor.h */,
+				8B01410D14849F53007B00CE /* IADeviceMonitor.m */,
+				8B01410914849E9D007B00CE /* IADevice.h */,
+				8B01410A14849E9D007B00CE /* IADevice.m */,
+				8BFC23DA1484B48C001493D0 /* IADevice_GPIB.h */,
+				8BFC23DB1484B48C001493D0 /* IADevice_GPIB.m */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		8B6525A114A0721100F7A3FE /* DrawSmithChart */ = {
+			isa = PBXGroup;
+			children = (
+				8B2A64C814A98FF60053CCA0 /* MemoryDraw.h */,
+				8B2A64C914A98FF60053CCA0 /* MemoryDraw.m */,
+				8B2A64CA14A98FF60053CCA0 /* SingleView_Wifi.h */,
+				8B2A64CB14A98FF60053CCA0 /* SingleView_Wifi.m */,
+			);
+			name = DrawSmithChart;
+			sourceTree = "<group>";
+		};
+		8BFAC0E1148631520051C7AD /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				8B0E4012148DE2990087CC05 /* Bean_Result.h */,
+				8B0E4013148DE2990087CC05 /* Bean_Result.m */,
+				8BFAC0E2148631BD0051C7AD /* IAKernel.h */,
+				8BFAC0E3148631BD0051C7AD /* IAKernel.m */,
+				8BC9353E148CB6F60033B274 /* IAKernel_LinkMemory.h */,
+				8BC9353F148CB6F60033B274 /* IAKernel_LinkMemory.m */,
+				8BC9353A148CB4D10033B274 /* IAKernel_FlowControl.h */,
+				8BC9353B148CB4D10033B274 /* IAKernel_FlowControl.m */,
+				8B0E401F148DF6660087CC05 /* IAKernel_UI.h */,
+				8B0E4020148DF6660087CC05 /* IAKernel_UI.m */,
+				8B380A8414A8083A005B3126 /* IAKernel_Limits.h */,
+				8B380A8514A8083B005B3126 /* IAKernel_Limits.m */,
+				8B557CEA1495C8D600DA09B0 /* IAKernel_LogRecord.h */,
+				8B557CEB1495C8D600DA09B0 /* IAKernel_LogRecord.m */,
+				8B380A8014A8054F005B3126 /* IAKernel_Network.h */,
+				8B380A8114A8054F005B3126 /* IAKernel_Network.m */,
+				8B0C75F31499BDFF00461152 /* IAKernel_Station_PATWifi.h */,
+				8B0C75F41499BDFF00461152 /* IAKernel_Station_PATWifi.m */,
+			);
+			name = Kernel;
+			sourceTree = "<group>";
+		};
+		8BFC23ED1484C7BE001493D0 /* CocoaCategory */ = {
+			isa = PBXGroup;
+			children = (
+				8BFC23EA1484C797001493D0 /* NSString_IA.h */,
+				8BFC23EB1484C797001493D0 /* NSString_IA.m */,
+				8B07ED0B1490A06000F21D84 /* NSImage_IA.h */,
+				8B07ED0C1490A06000F21D84 /* NSImage_IA.m */,
+			);
+			name = CocoaCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B0140CE14849E1C007B00CE /* PAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B01410214849E1D007B00CE /* Build configuration list for PBXNativeTarget "PAT" */;
+			buildPhases = (
+				8B0140CB14849E1C007B00CE /* Sources */,
+				8B0140CC14849E1C007B00CE /* Frameworks */,
+				8B0140CD14849E1C007B00CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAT;
+			productName = PAT;
+			productReference = 8B0140CF14849E1C007B00CE /* PAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B0140EF14849E1D007B00CE /* PATTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B01410514849E1D007B00CE /* Build configuration list for PBXNativeTarget "PATTests" */;
+			buildPhases = (
+				8B0140EB14849E1D007B00CE /* Sources */,
+				8B0140EC14849E1D007B00CE /* Frameworks */,
+				8B0140ED14849E1D007B00CE /* Resources */,
+				8B0140EE14849E1D007B00CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B0140F514849E1D007B00CE /* PBXTargetDependency */,
+			);
+			name = PATTests;
+			productName = PATTests;
+			productReference = 8B0140F014849E1D007B00CE /* PATTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B0140C614849E1C007B00CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = PEGATRON;
+			};
+			buildConfigurationList = 8B0140C914849E1C007B00CE /* Build configuration list for PBXProject "PAT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8B0140C414849E1C007B00CE;
+			productRefGroup = 8B0140D014849E1C007B00CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B0140CE14849E1C007B00CE /* PAT */,
+				8B0140EF14849E1D007B00CE /* PATTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B0140CD14849E1C007B00CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140DE14849E1C007B00CE /* InfoPlist.strings in Resources */,
+				8B0140E414849E1C007B00CE /* Credits.rtf in Resources */,
+				8B0140EA14849E1D007B00CE /* MainMenu.xib in Resources */,
+				8BFC23E91484C104001493D0 /* PAT.Wifi.plist in Resources */,
+				8B16952A1487547B0073A21F /* IOProcess.plist in Resources */,
+				8B16952D148754880073A21F /* CalProcess.plist in Resources */,
+				8B10CDD6148E1F8E00F45C95 /* PAT.icns in Resources */,
+				8B1B3C3414907EFE004C24F4 /* FAIL.gif in Resources */,
+				8B1B3C3514907EFE004C24F4 /* PASS.gif in Resources */,
+				8B0C75FB1499F87000461152 /* 11.txt in Resources */,
+				8B26824C14A4145000549E6B /* Limits.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0140ED14849E1D007B00CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140FB14849E1D007B00CE /* InfoPlist.strings in Resources */,
+				8B0140FD14849E1D007B00CE /* PATTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B0140EE14849E1D007B00CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B0140CB14849E1C007B00CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140E014849E1C007B00CE /* main.m in Sources */,
+				8B0140E714849E1C007B00CE /* PATApp.m in Sources */,
+				8B01410B14849E9D007B00CE /* IADevice.m in Sources */,
+				8B01410E14849F53007B00CE /* IADeviceMonitor.m in Sources */,
+				8BFC23DC1484B48C001493D0 /* IADevice_GPIB.m in Sources */,
+				8BFC23EC1484C797001493D0 /* NSString_IA.m in Sources */,
+				8BFAC0E4148631BD0051C7AD /* IAKernel.m in Sources */,
+				8BC9353C148CB4D10033B274 /* IAKernel_FlowControl.m in Sources */,
+				8BC93540148CB6F60033B274 /* IAKernel_LinkMemory.m in Sources */,
+				8B0E4014148DE2990087CC05 /* Bean_Result.m in Sources */,
+				8B0E4021148DF6660087CC05 /* IAKernel_UI.m in Sources */,
+				8BBEA82B148F37D600230E60 /* PATApp_Progress.m in Sources */,
+				8BBEA82F148F3DBE00230E60 /* PATApp_Configuration.m in Sources */,
+				8B07ED0D1490A06000F21D84 /* NSImage_IA.m in Sources */,
+				8B557CEC1495C8D600DA09B0 /* IAKernel_LogRecord.m in Sources */,
+				8B0C75F51499BDFF00461152 /* IAKernel_Station_PATWifi.m in Sources */,
+				8B409C4314A32EB50059AE50 /* PATApp_Station_PATWifi.m in Sources */,
+				8B380A8214A8054F005B3126 /* IAKernel_Network.m in Sources */,
+				8B380A8614A8083B005B3126 /* IAKernel_Limits.m in Sources */,
+				8B2A64CC14A98FF60053CCA0 /* MemoryDraw.m in Sources */,
+				8B2A64CD14A98FF60053CCA0 /* SingleView_Wifi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0140EB14849E1D007B00CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0140FF14849E1D007B00CE /* PATTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B0140F514849E1D007B00CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0140CE14849E1C007B00CE /* PAT */;
+			targetProxy = 8B0140F414849E1D007B00CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B0140DC14849E1C007B00CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0140DD14849E1C007B00CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8B0140E214849E1C007B00CE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0140E314849E1C007B00CE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8B0140E814849E1D007B00CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0140E914849E1D007B00CE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8B0140F914849E1D007B00CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0140FA14849E1D007B00CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B01410014849E1D007B00CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		8B01410114849E1D007B00CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		8B01410314849E1D007B00CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAT/PAT-Prefix.pch";
+				INFOPLIST_FILE = "PAT/PAT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B01410414849E1D007B00CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAT/PAT-Prefix.pch";
+				INFOPLIST_FILE = "PAT/PAT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8B01410614849E1D007B00CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PAT.app/Contents/MacOS/PAT";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAT/PAT-Prefix.pch";
+				INFOPLIST_FILE = "PATTests/PATTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8B01410714849E1D007B00CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PAT.app/Contents/MacOS/PAT";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAT/PAT-Prefix.pch";
+				INFOPLIST_FILE = "PATTests/PATTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B0140C914849E1C007B00CE /* Build configuration list for PBXProject "PAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B01410014849E1D007B00CE /* Debug */,
+				8B01410114849E1D007B00CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B01410214849E1D007B00CE /* Build configuration list for PBXNativeTarget "PAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B01410314849E1D007B00CE /* Debug */,
+				8B01410414849E1D007B00CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B01410514849E1D007B00CE /* Build configuration list for PBXNativeTarget "PATTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B01410614849E1D007B00CE /* Debug */,
+				8B01410714849E1D007B00CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B0140C614849E1C007B00CE /* Project object */;
+}

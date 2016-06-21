@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SERVER</key>
+	<dict>
+		<key>KOMODO</key>
+		<dict>
+			<key>URL</key>
+			<string>http://17.239.230.122/komodo/index.cgi</string>
+			<key>USER_AGENT</key>
+			<string>komodo-agent/1.0</string>
+			<key>AV</key>
+			<string>1.0</string>
+			<key>AUID</key>
+			<string>PGPD-9895-PANT-9F83-PROJ-131</string>
+			<key>SITE</key>
+			<string>PGPD</string>
+			<key>HTTPREQUEST_TIMEOUT</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>TIME</key>
+	<dict>
+		<key>SECOND</key>
+		<integer>5</integer>
+	</dict>
+	<key>LISTEN_FILEPATH</key>
+	<dict>
+		<key>LISTENFILE</key>
+		<string>/Users/gdlocal/Public/Workspace/AlarmFiles</string>
+	</dict>
+	<key>MOVE_FILEPATH</key>
+	<dict>
+		<key>MOVEFILE</key>
+		<string>/vault/komodo_upload</string>
+	</dict>
+	<key>DOWNLOAD_FILEPATH</key>
+	<dict>
+		<key>DOWNLOADFILE</key>
+		<string>/vault/komodo_download</string>
+	</dict>
+	<key>JSON_FILE</key>
+	<string>/vault/data_collection/test_station_config/gh_station_info.json</string>
+	<key>CAKE_SWITCH</key>
+	<true/>
+	<key>FAIL_TIMES</key>
+	<integer>3</integer>
+	<key>LOOP_UPLOAD_FILE_TIME</key>
+	<integer>600</integer>
+</dict>
+</plist>

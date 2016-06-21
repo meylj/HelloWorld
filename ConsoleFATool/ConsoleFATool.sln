@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFATool", "ConsoleFATool\ConsoleFATool.csproj", "{33B7CA6C-A380-467B-8E8F-8159220CC7AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGetPath", "ConsoleGetPath\ConsoleGetPath.csproj", "{8F2DFEB8-F34A-48C9-A363-B2357A545207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33B7CA6C-A380-467B-8E8F-8159220CC7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B7CA6C-A380-467B-8E8F-8159220CC7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B7CA6C-A380-467B-8E8F-8159220CC7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B7CA6C-A380-467B-8E8F-8159220CC7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2DFEB8-F34A-48C9-A363-B2357A545207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2DFEB8-F34A-48C9-A363-B2357A545207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2DFEB8-F34A-48C9-A363-B2357A545207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2DFEB8-F34A-48C9-A363-B2357A545207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

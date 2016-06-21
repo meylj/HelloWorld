@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Commands</key>
+	<array>
+		<string>AStart_To_Test#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>BSet_To_Wait#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>BStart_To_Test#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>ASet_To_Wait#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>Start To Test#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>Stop Test#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>Status_Query#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>Set_To_Wait#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>Open_Fixture#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>ServerInitOK#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>ServerInitialQuery#PGPD_F01-4FRF-02_36_CELL-CAL</string>
+		<string>PGPD_F01-4FRF-02_36_CELL-CAL</string>
+	</array>
+	<key>Commands_CELLCAL</key>
+	<array>
+		<string>Status_Query#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+		<string>ServerInitOK#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+		<string>Start To Test#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+		<string>AStart_To_Test#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+		<string>Set_To_Wait#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+		<string>Stop Test#PGPD_F02-4FB-REP_6_CELL-CAL</string>
+	</array>
+	<key>Commands_OPAS</key>
+	<array>
+		<string>Station_Initial_OK;VERSION:1.0d1;STATION_ID:PGPD_F05-4FT-FlightDeck_2_OPAS-POSTBURN;TIMESTAMP:2013/12/03 10-02-28.905_ACK#</string>
+		<string>Status_Query; TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Device_Removed;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>RESTART;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+	</array>
+	<key>Commands_ALSAR</key>
+	<array>
+		<string>Station_Initial_OK;VERSION:1.0d1;STATION_ID:PGPD_F05-4FT-FlightDeck_3_ALSAR;TIMESTAMP:2013/12/03 10-02-28.905_ACK#</string>
+		<string>Status_Query; TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:3;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Device_Removed;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:3;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>RESTART;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+	</array>
+	<key>Commands_ALSTEST</key>
+	<array>
+		<string>Station_Initial_OK;VERSION:1.0d1;STATION_ID:PGPD_F05-4FT-FlightDeck_1_ALS-TEST;TIMESTAMP:2013/12/03 10-02-28.905_ACK#</string>
+		<string>Status_Query; TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:1,2,3,4;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Device_Removed;SLOT:1,2,3,4;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>RESTART;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+	</array>
+	<key>Commands_Log-Collection</key>
+	<array>
+		<string>Station_Initial_OK;VERSION:1.0d1;STATION_ID:PGPD_F05-4FT-FlightDeck_2_BURNIN;TIMESTAMP:2013/12/03 10-02-28.905_ACK#</string>
+		<string>Status_Query; TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:3;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:4;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Start_Test;SLOT:5;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+		<string>Device_Removed;SLOT:1;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:2;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:3;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:4;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>Device_Removed;SLOT:5;TIMESTAMP:2013/12/03 10-02-28.905#	</string>
+		<string>RESTART;TIMESTAMP:2013/12/03 10-02-28.905#</string>
+	</array>
+	<key>LitsenSetting</key>
+	<dict>
+		<key>IP</key>
+		<string>192.168.1.3</string>
+		<key>PORT</key>
+		<string>7777</string>
+	</dict>
+	<key>SendSetting</key>
+	<dict>
+		<key>IP</key>
+		<string>192.168.1.2</string>
+		<key>PORT</key>
+		<string>8888</string>
+	</dict>
+</dict>
+</plist>

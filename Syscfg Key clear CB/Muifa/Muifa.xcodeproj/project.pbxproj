@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A30666C1868284300DFCBD4 /* CustomTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30666B1868284300DFCBD4 /* CustomTimer.m */; };
+		0A3850781ACADD0900F3C8E3 /* InstrumentLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3850771ACADD0900F3C8E3 /* InstrumentLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A38507A1ACADD7600F3C8E3 /* InstrumentLibrary.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0A3850771ACADD0900F3C8E3 /* InstrumentLibrary.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A40C9651A230B67001AA233 /* AppleTestStationAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A40C9631A230B67001AA233 /* AppleTestStationAutomation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A40C9661A230B67001AA233 /* etraveler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A40C9641A230B67001AA233 /* etraveler.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0A411602195188BF00536FB8 /* MuifaWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A411601195188BF00536FB8 /* MuifaWindow.m */; };
+		0A41BB9C183B6725008582B1 /* DebugWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41BB9A183B6725008582B1 /* DebugWindowController.m */; };
+		0A41BB9D183B6725008582B1 /* DebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41BB9B183B6725008582B1 /* DebugWindowController.xib */; };
+		0A84395F18641E520090EA10 /* MuifaScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A84395E18641E520090EA10 /* MuifaScroller.m */; };
+		0A8439611864213F0090EA10 /* QueryPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8439601864213F0090EA10 /* QueryPage.xib */; };
+		0A8439631864245D0090EA10 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8439621864245D0090EA10 /* WebKit.framework */; };
+		0A84396518642E390090EA10 /* PEGA_ATS_UART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84396418642E390090EA10 /* PEGA_ATS_UART.framework */; };
+		0A84396618642E450090EA10 /* PEGA_ATS_UART.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0A84396418642E390090EA10 /* PEGA_ATS_UART.framework */; };
+		0A8CFE98169EE7DD0053C5BB /* FunnyZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8CFE97169EE7DD0053C5BB /* FunnyZone.framework */; };
+		0A8CFE9A169EE8060053C5BB /* FunnyZone.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0A8CFE97169EE7DD0053C5BB /* FunnyZone.framework */; };
+		0A8CFEA6169EE8680053C5BB /* PuddingPDCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8CFEA3169EE8680053C5BB /* PuddingPDCA.framework */; };
+		0A8CFEA9169EE86D0053C5BB /* PuddingPDCA.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0A8CFEA3169EE8680053C5BB /* PuddingPDCA.framework */; };
+		26615766142B34360071580E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26615765142B34360071580E /* Cocoa.framework */; };
+		26615770142B34360071580E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2661576E142B34360071580E /* InfoPlist.strings */; };
+		26615772142B34360071580E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26615771142B34360071580E /* main.m */; };
+		26615776142B34360071580E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26615774142B34360071580E /* Credits.rtf */; };
+		26615779142B34360071580E /* MuifaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26615778142B34360071580E /* MuifaAppDelegate.m */; };
+		2661577C142B34360071580E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2661577A142B34360071580E /* MainMenu.xib */; };
+		26615785142B34990071580E /* Template.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26615784142B34990071580E /* Template.xib */; };
+		26615788142B34AE0071580E /* Template.m in Sources */ = {isa = PBXBuildFile; fileRef = 26615787142B34AE0071580E /* Template.m */; };
+		268B9AF5144EBF64000A202F /* Muifa.icns in Resources */ = {isa = PBXBuildFile; fileRef = 268B9AF4144EBF64000A202F /* Muifa.icns */; };
+		2A35DBE11B0321470096B018 /* MuifaAppDelegate+USBPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A35DBE01B0321470096B018 /* MuifaAppDelegate+USBPlugIn.m */; };
+		2A35DBE31B0322CA0096B018 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A35DBE21B0322CA0096B018 /* IOKit.framework */; };
+		2A9EC0B41B04787300E61A5C /* FuckDCSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EC0B31B04787300E61A5C /* FuckDCSD.m */; };
+		E448033F1A7B3059001ADA32 /* ScrollingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E448033E1A7B3059001ADA32 /* ScrollingTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D94A994D1460231800FBB7A9 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6B8F0214457F3E009CAF05 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A38507A1ACADD7600F3C8E3 /* InstrumentLibrary.framework in Copy Files */,
+				0A8CFE9A169EE8060053C5BB /* FunnyZone.framework in Copy Files */,
+				0A8CFEA9169EE86D0053C5BB /* PuddingPDCA.framework in Copy Files */,
+				0A84396618642E450090EA10 /* PEGA_ATS_UART.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A30666A1868284300DFCBD4 /* CustomTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimer.h; sourceTree = "<group>"; };
+		0A30666B1868284300DFCBD4 /* CustomTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimer.m; sourceTree = "<group>"; };
+		0A3850771ACADD0900F3C8E3 /* InstrumentLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstrumentLibrary.framework; path = ../../../../../../../../../Frameworks/InstrumentLibrary.framework; sourceTree = "<group>"; };
+		0A40C9631A230B67001AA233 /* AppleTestStationAutomation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleTestStationAutomation.framework; sourceTree = "<group>"; };
+		0A40C9641A230B67001AA233 /* etraveler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = etraveler.framework; sourceTree = "<group>"; };
+		0A411600195188BF00536FB8 /* MuifaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuifaWindow.h; sourceTree = "<group>"; };
+		0A411601195188BF00536FB8 /* MuifaWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuifaWindow.m; sourceTree = "<group>"; };
+		0A41BB99183B6725008582B1 /* DebugWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugWindowController.h; sourceTree = "<group>"; };
+		0A41BB9A183B6725008582B1 /* DebugWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugWindowController.m; sourceTree = "<group>"; };
+		0A41BB9B183B6725008582B1 /* DebugWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugWindowController.xib; sourceTree = "<group>"; };
+		0A84395D18641E520090EA10 /* MuifaScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuifaScroller.h; sourceTree = "<group>"; };
+		0A84395E18641E520090EA10 /* MuifaScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuifaScroller.m; sourceTree = "<group>"; };
+		0A8439601864213F0090EA10 /* QueryPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QueryPage.xib; sourceTree = "<group>"; };
+		0A8439621864245D0090EA10 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0A84396418642E390090EA10 /* PEGA_ATS_UART.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PEGA_ATS_UART.framework; path = /Frameworks/PEGA_ATS_UART.framework; sourceTree = "<absolute>"; };
+		0A8CFE97169EE7DD0053C5BB /* FunnyZone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunnyZone.framework; path = /Frameworks/FunnyZone.framework; sourceTree = "<absolute>"; };
+		0A8CFEA3169EE8680053C5BB /* PuddingPDCA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PuddingPDCA.framework; path = /Frameworks/PuddingPDCA.framework; sourceTree = "<absolute>"; };
+		132B65CD16B7B727005F828D /* Template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Template.h; sourceTree = "<group>"; };
+		26615761142B34360071580E /* Muifa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muifa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26615765142B34360071580E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		26615768142B34360071580E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		26615769142B34360071580E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2661576A142B34360071580E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2661576D142B34360071580E /* Muifa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Muifa-Info.plist"; sourceTree = "<group>"; };
+		2661576F142B34360071580E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26615771142B34360071580E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26615773142B34360071580E /* Muifa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Muifa-Prefix.pch"; sourceTree = "<group>"; };
+		26615775142B34360071580E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		26615777142B34360071580E /* MuifaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuifaAppDelegate.h; sourceTree = "<group>"; };
+		26615778142B34360071580E /* MuifaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuifaAppDelegate.m; sourceTree = "<group>"; };
+		2661577B142B34360071580E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		26615784142B34990071580E /* Template.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Template.xib; sourceTree = "<group>"; };
+		26615787142B34AE0071580E /* Template.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Template.m; sourceTree = "<group>"; };
+		268B9AF4144EBF64000A202F /* Muifa.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Muifa.icns; sourceTree = "<group>"; };
+		26A7BAA6142C147E004F2E0B /* Muifa_Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Muifa_Define.h; sourceTree = "<group>"; };
+		2A35DBDF1B0321470096B018 /* MuifaAppDelegate+USBPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MuifaAppDelegate+USBPlugIn.h"; sourceTree = "<group>"; };
+		2A35DBE01B0321470096B018 /* MuifaAppDelegate+USBPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MuifaAppDelegate+USBPlugIn.m"; sourceTree = "<group>"; };
+		2A35DBE21B0322CA0096B018 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
+		2A9EC0B21B04787300E61A5C /* FuckDCSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckDCSD.h; sourceTree = "<group>"; };
+		2A9EC0B31B04787300E61A5C /* FuckDCSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckDCSD.m; sourceTree = "<group>"; };
+		E448033D1A7B3059001ADA32 /* ScrollingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingTextView.h; sourceTree = "<group>"; };
+		E448033E1A7B3059001ADA32 /* ScrollingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingTextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2661575E142B34360071580E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8439631864245D0090EA10 /* WebKit.framework in Frameworks */,
+				0A40C9661A230B67001AA233 /* etraveler.framework in Frameworks */,
+				26615766142B34360071580E /* Cocoa.framework in Frameworks */,
+				0A8CFE98169EE7DD0053C5BB /* FunnyZone.framework in Frameworks */,
+				0A40C9651A230B67001AA233 /* AppleTestStationAutomation.framework in Frameworks */,
+				0A3850781ACADD0900F3C8E3 /* InstrumentLibrary.framework in Frameworks */,
+				0A84396518642E390090EA10 /* PEGA_ATS_UART.framework in Frameworks */,
+				0A8CFEA6169EE8680053C5BB /* PuddingPDCA.framework in Frameworks */,
+				2A35DBE31B0322CA0096B018 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A7F9DCB1AC054B400DC3678 /* ATS Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3850771ACADD0900F3C8E3 /* InstrumentLibrary.framework */,
+				0A84396418642E390090EA10 /* PEGA_ATS_UART.framework */,
+				0A8CFEA3169EE8680053C5BB /* PuddingPDCA.framework */,
+				0A8CFE97169EE7DD0053C5BB /* FunnyZone.framework */,
+			);
+			name = "ATS Frameworks";
+			sourceTree = "<group>";
+		};
+		0A7F9DCC1AC054C300DC3678 /* 3rd Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A40C9631A230B67001AA233 /* AppleTestStationAutomation.framework */,
+				0A40C9641A230B67001AA233 /* etraveler.framework */,
+			);
+			name = "3rd Frameworks";
+			sourceTree = "<group>";
+		};
+		0A84395C18641E2C0090EA10 /* QueryPage */ = {
+			isa = PBXGroup;
+			children = (
+				0A84395D18641E520090EA10 /* MuifaScroller.h */,
+				0A84395E18641E520090EA10 /* MuifaScroller.m */,
+				0A8439601864213F0090EA10 /* QueryPage.xib */,
+			);
+			name = QueryPage;
+			sourceTree = "<group>";
+		};
+		26615756142B34360071580E = {
+			isa = PBXGroup;
+			children = (
+				2661576B142B34360071580E /* Muifa */,
+				26615764142B34360071580E /* Frameworks */,
+				26615762142B34360071580E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26615762142B34360071580E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26615761142B34360071580E /* Muifa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26615764142B34360071580E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A35DBE21B0322CA0096B018 /* IOKit.framework */,
+				0A7F9DCC1AC054C300DC3678 /* 3rd Frameworks */,
+				0A7F9DCB1AC054B400DC3678 /* ATS Frameworks */,
+				26615767142B34360071580E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26615767142B34360071580E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26615765142B34360071580E /* Cocoa.framework */,
+				26615768142B34360071580E /* AppKit.framework */,
+				26615769142B34360071580E /* CoreData.framework */,
+				2661576A142B34360071580E /* Foundation.framework */,
+				0A8439621864245D0090EA10 /* WebKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2661576B142B34360071580E /* Muifa */ = {
+			isa = PBXGroup;
+			children = (
+				0A84395C18641E2C0090EA10 /* QueryPage */,
+				26A7BAA6142C147E004F2E0B /* Muifa_Define.h */,
+				26615777142B34360071580E /* MuifaAppDelegate.h */,
+				26615778142B34360071580E /* MuifaAppDelegate.m */,
+				2A35DBDF1B0321470096B018 /* MuifaAppDelegate+USBPlugIn.h */,
+				2A35DBE01B0321470096B018 /* MuifaAppDelegate+USBPlugIn.m */,
+				0A30666A1868284300DFCBD4 /* CustomTimer.h */,
+				0A30666B1868284300DFCBD4 /* CustomTimer.m */,
+				0A411600195188BF00536FB8 /* MuifaWindow.h */,
+				0A411601195188BF00536FB8 /* MuifaWindow.m */,
+				E448033D1A7B3059001ADA32 /* ScrollingTextView.h */,
+				E448033E1A7B3059001ADA32 /* ScrollingTextView.m */,
+				2661577A142B34360071580E /* MainMenu.xib */,
+				26615783142B34620071580E /* Template */,
+				2661576C142B34360071580E /* Supporting Files */,
+			);
+			path = Muifa;
+			sourceTree = "<group>";
+		};
+		2661576C142B34360071580E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268B9AF4144EBF64000A202F /* Muifa.icns */,
+				2661576D142B34360071580E /* Muifa-Info.plist */,
+				2661576E142B34360071580E /* InfoPlist.strings */,
+				26615771142B34360071580E /* main.m */,
+				26615773142B34360071580E /* Muifa-Prefix.pch */,
+				26615774142B34360071580E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26615783142B34620071580E /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				2A9EC0B21B04787300E61A5C /* FuckDCSD.h */,
+				2A9EC0B31B04787300E61A5C /* FuckDCSD.m */,
+				26615784142B34990071580E /* Template.xib */,
+				132B65CD16B7B727005F828D /* Template.h */,
+				26615787142B34AE0071580E /* Template.m */,
+				0A41BB99183B6725008582B1 /* DebugWindowController.h */,
+				0A41BB9A183B6725008582B1 /* DebugWindowController.m */,
+				0A41BB9B183B6725008582B1 /* DebugWindowController.xib */,
+			);
+			name = Template;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26615760142B34360071580E /* Muifa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2661577F142B34360071580E /* Build configuration list for PBXNativeTarget "Muifa" */;
+			buildPhases = (
+				2661575D142B34360071580E /* Sources */,
+				2661575E142B34360071580E /* Frameworks */,
+				2661575F142B34360071580E /* Resources */,
+				ED6B8F0214457F3E009CAF05 /* Copy Files */,
+				D94A994D1460231800FBB7A9 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Muifa;
+			productName = Muifa;
+			productReference = 26615761142B34360071580E /* Muifa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26615758142B34360071580E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = PEGATRON;
+			};
+			buildConfigurationList = 2661575B142B34360071580E /* Build configuration list for PBXProject "Muifa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26615756142B34360071580E;
+			productRefGroup = 26615762142B34360071580E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26615760142B34360071580E /* Muifa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2661575F142B34360071580E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41BB9D183B6725008582B1 /* DebugWindowController.xib in Resources */,
+				0A8439611864213F0090EA10 /* QueryPage.xib in Resources */,
+				26615770142B34360071580E /* InfoPlist.strings in Resources */,
+				26615776142B34360071580E /* Credits.rtf in Resources */,
+				2661577C142B34360071580E /* MainMenu.xib in Resources */,
+				26615785142B34990071580E /* Template.xib in Resources */,
+				268B9AF5144EBF64000A202F /* Muifa.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2661575D142B34360071580E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9EC0B41B04787300E61A5C /* FuckDCSD.m in Sources */,
+				26615772142B34360071580E /* main.m in Sources */,
+				0A41BB9C183B6725008582B1 /* DebugWindowController.m in Sources */,
+				0A411602195188BF00536FB8 /* MuifaWindow.m in Sources */,
+				E448033F1A7B3059001ADA32 /* ScrollingTextView.m in Sources */,
+				2A35DBE11B0321470096B018 /* MuifaAppDelegate+USBPlugIn.m in Sources */,
+				0A30666C1868284300DFCBD4 /* CustomTimer.m in Sources */,
+				26615779142B34360071580E /* MuifaAppDelegate.m in Sources */,
+				26615788142B34AE0071580E /* Template.m in Sources */,
+				0A84395F18641E520090EA10 /* MuifaScroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2661576E142B34360071580E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2661576F142B34360071580E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		26615774142B34360071580E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26615775142B34360071580E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2661577A142B34360071580E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2661577B142B34360071580E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2661577D142B34360071580E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "~/Public/";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		2661577E142B34360071580E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "~/Public/";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		26615780142B34360071580E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Frameworks,
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/FactoryAutomation/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Muifa/Muifa-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Muifa/Muifa-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26615781142B34360071580E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Frameworks,
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/FactoryAutomation/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Muifa/Muifa-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Muifa/Muifa-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2661575B142B34360071580E /* Build configuration list for PBXProject "Muifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2661577D142B34360071580E /* Debug */,
+				2661577E142B34360071580E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2661577F142B34360071580E /* Build configuration list for PBXNativeTarget "Muifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26615780142B34360071580E /* Debug */,
+				26615781142B34360071580E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26615758142B34360071580E /* Project object */;
+}

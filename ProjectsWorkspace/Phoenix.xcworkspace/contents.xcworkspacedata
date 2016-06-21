@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../Phoenix/Code/Muifa/Muifa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/FunnyZone/FunnyZone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/PEGA_ATS_UART/PEGA_ATS_UART.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/TestPudding/TestPudding.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/AMSerialPort/AMSerialPort.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/InstrumentTest/InstrumentTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Phoenix/Code/Printer/Printer.xcodeproj">
+   </FileRef>
+</Workspace>

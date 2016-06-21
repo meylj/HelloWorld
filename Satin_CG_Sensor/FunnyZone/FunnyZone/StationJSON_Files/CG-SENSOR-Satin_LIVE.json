@@ -1,0 +1,1990 @@
+{
+  "hash" : "E643F0FD7A3B87F57F81DB629365943666311D52",
+  "data" : {
+    "product": "D10",
+    "build" : "Proto2",
+    "Versions" : "16_Satin",
+    "tests" : [
+{
+        "Name" : {
+          "main" : "START_TEST_CG-SENSOR-Satin"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Initialise Fixture"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check DUT Mode"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Upload LCM SN"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x0 0x39",
+          "i2c -z 2 --devread 4 0x51 0x1200 0x16"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Get CG SN"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check UOP"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Get Link Data via CG SN From SFC"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CG Color"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Board ID(ECID)"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "chipid"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Read Fixture SN"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check And Burn MLB OrbG"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "syscfg print OrbG"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name" : {
+          "main" : "Diag Version Check"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "ver"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Write GMT Date and Time"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Check config"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Check signature and checksum for Satin Configs"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "touch --off",
+          "i2c -z 2 --devread 4 0x51 0x10EE 0x18"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Burn SACL"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "syscfg add SACL",
+          "syscfg print SACL"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Critical Error Check For Satin Configs"
+        },
+        "Specification": {
+          "match": [
+            "0"
+          ]
+        },
+        "Commands": [
+          "touch --sel grape",
+          "touch --on --load_firmware D10-GrapeFW-Satin.mihu",
+          "touch --test critical --run"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Check MIC3 Exist"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "smokey --run MicTempTest;cbcolor"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "MIC3 Temp Vendor Check"
+        },
+        "Specification": {
+          "match": [
+            "0x00,0x21,0x40"
+          ]
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "MIC3 Temperature"
+        },
+        "Specification": {
+          "min": "10",
+          "max": "50",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Convoy Device ID Check"
+        },
+        "Specification": {
+          "match": [
+            "0xCD"
+          ]
+        },
+        "Commands": [
+          "i2c -d 2 0x21 0x01 1"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "Convoy ExtCapacitance"
+        },
+        "Specification": {
+          "min": "0.5",
+          "max": "2",
+          "units": "pF"
+        },
+        "Commands": [
+          "smokey --run ConvoyTest --test PowerOn",
+          "smokey --run ConvoyTest --test GetExtCapacitance;cbcolor"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name" : {
+          "main" : "Muon Fault Register"
+        },
+        "Specification" : {
+          "match" : [
+            "0x00"
+          ]
+        },
+        "Commands" : [
+          "bl -h",
+          "i2c -d 0 0x62 0x17 1",
+          "bl -m"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Load Touch Firmware"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "touch --sel grape",
+          "touch --off",
+          "touch --on",
+          "memrw --32 0x20A088004 0x10401E",
+          "memrw --32 0x20a088030 0x07",
+          "touch --load_firmware D10-GrapeFW-Satin.mihu"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name" : {
+          "main" : "CSIG_row_avg_med"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "touch --test csig_single_stim --run"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_avg_med"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_0"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_1"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_2"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_3"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_4"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_5"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_6"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_7"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_8"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_9"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_10"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_col_diff_11"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_0"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_1"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_2"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_3"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_4"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_5"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_6"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_7"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_8"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_9"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_10"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_11"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_12"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_13"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_14"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_15"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_16"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_17"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_18"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_19"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_20"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_21"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_22"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "CSIG_row_diff_23"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Column failures"
+        },
+        "Specification" : {
+          "match" : [
+            "None"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Row failures"
+        },
+        "Specification" : {
+          "match" : [
+            "None"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_row_avg_med"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "touch --off",
+          "touch --on",
+          "memrw --32 0x20a088030 0x07",
+          "touch --load_firmware D10-GrapeFW-Satin.mihu",
+          "touch --test csig_single_stim_v --run"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_col_avg_med"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_col_diff_0"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_col_diff_1"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_col_diff_2"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_CSIG_col_diff_3"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name" : {
+          "main" : "Velvet_CSIG_row_diff_0"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_Column failures"
+        },
+        "Specification" : {
+          "match" : [
+            "None"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Velvet_Row failures"
+        },
+        "Specification" : {
+          "match" : [
+            "None"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Load X582 Firmware"
+        },
+        "Specification" : {
+          "match" : [
+            "OK"
+          ]
+        },
+        "Commands" : [
+          "touch --sel mesa",
+          "touch --on",
+          "touch -p",
+          "memrw --32 0x20a088030 0x07",
+          "touch --load_firmware"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name" : {
+          "main" : "X582 Module SN From diag"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "touch -p module-sn"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name": {
+          "main": "Compare X582 Module SN with SFC"
+        },
+        "Specification": {
+          "match": [
+            "*"
+          ]
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS ID check"
+        },
+        "Specification": {
+          "match": [
+            "0x9B"
+          ]
+        },
+        "Commands": [
+          "i2c -d 2 0x29 0x92 1"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS CH0 Dark"
+        },
+        "Specification": {
+          "min": "0",
+          "max": "5",
+          "units": ""
+        },
+        "Commands": [
+          "camisp --exit",
+          "bl -o",
+          "sensor --sel als --init",
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS CH1 Dark"
+        },
+        "Specification": {
+          "min": "0",
+          "max": "5",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name" : {
+          "main" : "ALS CH0 LED1"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "ALS CH0 LED2"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "ALS CH0 LED3"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "ALS CH0 LED4"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "ALS CH0 LED5(White)"
+        },
+        "Specification" : {
+          "min" : "950",
+          "max" : "105600",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name": {
+          "main": "ALS CH1 LED5(White)"
+        },
+        "Specification": {
+          "min": "N/A",
+          "max": "N/A",
+          "units": ""
+        },
+        "Commands": [
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS_AR_MIN_MAX30(White)"
+        },
+        "Specification": {
+          "min": "65",
+          "max": "100",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name" : {
+          "main" : "ALS CH0 LED5(Black)"
+        },
+        "Specification" : {
+          "min" : "700",
+          "max" : "32000",
+          "units" : ""
+        },
+        "Commands" : [
+          "sensor --sel als --set gain 140 integration_cycles 179 --sample 5 --stream"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name": {
+          "main": "ALS CH1 LED5(Black)"
+        },
+        "Specification": {
+          "min": "N/A",
+          "max": "N/A",
+          "units": ""
+        },
+        "Commands": [
+          "sensor --sel als --set gain 140 integration_cycles 179 --sample 5 --stream"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name" : {
+          "main" : "ALS_AR_MIN_MAX30(Black)"
+        },
+        "Specification" : {
+          "min" : "55",
+          "max" : "100",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name": {
+          "main": "ALS Ch0 Combined BL High"
+        },
+        "Specification": {
+          "min": "0",
+          "max": "8",
+          "units": ""
+        },
+        "Commands": [
+          "pattern 4",
+          "bl -d 1959",
+          "sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS Ch1 Combined BL High"
+        },
+        "Specification": {
+          "min": "0",
+          "max": "8",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS Ch0 Backlight Leakage HIGH"
+        },
+        "Specification": {
+          "min": "N/A",
+          "max": "N/A",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name": {
+          "main": "ALS Ch1 Backlight Leakage HIGH"
+        },
+        "Specification": {
+          "min": "N/A",
+          "max": "N/A",
+          "units": ""
+        },
+        "Commands": [
+          "*"
+        ],
+        "FunctionNames": [
+          "*"
+        ]
+      },
+      {
+        "Name" : {
+          "main" : "Chestnut PWR_EN"
+        },
+        "Specification" : {
+          "min" : "1750",
+          "max" : "1814",
+          "units" : "mV"
+        },
+        "Commands" : [
+          "pmuadc --read amuxa5"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Bank_A"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "mipi -w 0x29 0xb2 \"0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\"",
+          "mipi -r 0x24 0xbb"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Bank_B"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Flick_Val"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff3 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "VSFOM_Val"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff5 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "FOS_Val"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff7 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Flick_Count"
+        },
+        "Specification" : {
+          "min" : "1",
+          "max" : "100",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff4 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "VSFOM_Count"
+        },
+        "Specification" : {
+          "min" : "1",
+          "max" : "100",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff6 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "FOS_Count"
+        },
+        "Specification" : {
+          "min" : "1",
+          "max" : "100",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x3ff8 0x01"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "RGBW_1"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x46 0x4"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "RGBW_2"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "i2c -z -2 --devread 4 0x51 0x122 0x4"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Front Camera SN"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "camisp --pick front",
+          "camisp --cameraconfig"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Compare Front Camera SN With SFC"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check MtCl"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x0B1A 0x0352"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check GLCl"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x46 0xdc"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check BLCl"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x122 0x10"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check OrbG"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x2000 0x1FA"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Check DPCl"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "i2c -z 2 --devread 4 0x51 0x133 0x28"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "MLB_SN"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "syscfg print MLB#"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_DevID"
+        },
+        "Specification" : {
+          "match" : [
+            "208"
+          ]
+        },
+        "Commands" : [
+          "i2c -d 4 0x58 0x00 1"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_RevID"
+        },
+        "Specification" : {
+          "match" : [
+            "18"
+          ]
+        },
+        "Commands" : [
+          "i2c -d 4 0x58 0x01 1"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_With_Target_Avg"
+        },
+        "Specification" : {
+          "min" : "400000",
+          "max" : "N/A",
+          "units" : "Events"
+        },
+        "Commands" : [
+          "smokey --run ProxTest --clean LogBehavior=ConsoleOnly;cbcolor"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_With_Target_Stdev"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_No_Target_Avg"
+        },
+        "Specification" : {
+          "min" : "25000",
+          "max" : "N/A",
+          "units" : "Events"
+        },
+        "Commands" : [
+          "smokey --run ProxTest --clean LogBehavior=ConsoleOnly;cbcolor"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_No_Target_Stdev"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Prox_With_Minus_No_Target_Delta"
+        },
+        "Specification" : {
+          "min" : "N/A",
+          "max" : "N/A",
+          "units" : ""
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+      {
+        "Name" : {
+          "main" : "AmIOK"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "Reset Fixture"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	},
+	{
+        "Name" : {
+          "main" : "END_TEST_CG-SENSOR-Satin"
+        },
+        "Specification" : {
+          "match" : [
+            "*"
+          ]
+        },
+        "Commands" : [
+          "*"
+        ],
+        "FunctionNames" : [
+          "*"
+        ]
+	}
+    ]
+  }
+}

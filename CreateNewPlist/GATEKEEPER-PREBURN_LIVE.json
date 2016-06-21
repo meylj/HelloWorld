@@ -1,0 +1,822 @@
+{
+  "Versions" : "1",
+  "data" : {
+    "product" : "D10",
+    "tests" : [
+      {
+        "START_TEST_GATEKEEPER-PREBURN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "START_TEST_GATEKEEPER-PREBURN"
+          }
+        }
+      },
+      {
+        "Check DUT Mode" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check DUT Mode"
+          }
+        }
+      },
+      {
+        "Scan SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Scan SN"
+          }
+        }
+      },
+      {
+        "Check UOP" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check UOP"
+          }
+        }
+      },
+      {
+        "DFU CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x00",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "DFU CB Check"
+          }
+        }
+      },
+      {
+        "SOC CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x02",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "SOC CB Check"
+          }
+        }
+      },
+      {
+        "FCT CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x01",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "FCT CB Check"
+          }
+        }
+      },
+      {
+        "WCS CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x07",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "WCS CB Check"
+          }
+        }
+      },
+      {
+        "Cell S1 CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x16",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Cell S1 CB Check"
+          }
+        }
+      },
+      {
+        "Cell S2 CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x17",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Cell S2 CB Check"
+          }
+        }
+      },
+      {
+        "WiFi/BT Cal and Test CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x15",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "WiFi/BT Cal and Test CB Check"
+          }
+        }
+      },
+      {
+        "WiFi Assoc CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x1A",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "WiFi Assoc CB Check"
+          }
+        }
+      },
+      {
+        "SCOND Card-Elvis CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x20",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "SCOND Card-Elvis CB Check"
+          }
+        }
+      },
+      {
+        "SCOND Reader-Elvis CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x28",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "SCOND Reader-Elvis CB Check"
+          }
+        }
+      },
+      {
+        "CCT CB Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "Passed",
+                "Failed"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "cbread 0x10",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "CCT CB Check"
+          }
+        }
+      },
+      {
+        "ECID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "chipid",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "ECID"
+          }
+        }
+      },
+      {
+        "SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg print MLB#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "SN"
+          }
+        }
+      },
+      {
+        "Compare MLB SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare MLB SN"
+          }
+        }
+      },
+      {
+        "Write GMT Date and Time" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "rtc --set [*NowTime*]",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Write GMT Date and Time"
+          }
+        }
+      },
+      {
+        "Write CB Incomplete" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Write CB Incomplete"
+          }
+        }
+      },
+      {
+        "Diag Version Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "ver",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Diag Version Check"
+          }
+        }
+      },
+      {
+        "Compare MLB ECID with SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare MLB ECID with SFC"
+          }
+        }
+      },
+      {
+        "Stockholm Firmware Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "stockholm --on",
+              ""
+            ],
+            [
+              "stockholm --init",
+              "OK"
+            ],
+            [
+              "stockholm --properties",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Stockholm Firmware Check"
+          }
+        }
+      },
+      {
+        "BB LoadFW_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "bblib -e 'BB_SMTQT()'",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "BB LoadFW_Ret"
+          }
+        }
+      },
+      {
+        "BB LoadFW_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB LoadFW_ExecTime"
+          }
+        }
+      },
+      {
+        "BB Calibration_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB Calibration_Ret"
+          }
+        }
+      },
+      {
+        "BB Sim_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB Sim_Ret"
+          }
+        }
+      },
+      {
+        "BB Sim_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB Sim_ExecTime"
+          }
+        }
+      },
+      {
+        "BB SH_Shsettest_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shsettest_Ret"
+          }
+        }
+      },
+      {
+        "BB SH_Shsettest_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shsettest_ExecTime"
+          }
+        }
+      },
+      {
+        "BB SH_Shswp_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shswp_Ret"
+          }
+        }
+      },
+      {
+        "BB SH_Shswp_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shswp_ExecTime"
+          }
+        }
+      },
+      {
+        "BB SH_Shoff_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shoff_Ret"
+          }
+        }
+      },
+      {
+        "BB SH_Shoff_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB SH_Shoff_ExecTime"
+          }
+        }
+      },
+      {
+        "BB Cleanup_Ret": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB Cleanup_Ret"
+          }
+        }
+      },
+      {
+        "BB Cleanup_ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BB Cleanup_ExecTime"
+          }
+        }
+      },
+      {
+        "MTE ExecTime": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "MTE ExecTime"
+          }
+        }
+      },
+      {
+        "MTE ErrorCount": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "PASS"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "PASS"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "MTE ExecTime"
+          }
+        }
+      },
+      {
+        "AmIOK" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "AmIOK"
+          }
+        }
+      },
+      {
+        "Unit SN Changed" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg print MLB#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Unit SN Changed"
+          }
+        }
+      },
+      {
+        "Write SMT_QT CB" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "UnNeed to set CB!"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "UnNeed to set CB!"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "rtc --set [*NowTime*]",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Write SMT_QT CB"
+          }
+        }
+      },
+      {
+        "SMT QT CB Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "cbread 0x0B",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "SMT QT CB Check"
+          }
+        }
+      },
+      {
+        "END_TEST_GATEKEEPER-PREBURN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "END_TEST_GATEKEEPER-PREBURN"
+          }
+        }
+      }
+    ]
+  },
+  "hash" : "8ebce86acFFF4b18eb42da8ce477447dd00",
+  "build" : "Proto1"
+}

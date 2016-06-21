@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO.Ports;
+
+namespace ConsoleFATool
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] IPortList = SerialPort.GetPortNames();
+            for (int i = 0; i < IPortList.Length; i++)
+            {
+                System.Console.WriteLine(IPortList[i]);
+            }
+
+            System.Console.ReadLine();
+        }
+
+
+
+
+    }
+
+
+    class IPort
+    {
+
+    }
+}

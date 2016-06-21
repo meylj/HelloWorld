@@ -1,0 +1,653 @@
+TLable Print
+v3
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist" "Lable Print/Lable Print-Info.plist"
+cProcessPCH "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o" "/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o" "/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print" normal i386
+cCopyStringsFile "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings" "Lable Print/en.lproj/InfoPlist.strings"
+cCompileXIB "/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib"
+cCpResource "Lable Print/en.lproj/Credits.rtf" "build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf"
+cPBXCp AMSerialFramework.framework "build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework"
+cPBXCp ../../../../Frameworks/controlPrinter.framework "build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework"
+cTouch "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004E4CCF5800000000000000EE
+t1313656664
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004D5B2E240000000000003430
+t1297821220
+s13360
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC401D100000000000013E6
+t1287913937
+s5094
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOBSD.h
+c000000004CC3DE6600000000000006C2
+t1287904870
+s1730
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h
+c000000004CC3E9840000000000012048
+t1287907716
+s73800
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Headers/serial/IOSerialKeys.h
+c000000004CC3E8120000000000000B28
+t1287907346
+s2856
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/errno.h
+c000000004BBD2CE900000000000003EB
+t1270689001
+s1003
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/fcntl.h
+c000000004BBD2CE900000000000003EA
+t1270689001
+s1002
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/paths.h
+c000000004BBD2CE90000000000001067
+t1270689001
+s4199
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/param.h
+c000000004CC3DE6700000000000027BE
+t1287904871
+s10174
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/stat.h
+c000000004CC3DE680000000000004A1D
+t1287904872
+s18973
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/time.h
+c000000004CC3DE680000000000001E17
+t1287904872
+s7703
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
+c000000004CC3DE680000000000002905
+t1287904872
+s10501
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sysexits.h
+c000000004BBD2CE90000000000001560
+t1270689001
+s5472
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/termios.h
+c000000004BBD2CE900000000000004D4
+t1270689001
+s1236
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h
+c000000004BBD2CE9000000000000563E
+t1270689001
+s22078
+
+N/Users/kyle_yu/Desktop/Lable Print/../../../../Frameworks/controlPrinter.framework
+c000000005062A5AC00000000000000CC
+t1348642220
+s204
+
+N/Users/kyle_yu/Desktop/Lable Print/../../../../Frameworks/controlPrinter.framework/controlPrinter
+c000000005062A5AC0000000000006194
+t1348642220
+s24980
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework
+c000000005062A55C00000000000000CC
+t1348642140
+s204
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework/AMSerialFramework
+c00000000500A6C54000000000000FB3C
+t1342860372
+s64316
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSDKCompatibility.h
+c00000000500A6C4C000000000000031B
+t1342860364
+s795
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPort.h
+c00000000500A6C4C0000000000001CF7
+t1342860364
+s7415
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPortAdditions.h
+c00000000500A6C4C0000000000000EE5
+t1342860364
+s3813
+
+N/Users/kyle_yu/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPortList.h
+c00000000500A6C4C000000000000076E
+t1342860364
+s1902
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable Print-Prefix.pch
+c0000000050400B280000000000000099
+t1346374440
+s153
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.h
+c0000000050625DEC0000000000000324
+t1348623852
+s804
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m
+c000000005062A91D0000000000000E12
+t1348643101
+s3602
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/Credits.rtf
+c0000000050400B2800000000000001B4
+t1346374440
+s436
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/InfoPlist.strings
+c0000000050400B28000000000000002D
+t1346374440
+s45
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib
+c000000005062A0140000000000028B63
+t1348640788
+s166755
+
+N/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m
+c0000000050400B2800000000000000FC
+t1346374440
+s252
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app
+t1348642250
+s102
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework
+t1348642140
+s204
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework
+t1348642250
+s204
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist
+t1348554656
+s1424
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print
+t1348642250
+s19420
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/PkgInfo
+t1348554656
+s8
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf
+t1348554673
+s436
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1348554673
+s92
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/MainMenu.nib
+t1348642250
+s29501
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable Print.LinkFileList
+c000000005062A5C900000000000000EE
+t1348642249
+s238
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o
+t1348642250
+s24304
+
+N/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o
+t1348642250
+s2084
+
+N/Users/kyle_yu/Desktop/Lable Print/controlPrinter.framework/Headers/controlPrint.h
+c0000000050494E8200000000000003A1
+t1346981506
+s929
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework
+c000000005061497C00000000000000CC
+t1348553084
+s204
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework/AMSerialFramework
+c00000000500A6C54000000000000FB3C
+t1342860372
+s64316
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSDKCompatibility.h
+c00000000500A6C4C000000000000031B
+t1342860364
+s795
+i<Foundation/Foundation.h>
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPort.h
+c00000000500A6C4C0000000000001CF7
+t1342860364
+s7415
+i"AMSDKCompatibility.h"
+i<stdio.h>
+i<string.h>
+i<unistd.h>
+i<fcntl.h>
+i<errno.h>
+i<paths.h>
+i<termios.h>
+i<sys/time.h>
+i<sysexits.h>
+i<sys/param.h>
+i<Foundation/Foundation.h>
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPortAdditions.h
+c00000000500A6C4C0000000000000EE5
+t1342860364
+s3813
+i"AMSDKCompatibility.h"
+i<Foundation/Foundation.h>
+i"AMSerialPort.h"
+
+N/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework/Headers/AMSerialPortList.h
+c00000000500A6C4C000000000000076E
+t1342860364
+s1902
+i"AMSDKCompatibility.h"
+i<Foundation/Foundation.h>
+i<IOKit/serial/IOSerialKeys.h>
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/Lable Print-Prefix.pch
+c0000000050400B280000000000000099
+t1346374440
+s153
+i<Cocoa/Cocoa.h>
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.h
+c00000000504023BE000000000000034F
+t1346380734
+s847
+i<Cocoa/Cocoa.h>
+i"AMSerialFramework/AMSerialPort.h"
+i"AMSerialFramework/AMSerialPortList.h"
+i"AMSerialFramework/AMSerialPortAdditions.h"
+i"controlPrinter/controlPrint.h"
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m
+c0000000050614F9E0000000000000D5F
+t1348554654
+s3423
+i"Lable_PrintAppDelegate.h"
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/Credits.rtf
+c0000000050400B2800000000000001B4
+t1346374440
+s436
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/InfoPlist.strings
+c0000000050400B28000000000000002D
+t1346374440
+s45
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib
+c0000000050614F9F00000000000272C7
+t1348554655
+s160455
+
+N/Users/pleasure/Desktop/Lable Print/Lable Print/main.m
+c0000000050400B2800000000000000FC
+t1346374440
+s252
+i<Cocoa/Cocoa.h>
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable Print.LinkFileList
+c0000000050614F9F00000000000000F0
+t1348554655
+s240
+
+N/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/pleasure/Desktop/Lable Print/controlPrinter.framework
+c000000005061497C00000000000000CC
+t1348553084
+s204
+
+N/Users/pleasure/Desktop/Lable Print/controlPrinter.framework/Headers/controlPrint.h
+c0000000050494E8200000000000003A1
+t1346981506
+s929
+i<Cocoa/Cocoa.h>
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<sys/types.h>
+i<sys/stat.h>
+i<fcntl.h>
+i<termios.h>
+i<errno.h>
+i<IOKit/IOBSD.h>
+i<IOKit/IOKitLib.h>
+i<IOKit/serial/IOSerialKeys.h>
+
+N/Users/pleasure/Desktop/Lable Print/controlPrinter.framework/controlPrinter
+c0000000050494E8200000000000061C4
+t1346981506
+s25028
+
+N/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth
+t1348642249
+s12407572
+
+N/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch.pth
+t2
+s0
+
+NLable Print/Lable Print-Info.plist
+c0000000050400B28000000000000044B
+t1346374440
+s1099
+
+CBuild AST from "/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m"
+r0
+
+CBuild AST from "/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m"
+r0
+
+CBuild AST from "/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m"
+r0
+
+CBuild AST from "/Users/pleasure/Desktop/Lable Print/Lable Print/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies41b7d7a0e012b641^77d8d8a0e012b641^---0#1#0#--18"Check dependencies
+
+CCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o" "/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370335904.864351
+e370335904.920167
+r1
+xCompileC
+xbuild/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o
+x/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m8c85dda0e012b641^c58deba0e012b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/kyle_yu/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^2314"CompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o" "Lable Print/Lable_PrintAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kyle_yu/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Debug/include" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/kyle_yu/Desktop/Lable Print/build/Debug" "-F/Users/kyle_yu/Desktop/Lable Print" -F/Frameworks -include "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch" -MMD -MT dependencies -MF "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.d" -c "/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m" -o "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o"
+
+CCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o" "/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370247469.322580
+e370247471.390268
+r1
+xCompileC
+xbuild/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o
+x/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21:{22:11-22:44}: warning: using the result of an assignment as a condition without parentheses [-Widiomatic-parentheses,2]
+o     while(SerialPort=[PortLists nextObject]){
+o           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+o/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21: note: use '==' to turn this assignment into an equality comparison [2]
+o     while(SerialPort=[PortLists nextObject]){
+o                     ^
+o                     ==
+ofix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:21-22:22}:"=="
+o/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21: note: place parentheses around the assignment to silence this warning [2]
+o     while(SerialPort=[PortLists nextObject]){
+o                     ^
+o           (                                )
+ofix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:11-22:11}:"("
+ofix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:44-22:44}:")"
+o1 warning generated.
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m90a25a2d8711b641^bce8632f8711b641^-1129"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21:{22:11-22:44}: warning: using the result of an assignment as a condition without parentheses [-Widiomatic-parentheses,2]     while(SerialPort=[PortLists nextObject]){           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21: note: use '==' to turn this assignment into an equality comparison [2]     while(SerialPort=[PortLists nextObject]){                     ^                     ==fix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:21-22:22}:"=="/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m:22:21: note: place parentheses around the assignment to silence this warning [2]     while(SerialPort=[PortLists nextObject]){                     ^           (                                )fix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:11-22:11}:"("fix-it:"/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m":{22:44-22:44}:")"1 warning generated.1(21%IDEActivityLogMessage2@68"Using the result of an assignment as a condition without parentheses-370247470#0#200#5(2@60"Use '==' to turn this assignment into an equality comparison-370247470#292#151#-0#-23%DVTTextDocumentLocation3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#20#21#20#18446744073709551615#0#14"Semantic Issue--26%IDEActivityLogFixItMessage4@23"Fix-It: replace with ==-370247470#537#101#-0#23"com.apple.dt.IDE.fix-it3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#20#21#21#18446744073709551615#0#---2"==2@63"Place parentheses around the assignment to silence this warning-370247470#638#154#-0#-3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#20#21#20#18446744073709551615#0#14"Semantic Issue--4@22"Fix-It: replace with (-370247470#908#100#-0#23"com.apple.dt.IDE.fix-it3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#10#21#10#18446744073709551615#0#---1"(4@22"Fix-It: replace with )-370247470#1008#100#-0#23"com.apple.dt.IDE.fix-it3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#43#21#43#18446744073709551615#0#---1")1#-3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#20#21#20#18446744073709551615#0#14"Semantic Issue1(3@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^21#10#21#43#18446744073709551615#0#-0#0#0#-19%DVTDocumentLocation5@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable_PrintAppDelegate.m0000000000000000^1997"CompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o" "Lable Print/Lable_PrintAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/pleasure/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Debug/include" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/pleasure/Desktop/Lable Print/build/Debug" "-F/Users/pleasure/Desktop/Lable Print" -include "/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch" -c "/Users/pleasure/Desktop/Lable Print/Lable Print/Lable_PrintAppDelegate.m" -o "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable_PrintAppDelegate.o"
+
+CCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o" "/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370335049.765217
+e370335050.217419
+r1
+xCompileC
+xbuild/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o
+x/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/kyle_yu/Desktop/Lable Print/Lable Print/main.maf06c449dd12b641^2aa9374add12b641^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/kyle_yu/Desktop/Lable%20Print/Lable%20Print/main.m0000000000000000^2224"CompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o" "Lable Print/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kyle_yu/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Debug/include" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/kyle_yu/Desktop/Lable Print/build/Debug" "-F/Users/kyle_yu/Desktop/Lable Print" -F/Frameworks -include "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch" -MMD -MT dependencies -MF "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.d" -c "/Users/kyle_yu/Desktop/Lable Print/Lable Print/main.m" -o "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o"
+
+CCompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o" "/Users/pleasure/Desktop/Lable Print/Lable Print/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370247469.322565
+e370247471.385185
+r1
+xCompileC
+xbuild/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o
+x/Users/pleasure/Desktop/Lable Print/Lable Print/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/pleasure/Desktop/Lable Print/Lable Print/main.m90a25a2d8711b641^2ba6622f8711b641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/main.m0000000000000000^1925"CompileC "build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o" "Lable Print/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/pleasure/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Debug/include" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/pleasure/Desktop/Lable Print/build/Debug" "-F/Users/pleasure/Desktop/Lable Print" -include "/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch" -c "/Users/pleasure/Desktop/Lable Print/Lable Print/main.m" -o "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/main.o"
+
+CCompileXIB "/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib"
+s370335050.750070
+e370335050.835563
+r1
+xCompileXIB
+x/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compiling /Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xibbe16c04add12b641^68e6d54add12b641^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/kyle_yu/Desktop/Lable%20Print/Lable%20Print/en.lproj/MainMenu.xib0000000000000000^469"CompileXIB "Lable Print/en.lproj/MainMenu.xib"    cd "/Users/kyle_yu/Desktop/Lable Print"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/MainMenu.nib" "/Users/kyle_yu/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk
+
+CCompileXIB "/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib"
+s370247473.957792
+e370247478.651851
+r1
+xCompileXIB
+x/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compiling /Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib0856f5318711b641^2fdfa6368711b641^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/en.lproj/MainMenu.xib0000000000000000^472"CompileXIB "Lable Print/en.lproj/MainMenu.xib"    cd "/Users/pleasure/Desktop/Lable Print"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/MainMenu.nib" "/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk
+
+CCopyStringsFile "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings" "Lable Print/en.lproj/InfoPlist.strings"
+r0
+
+CCopyStringsFile "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings" "Lable Print/en.lproj/InfoPlist.strings"
+s370247473.859383
+e370247473.956991
+r1
+xCopyStringsFile
+x/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings
+xLable Print/en.lproj/InfoPlist.strings
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy Lable Print/en.lproj/InfoPlist.stringseba8e6318711b641^72fcf4318711b641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/en.lproj/InfoPlist.strings0000000000000000^406"CopyStringsFile "build/Debug/Lable Print.app/Contents/Resources/en.lproj/InfoPlist.strings" "Lable Print/en.lproj/InfoPlist.strings"    cd "/Users/pleasure/Desktop/Lable Print"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj" -- "Lable Print/en.lproj/InfoPlist.strings"
+
+CCpResource "Lable Print/en.lproj/Credits.rtf" "build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf"
+s370247473.861525
+e370247473.956209
+r1
+xCpResource
+xLable Print/en.lproj/Credits.rtf
+xbuild/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtfa9a4e6318711b641^1dcaf4318711b641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/pleasure/Desktop/Lable%20Print/build/Debug/Lable%20Print.app/Contents/Resources/en.lproj/Credits.rtf000020442305f041^425"CpResource "Lable Print/en.lproj/Credits.rtf" "build/Debug/Lable Print.app/Contents/Resources/en.lproj/Credits.rtf"    cd "/Users/pleasure/Desktop/Lable Print"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pleasure/Desktop/Lable Print/Lable Print/en.lproj/Credits.rtf" "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Resources/en.lproj"
+
+CLd "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print" normal i386
+s370335904.928031
+e370335904.966183
+r1
+xLd
+x/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Link /Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Printefc7eda0e012b641^b856f7a0e012b641^---0#0#0#--726"Ld "build/Debug/Lable Print.app/Contents/MacOS/Lable Print" normal i386    cd "/Users/kyle_yu/Desktop/Lable Print"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/kyle_yu/Desktop/Lable Print/build/Debug" "-F/Users/kyle_yu/Desktop/Lable Print/build/Debug" "-F/Users/kyle_yu/Desktop/Lable Print" -F/Frameworks -filelist "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable Print.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework AMSerialFramework -framework controlPrinter -o "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print"
+
+CLd "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print" normal i386
+s370247471.391815
+e370247473.856435
+r1
+xLd
+x/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Link /Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Printfc70642f8711b641^2d40db318711b641^---0#0#0#--718"Ld "build/Debug/Lable Print.app/Contents/MacOS/Lable Print" normal i386    cd "/Users/pleasure/Desktop/Lable Print"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/pleasure/Desktop/Lable Print/build/Debug" "-F/Users/pleasure/Desktop/Lable Print/build/Debug" "-F/Users/pleasure/Desktop/Lable Print" -filelist "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Objects-normal/i386/Lable Print.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework AMSerialFramework -framework controlPrinter -o "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/MacOS/Lable Print"
+
+CPBXCp ../../../../Frameworks/controlPrinter.framework "build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework"
+s370335050.844138
+e370335050.849267
+r1
+xPBXCp
+x../../../../Frameworks/controlPrinter.framework
+xbuild/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.frameworkba2ed84add12b641^6268d94add12b641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/kyle_yu/Desktop/Lable%20Print/build/Debug/Lable%20Print.app/Contents/Frameworks/controlPrinter.framework/0000000000000000^442"PBXCp ../../../../Frameworks/controlPrinter.framework "build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework"    cd "/Users/kyle_yu/Desktop/Lable Print"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/kyle_yu/Desktop/Lable Print/../../../../Frameworks/controlPrinter.framework" "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks"
+
+CPBXCp AMSerialFramework.framework "build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework"
+s370247478.654534
+e370247478.753329
+r1
+xPBXCp
+xAMSerialFramework.framework
+xbuild/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework569fa7368711b641^6edac0368711b641^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/pleasure/Desktop/Lable%20Print/build/Debug/Lable%20Print.app/Contents/Frameworks/AMSerialFramework.framework000020442305f041^408"PBXCp AMSerialFramework.framework "build/Debug/Lable Print.app/Contents/Frameworks/AMSerialFramework.framework"    cd "/Users/pleasure/Desktop/Lable Print"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pleasure/Desktop/Lable Print/AMSerialFramework.framework" "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks"
+
+CPBXCp controlPrinter.framework "build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework"
+s370247478.656058
+e370247478.711653
+r1
+xPBXCp
+xcontrolPrinter.framework
+xbuild/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework37ffa7368711b641^8a3bb6368711b641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/pleasure/Desktop/Lable%20Print/build/Debug/Lable%20Print.app/Contents/Frameworks/controlPrinter.framework000020442305f041^399"PBXCp controlPrinter.framework "build/Debug/Lable Print.app/Contents/Frameworks/controlPrinter.framework"    cd "/Users/pleasure/Desktop/Lable Print"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pleasure/Desktop/Lable Print/controlPrinter.framework" "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Frameworks"
+
+CProcessInfoPlistFile "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist" "Lable Print/Lable Print-Info.plist"
+r0
+
+CProcessInfoPlistFile "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist" "Lable Print/Lable Print-Info.plist"
+s370247456.186926
+e370247456.288584
+r1
+xProcessInfoPlistFile
+x/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist
+xLable Print/Lable Print-Info.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Process Lable Print/Lable Print-Info.plistc17240208711b641^fb3f4f208711b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable%20Print-Info.plist0000000000000000^441"ProcessInfoPlistFile "build/Debug/Lable Print.app/Contents/Info.plist" "Lable Print/Lable Print-Info.plist"    cd "/Users/pleasure/Desktop/Lable Print"    builtin-infoPlistUtility "Lable Print/Lable Print-Info.plist" -genpkginfo "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app/Contents/Info.plist"
+
+CProcessPCH "/Users/kyle_yu/Library/Developer/Xcode/DerivedData/Lable_Print-fkixmxkkdsfpmzbbquxxnlffjpvf/Index/PrecompiledHeaders/Lable Print-Prefix-bgrjwqilkdcxzrhazetagkgzgiod_ast/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/pleasure/Library/Developer/Xcode/DerivedData/Lable_Print-fpfxgfndcwmmsmfdbnzowuttuvqj/Index/PrecompiledHeaders/Lable Print-Prefix-evermjhmqfwawjaeoejzryxqwlbc_ast/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370335049.195957
+e370335049.757466
+r1
+xProcessPCH
+x/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth
+xLable Print/Lable Print-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile Lable Print/Lable Print-Prefix.pch57433249dd12b641^79e6c149dd12b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/kyle_yu/Desktop/Lable%20Print/Lable%20Print/Lable%20Print-Prefix.pch0000000000000000^2299"ProcessPCH "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kyle_yu/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/kyle_yu/Desktop/Lable Print/build/Debug/include" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/kyle_yu/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/kyle_yu/Desktop/Lable Print/build/Debug" "-F/Users/kyle_yu/Desktop/Lable Print" -F/Frameworks -c "/Users/kyle_yu/Desktop/Lable Print/Lable Print/Lable Print-Prefix.pch" -o "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/lp/jtjt5zfx7212tpc3zj0cp8x40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Lable Print-Prefix-dfobzvoxjkeayyekaqzqwjtdhmui/Lable Print-Prefix.pch.d"
+
+CProcessPCH "/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s370247456.291250
+e370247469.320985
+r1
+xProcessPCH
+x/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch.pth
+xLable Print/Lable Print-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile Lable Print/Lable Print-Prefix.pch43c74a208711b641^d02b522d8711b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/pleasure/Desktop/Lable%20Print/Lable%20Print/Lable%20Print-Prefix.pch0000000000000000^1946"ProcessPCH "/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch.pth" "Lable Print/Lable Print-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/pleasure/Desktop/Lable Print"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-generated-files.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-own-target-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-all-target-headers.hmap" -iquote "/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/Lable Print-project-headers.hmap" "-I/Users/pleasure/Desktop/Lable Print/build/Debug/include" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources/i386" "-I/Users/pleasure/Desktop/Lable Print/build/Lable Print.build/Debug/Lable Print.build/DerivedSources" "-F/Users/pleasure/Desktop/Lable Print/build/Debug" "-F/Users/pleasure/Desktop/Lable Print" -c "/Users/pleasure/Desktop/Lable Print/Lable Print/Lable Print-Prefix.pch" -o "/var/folders/re/re2TjQ7xElqI2Xz5DZuK7U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Lable Print-Prefix-boubjjyamsorwpchmbkgddikqear/Lable Print-Prefix.pch.pth"
+
+CTouch "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app"
+s370335904.994445
+e370335905.001124
+r1
+xTouch
+x/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Touch /Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app07b2fea0e012b641^384800a1e012b641^---0#0#0#--167"Touch "build/Debug/Lable Print.app"    cd "/Users/kyle_yu/Desktop/Lable Print"    /usr/bin/touch -c "/Users/kyle_yu/Desktop/Lable Print/build/Debug/Lable Print.app"
+
+CTouch "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app"
+s370247478.756162
+e370247478.816664
+r1
+xTouch
+x/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Touch /Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app61a6c1368711b641^8812d1368711b641^---0#0#0#--169"Touch "build/Debug/Lable Print.app"    cd "/Users/pleasure/Desktop/Lable Print"    /usr/bin/touch -c "/Users/pleasure/Desktop/Lable Print/build/Debug/Lable Print.app"
+

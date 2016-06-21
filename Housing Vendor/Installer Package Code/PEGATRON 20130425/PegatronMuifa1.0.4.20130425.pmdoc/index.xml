@@ -1,0 +1,24 @@
+<pkmkdoc spec="1.12"><properties><title>PegatronMuifa20130425</title><build>/Users/Torres/Desktop/PegatronMuifa20130425.pkg</build><organization>com.torres</organization><userSees ui="both"/><min-target os="3"/><domain system="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><description>Create as 2012/7/15
+1.Update version 1.0d0715 at 2012/7/15.
+2.Update version 1.0d0802 at 2012/8/2.
+	modify magnet-spine spec to [500,780] gauss.
+
+Update 2012/08/17
+1.remove frameworks
+
+Update 2012/10/23
+1.Change the color:
+	Polarity NG parts show in red(Reject).
+	Parts out of flux upper limit show in yellow(Reject).
+	Parts out of flux lower limit show in white(Verify by Go/No go).
+	OK parts show in green(OK).
+2.Change version from 1.0d0817 to 1.0d1023
+
+Update 2012/10/25
+1.Modify serial number scan function, remove "\r"  from the string read from scanner.
+
+Update 2013/04/25
+1.move setting file from "~/Library" to "/Library".
+2.move app to Application
+3.Change version from 1.0d1023 to 20130425
+</description><contents><choice title="PackageRoot" id="choice106" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="com.torres.pegatronmuifa20130425.PackageRoot.pkg"/></choice></contents><resources bg-scale="proportional" bg-align="topright"><locale lang="en"><resource mod="true" type="background">/Users/Torres/Desktop/Magnet-Spine for housing vender/ReadMe/Muifa.icns</resource><resource mod="true" type="readme">/Users/Torres/Desktop/Magnet-Spine for housing vender/ReadMe/readme.rtf</resource></locale></resources><flags/><item type="file">01packageroot.xml</item><mod>description</mod><mod>properties.title</mod><mod>properties.customizeOption</mod><mod>properties.userDomain</mod><mod>properties.anywhereDomain</mod><mod>properties.systemDomain</mod></pkmkdoc>

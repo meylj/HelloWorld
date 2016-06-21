@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+    <!-- Add packages here -->
+    <package name="Tool" extends="struts-default,jasperreports-default,json-default">
+       	<!-- getStationList -->
+       	<action name="getStationList" class="com.FA.action.StationListAction" method="getStations">
+       		<result>Tool/FATool.jsp</result>
+       	</action>
+       	<action name="getTestItems" class="com.FA.action.StationListAction" method="getItems">
+       		<result type="json"></result>
+       	</action>
+       	<action name="getCommands" class="com.FA.action.StationListAction" method="getCommands">
+       		<result type="json"></result>
+       	</action>
+    </package>  
+</struts>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>C7JMF00GFY6T</key>
+	<dict>
+		<key>mlbsn</key>
+		<string>123456789</string>
+	</dict>
+	<key>C7JMF00FFY6T</key>
+	<dict>
+		<key>sbuild</key>
+		<string>123456789</string>
+		<key>color</key>
+		<string>sss</string>
+		<key>wifivendor</key>
+		<string>sssfgadf</string>
+	</dict>
+	<key>C7JMF00HFY6T</key>
+	<dict>
+		<key>AAA</key>
+		<string>123456789</string>
+		<key>CCC</key>
+		<string>234566gsdjf</string>
+	</dict>
+	<key>C7JMF00LFY6T</key>
+	<dict>
+		<key>dasd</key>
+		<string>123456789</string>
+		<key>sdfasd</key>
+		<string>dgsggg</string>
+		<key>12345</key>
+		<string>dgsdg</string>
+	</dict>
+	<key>C7JMF00JFY6T</key>
+	<dict>
+		<key>mlbsn</key>
+		<string>123456789</string>
+	</dict>
+</dict>
+</plist>

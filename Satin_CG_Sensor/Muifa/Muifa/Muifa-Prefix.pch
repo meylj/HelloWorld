@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Muifa' target in the 'Muifa' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

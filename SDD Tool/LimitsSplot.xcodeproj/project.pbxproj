@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE28508A166C30B80021A2C8 /* SDD.icns in Resources */ = {isa = PBXBuildFile; fileRef = CE285089166C30B80021A2C8 /* SDD.icns */; };
+		CE35544E1653B269005A32AB /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE35544D1653B269005A32AB /* LibXL.framework */; };
+		CE5AC7011644E2AF00E96DE8 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5AC7001644E2AF00E96DE8 /* CorePlot.framework */; };
+		CE5AC7031644E3BC00E96DE8 /* CorePlot.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5AC7001644E2AF00E96DE8 /* CorePlot.framework */; };
+		CE68EEBE1644AFF1009C45AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE68EEBD1644AFF1009C45AE /* Cocoa.framework */; };
+		CE68EEC81644AFF2009C45AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE68EEC61644AFF2009C45AE /* InfoPlist.strings */; };
+		CE68EECA1644AFF2009C45AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68EEC91644AFF2009C45AE /* main.m */; };
+		CE68EECE1644AFF2009C45AE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE68EECC1644AFF2009C45AE /* Credits.rtf */; };
+		CE68EED11644AFF2009C45AE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE68EED01644AFF2009C45AE /* AppDelegate.mm */; };
+		CE68EED41644AFF2009C45AE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68EED21644AFF2009C45AE /* MainMenu.xib */; };
+		CE8B94831654B3C7000251A6 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE35544D1653B269005A32AB /* LibXL.framework */; };
+		CEBBFBD216941C2400B3CD00 /* Base64.c in Sources */ = {isa = PBXBuildFile; fileRef = CEBBFBD116941C2400B3CD00 /* Base64.c */; };
+		CEF307021647D7C70083BFBA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF307011647D7C70083BFBA /* QuartzCore.framework */; };
+		CEF307031647D7CC0083BFBA /* QuartzCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEF307011647D7C70083BFBA /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE5AC7021644E39800E96DE8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE5AC7031644E3BC00E96DE8 /* CorePlot.framework in CopyFiles */,
+				CEF307031647D7CC0083BFBA /* QuartzCore.framework in CopyFiles */,
+				CE8B94831654B3C7000251A6 /* LibXL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE285089166C30B80021A2C8 /* SDD.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SDD.icns; sourceTree = "<group>"; };
+		CE35544D1653B269005A32AB /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
+		CE5AC7001644E2AF00E96DE8 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CorePlot.framework; sourceTree = "<group>"; };
+		CE68EEB91644AFF1009C45AE /* LimitsSplot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimitsSplot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE68EEBD1644AFF1009C45AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE68EEC01644AFF1009C45AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE68EEC11644AFF1009C45AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE68EEC21644AFF1009C45AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE68EEC51644AFF2009C45AE /* LimitsSplot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LimitsSplot-Info.plist"; sourceTree = "<group>"; };
+		CE68EEC71644AFF2009C45AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE68EEC91644AFF2009C45AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE68EECB1644AFF2009C45AE /* LimitsSplot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LimitsSplot-Prefix.pch"; sourceTree = "<group>"; };
+		CE68EECD1644AFF2009C45AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE68EECF1644AFF2009C45AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE68EED01644AFF2009C45AE /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CE68EED31644AFF2009C45AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE84CAA2166C88640013DEAD /* CGSPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
+		CEBBFBD116941C2400B3CD00 /* Base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64.c; sourceTree = "<group>"; };
+		CEF307011647D7C70083BFBA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE68EEB61644AFF1009C45AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE68EEBE1644AFF1009C45AE /* Cocoa.framework in Frameworks */,
+				CE5AC7011644E2AF00E96DE8 /* CorePlot.framework in Frameworks */,
+				CEF307021647D7C70083BFBA /* QuartzCore.framework in Frameworks */,
+				CE35544E1653B269005A32AB /* LibXL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE68EEAE1644AFF1009C45AE = {
+			isa = PBXGroup;
+			children = (
+				CE68EEC31644AFF1009C45AE /* LimitsSplot */,
+				CE68EEBC1644AFF1009C45AE /* Frameworks */,
+				CE68EEBA1644AFF1009C45AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE68EEBA1644AFF1009C45AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE68EEB91644AFF1009C45AE /* LimitsSplot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE68EEBC1644AFF1009C45AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE35544D1653B269005A32AB /* LibXL.framework */,
+				CEF307011647D7C70083BFBA /* QuartzCore.framework */,
+				CE5AC7001644E2AF00E96DE8 /* CorePlot.framework */,
+				CE68EEBD1644AFF1009C45AE /* Cocoa.framework */,
+				CE68EEBF1644AFF1009C45AE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE68EEBF1644AFF1009C45AE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE68EEC01644AFF1009C45AE /* AppKit.framework */,
+				CE68EEC11644AFF1009C45AE /* CoreData.framework */,
+				CE68EEC21644AFF1009C45AE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE68EEC31644AFF1009C45AE /* LimitsSplot */ = {
+			isa = PBXGroup;
+			children = (
+				CEBBFBD116941C2400B3CD00 /* Base64.c */,
+				CE84CAA2166C88640013DEAD /* CGSPrivate.h */,
+				CE68EECF1644AFF2009C45AE /* AppDelegate.h */,
+				CE68EED01644AFF2009C45AE /* AppDelegate.mm */,
+				CE68EED21644AFF2009C45AE /* MainMenu.xib */,
+				CE68EEC41644AFF1009C45AE /* Supporting Files */,
+			);
+			path = LimitsSplot;
+			sourceTree = "<group>";
+		};
+		CE68EEC41644AFF1009C45AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE285089166C30B80021A2C8 /* SDD.icns */,
+				CE68EEC51644AFF2009C45AE /* LimitsSplot-Info.plist */,
+				CE68EEC61644AFF2009C45AE /* InfoPlist.strings */,
+				CE68EEC91644AFF2009C45AE /* main.m */,
+				CE68EECB1644AFF2009C45AE /* LimitsSplot-Prefix.pch */,
+				CE68EECC1644AFF2009C45AE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE68EEB81644AFF1009C45AE /* LimitsSplot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE68EED71644AFF2009C45AE /* Build configuration list for PBXNativeTarget "LimitsSplot" */;
+			buildPhases = (
+				CE68EEB51644AFF1009C45AE /* Sources */,
+				CE68EEB61644AFF1009C45AE /* Frameworks */,
+				CE68EEB71644AFF1009C45AE /* Resources */,
+				CE5AC7021644E39800E96DE8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LimitsSplot;
+			productName = LimitsSplot;
+			productReference = CE68EEB91644AFF1009C45AE /* LimitsSplot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE68EEB01644AFF1009C45AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = User;
+			};
+			buildConfigurationList = CE68EEB31644AFF1009C45AE /* Build configuration list for PBXProject "LimitsSplot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE68EEAE1644AFF1009C45AE;
+			productRefGroup = CE68EEBA1644AFF1009C45AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE68EEB81644AFF1009C45AE /* LimitsSplot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE68EEB71644AFF1009C45AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE68EEC81644AFF2009C45AE /* InfoPlist.strings in Resources */,
+				CE68EECE1644AFF2009C45AE /* Credits.rtf in Resources */,
+				CE68EED41644AFF2009C45AE /* MainMenu.xib in Resources */,
+				CE28508A166C30B80021A2C8 /* SDD.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE68EEB51644AFF1009C45AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE68EECA1644AFF2009C45AE /* main.m in Sources */,
+				CE68EED11644AFF2009C45AE /* AppDelegate.mm in Sources */,
+				CEBBFBD216941C2400B3CD00 /* Base64.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE68EEC61644AFF2009C45AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE68EEC71644AFF2009C45AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE68EECC1644AFF2009C45AE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE68EECD1644AFF2009C45AE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE68EED21644AFF2009C45AE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE68EED31644AFF2009C45AE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE68EED51644AFF2009C45AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		CE68EED61644AFF2009C45AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		CE68EED81644AFF2009C45AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LimitsSplot/LimitsSplot-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LimitsSplot/LimitsSplot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE68EED91644AFF2009C45AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LimitsSplot/LimitsSplot-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LimitsSplot/LimitsSplot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE68EEB31644AFF1009C45AE /* Build configuration list for PBXProject "LimitsSplot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE68EED51644AFF2009C45AE /* Debug */,
+				CE68EED61644AFF2009C45AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE68EED71644AFF2009C45AE /* Build configuration list for PBXNativeTarget "LimitsSplot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE68EED81644AFF2009C45AE /* Debug */,
+				CE68EED91644AFF2009C45AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE68EEB01644AFF1009C45AE /* Project object */;
+}

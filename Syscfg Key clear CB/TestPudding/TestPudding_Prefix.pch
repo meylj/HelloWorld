@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TestPudding' target in the 'TestPudding' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,989 @@
+{
+	Flows = {
+		K931080p = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodHDCPTest";
+				displayName = "HDCP Compliant test";
+				subTestInfos = (
+					{
+						expected = Yes;
+						name = "HDCP Key Exchange Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "640x480 Pattern Test";
+				params = {
+					lane = 2;
+					mode = 0;
+					speed = "1.62";
+				};
+				subTestInfos = (
+					{
+						expected = 01D3;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = ADF7;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = C3E4;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 011E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "1.62 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 1;
+						lowLimit = 0;
+						name = "lane 1 pre-emphasis";
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 1;
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "1080p pattern test";
+				params = {
+					lane = 2;
+					mode = 21;
+					speed = "2.7";
+				};
+				subTestInfos = (
+					{
+						expected = 41FA;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = 78A5;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = 5B9E;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 015E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "2.7 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 1 pre-emphasis";
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+		);
+		default = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodHDCPTest";
+				displayName = "HDCP Compliant test";
+				subTestInfos = (
+					{
+						expected = Yes;
+						name = "HDCP Compliance Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "640x480 Pattern Test";
+				params = {
+					lane = 2;
+					mode = 0;
+					speed = "1.62";
+				};
+				subTestInfos = (
+					{
+						expected = 01D3;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = ADF7;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = C3E4;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 011E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "1.62 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						name = "lane 1 pre-emphasis";
+						lowLimit = 0;
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "1280x720 pattern test";
+				params = {
+					lane = 2;
+					mode = 17;
+					speed = "2.7";
+				};
+				subTestInfos = (
+					{
+						expected = DCEF;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = C9EB;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = FDE9;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 015E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "2.7 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 1 pre-emphasis";
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+		);
+		N92 = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodHDCPTest";
+				displayName = "HDCP Compliant test";
+				subTestInfos = (
+					{
+						expected = Yes;
+						name = "HDCP Compliance Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "640x480 Pattern Test";
+				params = {
+					lane = 2;
+					mode = 0;
+					speed = "1.62";
+				};
+				subTestInfos = (
+					{
+						expected = 01D3;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = ADF7;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = C3E4;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 011E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "1.62 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						name = "lane 1 pre-emphasis";
+						lowLimit = 0;
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "1280x720 pattern test";
+				params = {
+					lane = 2;
+					mode = 17;
+					speed = "2.7";
+				};
+				subTestInfos = (
+					{
+						expected = DCEF;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = C9EB;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = FDE9;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 015E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "2.7 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 1 pre-emphasis";
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = 3;
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+		);
+		J2 = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDCksmTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = 0x94;
+						name = "EDID checksum read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodHDCPTest";
+				displayName = "HDCP Compliant test";
+				subTestInfos = (
+					{
+						expected = Yes;
+						name = "HDCP Compliance Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "640x480 Pattern Test";
+				params = {
+					lane = 2;
+					mode = 0;
+					speed = "1.62";
+				};
+				subTestInfos = (
+					{
+						expected = 01D3;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = ADF7;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = C3E4;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 011E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "1.62 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						name = "lane 1 pre-emphasis";
+						lowLimit = 0;
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "1.1";
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "1920x1200 pattern test";
+				params = {
+					lane = 2;
+					mode = 37;
+					speed = "2.7";
+				};
+				subTestInfos = (
+					{
+						expected = 7DE4;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = E29A;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = D5F1;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 015E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodLogTrainingResults";
+				displayName = "2.7 training result";
+				subTestInfos = (
+					{
+						name = "lane 1 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "2.1";
+						lowLimit = 0;
+						name = "lane 1 pre-emphasis";
+						priority = 0;
+					},
+					{
+						name = "lane 2 swing";
+						priority = 0;
+					},
+					{
+						highLimit = "2.1";
+						lowLimit = 0;
+						name = "lane 2 pre-emphasis";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+		);
+		PRBS7Only = (
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+		);
+		debugedid = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+		);
+		QT1 = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = AppleIFTMethodDPPRBS;
+				displayName = "PRBS test";
+				params = {
+					duration = 10;
+				};
+				subTestInfos = (
+					{
+						expected = 0080;
+						name = "lane 1 PRBS";
+						priority = 0;
+					},
+					{
+						expected = 0080;
+						name = "lane 2 PRBS";
+						priority = 0;
+					},
+				);
+			},
+		);
+		noprbs = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodPatternTest";
+				displayName = "1280x720 Pattern Test";
+				params = {
+					lane = 2;
+					mode = 17;
+					speed = "2.7";
+				};
+				subTestInfos = (
+					{
+						expected = DCEF;
+						name = "Red CRC";
+						priority = 0;
+					},
+					{
+						expected = C9EB;
+						name = "Green CRC";
+						priority = 0;
+					},
+					{
+						expected = FDE9;
+						name = "Blue CRC";
+						priority = 0;
+					},
+					{
+						expected = 015E;
+						name = "Link Status";
+						priority = 0;
+					},
+					{
+						expected = 8010;
+						name = "video status";
+						priority = 0;
+					},
+					{
+						name = "video status register";
+						priority = 0;
+					},
+					{
+						name = "link status register";
+						priority = 0;
+					},
+				);
+			},
+		);
+		debugHDCP = (
+			{
+				class = "AppleIFTMethodHPDTest";
+				displayName = "Hot Plug Detect";
+				subTestInfos = (
+					{
+						expected = No;
+						name = "Sleep Test";
+						priority = 0;
+					},
+					{
+						expected = Yes;
+						name = "Wake Test";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodEDIDTest";
+				displayName = "EDID read back";
+				subTestInfos = (
+					{
+						expected = "00FFFFFFFFFFFF00060C100015CD5B07 0112010380412978EE8F95AD4F32B225 0F5054A54B008180A940D10001010101 010101010101B06800A0A0402E603020 360081902100001E000000FF00385233 333932364F303051530A000000FC0044 415644503030310A20202020000000FD 003C4B1F631B000A202020202020004E ";
+						name = "EDID read back";
+						priority = 0;
+					},
+				);
+			},
+			{
+				class = "AppleIFTMethodHDCPTest";
+				displayName = "HDCP Compliant test";
+				subTestInfos = (
+					{
+						name = "HDCP Valid Key Test";
+						priority = 0;
+						expected = 0;
+					},
+					{
+						expected = Yes;
+						name = "HDCP Compliance Test";
+						priority = 0;
+					},
+				);
+			},
+		);
+	};
+	Sites = {
+		site1 = {
+			Resources = {
+				davdp = "davdp_site1";
+				diags = "diags_site1";
+			};
+			disable = NO;
+		};
+		site2 = {
+			Resources = {
+				davdp = "davdp_site2";
+				diags = "diags_site2";
+			};
+			disable = YES;
+		};
+		site3 = {
+			Resources = {
+				davdp = "davdp_site3";
+				diags = "diags_site3";
+			};
+			disable = YES;
+		};
+		site4 = {
+			Resources = {
+				davdp = "davdp_site4";
+				diags = "diags_site4";
+			};
+			disable = YES;
+		};
+	};
+	defaultFlow = J2;
+	stationAttributes = {
+		DockName = Dock;
+		SNType = 0;
+		TestVersion = "J2-1080p-001";
+	};
+	version = "1.1";
+}

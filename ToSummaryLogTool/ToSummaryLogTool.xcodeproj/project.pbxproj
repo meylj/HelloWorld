@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1333C14615EB4ECB001C7320 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1333C14515EB4ECB001C7320 /* Cocoa.framework */; };
+		1333C15015EB4ECB001C7320 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1333C14E15EB4ECB001C7320 /* InfoPlist.strings */; };
+		1333C15315EB4ECB001C7320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1333C15215EB4ECB001C7320 /* main.m */; };
+		1333C15615EB4ECC001C7320 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1333C15415EB4ECB001C7320 /* Credits.rtf */; };
+		1333C15915EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1333C15815EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.m */; };
+		1333C15C15EB4ECC001C7320 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1333C15A15EB4ECC001C7320 /* MainMenu.xib */; };
+		1333C16315EB4ECC001C7320 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1333C14515EB4ECB001C7320 /* Cocoa.framework */; };
+		1333C16B15EB4ECC001C7320 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1333C16915EB4ECC001C7320 /* InfoPlist.strings */; };
+		1333C16E15EB4ECC001C7320 /* ToSummaryLogToolTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1333C16D15EB4ECC001C7320 /* ToSummaryLogToolTests.h */; };
+		1333C17015EB4ECC001C7320 /* ToSummaryLogToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1333C16F15EB4ECC001C7320 /* ToSummaryLogToolTests.m */; };
+		F6FB634015F2520A006B169B /* TemplateIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F6FB633F15F2520A006B169B /* TemplateIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1333C16415EB4ECC001C7320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1333C13815EB4ECB001C7320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1333C14015EB4ECB001C7320;
+			remoteInfo = ToSummaryLogTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1333C14115EB4ECB001C7320 /* ToSummaryLogTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToSummaryLogTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1333C14515EB4ECB001C7320 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1333C14815EB4ECB001C7320 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1333C14915EB4ECB001C7320 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1333C14A15EB4ECB001C7320 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1333C14D15EB4ECB001C7320 /* ToSummaryLogTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToSummaryLogTool-Info.plist"; sourceTree = "<group>"; };
+		1333C14F15EB4ECB001C7320 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1333C15115EB4ECB001C7320 /* ToSummaryLogTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToSummaryLogTool-Prefix.pch"; sourceTree = "<group>"; };
+		1333C15215EB4ECB001C7320 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1333C15515EB4ECC001C7320 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1333C15715EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToSummaryLogToolAppDelegate.h; sourceTree = "<group>"; };
+		1333C15815EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToSummaryLogToolAppDelegate.m; sourceTree = "<group>"; };
+		1333C15B15EB4ECC001C7320 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1333C16215EB4ECC001C7320 /* ToSummaryLogToolTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToSummaryLogToolTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1333C16815EB4ECC001C7320 /* ToSummaryLogToolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToSummaryLogToolTests-Info.plist"; sourceTree = "<group>"; };
+		1333C16A15EB4ECC001C7320 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1333C16C15EB4ECC001C7320 /* ToSummaryLogToolTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToSummaryLogToolTests-Prefix.pch"; sourceTree = "<group>"; };
+		1333C16D15EB4ECC001C7320 /* ToSummaryLogToolTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToSummaryLogToolTests.h; sourceTree = "<group>"; };
+		1333C16F15EB4ECC001C7320 /* ToSummaryLogToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToSummaryLogToolTests.m; sourceTree = "<group>"; };
+		F6769ABE15EFC10100E5679D /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
+		F6FB633F15F2520A006B169B /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1333C13E15EB4ECB001C7320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C14615EB4ECB001C7320 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1333C15E15EB4ECC001C7320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C16315EB4ECC001C7320 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1333C13615EB4ECB001C7320 = {
+			isa = PBXGroup;
+			children = (
+				1333C14B15EB4ECB001C7320 /* ToSummaryLogTool */,
+				1333C16615EB4ECC001C7320 /* ToSummaryLogToolTests */,
+				1333C14415EB4ECB001C7320 /* Frameworks */,
+				1333C14215EB4ECB001C7320 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1333C14215EB4ECB001C7320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1333C14115EB4ECB001C7320 /* ToSummaryLogTool.app */,
+				1333C16215EB4ECC001C7320 /* ToSummaryLogToolTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1333C14415EB4ECB001C7320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1333C14515EB4ECB001C7320 /* Cocoa.framework */,
+				1333C14715EB4ECB001C7320 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1333C14715EB4ECB001C7320 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1333C14815EB4ECB001C7320 /* AppKit.framework */,
+				1333C14915EB4ECB001C7320 /* CoreData.framework */,
+				1333C14A15EB4ECB001C7320 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1333C14B15EB4ECB001C7320 /* ToSummaryLogTool */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB633F15F2520A006B169B /* TemplateIcon.icns */,
+				1333C15715EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.h */,
+				1333C15815EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.m */,
+				1333C15A15EB4ECC001C7320 /* MainMenu.xib */,
+				1333C14C15EB4ECB001C7320 /* Supporting Files */,
+				F6769ABE15EFC10100E5679D /* CGSPrivate.h */,
+			);
+			path = ToSummaryLogTool;
+			sourceTree = "<group>";
+		};
+		1333C14C15EB4ECB001C7320 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1333C14D15EB4ECB001C7320 /* ToSummaryLogTool-Info.plist */,
+				1333C14E15EB4ECB001C7320 /* InfoPlist.strings */,
+				1333C15115EB4ECB001C7320 /* ToSummaryLogTool-Prefix.pch */,
+				1333C15215EB4ECB001C7320 /* main.m */,
+				1333C15415EB4ECB001C7320 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1333C16615EB4ECC001C7320 /* ToSummaryLogToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				1333C16D15EB4ECC001C7320 /* ToSummaryLogToolTests.h */,
+				1333C16F15EB4ECC001C7320 /* ToSummaryLogToolTests.m */,
+				1333C16715EB4ECC001C7320 /* Supporting Files */,
+			);
+			path = ToSummaryLogToolTests;
+			sourceTree = "<group>";
+		};
+		1333C16715EB4ECC001C7320 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1333C16815EB4ECC001C7320 /* ToSummaryLogToolTests-Info.plist */,
+				1333C16915EB4ECC001C7320 /* InfoPlist.strings */,
+				1333C16C15EB4ECC001C7320 /* ToSummaryLogToolTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1333C14015EB4ECB001C7320 /* ToSummaryLogTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1333C17315EB4ECC001C7320 /* Build configuration list for PBXNativeTarget "ToSummaryLogTool" */;
+			buildPhases = (
+				1333C13D15EB4ECB001C7320 /* Sources */,
+				1333C13E15EB4ECB001C7320 /* Frameworks */,
+				1333C13F15EB4ECB001C7320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToSummaryLogTool;
+			productName = ToSummaryLogTool;
+			productReference = 1333C14115EB4ECB001C7320 /* ToSummaryLogTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1333C16115EB4ECC001C7320 /* ToSummaryLogToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1333C17615EB4ECC001C7320 /* Build configuration list for PBXNativeTarget "ToSummaryLogToolTests" */;
+			buildPhases = (
+				1333C15D15EB4ECC001C7320 /* Sources */,
+				1333C15E15EB4ECC001C7320 /* Frameworks */,
+				1333C15F15EB4ECC001C7320 /* Resources */,
+				1333C16015EB4ECC001C7320 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1333C16515EB4ECC001C7320 /* PBXTargetDependency */,
+			);
+			name = ToSummaryLogToolTests;
+			productName = ToSummaryLogToolTests;
+			productReference = 1333C16215EB4ECC001C7320 /* ToSummaryLogToolTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1333C13815EB4ECB001C7320 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1333C13B15EB4ECB001C7320 /* Build configuration list for PBXProject "ToSummaryLogTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1333C13615EB4ECB001C7320;
+			productRefGroup = 1333C14215EB4ECB001C7320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1333C14015EB4ECB001C7320 /* ToSummaryLogTool */,
+				1333C16115EB4ECC001C7320 /* ToSummaryLogToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1333C13F15EB4ECB001C7320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C15015EB4ECB001C7320 /* InfoPlist.strings in Resources */,
+				1333C15615EB4ECC001C7320 /* Credits.rtf in Resources */,
+				1333C15C15EB4ECC001C7320 /* MainMenu.xib in Resources */,
+				F6FB634015F2520A006B169B /* TemplateIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1333C15F15EB4ECC001C7320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C16B15EB4ECC001C7320 /* InfoPlist.strings in Resources */,
+				1333C16E15EB4ECC001C7320 /* ToSummaryLogToolTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1333C16015EB4ECC001C7320 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1333C13D15EB4ECB001C7320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C15315EB4ECB001C7320 /* main.m in Sources */,
+				1333C15915EB4ECC001C7320 /* ToSummaryLogToolAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1333C15D15EB4ECC001C7320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1333C17015EB4ECC001C7320 /* ToSummaryLogToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1333C16515EB4ECC001C7320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1333C14015EB4ECB001C7320 /* ToSummaryLogTool */;
+			targetProxy = 1333C16415EB4ECC001C7320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1333C14E15EB4ECB001C7320 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1333C14F15EB4ECB001C7320 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1333C15415EB4ECB001C7320 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1333C15515EB4ECC001C7320 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1333C15A15EB4ECC001C7320 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1333C15B15EB4ECC001C7320 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1333C16915EB4ECC001C7320 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1333C16A15EB4ECC001C7320 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1333C17115EB4ECC001C7320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1333C17215EB4ECC001C7320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1333C17415EB4ECC001C7320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToSummaryLogTool/ToSummaryLogTool-Prefix.pch";
+				INFOPLIST_FILE = "ToSummaryLogTool/ToSummaryLogTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1333C17515EB4ECC001C7320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToSummaryLogTool/ToSummaryLogTool-Prefix.pch";
+				INFOPLIST_FILE = "ToSummaryLogTool/ToSummaryLogTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1333C17715EB4ECC001C7320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToSummaryLogTool.app/Contents/MacOS/ToSummaryLogTool";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToSummaryLogToolTests/ToSummaryLogToolTests-Prefix.pch";
+				INFOPLIST_FILE = "ToSummaryLogToolTests/ToSummaryLogToolTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1333C17815EB4ECC001C7320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToSummaryLogTool.app/Contents/MacOS/ToSummaryLogTool";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToSummaryLogToolTests/ToSummaryLogToolTests-Prefix.pch";
+				INFOPLIST_FILE = "ToSummaryLogToolTests/ToSummaryLogToolTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1333C13B15EB4ECB001C7320 /* Build configuration list for PBXProject "ToSummaryLogTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1333C17115EB4ECC001C7320 /* Debug */,
+				1333C17215EB4ECC001C7320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1333C17315EB4ECC001C7320 /* Build configuration list for PBXNativeTarget "ToSummaryLogTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1333C17415EB4ECC001C7320 /* Debug */,
+				1333C17515EB4ECC001C7320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1333C17615EB4ECC001C7320 /* Build configuration list for PBXNativeTarget "ToSummaryLogToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1333C17715EB4ECC001C7320 /* Debug */,
+				1333C17815EB4ECC001C7320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1333C13815EB4ECB001C7320 /* Project object */;
+}

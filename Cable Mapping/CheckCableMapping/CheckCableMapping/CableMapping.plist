@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceSetting</key>
+	<dict>
+		<key>LIGHTMETER</key>
+		<dict>
+			<key>MESSAGE</key>
+			<string>Pelase check light meter is opened</string>
+			<key>ENABLE</key>
+			<false/>
+			<key>CABLE_PREFIX</key>
+			<string>LIGHTMETER</string>
+			<key>BAUDE_RATE</key>
+			<string>9600</string>
+			<key>EXPECT</key>
+			<string>02 30 30 31</string>
+			<key>TRY</key>
+			<string></string>
+			<key>TYPE</key>
+			<integer>1</integer>
+		</dict>
+		<key>MIKEY</key>
+		<dict>
+			<key>MESSAGE</key>
+			<string>Please check the MIKEY is connnected well</string>
+			<key>ENABLE</key>
+			<false/>
+			<key>CABLE_PREFIX</key>
+			<string>MIKEY</string>
+			<key>BAUDE_RATE</key>
+			<integer>115200</integer>
+			<key>EXPECT</key>
+			<array>
+				<string>]</string>
+				<string>ok</string>
+			</array>
+			<key>TRY</key>
+			<string>h</string>
+			<key>TYPE</key>
+			<integer>0</integer>
+		</dict>
+		<key>MOBILE</key>
+		<dict>
+			<key>MESSAGE</key>
+			<string>Please input a DUT into Fixture</string>
+			<key>CABLE_PREFIX</key>
+			<string>UUT</string>
+			<key>ENABLE</key>
+			<true/>
+			<key>BAUDE_RATE</key>
+			<string>115200</string>
+			<key>EXPECT</key>
+			<array>
+				<string>?SYNTX ERROR</string>
+				<string>not found.</string>
+			</array>
+			<key>MATCH_TYPE</key>
+			<integer>1</integer>
+			<key>TRY</key>
+			<string>sx</string>
+			<key>TYPE</key>
+			<integer>0</integer>
+		</dict>
+		<key>FIXTURE</key>
+		<dict>
+			<key>CABLE_PREFIX</key>
+			<string>FIXTURE</string>
+			<key>ENABLE</key>
+			<true/>
+			<key>BAUDE_RATE</key>
+			<string>115200</string>
+			<key>DATA_BIT</key>
+			<string>8</string>
+			<key>ENDFLAG</key>
+			<string>\r\n</string>
+			<key>EXPECT</key>
+			<array>
+				<string>@_@</string>
+			</array>
+			<key>PARITY</key>
+			<string>NONE</string>
+			<key>STOP_BIT</key>
+			<string>1</string>
+			<key>TRY</key>
+			<string></string>
+			<key>TYPE</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

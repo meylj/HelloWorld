@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LogPath</key>
+	<dict>
+		<key>Slot 0</key>
+		<string>/Documents/WiPASXNext_0_1/temp/log.log</string>
+		<key>Slot 1</key>
+		<string>/Documents/WiPASXNext_1_1/temp/log.log</string>
+		<key>Slot 2</key>
+		<string>/Documents/WiPASXNext_2_1/temp/log.log</string>
+		<key>Slot 3</key>
+		<string>/Documents/WiPASXNext_3_1/temp/log.log</string>
+	</dict>
+	<key>Identify</key>
+	<dict/>
+	<key>Mode</key>
+	<dict>
+		<key>Audit</key>
+		<string>WiFi-BT-Cond-Audit</string>
+		<key>Normal</key>
+		<string>WiFi-BT-Cal-Cond</string>
+	</dict>
+	<key>Station</key>
+	<dict>
+		<key>Coco App Window</key>
+		<string>WiPASXNext</string>
+		<key>Coco App Name</key>
+		<string>WiPASXNext</string>
+		<key>Flash App Name</key>
+		<string>FLASHLVDebugServer</string>
+		<key>Slot NO.</key>
+		<string>4</string>
+		<key>Need Password</key>
+		<true/>
+		<key>Password</key>
+		<string>engineering</string>
+	</dict>
+	<key>Click</key>
+	<dict>
+		<key>First Coordination</key>
+		<string>95,95</string>
+		<key>Second Coordination</key>
+		<string>955,145</string>
+	</dict>
+	<key>Detect Window Durning Test</key>
+	<false/>
+	<key>ServerIP</key>
+	<string>113</string>
+	<key>PORT</key>
+	<string>7777</string>
+	<key>Running Mode</key>
+	<string>0</string>
+	<key>Emulation Test Timer</key>
+	<string>5</string>
+	<key>Emulation Test result replay</key>
+	<string>PASS:FAIL:PASS:FAIL</string>
+	<key>Pop out Tray after Test</key>
+	<false/>
+	<key>Connect to Shielding Box</key>
+	<false/>
+	<key>Fixture Cable</key>
+	<string>usbserial-FTG</string>
+	<key>StressTest</key>
+	<false/>
+</dict>
+</plist>

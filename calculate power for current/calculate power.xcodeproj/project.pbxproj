@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40DB87C2153C3C3000CD5756 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB87C1153C3C3000CD5756 /* Cocoa.framework */; };
+		40DB87CC153C3C3000CD5756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40DB87CA153C3C3000CD5756 /* InfoPlist.strings */; };
+		40DB87CE153C3C3000CD5756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB87CD153C3C3000CD5756 /* main.m */; };
+		40DB87D2153C3C3000CD5756 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 40DB87D0153C3C3000CD5756 /* Credits.rtf */; };
+		40DB87D5153C3C3000CD5756 /* calculate_powerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB87D4153C3C3000CD5756 /* calculate_powerAppDelegate.m */; };
+		40DB87D8153C3C3000CD5756 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40DB87D6153C3C3000CD5756 /* MainMenu.xib */; };
+		40DB87E0153C3C3000CD5756 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB87DF153C3C3000CD5756 /* SenTestingKit.framework */; };
+		40DB87E1153C3C3000CD5756 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB87C1153C3C3000CD5756 /* Cocoa.framework */; };
+		40DB87E9153C3C3000CD5756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40DB87E7153C3C3000CD5756 /* InfoPlist.strings */; };
+		40DB87EB153C3C3000CD5756 /* calculate_powerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 40DB87EA153C3C3000CD5756 /* calculate_powerTests.h */; };
+		40DB87ED153C3C3000CD5756 /* calculate_powerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB87EC153C3C3000CD5756 /* calculate_powerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DB87E2153C3C3000CD5756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB87B4153C3C3000CD5756 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DB87BC153C3C3000CD5756;
+			remoteInfo = "calculate power";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40DB87BD153C3C3000CD5756 /* calculate power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calculate power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB87C1153C3C3000CD5756 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		40DB87C4153C3C3000CD5756 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		40DB87C5153C3C3000CD5756 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		40DB87C6153C3C3000CD5756 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40DB87C9153C3C3000CD5756 /* calculate power-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "calculate power-Info.plist"; sourceTree = "<group>"; };
+		40DB87CB153C3C3000CD5756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40DB87CD153C3C3000CD5756 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40DB87CF153C3C3000CD5756 /* calculate power-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "calculate power-Prefix.pch"; sourceTree = "<group>"; };
+		40DB87D1153C3C3000CD5756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		40DB87D3153C3C3000CD5756 /* calculate_powerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculate_powerAppDelegate.h; sourceTree = "<group>"; };
+		40DB87D4153C3C3000CD5756 /* calculate_powerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculate_powerAppDelegate.m; sourceTree = "<group>"; };
+		40DB87D7153C3C3000CD5756 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		40DB87DE153C3C3000CD5756 /* calculate powerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calculate powerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB87DF153C3C3000CD5756 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		40DB87E6153C3C3000CD5756 /* calculate powerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "calculate powerTests-Info.plist"; sourceTree = "<group>"; };
+		40DB87E8153C3C3000CD5756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40DB87EA153C3C3000CD5756 /* calculate_powerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculate_powerTests.h; sourceTree = "<group>"; };
+		40DB87EC153C3C3000CD5756 /* calculate_powerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculate_powerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DB87BA153C3C3000CD5756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87C2153C3C3000CD5756 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB87DA153C3C3000CD5756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87E0153C3C3000CD5756 /* SenTestingKit.framework in Frameworks */,
+				40DB87E1153C3C3000CD5756 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DB87B2153C3C3000CD5756 = {
+			isa = PBXGroup;
+			children = (
+				40DB87C7153C3C3000CD5756 /* calculate power */,
+				40DB87E4153C3C3000CD5756 /* calculate powerTests */,
+				40DB87C0153C3C3000CD5756 /* Frameworks */,
+				40DB87BE153C3C3000CD5756 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40DB87BE153C3C3000CD5756 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87BD153C3C3000CD5756 /* calculate power.app */,
+				40DB87DE153C3C3000CD5756 /* calculate powerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DB87C0153C3C3000CD5756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87C1153C3C3000CD5756 /* Cocoa.framework */,
+				40DB87DF153C3C3000CD5756 /* SenTestingKit.framework */,
+				40DB87C3153C3C3000CD5756 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40DB87C3153C3C3000CD5756 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87C4153C3C3000CD5756 /* AppKit.framework */,
+				40DB87C5153C3C3000CD5756 /* CoreData.framework */,
+				40DB87C6153C3C3000CD5756 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		40DB87C7153C3C3000CD5756 /* calculate power */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87D3153C3C3000CD5756 /* calculate_powerAppDelegate.h */,
+				40DB87D4153C3C3000CD5756 /* calculate_powerAppDelegate.m */,
+				40DB87D6153C3C3000CD5756 /* MainMenu.xib */,
+				40DB87C8153C3C3000CD5756 /* Supporting Files */,
+			);
+			path = "calculate power";
+			sourceTree = "<group>";
+		};
+		40DB87C8153C3C3000CD5756 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87C9153C3C3000CD5756 /* calculate power-Info.plist */,
+				40DB87CA153C3C3000CD5756 /* InfoPlist.strings */,
+				40DB87CD153C3C3000CD5756 /* main.m */,
+				40DB87CF153C3C3000CD5756 /* calculate power-Prefix.pch */,
+				40DB87D0153C3C3000CD5756 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40DB87E4153C3C3000CD5756 /* calculate powerTests */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87EA153C3C3000CD5756 /* calculate_powerTests.h */,
+				40DB87EC153C3C3000CD5756 /* calculate_powerTests.m */,
+				40DB87E5153C3C3000CD5756 /* Supporting Files */,
+			);
+			path = "calculate powerTests";
+			sourceTree = "<group>";
+		};
+		40DB87E5153C3C3000CD5756 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40DB87E6153C3C3000CD5756 /* calculate powerTests-Info.plist */,
+				40DB87E7153C3C3000CD5756 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40DB87BC153C3C3000CD5756 /* calculate power */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB87F0153C3C3000CD5756 /* Build configuration list for PBXNativeTarget "calculate power" */;
+			buildPhases = (
+				40DB87B9153C3C3000CD5756 /* Sources */,
+				40DB87BA153C3C3000CD5756 /* Frameworks */,
+				40DB87BB153C3C3000CD5756 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calculate power";
+			productName = "calculate power";
+			productReference = 40DB87BD153C3C3000CD5756 /* calculate power.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40DB87DD153C3C3000CD5756 /* calculate powerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB87F3153C3C3000CD5756 /* Build configuration list for PBXNativeTarget "calculate powerTests" */;
+			buildPhases = (
+				40DB87D9153C3C3000CD5756 /* Sources */,
+				40DB87DA153C3C3000CD5756 /* Frameworks */,
+				40DB87DB153C3C3000CD5756 /* Resources */,
+				40DB87DC153C3C3000CD5756 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DB87E3153C3C3000CD5756 /* PBXTargetDependency */,
+			);
+			name = "calculate powerTests";
+			productName = "calculate powerTests";
+			productReference = 40DB87DE153C3C3000CD5756 /* calculate powerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DB87B4153C3C3000CD5756 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 40DB87B7153C3C3000CD5756 /* Build configuration list for PBXProject "calculate power" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40DB87B2153C3C3000CD5756;
+			productRefGroup = 40DB87BE153C3C3000CD5756 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40DB87BC153C3C3000CD5756 /* calculate power */,
+				40DB87DD153C3C3000CD5756 /* calculate powerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40DB87BB153C3C3000CD5756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87CC153C3C3000CD5756 /* InfoPlist.strings in Resources */,
+				40DB87D2153C3C3000CD5756 /* Credits.rtf in Resources */,
+				40DB87D8153C3C3000CD5756 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB87DB153C3C3000CD5756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87E9153C3C3000CD5756 /* InfoPlist.strings in Resources */,
+				40DB87EB153C3C3000CD5756 /* calculate_powerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40DB87DC153C3C3000CD5756 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DB87B9153C3C3000CD5756 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87CE153C3C3000CD5756 /* main.m in Sources */,
+				40DB87D5153C3C3000CD5756 /* calculate_powerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB87D9153C3C3000CD5756 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB87ED153C3C3000CD5756 /* calculate_powerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40DB87E3153C3C3000CD5756 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DB87BC153C3C3000CD5756 /* calculate power */;
+			targetProxy = 40DB87E2153C3C3000CD5756 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40DB87CA153C3C3000CD5756 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DB87CB153C3C3000CD5756 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40DB87D0153C3C3000CD5756 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DB87D1153C3C3000CD5756 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		40DB87D6153C3C3000CD5756 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DB87D7153C3C3000CD5756 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		40DB87E7153C3C3000CD5756 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DB87E8153C3C3000CD5756 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40DB87EE153C3C3000CD5756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		40DB87EF153C3C3000CD5756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		40DB87F1153C3C3000CD5756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "calculate power/calculate power-Prefix.pch";
+				INFOPLIST_FILE = "calculate power/calculate power-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40DB87F2153C3C3000CD5756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "calculate power/calculate power-Prefix.pch";
+				INFOPLIST_FILE = "calculate power/calculate power-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		40DB87F4153C3C3000CD5756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/calculate power.app/Contents/MacOS/calculate power";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "calculate power/calculate power-Prefix.pch";
+				INFOPLIST_FILE = "calculate powerTests/calculate powerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		40DB87F5153C3C3000CD5756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/calculate power.app/Contents/MacOS/calculate power";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "calculate power/calculate power-Prefix.pch";
+				INFOPLIST_FILE = "calculate powerTests/calculate powerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DB87B7153C3C3000CD5756 /* Build configuration list for PBXProject "calculate power" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB87EE153C3C3000CD5756 /* Debug */,
+				40DB87EF153C3C3000CD5756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB87F0153C3C3000CD5756 /* Build configuration list for PBXNativeTarget "calculate power" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB87F1153C3C3000CD5756 /* Debug */,
+				40DB87F2153C3C3000CD5756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB87F3153C3C3000CD5756 /* Build configuration list for PBXNativeTarget "calculate powerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB87F4153C3C3000CD5756 /* Debug */,
+				40DB87F5153C3C3000CD5756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DB87B4153C3C3000CD5756 /* Project object */;
+}

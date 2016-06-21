@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60D4AF4019A5E9DE00CCAB2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D4AF3F19A5E9DE00CCAB2B /* Cocoa.framework */; };
+		60D4AF4A19A5E9DE00CCAB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D4AF4819A5E9DE00CCAB2B /* InfoPlist.strings */; };
+		60D4AF4C19A5E9DE00CCAB2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D4AF4B19A5E9DE00CCAB2B /* main.m */; };
+		60D4AF5019A5E9DE00CCAB2B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 60D4AF4E19A5E9DE00CCAB2B /* Credits.rtf */; };
+		60D4AF5319A5E9DE00CCAB2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D4AF5219A5E9DE00CCAB2B /* AppDelegate.m */; };
+		60D4AF5619A5E9DE00CCAB2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D4AF5419A5E9DE00CCAB2B /* MainMenu.xib */; };
+		60D4AF6219A5EA9700CCAB2B /* ParseFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D4AF6119A5EA9700CCAB2B /* ParseFile.m */; };
+		60D4AF6519A5EF2A00CCAB2B /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D4AF6419A5EF2A00CCAB2B /* NSStringCategory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60D4AF3B19A5E9DE00CCAB2B /* SearchErrorResponseLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchErrorResponseLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D4AF3F19A5E9DE00CCAB2B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		60D4AF4219A5E9DE00CCAB2B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		60D4AF4319A5E9DE00CCAB2B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		60D4AF4419A5E9DE00CCAB2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60D4AF4719A5E9DE00CCAB2B /* SearchErrorResponseLog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SearchErrorResponseLog-Info.plist"; sourceTree = "<group>"; };
+		60D4AF4919A5E9DE00CCAB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60D4AF4B19A5E9DE00CCAB2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60D4AF4D19A5E9DE00CCAB2B /* SearchErrorResponseLog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchErrorResponseLog-Prefix.pch"; sourceTree = "<group>"; };
+		60D4AF4F19A5E9DE00CCAB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		60D4AF5119A5E9DE00CCAB2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		60D4AF5219A5E9DE00CCAB2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		60D4AF5519A5E9DE00CCAB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		60D4AF6019A5EA9700CCAB2B /* ParseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseFile.h; sourceTree = "<group>"; };
+		60D4AF6119A5EA9700CCAB2B /* ParseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseFile.m; sourceTree = "<group>"; };
+		60D4AF6319A5EF2A00CCAB2B /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategory.h; sourceTree = "<group>"; };
+		60D4AF6419A5EF2A00CCAB2B /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60D4AF3819A5E9DE00CCAB2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D4AF4019A5E9DE00CCAB2B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60D4AF3019A5E9DE00CCAB2B = {
+			isa = PBXGroup;
+			children = (
+				60D4AF4519A5E9DE00CCAB2B /* SearchErrorResponseLog */,
+				60D4AF3E19A5E9DE00CCAB2B /* Frameworks */,
+				60D4AF3C19A5E9DE00CCAB2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60D4AF3C19A5E9DE00CCAB2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60D4AF3B19A5E9DE00CCAB2B /* SearchErrorResponseLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60D4AF3E19A5E9DE00CCAB2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D4AF3F19A5E9DE00CCAB2B /* Cocoa.framework */,
+				60D4AF4119A5E9DE00CCAB2B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60D4AF4119A5E9DE00CCAB2B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D4AF4219A5E9DE00CCAB2B /* AppKit.framework */,
+				60D4AF4319A5E9DE00CCAB2B /* CoreData.framework */,
+				60D4AF4419A5E9DE00CCAB2B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		60D4AF4519A5E9DE00CCAB2B /* SearchErrorResponseLog */ = {
+			isa = PBXGroup;
+			children = (
+				60D4AF6319A5EF2A00CCAB2B /* NSStringCategory.h */,
+				60D4AF6419A5EF2A00CCAB2B /* NSStringCategory.m */,
+				60D4AF5119A5E9DE00CCAB2B /* AppDelegate.h */,
+				60D4AF5219A5E9DE00CCAB2B /* AppDelegate.m */,
+				60D4AF6019A5EA9700CCAB2B /* ParseFile.h */,
+				60D4AF6119A5EA9700CCAB2B /* ParseFile.m */,
+				60D4AF5419A5E9DE00CCAB2B /* MainMenu.xib */,
+				60D4AF4619A5E9DE00CCAB2B /* Supporting Files */,
+			);
+			path = SearchErrorResponseLog;
+			sourceTree = "<group>";
+		};
+		60D4AF4619A5E9DE00CCAB2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60D4AF4719A5E9DE00CCAB2B /* SearchErrorResponseLog-Info.plist */,
+				60D4AF4819A5E9DE00CCAB2B /* InfoPlist.strings */,
+				60D4AF4B19A5E9DE00CCAB2B /* main.m */,
+				60D4AF4D19A5E9DE00CCAB2B /* SearchErrorResponseLog-Prefix.pch */,
+				60D4AF4E19A5E9DE00CCAB2B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60D4AF3A19A5E9DE00CCAB2B /* SearchErrorResponseLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60D4AF5919A5E9DE00CCAB2B /* Build configuration list for PBXNativeTarget "SearchErrorResponseLog" */;
+			buildPhases = (
+				60D4AF3719A5E9DE00CCAB2B /* Sources */,
+				60D4AF3819A5E9DE00CCAB2B /* Frameworks */,
+				60D4AF3919A5E9DE00CCAB2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchErrorResponseLog;
+			productName = SearchErrorResponseLog;
+			productReference = 60D4AF3B19A5E9DE00CCAB2B /* SearchErrorResponseLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60D4AF3219A5E9DE00CCAB2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "张斌";
+			};
+			buildConfigurationList = 60D4AF3519A5E9DE00CCAB2B /* Build configuration list for PBXProject "SearchErrorResponseLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60D4AF3019A5E9DE00CCAB2B;
+			productRefGroup = 60D4AF3C19A5E9DE00CCAB2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60D4AF3A19A5E9DE00CCAB2B /* SearchErrorResponseLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60D4AF3919A5E9DE00CCAB2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D4AF4A19A5E9DE00CCAB2B /* InfoPlist.strings in Resources */,
+				60D4AF5019A5E9DE00CCAB2B /* Credits.rtf in Resources */,
+				60D4AF5619A5E9DE00CCAB2B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60D4AF3719A5E9DE00CCAB2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D4AF4C19A5E9DE00CCAB2B /* main.m in Sources */,
+				60D4AF5319A5E9DE00CCAB2B /* AppDelegate.m in Sources */,
+				60D4AF6219A5EA9700CCAB2B /* ParseFile.m in Sources */,
+				60D4AF6519A5EF2A00CCAB2B /* NSStringCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60D4AF4819A5E9DE00CCAB2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60D4AF4919A5E9DE00CCAB2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60D4AF4E19A5E9DE00CCAB2B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60D4AF4F19A5E9DE00CCAB2B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		60D4AF5419A5E9DE00CCAB2B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60D4AF5519A5E9DE00CCAB2B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60D4AF5719A5E9DE00CCAB2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60D4AF5819A5E9DE00CCAB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60D4AF5A19A5E9DE00CCAB2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchErrorResponseLog/SearchErrorResponseLog-Prefix.pch";
+				INFOPLIST_FILE = "SearchErrorResponseLog/SearchErrorResponseLog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		60D4AF5B19A5E9DE00CCAB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchErrorResponseLog/SearchErrorResponseLog-Prefix.pch";
+				INFOPLIST_FILE = "SearchErrorResponseLog/SearchErrorResponseLog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60D4AF3519A5E9DE00CCAB2B /* Build configuration list for PBXProject "SearchErrorResponseLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D4AF5719A5E9DE00CCAB2B /* Debug */,
+				60D4AF5819A5E9DE00CCAB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60D4AF5919A5E9DE00CCAB2B /* Build configuration list for PBXNativeTarget "SearchErrorResponseLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D4AF5A19A5E9DE00CCAB2B /* Debug */,
+				60D4AF5B19A5E9DE00CCAB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60D4AF3219A5E9DE00CCAB2B /* Project object */;
+}

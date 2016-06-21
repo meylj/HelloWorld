@@ -1,0 +1,13 @@
+<pkmkdoc spec="1.12"><properties><title>PegatronFrameworks_v1.0d1128</title><build>/Users/Torres/Desktop/PegatronFrameworks_v1.0d1128.pkg</build><organization>com.torres</organization><userSees ui="both"/><min-target os="3"/><domain system="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><description>Create as 2012/8/17
+1.Update version 1.0d0817 at 2012/8/17.
+
+Update 2012/10/23
+1.Change the color:
+	Polarity NG parts show in red(Reject).
+	Parts out of flux upper limit show in yellow(Reject).
+	Parts out of flux lower limit show in white(Verify by Go/No go).
+	OK parts show in green(OK).
+2.Change version from 1.0d0817 to 1.0d1023
+
+Update 2012/10/25
+1.Modify serial number scan function, remove "\r"  from the string read from scanner.</description><contents><choice title="Frameworks" id="choice66" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="com.torres.pegatronframeworksv10d1128.PackageRoot.pkg"/></choice></contents><resources bg-scale="proportional" bg-align="topright"><locale lang="en"><resource mod="true" type="background">/Users/Torres/Desktop/Magnet-Spine for housing vender/ReadMe/Muifa.icns</resource><resource mod="true" type="readme">/Users/Torres/Desktop/Magnet-Spine for housing vender/ReadMe/readme.rtf</resource></locale></resources><flags/><item type="file">01packageroot.xml</item><mod>properties.systemDomain</mod><mod>properties.title</mod><mod>properties.customizeOption</mod><mod>description</mod><mod>properties.anywhereDomain</mod><mod>properties.userDomain</mod></pkmkdoc>

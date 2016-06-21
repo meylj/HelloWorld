@@ -1,0 +1,436 @@
+TNSTableViewBinding
+v3
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Info.plist Info.plist
+cCpResource ReadMe.txt build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt
+cCpResource en.lproj/Credits.rtf build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf
+cStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib
+cCopyStringsFile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+cStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib
+cStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding normal x86_64
+cLd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding normal i386
+cCreateUniversalBinary /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding normal "x86_64 i386"
+cTouch /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app
+
+N/Developer/SDKs/MacOSX10.7.sdk
+c000000004E0BFE7D00000000000000EE
+t1309408893
+s238
+
+N/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E1B3B730000000000006560
+t1310407539
+s25952
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.h
+c000000004F95EF170000000000000A63
+t1335226135
+s2659
+i<Cocoa/Cocoa.h>
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m
+c000000004F95EF170000000000000F31
+t1335226135
+s3889
+i"AppDelegate.h"
+i"MyWindowController.h"
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.h
+c000000004F95EF170000000000000B3D
+t1335226135
+s2877
+i<Cocoa/Cocoa.h>
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m
+c000000004F95EF1700000000000015EE
+t1335226135
+s5614
+i"EditController.h"
+i"MyWindowController.h"
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.h
+c000000004F95EF170000000000000BE2
+t1335226135
+s3042
+i<Cocoa/Cocoa.h>
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m
+c000000004F95EF170000000000002F94
+t1335226135
+s12180
+i"MyWindowController.h"
+i"EditController.h"
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch
+c000000004AFB366D0000000000000033
+t1257977453
+s51
+i<Cocoa/Cocoa.h>
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/ReadMe.txt
+c000000004F70FC190000000000000743
+t1332804633
+s1859
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Info.plist
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/TableEdit.nib
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/TestWindow.nib
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding.LinkFileList
+c0000000051370DC200000000000002C3
+t1362562498
+s707
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding.LinkFileList
+c0000000051370DC200000000000002CB
+t1362562498
+s715
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/Credits.rtf
+c0000000046DDA0D400000000000001D2
+t1188929748
+s466
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/InfoPlist.strings
+c000000004F70FC1900000000000000B1
+t1332804633
+s177
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib
+c000000004F95EEF70000000000000088
+t1335226103
+s136
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib
+c000000004F95EEF70000000000000088
+t1335226103
+s136
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib
+c000000004F95EEF70000000000000088
+t1335226103
+s136
+
+N/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m
+c000000004F95EF170000000000000A41
+t1335226135
+s2625
+i<Cocoa/Cocoa.h>
+
+NInfo.plist
+c000000004F70FC19000000000000038B
+t1332804633
+s907
+
+CBuild AST from /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m
+r0
+
+CBuild AST from /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m
+r0
+
+CBuild AST from /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m
+r0
+
+CBuild AST from /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesfb243f4245e7b641^280e684245e7b641^---0#1#0#--18"Check dependencies
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s384255304.106142
+e384255304.972578
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m38491b4845e7b641^37faf84845e7b641^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m0000000000000000^1619"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/i386 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/AppDelegate.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s384255304.106146
+e384255304.999130
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m38491b4845e7b641^11c6ff4845e7b641^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m0000000000000000^1631"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o EditController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/i386 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/EditController.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s384255304.048001
+e384255304.923736
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m276b0c4845e7b641^8578ec4845e7b641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m0000000000000000^1647"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o MyWindowController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/i386 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/MyWindowController.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s384255303.840024
+e384255304.883900
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m902dd74745e7b641^d95be24845e7b641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m0000000000000000^1591"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/i386 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/main.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s384255302.237576
+e384255304.046654
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.md9e83c4645e7b641^edf00b4845e7b641^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m0000000000000000^1629"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/x86_64 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/AppDelegate.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/AppDelegate.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s384255302.237678
+e384255304.104700
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m52f03c4645e7b641^acca1a4845e7b641^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m0000000000000000^1641"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o EditController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/x86_64 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/EditController.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/EditController.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s384255302.237270
+e384255304.104733
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.ma7e83c4645e7b641^6bd51a4845e7b641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m0000000000000000^1657"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o MyWindowController.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/x86_64 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/MyWindowController.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/MyWindowController.o
+
+CCompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s384255302.237262
+e384255303.838660
+r1
+xCompileC
+xbuild/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.mffeb3c4645e7b641^c9b0d64745e7b641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m0000000000000000^1601"CompileC build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/NSTableViewBinding.hmap -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/include -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources/x86_64 -I/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/DerivedSources -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -include /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Prefix.pch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/main.m -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/main.o
+
+CCopyStringsFile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+s384255298.653350
+e384255298.659161
+r1
+xCopyStringsFile
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Copy en.lproj/InfoPlist.strings4d67a74245e7b641^ecbda84245e7b641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/InfoPlist.strings0000000000000000^474"CopyStringsFile build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj -- en.lproj/InfoPlist.strings
+
+CCpResource ReadMe.txt build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt
+s384255298.652714
+e384255298.656862
+r1
+xCpResource
+xReadMe.txt
+xbuild/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt7a36a74245e7b641^302fa84245e7b641^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt00f42413deffdf42^498"CpResource ReadMe.txt build/Debug/NSTableViewBinding.app/Contents/Resources/ReadMe.txt    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/ReadMe.txt /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources
+
+CCpResource en.lproj/Credits.rtf build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf
+s384255298.652725
+e384255298.656848
+r1
+xCpResource
+xen.lproj/Credits.rtf
+xbuild/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf7b32a74245e7b641^d927a84245e7b641^---0#0#0#-19%DVTDocumentLocation2@170"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf00f42413deffdf42^537"CpResource en.lproj/Credits.rtf build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/Credits.rtf /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj
+
+CCreateUniversalBinary /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding normal "x86_64 i386"
+s384255306.997465
+e384255307.047123
+r1
+xCreateUniversalBinary
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding
+xnormal
+xx86_64 i386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection172"Create universal binary /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding9d68ff4a45e7b641^f10e0c4b45e7b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding00f42413deffdf42^746"CreateUniversalBinary build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding normal "x86_64 i386"    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    /usr/bin/lipo -create /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding -output /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding
+
+CLd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/MacOS/NSTableViewBinding normal x86_64
+r0
+
+CLd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding normal i386
+s384255305.006986
+e384255306.989217
+r1
+xLd
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection185"Link /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding62dc014945e7b641^9142fd4a45e7b641^---0#0#0#--951"Ld build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding normal i386    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -filelist /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/i386/NSTableViewBinding
+
+CLd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding normal x86_64
+s384255304.885368
+e384255306.989208
+r1
+xLd
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection187"Link /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding19c5e24845e7b641^7e3bfd4a45e7b641^---0#0#0#--961"Ld build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding normal x86_64    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -F/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug -filelist /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/NSTableViewBinding.build/Debug/NSTableViewBinding.build/Objects-normal/x86_64/NSTableViewBinding
+
+CProcessInfoPlistFile /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Info.plist Info.plist
+s384255298.550469
+e384255298.644400
+r1
+xProcessInfoPlistFile
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Info.plist
+xInfo.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist2b148d4245e7b641^ca6fa54245e7b641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/Info.plist0000000000000000^534"ProcessInfoPlistFile build/Debug/NSTableViewBinding.app/Contents/Info.plist Info.plist    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    builtin-infoPlistUtility Info.plist -genpkginfo /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Info.plist
+
+CStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib
+s384255298.653361
+e384255302.229263
+r1
+xStripNIB
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Processing /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib3a77a74245e7b641^89b33a4645e7b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib/0000000000000000^508"StripNIB en.lproj/MainMenu.nib    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --strip /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/MainMenu.nib --output-format human-readable-text /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/MainMenu.nib
+
+CStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib
+s384255298.658203
+e384255298.738467
+r1
+xStripNIB
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Processing /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib899aa84245e7b641^4032bd4245e7b641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib/0000000000000000^511"StripNIB en.lproj/TableEdit.nib    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --strip /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/TableEdit.nib --output-format human-readable-text /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TableEdit.nib
+
+CStripNIB /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib
+s384255298.658496
+e384255298.739895
+r1
+xStripNIB
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Processing /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib54aaa84245e7b641^d768bd4245e7b641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib/0000000000000000^514"StripNIB en.lproj/TestWindow.nib    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --strip /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app/Contents/Resources/en.lproj/TestWindow.nib --output-format human-readable-text /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/en.lproj/TestWindow.nib
+
+CTouch /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app
+s384255307.056267
+e384255307.083082
+r1
+xTouch
+x/Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Touch /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.appb0740e4b45e7b641^d542154b45e7b641^---0#0#0#--265"Touch build/Debug/NSTableViewBinding.app    cd /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding    /usr/bin/touch -c /Users/eagle/Desktop/Robot-Simul/Robot-Simul/NStableViewBind/NSTableViewBinding/build/Debug/NSTableViewBinding.app
+

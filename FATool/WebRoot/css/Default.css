@@ -1,0 +1,211 @@
+body 
+{
+	width:100%;
+	margin:0 auto;
+	color:#888;
+	font-size:9pt; 
+	font-family:Verdana; 
+	background-position:center;
+	background-repeat:repeat-y; 
+}
+
+a{
+	text-decoration:none;color:#5895be;
+}
+
+a:hover{
+	text-decoration:none;color:#f5115a;
+}
+
+img{
+	border:0;
+}
+
+input 
+{
+	color:#888;
+	height:22px; 
+	line-height:22px;
+	border:1px solid #dedede;
+	background:#fff; 
+	}
+	
+input.conbtn
+	{
+		background:url(../img/btn.jpg);
+		color:#fff;
+		width:50px;
+		height:28px;
+		border:none;
+		font-weight:bold;
+		cursor:hand;
+}
+input.conbtn3
+	{
+		background:url(../img/btn3.jpg);
+		color:#fff;
+		width:63px;
+		height:28px;
+		border:none;
+		font-weight:bold;
+		cursor:hand;
+}
+
+input.conbtn4
+	{
+		background:url(../img/btn4.jpg);
+		color:#fff;
+		width:76px;
+		height:28px;
+		border:none;
+		font-weight:bold;
+		cursor:hand;
+}
+
+input.conbtn5
+	{
+		background:url(../../img/btn5.jpg);
+		color:#fff;
+		width:89px;
+		height:28px;
+		border:none;
+		font-weight:bold;
+		cursor:hand;
+}
+
+input.conbtn6
+	{
+		background:url(../img/btn6.jpg);
+		color:#fff;
+		width:102px;
+		height:28px;
+		border:none;
+		font-weight:bold;
+		cursor:hand;
+}
+
+
+.conth
+{
+	height:25px;
+	color:#5895be;
+	background-image:url(../img/th.jpg);
+	font-weight:bold;
+	}
+
+
+.conth2
+{
+	height:26px;
+	color:#5895be;
+	background-image:url(../img/th.jpg);
+	font-weight:bold;
+	}
+	
+
+.contr
+{
+	background-color:#ffffff;
+}
+
+
+.contr1
+{
+	background-color:#fafafa;
+}
+
+.contb
+{
+	text-align:center;
+	background-color: #dedede;
+	dudley:expression(cellPadding=1,cellSpacing=1); 
+}
+	
+.contb td
+{
+	padding:3px; 
+}
+
+	
+.contb2
+{
+	width:98.5%; 
+	margin:0 auto;
+	border-style: solid; 
+	border-width: 0px; 
+	background-color:#dedede;
+	dudley:expression(cellPadding=1,cellSpacing=1);
+}
+
+
+
+
+	
+.contb2 td
+{
+	padding-left:3px;
+}
+	
+.contb3
+{
+	border:1px solid #dedede;
+	background-color: #fafafa;
+	dudley:expression(cellPadding=0,cellSpacing=0); 
+}
+
+.txta
+{
+	color:#888;
+	border:1px solid #dedede;
+	 }
+	 
+	
+.page
+{
+	width:98.3%; 
+	height:30px; 
+	margin:0 auto;
+	margin-top:5px;
+	border:1px solid #dedede;
+	background-color:#fafafa;
+	}
+
+.page a
+{
+	color:#888;
+	}
+	
+.page a:hover
+{
+	color:#f5115a;
+
+}
+
+.page input
+{
+	color:#666;
+	height:14px; 
+	width:25px;
+	line-height:14px;
+	border:1px solid #888;
+	background:#fff; 
+	}
+	
+.page input.gobtn
+{
+	height:18px;
+	color:#888;
+
+}
+
+.pagemain
+{
+	margin-top:5px;
+	}
+	
+.lmenu_tb{
+	width:151px;
+	float:left;
+	border:0;
+	dudley:expression(cellPadding=0,cellSpacing=0); 
+}

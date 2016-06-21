@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84063D3018BD80C200D91E05 /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84063D2F18BD80C200D91E05 /* icons.icns */; };
+		840DBE2E1AB2E85900C54A08 /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DBE2D1AB2E85900C54A08 /* NSStringCategory.m */; };
+		848393AF18AA224800B1895C /* libftd2xx.1.0.2-2.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 848393AC18AA224800B1895C /* libftd2xx.1.0.2-2.dylib */; };
+		848393B018AA224800B1895C /* libftd2xx.1.0.2.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 848393AD18AA224800B1895C /* libftd2xx.1.0.2.dylib */; };
+		849DE11E18BF113000449E86 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DE11D18BF113000449E86 /* CoreFoundation.framework */; };
+		84A848E518A87E4D00463636 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A848E418A87E4D00463636 /* Cocoa.framework */; };
+		84A848EF18A87E4D00463636 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A848ED18A87E4D00463636 /* InfoPlist.strings */; };
+		84A848F118A87E4D00463636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A848F018A87E4D00463636 /* main.m */; };
+		84A848F518A87E4E00463636 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84A848F318A87E4E00463636 /* Credits.rtf */; };
+		84A848F818A87E4E00463636 /* RCTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A848F718A87E4E00463636 /* RCTAppDelegate.m */; };
+		84A848FB18A87E4E00463636 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A848F918A87E4E00463636 /* MainMenu.xib */; };
+		84A8490318A8A4EE00463636 /* RCTControlPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8490218A8A4EE00463636 /* RCTControlPort.m */; };
+		84A8490518A8A57B00463636 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A8490418A8A57B00463636 /* IOKit.framework */; };
+		84C4DF1A18B745C100BD92DB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C4DF1918B745C100BD92DB /* OpenGL.framework */; };
+		84C6F66018AAFBEA0009030F /* libd2xx_table.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 848393AB18AA224800B1895C /* libd2xx_table.dylib */; };
+		84C6F66518AAFD390009030F /* ftdimv in Resources */ = {isa = PBXBuildFile; fileRef = 84C6F66118AAFD390009030F /* ftdimv */; };
+		84C6F66618AAFD390009030F /* installD2XX.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84C6F66218AAFD390009030F /* installD2XX.sh */; };
+		84C6F66718AAFD390009030F /* reloadVCP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84C6F66318AAFD390009030F /* reloadVCP.sh */; };
+		84C6F66818AAFD390009030F /* unloadVCP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84C6F66418AAFD390009030F /* unloadVCP.sh */; };
+		84EC1E3B18BC94C900AE0AC8 /* ReloadTest.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 84EC1E3918BC94C900AE0AC8 /* ReloadTest.scpt */; };
+		84EC1E3C18BC94C900AE0AC8 /* UnloadTest.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 84EC1E3A18BC94C900AE0AC8 /* UnloadTest.scpt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84063D2F18BD80C200D91E05 /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
+		840DBE2C1AB2E85900C54A08 /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategory.h; sourceTree = "<group>"; };
+		840DBE2D1AB2E85900C54A08 /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
+		848393AB18AA224800B1895C /* libd2xx_table.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libd2xx_table.dylib; sourceTree = "<group>"; };
+		848393AC18AA224800B1895C /* libftd2xx.1.0.2-2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libftd2xx.1.0.2-2.dylib"; sourceTree = "<group>"; };
+		848393AD18AA224800B1895C /* libftd2xx.1.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libftd2xx.1.0.2.dylib; sourceTree = "<group>"; };
+		849DE11D18BF113000449E86 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		84A848E118A87E4D00463636 /* RenameCableTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenameCableTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A848E418A87E4D00463636 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84A848E718A87E4D00463636 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84A848E818A87E4D00463636 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84A848E918A87E4D00463636 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84A848EC18A87E4D00463636 /* RenameCableTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RenameCableTool-Info.plist"; sourceTree = "<group>"; };
+		84A848EE18A87E4D00463636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A848F018A87E4D00463636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A848F218A87E4E00463636 /* RenameCableTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RenameCableTool-Prefix.pch"; sourceTree = "<group>"; };
+		84A848F418A87E4E00463636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		84A848F618A87E4E00463636 /* RCTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAppDelegate.h; sourceTree = "<group>"; };
+		84A848F718A87E4E00463636 /* RCTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAppDelegate.m; sourceTree = "<group>"; };
+		84A848FA18A87E4E00463636 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84A8490118A8A4EE00463636 /* RCTControlPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTControlPort.h; sourceTree = "<group>"; };
+		84A8490218A8A4EE00463636 /* RCTControlPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTControlPort.m; sourceTree = "<group>"; };
+		84A8490418A8A57B00463636 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		84C4DF1918B745C100BD92DB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84C6F66118AAFD390009030F /* ftdimv */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ftdimv; sourceTree = "<group>"; };
+		84C6F66218AAFD390009030F /* installD2XX.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = installD2XX.sh; sourceTree = "<group>"; };
+		84C6F66318AAFD390009030F /* reloadVCP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reloadVCP.sh; sourceTree = "<group>"; };
+		84C6F66418AAFD390009030F /* unloadVCP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = unloadVCP.sh; sourceTree = "<group>"; };
+		84EC1E3918BC94C900AE0AC8 /* ReloadTest.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReloadTest.scpt; sourceTree = "<group>"; };
+		84EC1E3A18BC94C900AE0AC8 /* UnloadTest.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnloadTest.scpt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A848DE18A87E4D00463636 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DE11E18BF113000449E86 /* CoreFoundation.framework in Frameworks */,
+				84C4DF1A18B745C100BD92DB /* OpenGL.framework in Frameworks */,
+				84A8490518A8A57B00463636 /* IOKit.framework in Frameworks */,
+				84A848E518A87E4D00463636 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848393AA18AA224800B1895C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				84C6F66118AAFD390009030F /* ftdimv */,
+				84C6F66218AAFD390009030F /* installD2XX.sh */,
+				84C6F66318AAFD390009030F /* reloadVCP.sh */,
+				84C6F66418AAFD390009030F /* unloadVCP.sh */,
+				848393AB18AA224800B1895C /* libd2xx_table.dylib */,
+				848393AC18AA224800B1895C /* libftd2xx.1.0.2-2.dylib */,
+				848393AD18AA224800B1895C /* libftd2xx.1.0.2.dylib */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		84A848D818A87E4D00463636 = {
+			isa = PBXGroup;
+			children = (
+				84A848EA18A87E4D00463636 /* RenameCableTool */,
+				84A848E318A87E4D00463636 /* Frameworks */,
+				84A848E218A87E4D00463636 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A848E218A87E4D00463636 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A848E118A87E4D00463636 /* RenameCableTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A848E318A87E4D00463636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848393AA18AA224800B1895C /* libs */,
+				849DE11D18BF113000449E86 /* CoreFoundation.framework */,
+				84A8490418A8A57B00463636 /* IOKit.framework */,
+				84C4DF1918B745C100BD92DB /* OpenGL.framework */,
+				84A848E418A87E4D00463636 /* Cocoa.framework */,
+				84A848E618A87E4D00463636 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A848E618A87E4D00463636 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A848E718A87E4D00463636 /* AppKit.framework */,
+				84A848E818A87E4D00463636 /* CoreData.framework */,
+				84A848E918A87E4D00463636 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84A848EA18A87E4D00463636 /* RenameCableTool */ = {
+			isa = PBXGroup;
+			children = (
+				84A848F618A87E4E00463636 /* RCTAppDelegate.h */,
+				84A848F718A87E4E00463636 /* RCTAppDelegate.m */,
+				84A8490118A8A4EE00463636 /* RCTControlPort.h */,
+				84A8490218A8A4EE00463636 /* RCTControlPort.m */,
+				84A848F918A87E4E00463636 /* MainMenu.xib */,
+				84A848EB18A87E4D00463636 /* Supporting Files */,
+			);
+			path = RenameCableTool;
+			sourceTree = "<group>";
+		};
+		84A848EB18A87E4D00463636 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840DBE2C1AB2E85900C54A08 /* NSStringCategory.h */,
+				840DBE2D1AB2E85900C54A08 /* NSStringCategory.m */,
+				84063D2F18BD80C200D91E05 /* icons.icns */,
+				84A848EC18A87E4D00463636 /* RenameCableTool-Info.plist */,
+				84A848ED18A87E4D00463636 /* InfoPlist.strings */,
+				84EC1E3918BC94C900AE0AC8 /* ReloadTest.scpt */,
+				84EC1E3A18BC94C900AE0AC8 /* UnloadTest.scpt */,
+				84A848F018A87E4D00463636 /* main.m */,
+				84A848F218A87E4E00463636 /* RenameCableTool-Prefix.pch */,
+				84A848F318A87E4E00463636 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A848E018A87E4D00463636 /* RenameCableTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A848FE18A87E4E00463636 /* Build configuration list for PBXNativeTarget "RenameCableTool" */;
+			buildPhases = (
+				84A848DD18A87E4D00463636 /* Sources */,
+				84A848DE18A87E4D00463636 /* Frameworks */,
+				84A848DF18A87E4D00463636 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenameCableTool;
+			productName = RenameCableTool;
+			productReference = 84A848E118A87E4D00463636 /* RenameCableTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A848D918A87E4D00463636 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = raniys;
+			};
+			buildConfigurationList = 84A848DC18A87E4D00463636 /* Build configuration list for PBXProject "RenameCableTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84A848D818A87E4D00463636;
+			productRefGroup = 84A848E218A87E4D00463636 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A848E018A87E4D00463636 /* RenameCableTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A848DF18A87E4D00463636 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848393AF18AA224800B1895C /* libftd2xx.1.0.2-2.dylib in Resources */,
+				84C6F66018AAFBEA0009030F /* libd2xx_table.dylib in Resources */,
+				848393B018AA224800B1895C /* libftd2xx.1.0.2.dylib in Resources */,
+				84A848EF18A87E4D00463636 /* InfoPlist.strings in Resources */,
+				84A848F518A87E4E00463636 /* Credits.rtf in Resources */,
+				84A848FB18A87E4E00463636 /* MainMenu.xib in Resources */,
+				84C6F66518AAFD390009030F /* ftdimv in Resources */,
+				84C6F66618AAFD390009030F /* installD2XX.sh in Resources */,
+				84C6F66718AAFD390009030F /* reloadVCP.sh in Resources */,
+				84C6F66818AAFD390009030F /* unloadVCP.sh in Resources */,
+				84EC1E3B18BC94C900AE0AC8 /* ReloadTest.scpt in Resources */,
+				84EC1E3C18BC94C900AE0AC8 /* UnloadTest.scpt in Resources */,
+				84063D3018BD80C200D91E05 /* icons.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A848DD18A87E4D00463636 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A848F118A87E4D00463636 /* main.m in Sources */,
+				84A848F818A87E4E00463636 /* RCTAppDelegate.m in Sources */,
+				84A8490318A8A4EE00463636 /* RCTControlPort.m in Sources */,
+				840DBE2E1AB2E85900C54A08 /* NSStringCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84A848ED18A87E4D00463636 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A848EE18A87E4D00463636 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84A848F318A87E4E00463636 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A848F418A87E4E00463636 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		84A848F918A87E4E00463636 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A848FA18A87E4E00463636 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A848FC18A87E4E00463636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84A848FD18A87E4E00463636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84A848FF18A87E4E00463636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenameCableTool/RenameCableTool-Prefix.pch";
+				INFOPLIST_FILE = "RenameCableTool/RenameCableTool-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84A8490018A87E4E00463636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenameCableTool/RenameCableTool-Prefix.pch";
+				INFOPLIST_FILE = "RenameCableTool/RenameCableTool-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A848DC18A87E4D00463636 /* Build configuration list for PBXProject "RenameCableTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A848FC18A87E4E00463636 /* Debug */,
+				84A848FD18A87E4E00463636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A848FE18A87E4E00463636 /* Build configuration list for PBXNativeTarget "RenameCableTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A848FF18A87E4E00463636 /* Debug */,
+				84A8490018A87E4E00463636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A848D918A87E4D00463636 /* Project object */;
+}

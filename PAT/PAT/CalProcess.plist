@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1.StartTest</key>
+	<dict>
+		<key>1.SHOW_MEMORY</key>
+		<dict>
+			<key>SOURCE</key>
+			<string>DeviceName</string>
+			<key>SHOW</key>
+			<true/>
+			<key>SAVE</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>2.GetMagnitude</key>
+	<dict>
+		<key>1.SHOW_MEMORY</key>
+		<dict>
+			<key>SOURCE</key>
+			<string>MagnitudeData</string>
+			<key>SHOW</key>
+			<true/>
+			<key>SAVE</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>3.GetPhase</key>
+	<dict>
+		<key>1.SHOW_MEMORY</key>
+		<dict>
+			<key>SOURCE</key>
+			<string>PhaseData</string>
+			<key>SHOW</key>
+			<true/>
+			<key>SAVE</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>4.DrawChart</key>
+	<dict>
+		<key>1.DRAW_CHART_PAT_WIFI</key>
+		<dict>
+			<key>SAVE</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>5.EndTest</key>
+	<dict/>
+</dict>
+</plist>

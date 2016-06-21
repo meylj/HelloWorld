@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>START_TEST_IQC_Display</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>Power On the Fixture</key>
+		<array>
+			<dict>
+				<key>Init_Instrument:RETURN_VALUE:</key>
+				<dict>
+					<key>BOARDIDCOUNT</key>
+					<integer>1</integer>
+					<key>PRIMARYADDRESS</key>
+					<integer>22</integer>
+					<key>iInstrumentType</key>
+					<integer>0</integer>
+					<key>INSTRUMENTNAME</key>
+					<string>34401</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Measure LCM Current</key>
+		<array>
+			<dict>
+				<key>SendCommandTimesForAVG:RETURN_VALUE:</key>
+				<dict>
+					<key>INSTRUMENTNAME</key>
+					<string>34401</string>
+					<key>GPIBCOMMAND</key>
+					<string>MEAS:CURR:DC? AUTO</string>
+					<key>TIMES</key>
+					<string>10</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Measure LCM Voltage</key>
+		<array>
+			<dict>
+				<key>SendCommandTimesForAVG:RETURN_VALUE:</key>
+				<dict>
+					<key>INSTRUMENTNAME</key>
+					<string>34401</string>
+					<key>GPIBCOMMAND</key>
+					<string>MEAS:VOLT:DC? AUTO</string>
+					<key>TIMES</key>
+					<string>10</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Turn off Backlight</key>
+		<array>
+			<dict>
+				<key>SEND_COMMAND:</key>
+				<dict>
+					<key>STRING</key>
+					<string>bl -o</string>
+					<key>TARGET</key>
+					<string>MOBILE</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>READ_COMMAND:RETURN_VALUE:</key>
+				<dict>
+					<key>BEGIN</key>
+					<string>bl -o</string>
+					<key>DELETE_ENTER</key>
+					<false/>
+					<key>END</key>
+					<string>:-)</string>
+					<key>FAIL_RECEIVE</key>
+					<array>
+						<string>ERROR</string>
+					</array>
+					<key>MATCHTYPE</key>
+					<integer>0</integer>
+					<key>PASS_RECEIVE</key>
+					<array>
+						<string>:-)</string>
+					</array>
+					<key>REPEAT</key>
+					<integer>1</integer>
+					<key>TARGET</key>
+					<string>MOBILE</string>
+					<key>TIMEOUT</key>
+					<integer>10</integer>
+				</dict>
+			</dict>
+			<dict>
+				<key>MSGBOX_COMMAND:RETURN_VALUE:</key>
+				<dict>
+					<key>ABUTTONS</key>
+					<string>PASS,FAIL</string>
+					<key>MESSAGE</key>
+					<string>1.请确认屏幕是否关闭，若关闭，请按“PASS”，否则“FAIL”！</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>CHANGE_RETURNVALUE_TO_PASS_FAIL:RETURN_VALUE:</key>
+				<dict>
+					<key>SZ_PASS</key>
+					<string>PASS</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Power Off the Fixture</key>
+		<array>
+			<dict>
+				<key>DISORCONNECTUSB:RETURN_VALUE:</key>
+				<dict>
+					<key>Argus</key>
+					<string>0</string>
+					<key>Path</key>
+					<string>/usr/local/bin/usbconnect</string>
+					<key>TARGET</key>
+					<string>MOBILE</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>CLOSE_TARGET:RETURN_VALUE:</key>
+				<dict>
+					<key>TARGET</key>
+					<string>MOBILE</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>MSGBOX_COMMAND:RETURN_VALUE:</key>
+				<dict>
+					<key>ABUTTONS</key>
+					<string>OK</string>
+					<key>MESSAGE</key>
+					<string>1.关闭治具电源；2.将Home Button/Grape模组从治具上移除。</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>CHANGE_RETURNVALUE_TO_PASS_FAIL:RETURN_VALUE:</key>
+				<dict>
+					<key>SZ_PASS</key>
+					<string>PASS</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

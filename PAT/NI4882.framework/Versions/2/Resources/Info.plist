@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>CFBundleDevelopmentRegion</key>
+   <string>English</string>
+   <key>CFBundleExecutable</key>
+   <string>NI4882</string>
+   <key>CFBundleIdentifier</key>
+   <string>com.ni.framework.NI4882</string>
+   <key>CFBundleInfoDictionaryVersion</key>
+   <string>6.0</string>
+   <key>CFBundleName</key>
+   <string>NI4882</string>
+   <key>CFBundleGetInfoString</key>
+   <string>NI-488.2 API 3.0.0f1, Copyright (c) 2003-2011 National Instruments Corporation. All Rights Reserved.</string>
+   <key>CFBundlePackageType</key>
+   <string>FMWK</string>
+   <key>CFBundleSignature</key>
+   <string>????</string>
+   <key>CFBundleShortVersionString</key>
+   <string>3.0.0</string>
+   <key>CFBundleVersion</key>
+   <string>3.0.0f1</string>
+   <key>NSHumanReadableCopyright</key>
+   <string>Copyright (c) 2003-2011 National Instruments Corporation. All Rights Reserved.</string>
+</dict>
+</plist>

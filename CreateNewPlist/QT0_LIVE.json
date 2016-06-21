@@ -1,0 +1,8091 @@
+{
+  "Versions" : "1",
+  "data" : {
+    "product" : "D10",
+    "tests" : [
+      {
+        "START_TEST_QT0" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "START_TEST_QT0"
+          }
+        }
+      },
+      {
+        "Initialise Fixture_Auto" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Initialise Fixture_Auto"
+          }
+        }
+      },
+      {
+        "Check DUT Mode" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check DUT Mode"
+          }
+        }
+      },
+      {
+        "Check DUT Mode_Auto" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check DUT Mode_Auto"
+          }
+        }
+      },
+      {
+        "Board ID(ECID)" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "chipid",
+              ""
+            ],
+            [
+              "bl -m",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Board ID(ECID)"
+          }
+        }
+      },
+      {
+        "Get Link Data via MLB SN From SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg print MLB#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Get Link Data via MLB SN From SFC"
+          }
+        }
+      },
+      {
+        "SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "SN"
+          }
+        }
+      },
+      {
+        "Compare 80ISN With SFC": {
+          "Specification": {
+          },
+          "Commands": [
+            [
+              "sn",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Compare 80ISN With SFC"
+          }
+        }
+      },
+      {
+        "PREVIOUS FG SN_REL" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "sn",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "PREVIOUS FG SN_REL"
+          }
+        }
+      },
+      {
+        "QUERY_SFC_REL" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "QUERY_SFC_REL"
+          }
+        }
+      },
+      {
+        "Write GMT Date and Time" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "rtc --set [*NowTime*]",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Write GMT Date and Time"
+          }
+        }
+      },
+      {
+        "Check UOP" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check UOP"
+          }
+        }
+      },
+      {
+        "NetWork CB: Check Previous Station CBs" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "NetWork CB: Check Previous Station CBs"
+          }
+        }
+      },
+      {
+        "Diag Version Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "ver",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Diag Version Check"
+          }
+        }
+      },
+      {
+        "Slot" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Slot"
+          }
+        }
+      },
+      {
+        "Write CB Incomplete" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Write CB Incomplete"
+          }
+        }
+      },
+      {
+        "Muon Fault Register" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x00"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x00"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "bl -h",
+              ""
+            ],
+            [
+              "i2c -d 0 0x62 0x17 1",
+              ""
+            ],
+            [
+              "bl -m",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Muon Fault Register"
+          }
+        }
+      },
+      {
+        "Boost IC Check": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "<0x20>"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "i2c --devread 0 0x75 0x05 1",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Boost IC Check"
+          }
+        }
+      },
+      {
+        "Lifetime Max Temperature" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "60",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "60",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -e read_blk 59 0",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Lifetime Max Temperature"
+          }
+        }
+      },
+      {
+        "Get Link Data via ISN From SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Get Link Data via ISN From SFC"
+          }
+        }
+      },
+      {
+        "Get ARC Type From SFC": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Get ARC Type From SFC"
+          }
+        }
+      },
+      {
+        "Burn Matrix and Special Builds" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add CFG# \"[*CFG#*]\"",
+              ""
+            ],
+            [
+              "syscfg print CFG#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Matrix and Special Builds"
+          }
+        }
+      },
+      {
+        "Stockholm Firmware Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "stockholm --on",
+              ""
+            ],
+            [
+              "stockholm --init",
+              "OK"
+            ],
+            [
+              "stockholm --properties",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Stockholm Firmware Check"
+          }
+        }
+      },
+      {
+        "Read SEID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "stockholm --seid",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read SEID"
+          }
+        }
+      },
+      {
+        "Battery FW Version" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x601"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x601"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k gasgauge -g fw-version",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery FW Version"
+          }
+        }
+      },
+      {
+        "Battery Chem Id" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x3504",
+                "0x3465",
+                "0x3557"
+              ]
+            },
+            "Type2" : {
+              "match": [
+                "0x3504",
+                "0x3465",
+                "0x3557"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k gasgauge -g chem-id",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery Chem Id"
+          }
+        }
+      },
+      {
+        "Check The Checksnum of battery before flash" : {
+          "Specification" : {
+            "Type1": {
+              "match": [
+                "0x7BCF",
+                "0x7876",
+                "0x76BC",
+                "0x5680",
+                "0x56BD",
+                "0x52F6",
+                "0x5155"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "0x7BCF",
+                "0x7876",
+                "0x76BC",
+                "0x5680",
+                "0x56BD",
+                "0x52F6",
+                "0x5155"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -e test_checksum",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Check The Checksnum of battery before flash"
+          }
+        }
+      },
+      {
+        "Battery Present" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3400",
+              "max" : "4300",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3400",
+              "max" : "4300",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+            [
+              "pmuadc --sel tigris --read vbat",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery Present"
+          }
+        }
+      },
+      {
+        "Read MLB SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg print MLB#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read MLB SN"
+          }
+        }
+      },
+      {
+        "Read Nand Size" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "nandsize",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Nand Size"
+          }
+        }
+      },
+      {
+        "Read Nand ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "nandcsid",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Nand ID"
+          }
+        }
+      },
+      {
+        "Cal GasGauge" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Yes"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Yes"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -e seal",
+              "OK"
+            ],
+            [
+              "dev -g sealed",
+              ""
+            ],
+            [
+              "dev -k gasgauge -g chem-id",
+              ""
+            ],
+            [
+              "dev -k GasGauge -g cycle-count",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Cal GasGauge"
+          }
+        }
+      },
+      {
+        "Battery GG Test Enhancement_Cycle Count" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "5",
+              "units" : ""
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "5",
+              "units" : ""
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Battery GG Test Enhancement_Cycle Count"
+          }
+        }
+      },
+      {
+        "x582 Serial Number" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "touch --sel mesa",
+              ""
+            ],
+            [
+              "touch --on",
+              ""
+            ],
+            [
+              "touch -p serial-number",
+              "OK"
+            ],
+            [
+              "touch --off",
+              "OK"
+            ]
+          ],
+          "Name" : {
+            "main" : "x582 Serial Number"
+          }
+        }
+      },
+      {
+        "Burn x582 Chip ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add NSrN [*MESA_CHIP_SN*]",
+              ""
+            ],
+            [
+              "syscfg print NSrN",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn x582 Chip ID"
+          }
+        }
+      },
+      {
+        "Read Panel ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "display --on",
+              ""
+            ],
+            [
+              "display --id",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Panel ID"
+          }
+        }
+      },
+      {
+        "Read Photon ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "display --method photon_id",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Photon ID"
+          }
+        }
+      },
+      {
+        "Check LCM SN with SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x0 0x39",
+              ""
+            ],
+            [
+              "i2c -z 2 --devread 0 0x51 0x1200 0x16",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Check LCM SN with SFC"
+          }
+        }
+      },
+      {
+        "Check CG Color and HSG Color" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check CG Color and HSG Color"
+          }
+        }
+      },
+      {
+        "Upload Orb Flex SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x1200 0x16",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Upload Orb Flex SN"
+          }
+        }
+      },
+      {
+        "Burn CGSp" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add CGSp 0x0001 [*CGSp_Part2*]",
+              ""
+            ],
+            [
+              "syscfg print CGSp",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn CGSp"
+          }
+        }
+      },
+      {
+        "Check CG Type" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check CG Type"
+          }
+        }
+      },
+      {
+        "Compare MLB SN With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare MLB SN With SFC"
+          }
+        }
+      },
+      {
+        "Compare NandSize Range With Local" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare NandSize Range With Local"
+          }
+        }
+      },
+      {
+        "Check NandSize With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check NandSize With SFC"
+          }
+        }
+      },
+      {
+        "Check Nand ID With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Check Nand ID With SFC"
+          }
+        }
+      },
+      {
+        "Burn MPN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add Mod# \"[*MPN*]\"",
+              "Finish"
+            ],
+            [
+              "syscfg print Mod#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn MPN"
+          }
+        }
+      },
+      {
+        "Burn Regn" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add Regn \"[*REGION_CODE*]\"",
+              "Finish"
+            ],
+            [
+              "syscfg print Regn",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Regn"
+          }
+        }
+      },
+      {
+        "Burn DClr" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add DClr [*DCLR*]",
+              ""
+            ],
+            [
+              "syscfg print DClr",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn DClr"
+          }
+        }
+      },
+      {
+        "Compare Battery SN With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "device -k GasGauge -e read_pack_sn",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Compare Battery SN With SFC"
+          }
+        }
+      },
+      {
+        "Burn Battery SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add Batt \"[*Battery_SN_UNIT*]\"",
+              ""
+            ],
+            [
+              "syscfg print Batt",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Battery SN"
+          }
+        }
+      },
+      {
+        "Burn NoCl_REL" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add NoCl 1",
+              "Finish"
+            ],
+            [
+              "syscfg print NoCl",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn NoCl_REL"
+          }
+        }
+      },
+      {
+        "Burn NoCl" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add NoCl 0x00000000 0x00000000 0x00000000 0x00000000",
+              "Finish"
+            ],
+            [
+              "syscfg print NoCl",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn NoCl"
+          }
+        }
+      },
+      {
+        "Burn PRSq" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add PRSq 0x02010001 0x00000000 0x00000000 0x00000000",
+              "Finish"
+            ],
+            [
+              "syscfg print PRSq",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn PRSq"
+          }
+        }
+      },
+      {
+        "Read Back CHIP ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "chipid",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Back CHIP ID"
+          }
+        }
+      },
+      {
+        "Clear WpCl" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Not Found"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Not Found"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "syscfg delete WpCl",
+              ""
+            ],
+            [
+              "syscfg print WpCl",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Clear WpCl"
+          }
+        }
+      },
+      {
+        "Burn LCM SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add LCM# \"[*LCM_SN_DIAGS*]\"",
+              ""
+            ],
+            [
+              "syscfg print LCM#",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn LCM SN"
+          }
+        }
+      },
+      {
+        "Burn Grape SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add MtSN \"[*CG_SN*]\"",
+              ""
+            ],
+            [
+              "syscfg print MtSN",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Grape SN"
+          }
+        }
+      },
+      {
+        "LCM Vendor Name" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "mipi --write 0x23 0xb2 0x00",
+              ""
+            ],
+            [
+              "mipi --read 0x24 0xB1",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "LCM Vendor Name"
+          }
+        }
+      },
+      {
+        "Read Kepler SN": {
+          "Specification": {
+          },
+          "Commands": [
+            [
+              "i2c -z 2 --devread 0 0x51 0x3b00 0x1A",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Read Kepler SN"
+          }
+        }
+      },
+      {
+        "Read Kepler Data" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x0000 0x3E80",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Read Kepler Data"
+          }
+        }
+      },
+      {
+        "Burn MtCl" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x0B1A 0x0300",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn MtCl"
+          }
+        }
+      },
+      {
+        "Burn GLCl" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x46 0xdc",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn GLCl"
+          }
+        }
+      },
+      {
+        "Burn DPCl": {
+          "Specification": {
+          },
+          "Commands": [
+            [
+              "i2c -z 2 --devread 0 0x51 0x133 0x28",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Burn DPCl"
+          }
+        }
+      },
+      {
+        "Burn BLCl" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x122 0x10",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn BLCl"
+          }
+        }
+      },
+      {
+        "BLCl_Version" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "BLCl_Version"
+          }
+        }
+      },
+      {
+        "BLCl_1" : {
+          "Specification": {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "BLCl_1"
+          }
+        }
+      },
+      {
+        "BLCl_2": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BLCl_2"
+          }
+        }
+      },
+      {
+        "BLCl_3": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "BLCl_3"
+          }
+        }
+      },
+      {
+        "Burn OrbG" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "i2c -z 2 --devread 0 0x51 0x2000 0x1FA",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn OrbG"
+          }
+        }
+      },
+      {
+        "Check Sleep Enable Bit" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Sleep Enabled: Yes"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Sleep Enabled: Yes"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "device -k GasGauge -e read_sleep",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Check Sleep Enable Bit"
+          }
+        }
+      },
+      {
+        "AutoCal/Sleep Current" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "8",
+              "max" : "8",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "8",
+              "max" : "8",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "AutoCal/Sleep Current"
+          }
+        }
+      },
+      {
+        "GG Battery Type" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "BQ27546"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "BQ27546"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "device -k GasGauge -g model",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "GG Battery Type"
+          }
+        }
+      },
+      {
+        "adc_vddout" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+            [
+              "pmuset --ldo 6 --vol 3300 --on",
+              ""
+            ],
+            [
+              "soc --set \"perfstate gpu 1\"",
+              ""
+            ],
+            [
+              "soc -p get-perf-state",
+              ""
+            ],
+            [
+              "baseband --on --load",
+              ""
+            ],
+            [
+              "touch --sel mesa",
+              ""
+            ],
+            [
+              "touch --on",
+              ""
+            ],
+            [
+              "touch --sel grape",
+              ""
+            ],
+            [
+              "touch --on",
+              ""
+            ],
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "camisp --pick front --on",
+              ""
+            ],
+            [
+              "charge --set 0",
+              ""
+            ],
+            [
+              "event -s enter-bg-quiesce",
+              ""
+            ],
+            [
+              "touch --sel mesa --on",
+              ""
+            ],
+            [
+              "touch --sel mesa --off",
+              ""
+            ],
+            [
+              "wait 10",
+              ""
+            ],
+            [
+              "touch --sel mesa --on",
+              ""
+            ],
+            [
+              "pmuadc --read all",
+              ""
+            ],
+            [
+              "event -s leave-bg-quiesce",
+              ""
+            ],
+            [
+              "touch --off",
+              ""
+            ],
+            [
+              "touch --sel mesa",
+              ""
+            ],
+            [
+              "touch --off",
+              ""
+            ],
+            [
+              "camisp --pick front --exit",
+              ""
+            ],
+            [
+              "soc --set \"perfstate gpu 0\"",
+              ""
+            ],
+            [
+              "baseband --off",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "adc_vddout"
+          }
+        }
+      },
+      {
+        "Cpu_Voltage" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Cpu_Voltage"
+          }
+        }
+      },
+      {
+        "SoC_Voltage" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "SoC_Voltage"
+          }
+        }
+      },
+      {
+        "Gpu_Voltage" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Gpu_Voltage"
+          }
+        }
+      },
+      {
+        "adc_brick_id_usb_dm" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2620",
+              "max" : "2820",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2620",
+              "max" : "2820",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_brick_id_usb_dm"
+          }
+        }
+      },
+      {
+        "adc_brick_id_usb_dp" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1950",
+              "max" : "2100",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1950",
+              "max" : "2100",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_brick_id_usb_dp"
+          }
+        }
+      },
+      {
+        "adc_tcal" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3449.6",
+              "max" : "4390.4",
+              "units" : "Ohm"
+            },
+            "Type2" : {
+              "min" : "3449.6",
+              "max" : "4390.4",
+              "units" : "Ohm"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_tcal"
+          }
+        }
+      },
+      {
+        "adc_temp1_forehead" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3800",
+              "max" : "12800",
+              "units" : "Ohm"
+            },
+            "Type2" : {
+              "min" : "3800",
+              "max" : "12800",
+              "units" : "Ohm"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp1_forehead"
+          }
+        }
+      },
+      {
+        "adc_temp2_rear_camera" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3200",
+              "max" : "12800",
+              "units" : "Ohm"
+            },
+            "Type2" : {
+              "min" : "3200",
+              "max" : "12800",
+              "units" : "Ohm"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp2_rear_camera"
+          }
+        }
+      },
+      {
+        "adc_temp3_radio_pa" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "4900",
+              "max" : "13300",
+              "units" : "Ohm"
+            },
+            "Type2" : {
+              "min" : "4900",
+              "max" : "13300",
+              "units" : "Ohm"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp3_radio_pa"
+          }
+        }
+      },
+      {
+        "adc_temp4_ap" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2000",
+              "max" : "12000",
+              "units" : "Ohm"
+            },
+            "Type2" : {
+              "min" : "2000",
+              "max" : "12000",
+              "units" : "Ohm"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp4_ap"
+          }
+        }
+      },
+      {
+        "adc_temp_ldo5" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_ldo5"
+          }
+        }
+      },
+      {
+        "adc_temp_ldo10" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_ldo10"
+          }
+        }
+      },
+      {
+        "adc_temp_buck0" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck0"
+          }
+        }
+      },
+      {
+        "adc_temp_buck1" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck1"
+          }
+        }
+      },
+      {
+        "adc_temp_buck2" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck2"
+          }
+        }
+      },
+      {
+        "adc_temp_buck3" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck3"
+          }
+        }
+      },
+      {
+        "adc_temp_buck4" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck4"
+          }
+        }
+      },
+      {
+        "adc_temp_buck5" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck5"
+          }
+        }
+      },
+      {
+        "adc_temp_buck6" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck6"
+          }
+        }
+      },
+      {
+        "adc_temp_buck7" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck7"
+          }
+        }
+      },
+      {
+        "adc_temp_buck8" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_temp_buck8"
+          }
+        }
+      },
+      {
+        "adc_tjint" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "70",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_tjint"
+          }
+        }
+      },
+      {
+        "adc_ibuck0_pp_cpu" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck0_pp_cpu"
+          }
+        }
+      },
+      {
+        "adc_ibuck1_pp_gpu" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck1_pp_gpu"
+          }
+        }
+      },
+      {
+        "adc_ibuck2_pp_soc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck2_pp_soc"
+          }
+        }
+      },
+      {
+        "adc_ibuck3_pp1v8_sdram" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck3_pp1v8_sdram"
+          }
+        }
+      },
+      {
+        "adc_ibuck4_pp1v1_sdram" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck4_pp1v1_sdram"
+          }
+        }
+      },
+      {
+        "adc_ibuck5_pp_fixed" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck5_pp_fixed"
+          }
+        }
+      },
+      {
+        "adc_ibuck6_pp1v2_camera" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck6_pp1v2_camera"
+          }
+        }
+      },
+      {
+        "adc_ibuck7_pp_cpu_sram" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck7_pp_cpu_sram"
+          }
+        }
+      },
+      {
+        "adc_ibuck8_pp_gpu_sram" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_ibuck8_pp_gpu_sram"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck0_pp_cpu" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck0_pp_cpu"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck1_pp_gpu" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck1_pp_gpu"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck2_pp_var_soc" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck2_pp_var_soc"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck3_pp1v8_sdram" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1765",
+              "max" : "1830",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1765",
+              "max" : "1830",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck3_pp1v8_sdram"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck4_pp1v1_sdram" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1065",
+              "max" : "1130",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1065",
+              "max" : "1130",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck4_pp1v1_sdram"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck5_pp_fixed" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "815",
+              "max" : "880",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck5_pp_fixed"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck6_pp1v2_camera" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1165",
+              "max" : "1230",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1165",
+              "max" : "1230",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck6_pp1v2_camera"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck7_pp_cpu_sram" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "770",
+              "max" : "835",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "770",
+              "max" : "835",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck7_pp_cpu_sram"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck8_pp_gpu_sram" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "770",
+              "max" : "835",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "770",
+              "max" : "835",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck8_pp_gpu_sram"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck3_sw1_pp1v8" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck3_sw1_pp1v8"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck3_sw2_touch" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck3_sw2_touch"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck3_sw3_imu_owl" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1760",
+              "max" : "1830",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck3_sw3_imu_owl"
+          }
+        }
+      },
+      {
+        "adc_BIST_buck4_sw1_pp1v1" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1060",
+              "max" : "1130",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1060",
+              "max" : "1130",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_buck4_sw1_pp1v1"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo1_pp3v3_usb" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3201",
+              "max" : "3399",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3201",
+              "max" : "3399",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo1_pp3v3_usb"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo2_pp1v8_va" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo2_pp1v8_va"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo3_pp3v0_tristar" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo3_pp3v0_tristar"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo4_pp0v8_owl" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "776",
+              "max" : "824",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "776",
+              "max" : "824",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo4_pp0v8_owl"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo5_pp3v0_nand" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo5_pp3v0_nand"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo6_pp3v3_acc" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3201",
+              "max" : "3399",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3201",
+              "max" : "3399",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo6_pp3v3_acc"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo7_pp3v0_prox_als" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo7_pp3v0_prox_als"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo8_pp2v75_mamba" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo8_pp2v75_mamba"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo9_pp2v85_cam_avdd" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2764.5",
+              "max" : "2935.5",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2764.5",
+              "max" : "2935.5",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo9_pp2v85_cam_avdd"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo10_pp0v9_nand" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "873",
+              "max" : "927",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "873",
+              "max" : "927",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo10_pp0v9_nand"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo11_pp3v0_prox_irled" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo11_pp3v0_prox_irled"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo12_pp1v8_always" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo12_pp1v8_always"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo13_pp3v0_mesa" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2910",
+              "max" : "3090",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo13_pp3v0_mesa"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo14_pp1v2" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1164",
+              "max" : "1236",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1164",
+              "max" : "1236",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo14_pp1v2"
+          }
+        }
+      },
+      {
+        "adc_BIST_ldo15_pp1v8_mesa" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1746",
+              "max" : "1854",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ldo15_pp1v8_mesa"
+          }
+        }
+      },
+      {
+        "adc_BIST_vrtc" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2450",
+              "max" : "2550",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "2450",
+              "max" : "2550",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_vrtc"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo1_pp3v3_usb" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1.3",
+              "max" : "3.3",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "1.3",
+              "max" : "3.3",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo1_pp3v3_usb"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo2_pp1v8_va" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2",
+              "max" : "5",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "2",
+              "max" : "5",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo2_pp1v8_va"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo3_pp3v0_tristar" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.2",
+              "max" : "1",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.2",
+              "max" : "1",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo3_pp3v0_tristar"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo4_pp0v8_owl" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "6",
+              "max" : "22",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo4_pp0v8_owl"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo5_pp3v0_nand" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-5",
+              "max" : "5",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "-5",
+              "max" : "5",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo5_pp3v0_nand"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo6_pp3v3_acc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo6_pp3v3_acc"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo7_pp3v0_prox_als" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "2.5",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "2.5",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo7_pp3v0_prox_als"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo8_pp2v75_mamba" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo8_pp2v75_mamba"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo9_pp2v85_cam_avdd" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo9_pp2v85_cam_avdd"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo10_pp0v9_nand" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "130",
+              "max" : "370",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "130",
+              "max" : "370",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo10_pp0v9_nand"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo11_pp3v0_prox_irled" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo11_pp3v0_prox_irled"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo12_pp1v8_always" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.005",
+              "max" : "0.04",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.005",
+              "max" : "0.04",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo12_pp1v8_always"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo13_pp3v0_mesa" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo13_pp3v0_mesa"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo14_pp1v2" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "40",
+              "max" : "160",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo14_pp1v2"
+          }
+        }
+      },
+      {
+        "adc_BIST_ildo15_pp1v8_mesa" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_ildo15_pp1v8_mesa"
+          }
+        }
+      },
+      {
+        "adc_BIST_irtc" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.66",
+              "max" : "1.26",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.66",
+              "max" : "1.26",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_irtc"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa0_pmu_to_ap_irq_l" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa0_pmu_to_ap_irq_l"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa1_nc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa1_nc"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa3_button_vol_up_l" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1771",
+              "max" : "1819",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1771",
+              "max" : "1819",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa3_button_vol_up_l"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa4_button_vol_down_l" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1771",
+              "max" : "1819",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1771",
+              "max" : "1819",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa4_button_vol_down_l"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa5_lcm_to_chestnut_pwr_en" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1766",
+              "max" : "1814",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1766",
+              "max" : "1814",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa5_lcm_to_chestnut_pwr_en"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa6_nc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa6_nc"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxa7_chestnut_to_pmu_adcmux" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxa7_chestnut_to_pmu_adcmux"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxay_pmu_amux_ay" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxay_pmu_amux_ay"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb0_bb_to_pmu_amux_smps1" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb0_bb_to_pmu_amux_smps1"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb1_bb_to_pmu_amux_smps3" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb1_bb_to_pmu_amux_smps3"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb2_nc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb2_nc"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb3_nc" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb3_nc"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb4_pmu_to_wlan_clk32k" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb4_pmu_to_wlan_clk32k"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb5_bb_to_pmu_amux_ldo11_sim1" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb5_bb_to_pmu_amux_ldo11_sim1"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb6_ap_to_pmu_test_clockout" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb6_ap_to_pmu_test_clockout"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxb7_bb_to_pmu_amux_smps4" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxb7_bb_to_pmu_amux_smps4"
+          }
+        }
+      },
+      {
+        "adc_BIST_amuxby_pmu_amux_by" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "adc_BIST_amuxby_pmu_amux_by"
+          }
+        }
+      },
+      {
+        "tigris_adc_vbus" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "4900",
+              "max" : "5300",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "4900",
+              "max" : "5300",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_vbus"
+          }
+        }
+      },
+      {
+        "tigris_adc_ibus" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-20",
+              "max" : "20",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "-20",
+              "max" : "20",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_ibus"
+          }
+        }
+      },
+      {
+        "tigris_adc_ibat" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "140",
+              "max" : "180",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "140",
+              "max" : "180",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_ibat"
+          }
+        }
+      },
+      {
+        "tigris_adc_vdd" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_vdd"
+          }
+        }
+      },
+      {
+        "tigris_adc_die_temp" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "20",
+              "max" : "50",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "20",
+              "max" : "50",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_die_temp"
+          }
+        }
+      },
+      {
+        "tigris_adc_vbat" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "tigris_adc_vbat"
+          }
+        }
+      },
+      {
+        "chestnut_Ground" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_Ground"
+          }
+        }
+      },
+      {
+        "chestnut_VIN" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mV"
+            },
+            "Type2": {
+              "units": "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VIN"
+          }
+        }
+      },
+      {
+        "chestnut_VREF" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "1235",
+              "max" : "1265",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "1235",
+              "max" : "1265",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VREF"
+          }
+        }
+      },
+      {
+        "chestnut_VBST" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "5731",
+              "max" : "6272",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "5731",
+              "max" : "6272",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VBST"
+          }
+        }
+      },
+      {
+        "chestnut_VLDO1" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "5530",
+              "max" : "5870",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "5530",
+              "max" : "5870",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VLDO1"
+          }
+        }
+      },
+      {
+        "chestnut_VLDO2" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "5530",
+              "max" : "5870",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "5530",
+              "max" : "5870",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VLDO2"
+          }
+        }
+      },
+      {
+        "chestnut_VLDO3" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "4845",
+              "max" : "5355",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "4845",
+              "max" : "5355",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VLDO3"
+          }
+        }
+      },
+      {
+        "chestnut_VNEG" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-5870",
+              "max" : "-5530",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "-5870",
+              "max" : "-5530",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_VNEG"
+          }
+        }
+      },
+      {
+        "chestnut_Die_temp" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "25",
+              "max" : "50",
+              "units" : "C"
+            },
+            "Type2" : {
+              "min" : "25",
+              "max" : "50",
+              "units" : "C"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_Die_temp"
+          }
+        }
+      },
+      {
+        "chestnut_ILDO1" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.5",
+              "max" : "12",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.5",
+              "max" : "12",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_ILDO1"
+          }
+        }
+      },
+      {
+        "chestnut_ILDO2" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.5",
+              "max" : "6",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.5",
+              "max" : "6",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_ILDO2"
+          }
+        }
+      },
+      {
+        "chestnut_ILDO3" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "1",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_ILDO3"
+          }
+        }
+      },
+      {
+        "chestnut_Ineg" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.5",
+              "max" : "19",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.5",
+              "max" : "19",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "chestnut_Ineg"
+          }
+        }
+      },
+      {
+        "BB ON" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "OK"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "OK"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "baseband --off",
+              ""
+            ],
+            [
+              "time baseband --on",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BB ON"
+          }
+        }
+      },
+      {
+        "Load BB Firmware" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "time baseband --load_firmware",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Load BB Firmware"
+          }
+        }
+      },
+      {
+        "BB Wait For Ready": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "OK"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "OK"
+              ]
+            }
+          },
+          "Commands": [
+            [
+              "time baseband --wait_for_ready",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "BB Wait For Ready"
+          }
+        }
+      },
+      {
+        "BB SNUM" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              " baseband --properties sn",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BB SNUM"
+          }
+        }
+      },
+      {
+        "BB FW Version Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "time baseband --properties firmware-version",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BB FW Version Check"
+          }
+        }
+      },
+      {
+        "BB Ping" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "time baseband --ping",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BB Ping"
+          }
+        }
+      },
+      {
+        "WiFi/BT Vendor" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "wifi --on",
+              ""
+            ],
+            [
+              "wifi --load_firmware",
+              ""
+            ],
+            [
+              "wifi --properties module-revision",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "WiFi/BT Vendor"
+          }
+        }
+      },
+      {
+        "Wifi Host Wake" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "wifi --test_host_wake",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Wifi Host Wake"
+          }
+        }
+      },
+      {
+        "Wifi Host Wake_REL" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "wifi --on",
+              ""
+            ],
+            [
+              "wifi --load_firmware",
+              ""
+            ],
+            [
+              "wifi --test_host_wake",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Wifi Host Wake_REL"
+          }
+        }
+      },
+      {
+        "WIFI/BT Module SN" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "wifi --properties",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "WIFI/BT Module SN"
+          }
+        }
+      },
+      {
+        "BT Auto Test" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "bluetooth --on",
+              ""
+            ],
+            [
+              "bluetooth --load_firmware",
+              ""
+            ],
+            [
+              "bluetooth --test_self_test",
+              ""
+            ],
+            [
+              "wifi --off",
+              ""
+            ],
+            [
+              "bluetooth --off",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BT Auto Test"
+          }
+        }
+      },
+      {
+        "BB OFF" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "OK"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "OK"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "time baseband --off",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BB OFF"
+          }
+        }
+      },
+      {
+        "Battery QEN Check" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Yes"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Yes"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -g chem-cap-updates-en",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery QEN Check"
+          }
+        }
+      },
+      {
+        "Battery Charge Voltage" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "charge --set 0",
+              ""
+            ],
+            [
+              "pmuadc --sel tigris --read vbat",
+              ""
+            ],
+            [
+              "charge --set 1000 --force",
+              ""
+            ],
+            [
+              "charge --set 1000",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery Charge Voltage"
+          }
+        }
+      },
+      {
+        "Burn MdlC_ARC": {
+          "Specification": {
+          },
+          "Commands": [
+            [
+              "syscfg add MdlC \"[*MDLC*]\"",
+              ""
+            ],
+            [
+              "syscfg print MdlC",
+              ""
+            ]
+          ],
+          "Name": {
+            "main": "Burn MdlC_ARC"
+          }
+        }
+      },
+      {
+        "Orb Value Check" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x81B0"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x81B0"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "touch --sel grape",
+              ""
+            ],
+            [
+              "touch --off",
+              ""
+            ],
+            [
+              "touch --on",
+              ""
+            ],
+            [
+              "memrw --32 0x20A088004 0x10401E",
+              ""
+            ],
+            [
+              "touch --load_firmware",
+              ""
+            ],
+            [
+              "touch --test orb --run",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Orb Value Check"
+          }
+        }
+      },
+      {
+        "Orb Frame Check" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "PASS"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "PASS"
+              ]
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Orb Frame Check"
+          }
+        }
+      },
+      {
+        "CSIG_row_avg_med" : {
+          "Specification" : {
+          },
+          "Commands" : [
+            [
+              "display --on",
+              ""
+            ],
+            [
+              "bl -m",
+              ""
+            ],
+            [
+              "touch --off",
+              ""
+            ],
+            [
+              "touch --sel grape",
+              ""
+            ],
+            [
+              "touch --on",
+              ""
+            ],
+            [
+              "memrw --32 0x20A088004 0x10401E",
+              ""
+            ],
+            [
+              "touch --load_firmware",
+              ""
+            ],
+            [
+              "touch --test csig_single_stim --set_limit col --max 20 --run",
+              ""
+            ],
+            [
+              "touch --off",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "CSIG_row_avg_med"
+          }
+        }
+      },
+      {
+        "CSIG_col_avg_med" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_avg_med"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_0" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_0"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_1" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_1"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_2" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_2"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_3" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_3"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_4" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_4"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_5" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_5"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_6" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_6"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_7" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_7"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_8" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_8"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_9" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_9"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_10" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_10"
+          }
+        }
+      },
+      {
+        "CSIG_col_diff_11" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_col_diff_11"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_0" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_0"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_1" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_1"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_2" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_2"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_3" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_3"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_4" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_4"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_5" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_5"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_6" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_6"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_7" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_7"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_8" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_8"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_9" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_9"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_10" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_10"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_11" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_11"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_12" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_12"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_13" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_13"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_14" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_14"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_15" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_15"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_16" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_16"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_17" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_17"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_18" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_18"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_19" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_19"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_20" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_20"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_21" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_21"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_22" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_22"
+          }
+        }
+      },
+      {
+        "CSIG_row_diff_23" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "CSIG_row_diff_23"
+          }
+        }
+      },
+      {
+        "Column failures" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "None"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "None"
+              ]
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Column failures"
+          }
+        }
+      },
+      {
+        "Row failures" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "None"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "None"
+              ]
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Row failures"
+          }
+        }
+      },
+      {
+        "Charge Test" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "50",
+              "max" : "",
+              "units" : ""
+            },
+            "Type2" : {
+              "min" : "50",
+              "max" : "",
+              "units" : ""
+            }
+          },
+          "Commands" : [
+            [
+              "i2c -v 1 0x75 0x10 0x04",
+              ""
+            ],
+            [
+              "charge --set 1000 --force",
+              ""
+            ],
+            [
+              "pmuadc --sel tigris --read vbus",
+              ""
+            ],
+            [
+              "pmuadc --sel tigris --read ibat",
+              ""
+            ],
+            [
+              "pmuadc --sel tigris --read ibus",
+              ""
+            ],
+            [
+              "charge --set 0",
+              "OK"
+            ]
+          ],
+          "Name" : {
+            "main" : "Charge Test"
+          }
+        }
+      },
+      {
+        "SPKAMP_VERS" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x21"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x21"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "i2c -d 1 0x40 0x02 2",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "SPKAMP_VERS"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_0V" : {
+          "Specification" : {
+            "Type1": {
+              "units": "V"
+            },
+            "Type2": {
+              "units": "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x2A 0x09",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value 0",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param amp-drive --set --value LDO",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param diag-hpf --set --value disable",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param diag-signal --set --value 0",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 50 --rate 48000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--bins 2\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_0V"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IMON_0A" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IMON_0A"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_500mV_P" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.4",
+              "max" : "0.6",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "0.4",
+              "max" : "0.6",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x2A 0x09",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param amp-drive --set --value LDO",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value -24",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 100 --rate 48000 --freq 2000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_500mV_P"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_500mV_N" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-0.6",
+              "max" : "-0.4",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "-0.6",
+              "max" : "-0.4",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_500mV_N"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IMON_500mV_MAX" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.03",
+              "max" : "0.15",
+              "units" : "A"
+            },
+            "Type2" : {
+              "min" : "0.03",
+              "max" : "0.15",
+              "units" : "A"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IMON_500mV_MAX"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_3500mV_P" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2.8",
+              "max" : "4.2",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "2.8",
+              "max" : "4.2",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x2A 0x09",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param amp-drive --set --value VBST",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value -7",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 100 --rate 48000 --freq 2000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_3500mV_P"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_3500mV_N" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-4.2",
+              "max" : "-2.8",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "-4.2",
+              "max" : "-2.8",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_3500mV_N"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IMON_3500mV_MAX" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.2",
+              "max" : "0.6",
+              "units" : "A"
+            },
+            "Type2" : {
+              "min" : "0.2",
+              "max" : "0.6",
+              "units" : "A"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IMON_3500mV_MAX"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_7000mV_P" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "5.6",
+              "max" : "8.4",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "5.6",
+              "max" : "8.4",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x2A 0x09",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param amp-drive --set --value VBST",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value -1",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 100 --rate 48000 --freq 2000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_7000mV_P"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_VMON_7000mV_N" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-8.4",
+              "max" : "-5.6",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "-8.4",
+              "max" : "-5.6",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_VMON_7000mV_N"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IMON_7000mV_MAX" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.7",
+              "max" : "1.1",
+              "units" : "mA"
+            },
+            "Type2" : {
+              "min" : "0.7",
+              "max" : "1.1",
+              "units" : "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IMON_7000mV_MAX"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IREFMIN_VBST" : {
+          "Specification" : {
+            "Type1": {
+              "units": "V"
+            },
+            "Type2": {
+              "units": "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x2A 0x09",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block botspeaker --param amp-drive --set --value VBST",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value -1",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0x00",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 100 --rate 48000 --freq 2000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IREFMIN_VBST"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_IREF_VBST_DELTA" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.2",
+              "max" : "",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "0.2",
+              "max" : "",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_IREF_VBST_DELTA"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_HG_FREQ" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "298",
+              "max" : "302",
+              "units" : "Hz"
+            },
+            "Type2" : {
+              "min" : "298",
+              "max" : "302",
+              "units" : "Hz"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock botspeaker",
+              ""
+            ],
+            [
+              "audio --turnoff arc",
+              ""
+            ],
+            [
+              "routeaudio --route --block botspeaker --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x40 0x09 0xAA",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "setvol --block botspeaker --volume spk-vol --value 2",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param amp-gain --value 9",
+              ""
+            ],
+            [
+              "audioparam --set --block botspeaker --param enable-mon --value true",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 1000 --rate 48000 --freq 300",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--buffers\"",
+              ""
+            ],
+            [
+              "processaudio --pick fft -i process0 --option \"--skipSamples 10000\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_HG_FREQ"
+          }
+        }
+      },
+      {
+        "L25_SPEAKER_HG_THD" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "",
+              "max" : "-60",
+              "units" : ""
+            },
+            "Type2" : {
+              "min" : "",
+              "max" : "-60",
+              "units" : ""
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_SPEAKER_HG_THD"
+          }
+        }
+      },
+      {
+        "ARC_VERS" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x21"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x21"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock arc",
+              ""
+            ],
+            [
+              "audio --turnoff botspeaker",
+              ""
+            ],
+            [
+              "i2c -d 1 0x41 0x02 2",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "ARC_VERS"
+          }
+        }
+      },
+      {
+        "L25_ARC_VMON_0V" : {
+          "Specification" : {
+            "Type1": {
+              "units": "V"
+            },
+            "Type2": {
+              "units": "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock arc",
+              ""
+            ],
+            [
+              "audio --turnoff botspeaker",
+              ""
+            ],
+            [
+              "routeaudio --route --block arc --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x2A 0x09",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x0F 0x01",
+              ""
+            ],
+            [
+              "setvol --block arc --volume spk-vol --value 0",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "audioparam --block arc --param amp-drive --set --value LDO",
+              ""
+            ],
+            [
+              "audioparam --block arc --param diag-hpf --set --value disable",
+              ""
+            ],
+            [
+              "audioparam --block arc --param diag-signal --set --value 0",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 50 --rate 48000",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--bins 2\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_ARC_VMON_0V"
+          }
+        }
+      },
+      {
+        "L25_ARC_IMON_0A" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_ARC_IMON_0A"
+          }
+        }
+      },
+      {
+        "L25_ARC_VMON_500mV_P" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.4",
+              "max" : "0.6",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "0.4",
+              "max" : "0.6",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock arc",
+              ""
+            ],
+            [
+              "audio --turnoff botspeaker",
+              ""
+            ],
+            [
+              "routeaudio --route --block arc --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x2A 0x09",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x0F 0x01",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param diag-hpf --value disable",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block arc --param amp-drive --set --value VBST",
+              ""
+            ],
+            [
+              "setvol --block arc --volume spk-vol --value -24",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 --rate 48000 -l 100 --freq 170",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_ARC_VMON_500mV_P"
+          }
+        }
+      },
+      {
+        "L25_ARC_VMON_500mV_N" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-0.6",
+              "max" : "-0.4",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "-0.6",
+              "max" : "-0.4",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_ARC_VMON_500mV_N"
+          }
+        }
+      },
+      {
+        "L25_ARC_IMON_500mV_MAX" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.02",
+              "max" : "0.06",
+              "units" : "A"
+            },
+            "Type2" : {
+              "min" : "0.02",
+              "max" : "0.06",
+              "units" : "A"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_ARC_IMON_500mV_MAX"
+          }
+        }
+      },
+      {
+        "L25_ARC_VMON_2500mV_P" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "2",
+              "max" : "3",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "2",
+              "max" : "3",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock arc",
+              ""
+            ],
+            [
+              "audio --turnoff botspeaker",
+              ""
+            ],
+            [
+              "routeaudio --route --block arc --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x2A 0x09",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x0F 0x01",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param diag-hpf --value disable",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param enable-mon --value true",
+              ""
+            ],
+            [
+              "audioparam --block arc --param amp-drive --set --value VBST",
+              ""
+            ],
+            [
+              "setvol --block arc --volume spk-vol --value -10",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 --rate 48000 -l 100 --freq 170",
+              ""
+            ],
+            [
+              "processaudio -p CS35L19 -i looprx0 -o \"--stats\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_ARC_VMON_2500mV_P"
+          }
+        }
+      },
+      {
+        "L25_ARC_VMON_2500mV_N" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "-3",
+              "max" : "-2",
+              "units" : "V"
+            },
+            "Type2" : {
+              "min" : "-3",
+              "max" : "-2",
+              "units" : "V"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_ARC_VMON_2500mV_N"
+          }
+        }
+      },
+      {
+        "L25_ARC_IMON_2500mV_MAX" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0.133",
+              "max" : "0.25",
+              "units" : "A"
+            },
+            "Type2" : {
+              "min" : "0.133",
+              "max" : "0.25",
+              "units" : "A"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "L25_ARC_IMON_2500mV_MAX"
+          }
+        }
+      },
+      {
+        "L25_ARC_FREQ" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "165",
+              "max" : "175",
+              "units" : "Hz"
+            },
+            "Type2" : {
+              "min" : "165",
+              "max" : "175",
+              "units" : "Hz"
+            }
+          },
+          "Commands" : [
+            [
+              "audio -p fpga --load_firmware maggie_top_bitmap.bin",
+              ""
+            ],
+            [
+              "audio --reset",
+              ""
+            ],
+            [
+              "audio --resetblock arc",
+              ""
+            ],
+            [
+              "audio --turnoff botspeaker",
+              ""
+            ],
+            [
+              "routeaudio --route --block arc --in spk-i2s --out spk-out",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x09 0xAA",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x2A 0x89",
+              ""
+            ],
+            [
+              "i2c -v 1 0x41 0x0F 0x01",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param boost-control --value 8000",
+              ""
+            ],
+            [
+              "setvol --block arc --volume spk-vol --value -24",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param amp-gain --value 16",
+              ""
+            ],
+            [
+              "audioparam --set --block arc --param enable-mon --value true",
+              ""
+            ],
+            [
+              "processaudio --freebufs all",
+              ""
+            ],
+            [
+              "loopaudio -b socmca -p ap-mca2 -x ap-mca2 -d 24 -l 1000 --rate 48000 --freq 170",
+              ""
+            ],
+            [
+              "processaudio --pick CS35L19 -i looprx0 -o \"--buffers\"",
+              ""
+            ],
+            [
+              "processaudio --pick fft -i process0 --option \"--skipSamples 10000\"",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "L25_ARC_FREQ"
+          }
+        }
+      },
+      {
+        "Battery Hibernate" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -e read_ctl 0x0",
+              ""
+            ],
+            [
+              "dev -k GasGauge -e write_ctl 0x13",
+              ""
+            ],
+            [
+              "dev -k GasGauge -e write_ctl 0x13",
+              ""
+            ],
+            [
+              "dev -k GasGauge -e read_ctl 0x0",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery Hibernate"
+          }
+        }
+      },
+      {
+        "Battery GG And IT Test_ChemID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Battery GG And IT Test_ChemID"
+          }
+        }
+      },
+      {
+        "Battery GG Test Enhancement FWVersion" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "device -k GasGauge -g fw-version",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery GG Test Enhancement FWVersion"
+          }
+        }
+      },
+      {
+        "Battery GG Test Enhancement_Sealed" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Yes"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Yes"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -g sealed",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery GG Test Enhancement_Sealed"
+          }
+        }
+      },
+      {
+        "BatteryPair_Count" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "charge --on",
+              ""
+            ],
+            [
+              "dev -k GasGauge -e pair",
+              ""
+            ],
+            [
+              "dev -k GasGauge -e check_pairing",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "BatteryPair_Count"
+          }
+        }
+      },
+      {
+        "Battery Voltage" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            },
+            "Type2" : {
+              "min" : "3400",
+              "max" : "4350",
+              "units" : "mV"
+            }
+          },
+          "Commands" : [
+            [
+              "dev -k GasGauge -p",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Battery Voltage"
+          }
+        }
+      },
+      {
+        "Battery Current" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mA"
+            },
+            "Type2": {
+              "units": "mA"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Battery Current"
+          }
+        }
+      },
+      {
+        "Battery Average Power" : {
+          "Specification" : {
+            "Type1": {
+              "units": "mW"
+            },
+            "Type2": {
+              "units": "mW"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Battery Average Power"
+          }
+        }
+      },
+      {
+        "Battery Charge Percentage" : {
+          "Specification" : {
+            "Type1": {
+              "units": "%"
+            },
+            "Type2": {
+              "units": "%"
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Battery Charge Percentage"
+          }
+        }
+      },
+      {
+        "Full Charge Capacity": {
+          "Specification": {
+            "Type1": {
+              "min": "1425",
+              "max": "1833",
+              "units": "mAh"
+            },
+            "Type2": {
+              "min": "1425",
+              "max": "1833",
+              "units": "mAh"
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Full Charge Capacity"
+          }
+        }
+      },
+      {
+        "Accelerator Connect Test" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "sensor --sel accel --init",
+              "OK"
+            ],
+            [
+              "sensor --sel accel --conntest",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Accelerator Connect Test"
+          }
+        }
+      },
+      {
+        "Gyro Connect Test" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "sensor --sel gyro --init",
+              "OK"
+            ],
+            [
+              "sensor --sel gyro --conntest",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Gyro Connect Test"
+          }
+        }
+      },
+      {
+        "Compass Connect Test" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "sensor --sel compass --init",
+              "OK"
+            ],
+            [
+              "sensor --sel compass --conntest",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Compass Connect Test"
+          }
+        }
+      },
+      {
+        "Pressure Connect Test " : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "passed"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "passed"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "sensor --sel pressure --init",
+              "OK"
+            ],
+            [
+              "sensor --sel pressure --conntest",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Pressure Connect Test "
+          }
+        }
+      },
+      {
+        "Front Camera Find" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Pass"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Pass"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "camisp --pick front",
+              ""
+            ],
+            [
+              "camisp --cameraconfig",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Front Camera Find"
+          }
+        }
+      },
+      {
+        "Front Camera ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "camisp --on",
+              "Pass"
+            ],
+            [
+              "camisp --id",
+              "Pass"
+            ]
+          ],
+          "Name" : {
+            "main" : "Front Camera ID"
+          }
+        }
+      },
+      {
+        "Front Camera Stream" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Pass"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Pass"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "camisp --stream on",
+              ""
+            ],
+            [
+              "camisp --exit",
+              "Pass"
+            ]
+          ],
+          "Name" : {
+            "main" : "Front Camera Stream"
+          }
+        }
+      },
+      {
+        "Front Camera_NVM Version" : {
+          "Specification" : {
+            "Type1" : {
+              "match": [
+                "243"
+              ]
+            },
+            "Type2" : {
+              "match": [
+                "243"
+              ]
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_NVM Version"
+          }
+        }
+      },
+      {
+        "Front Camera_Camera Project": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "21"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "21"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Camera Project"
+          }
+        }
+      },
+      {
+        "Front Camera_Project Version": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "12"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "12"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Project Version"
+          }
+        }
+      },
+      {
+        "Front Camera_Integrator" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "5",
+                "9"
+              ]
+            },
+            "Type2" : {
+              "match": [
+                "5",
+                "9"
+              ]
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Integrator"
+          }
+        }
+      },
+      {
+        "Front Camera_Plant": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Plant"
+          }
+        }
+      },
+      {
+        "Front Camera_Lens Vendor": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1",
+                "2",
+                "3",
+                "6"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1",
+                "2",
+                "3",
+                "6"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Lens Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_Lens Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Lens Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Lens Variant": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "0"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "0"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Lens Variant"
+          }
+        }
+      },
+      {
+        "Front Camera_IRCF Vendor": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1",
+                "3"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1",
+                "3"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_IRCF Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_IRCF Revision": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_IRCF Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_IRCF Variant": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_IRCF Variant"
+          }
+        }
+      },
+      {
+        "Front Camera_Substrate Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Substrate Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_Substrate Revision": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Substrate Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Substrate Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Substrate Variant"
+          }
+        }
+      },
+      {
+        "Front Camera_Sensor Vendor": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Sensor Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_Sensor Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "3",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "3",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Sensor Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Sensor Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "3",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "3",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Sensor Variant"
+          }
+        }
+      },
+      {
+        "Front Camera_Flex Vendor": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "2",
+                "3",
+                "8"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "2",
+                "3",
+                "8"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Flex Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_Flex Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Flex Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Stiffener Vendor": {
+          "Specification": {
+            "Type1": {
+              "match": [
+                "1",
+                "2",
+                "6"
+              ]
+            },
+            "Type2": {
+              "match": [
+                "1",
+                "2",
+                "6"
+              ]
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Stiffener Vendor"
+          }
+        }
+      },
+      {
+        "Front Camera_Stiffener Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Stiffener Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Camera Build": {
+          "Specification": {
+            "Type1": {
+              "min": "80",
+              "max": "80",
+              "units": ""
+            },
+            "Type2": {
+              "min": "80",
+              "max": "80",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Camera Build"
+          }
+        }
+      },
+      {
+        "Front Camera_Config Number" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Config Number"
+          }
+        }
+      },
+      {
+        "Front Camera_Test Software Revision": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Test Software Revision"
+          }
+        }
+      },
+      {
+        "Front Camera_Process DOE Code": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Front Camera_Process DOE Code"
+          }
+        }
+      },
+      {
+        "Front Camera_Col Cal 1 B/G A" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Col Cal 1 B/G A"
+          }
+        }
+      },
+      {
+        "Front Camera_Col Cal 1 R/G A" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Col Cal 1 R/G A"
+          }
+        }
+      },
+      {
+        "Front Camera_Col Cal 1 B/G D50" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Col Cal 1 B/G D50"
+          }
+        }
+      },
+      {
+        "Front Camera_Col Cal 1 R/G D50" : {
+          "Specification" : {
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Front Camera_Col Cal 1 R/G D50"
+          }
+        }
+      },
+      {
+        "Compare Front Camera SN With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare Front Camera SN With SFC"
+          }
+        }
+      },
+      {
+        "Burn Front Camera FCMS" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add FCMS \"[*front_nvm_barcode(unit)*]\"",
+              ""
+            ],
+            [
+              "syscfg print FCMS",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Front Camera FCMS"
+          }
+        }
+      },
+      {
+        "Burn Front Camera FCMB" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add FCMB \"[*FCMB*]\"",
+              ""
+            ],
+            [
+              "syscfg print FCMB",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Front Camera FCMB"
+          }
+        }
+      },
+      {
+        "Back Camera Find" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Pass"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Pass"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "camisp --pick back",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Back Camera Find"
+          }
+        }
+      },
+      {
+        "Back Camera ID" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "camisp --on",
+              "Pass"
+            ],
+            [
+              "camisp --id",
+              "Pass"
+            ]
+          ],
+          "Name" : {
+            "main" : "Back Camera ID"
+          }
+        }
+      },
+      {
+        "Back Camera Stream" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "Pass"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "Pass"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "camisp --stream on",
+              ""
+            ],
+            [
+              "camisp --exit",
+              "Pass"
+            ]
+          ],
+          "Name" : {
+            "main" : "Back Camera Stream"
+          }
+        }
+      },
+      {
+        "Back Camera_NVM Version" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "15",
+              "max" : "15",
+              "units" : ""
+            },
+            "Type2" : {
+              "min" : "15",
+              "max" : "15",
+              "units" : ""
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Back Camera_NVM Version"
+          }
+        }
+      },
+      {
+        "Back Camera_NVM Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_NVM Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Camera Project": {
+          "Specification": {
+            "Type1": {
+              "min": "13",
+              "max": "13",
+              "units": ""
+            },
+            "Type2": {
+              "min": "13",
+              "max": "13",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Camera Project"
+          }
+        }
+      },
+      {
+        "Back Camera_Project Version": {
+          "Specification": {
+            "Type1": {
+              "min": "12",
+              "max": "12",
+              "units": ""
+            },
+            "Type2": {
+              "min": "12",
+              "max": "12",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Project Version"
+          }
+        }
+      },
+      {
+        "Back Camera_Integrator": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Integrator"
+          }
+        }
+      },
+      {
+        "Back Camera_Plant Code" : {
+          "Specification" : {
+            "Type1" : {
+              "min" : "0",
+              "max" : "0",
+              "units" : ""
+            },
+            "Type2" : {
+              "min" : "0",
+              "max" : "0",
+              "units" : ""
+            }
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Back Camera_Plant Code"
+          }
+        }
+      },
+      {
+        "Back Camera_Camera Build": {
+          "Specification": {
+            "Type1": {
+              "min": "80",
+              "max": "80",
+              "units": ""
+            },
+            "Type2": {
+              "min": "80",
+              "max": "80",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Camera Build"
+          }
+        }
+      },
+      {
+        "Back Camera_Config Number": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "255",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "255",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Config Number"
+          }
+        }
+      },
+      {
+        "Back Camera_IRCF Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_IRCF Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_IRCF Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_IRCF Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_IRCF Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_IRCF Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Substrate Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Substrate Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Substrate Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Substrate Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Substrate Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Substrate Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Sensor Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sensor Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Sensor Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sensor Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Sensor Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sensor Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Actuator Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Actuator Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Actuator Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Actuator Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Actuator Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Actuator Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Lens Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Lens Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Lens Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Lens Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Lens Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Lens Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_AF Driver Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_AF Driver Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_AF Driver Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "2",
+              "max": "2",
+              "units": ""
+            },
+            "Type2": {
+              "min": "2",
+              "max": "2",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_AF Driver Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_AF Driver Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_AF Driver Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Sphere Sensor Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sphere Sensor Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Sphere Sensor Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sphere Sensor Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Sphere Sensor Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Sphere Sensor Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_APS Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "3",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "3",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_APS Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_APS Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            },
+            "Type2": {
+              "min": "5",
+              "max": "5",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_APS Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_APS Variant": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_APS Variant"
+          }
+        }
+      },
+      {
+        "Back Camera_Flex Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "8",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "8",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Flex Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Flex Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Flex Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Stiffener Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "1",
+              "max": "6",
+              "units": ""
+            },
+            "Type2": {
+              "min": "1",
+              "max": "6",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Stiffener Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Stiffener Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "1",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Stiffener Revision"
+          }
+        }
+      },
+      {
+        "Back Camera_Trim Vendor": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Trim Vendor"
+          }
+        }
+      },
+      {
+        "Back Camera_Trim Revision": {
+          "Specification": {
+            "Type1": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            },
+            "Type2": {
+              "min": "0",
+              "max": "0",
+              "units": ""
+            }
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Back Camera_Trim Revision"
+          }
+        }
+      },
+      {
+        "Compare Back Camera SN With SFC" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Compare Back Camera SN With SFC"
+          }
+        }
+      },
+      {
+        "Burn Back Camera BCMS" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add BCMS \"[*back_nvm_barcode(unit)*]\"",
+              ""
+            ],
+            [
+              "syscfg print BCMS",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Back Camera BCMS"
+          }
+        }
+      },
+      {
+        "Burn Back Camera BCMB" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "syscfg add BCMB \"[*BCMB*]\"",
+              ""
+            ],
+            [
+              "syscfg print BCMB",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Burn Back Camera BCMB"
+          }
+        }
+      },
+      {
+        "MoPED Append" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "0x"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "0x"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "hash --type Moped --append",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "MoPED Append"
+          }
+        }
+      },
+      {
+        "MoPED Check" : {
+          "Specification" : {
+            "Type1" : {
+              "match" : [
+                "PASS"
+              ]
+            },
+            "Type2" : {
+              "match" : [
+                "PASS"
+              ]
+            }
+          },
+          "Commands" : [
+            [
+              "hash --type Moped --check",
+              ""
+            ],
+            [
+              "syscfg print MdlC",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "MoPED Check"
+          }
+        }
+      },
+      {
+        "AmIOk" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "AmIOk"
+          }
+        }
+      },
+      {
+        "Write QT0 CB" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "rtc --set [*NowTime*]",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "Write QT0 CB"
+          }
+        }
+      },
+      {
+        "QT0 CB Check" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+            [
+              "cbread 0x80",
+              ""
+            ]
+          ],
+          "Name" : {
+            "main" : "QT0 CB Check"
+          }
+        }
+      },
+      {
+        "Display DUT": {
+          "Specification": {
+          },
+          "Commands": [
+          ],
+          "Name": {
+            "main": "Display DUT"
+          }
+        }
+      },
+      {
+        "Reset Fixture and Display DUT_Auto" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "Reset Fixture and Display DUT_Auto"
+          }
+        }
+      },
+      {
+        "END_TEST_QT0" : {
+          "Specification" : {
+
+          },
+          "Commands" : [
+
+          ],
+          "Name" : {
+            "main" : "END_TEST_QT0"
+          }
+        }
+      }
+    ]
+  },
+  "hash" : "D4223A00C005EE40FF45BB0738E4B7DBBB63384D",
+  "build" : "Proto1"
+}

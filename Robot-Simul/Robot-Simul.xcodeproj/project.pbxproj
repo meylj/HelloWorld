@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A1A9817170432C500A2FB63 /* Optimization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A9816170432C500A2FB63 /* Optimization.m */; };
+		B243797E186BCC000040251C /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B243797D186BCC000040251C /* LogManager.m */; };
+		C5A78F6B186A60C800D33508 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A78F6A186A60C800D33508 /* Setting.plist */; };
+		D930258216B3CA3B0026A6AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D930258116B3CA3B0026A6AE /* Cocoa.framework */; };
+		D930258C16B3CA3C0026A6AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D930258A16B3CA3C0026A6AE /* InfoPlist.strings */; };
+		D930258E16B3CA3C0026A6AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D930258D16B3CA3C0026A6AE /* main.m */; };
+		D930259216B3CA3C0026A6AE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D930259016B3CA3C0026A6AE /* Credits.rtf */; };
+		D930259516B3CA3C0026A6AE /* Robot_SimulAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D930259416B3CA3C0026A6AE /* Robot_SimulAppDelegate.m */; };
+		D930259816B3CA3C0026A6AE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930259616B3CA3C0026A6AE /* MainMenu.xib */; };
+		D9386BEA16D4557500C57ABA /* StationUnit.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9386BE916D4557500C57ABA /* StationUnit.xib */; };
+		D948BAE61701B69E0077EBF3 /* StationCline.m in Sources */ = {isa = PBXBuildFile; fileRef = D948BAE51701B69E0077EBF3 /* StationCline.m */; };
+		D94DC37016BBB01A00DBF588 /* Robot-Simul.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94DC36F16BBB01A00DBF588 /* Robot-Simul.plist */; };
+		D956346616D1EA0F00B3B298 /* StationUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = D956346516D1EA0F00B3B298 /* StationUnit.m */; };
+		D9B4EDF31702ED3C00389B67 /* RobotServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B4EDF21702ED3C00389B67 /* RobotServer.m */; };
+		D9BF90A316D0F725003B73BA /* SingleStation.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BF90A216D0F725003B73BA /* SingleStation.xib */; };
+		D9BF90A716D0F76E003B73BA /* SingleStation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF90A616D0F76E003B73BA /* SingleStation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A1A9816170432C500A2FB63 /* Optimization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Optimization.m; path = "Robot-Simul/Optimization.m"; sourceTree = "<group>"; };
+		B243797C186BCC000040251C /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		B243797D186BCC000040251C /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		C5A78F6A186A60C800D33508 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
+		D930257D16B3CA3B0026A6AE /* Robot-Simul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robot-Simul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D930258116B3CA3B0026A6AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D930258416B3CA3B0026A6AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D930258516B3CA3B0026A6AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D930258616B3CA3B0026A6AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D930258916B3CA3C0026A6AE /* Robot-Simul-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Robot-Simul-Info.plist"; sourceTree = "<group>"; };
+		D930258B16B3CA3C0026A6AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D930258D16B3CA3C0026A6AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D930258F16B3CA3C0026A6AE /* Robot-Simul-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Robot-Simul-Prefix.pch"; sourceTree = "<group>"; };
+		D930259116B3CA3C0026A6AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D930259316B3CA3C0026A6AE /* Robot_SimulAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot_SimulAppDelegate.h; sourceTree = "<group>"; };
+		D930259416B3CA3C0026A6AE /* Robot_SimulAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot_SimulAppDelegate.m; sourceTree = "<group>"; };
+		D930259716B3CA3C0026A6AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D9386BE916D4557500C57ABA /* StationUnit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationUnit.xib; sourceTree = "<group>"; };
+		D948BAE21701B69E0077EBF3 /* normaldefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = normaldefine.h; path = "Robot-Simul/normaldefine.h"; sourceTree = "<group>"; };
+		D948BAE31701B69E0077EBF3 /* Optimization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Optimization.h; path = "Robot-Simul/Optimization.h"; sourceTree = "<group>"; };
+		D948BAE41701B69E0077EBF3 /* StationCline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StationCline.h; path = "Robot-Simul/StationCline.h"; sourceTree = "<group>"; };
+		D948BAE51701B69E0077EBF3 /* StationCline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StationCline.m; path = "Robot-Simul/StationCline.m"; sourceTree = "<group>"; };
+		D94DC36F16BBB01A00DBF588 /* Robot-Simul.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Robot-Simul.plist"; sourceTree = "<group>"; };
+		D956346416D1EA0F00B3B298 /* StationUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationUnit.h; sourceTree = "<group>"; };
+		D956346516D1EA0F00B3B298 /* StationUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationUnit.m; sourceTree = "<group>"; };
+		D9B4EDF11702ED3C00389B67 /* RobotServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotServer.h; path = "Robot-Simul/RobotServer.h"; sourceTree = "<group>"; };
+		D9B4EDF21702ED3C00389B67 /* RobotServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotServer.m; path = "Robot-Simul/RobotServer.m"; sourceTree = "<group>"; };
+		D9BF90A216D0F725003B73BA /* SingleStation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleStation.xib; sourceTree = "<group>"; };
+		D9BF90A516D0F76E003B73BA /* SingleStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleStation.h; sourceTree = "<group>"; };
+		D9BF90A616D0F76E003B73BA /* SingleStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleStation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D930257A16B3CA3B0026A6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D930258216B3CA3B0026A6AE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B243790D186ACB080040251C /* LogManager */ = {
+			isa = PBXGroup;
+			children = (
+				B243797C186BCC000040251C /* LogManager.h */,
+				B243797D186BCC000040251C /* LogManager.m */,
+			);
+			name = LogManager;
+			sourceTree = "<group>";
+		};
+		D930257216B3CA3A0026A6AE = {
+			isa = PBXGroup;
+			children = (
+				B243790D186ACB080040251C /* LogManager */,
+				D948BAE11701B69E0077EBF3 /* Robot-Client */,
+				D930258716B3CA3B0026A6AE /* Robot-Simul */,
+				D930258016B3CA3B0026A6AE /* Frameworks */,
+				D930257E16B3CA3B0026A6AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D930257E16B3CA3B0026A6AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D930257D16B3CA3B0026A6AE /* Robot-Simul.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D930258016B3CA3B0026A6AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D930258116B3CA3B0026A6AE /* Cocoa.framework */,
+				D930258316B3CA3B0026A6AE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D930258316B3CA3B0026A6AE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D930258416B3CA3B0026A6AE /* AppKit.framework */,
+				D930258516B3CA3B0026A6AE /* CoreData.framework */,
+				D930258616B3CA3B0026A6AE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D930258716B3CA3B0026A6AE /* Robot-Simul */ = {
+			isa = PBXGroup;
+			children = (
+				D930259316B3CA3C0026A6AE /* Robot_SimulAppDelegate.h */,
+				D930259416B3CA3C0026A6AE /* Robot_SimulAppDelegate.m */,
+				D930259616B3CA3C0026A6AE /* MainMenu.xib */,
+				D9BF90A516D0F76E003B73BA /* SingleStation.h */,
+				D9BF90A616D0F76E003B73BA /* SingleStation.m */,
+				D9BF90A216D0F725003B73BA /* SingleStation.xib */,
+				D956346416D1EA0F00B3B298 /* StationUnit.h */,
+				D956346516D1EA0F00B3B298 /* StationUnit.m */,
+				D9386BE916D4557500C57ABA /* StationUnit.xib */,
+				C5A78F6A186A60C800D33508 /* Setting.plist */,
+				D930258816B3CA3C0026A6AE /* Supporting Files */,
+			);
+			path = "Robot-Simul";
+			sourceTree = "<group>";
+		};
+		D930258816B3CA3C0026A6AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94DC36F16BBB01A00DBF588 /* Robot-Simul.plist */,
+				D930258916B3CA3C0026A6AE /* Robot-Simul-Info.plist */,
+				D930258A16B3CA3C0026A6AE /* InfoPlist.strings */,
+				D930258D16B3CA3C0026A6AE /* main.m */,
+				D930258F16B3CA3C0026A6AE /* Robot-Simul-Prefix.pch */,
+				D930259016B3CA3C0026A6AE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D948BAE11701B69E0077EBF3 /* Robot-Client */ = {
+			isa = PBXGroup;
+			children = (
+				D9B4EDF11702ED3C00389B67 /* RobotServer.h */,
+				D9B4EDF21702ED3C00389B67 /* RobotServer.m */,
+				D948BAE21701B69E0077EBF3 /* normaldefine.h */,
+				D948BAE31701B69E0077EBF3 /* Optimization.h */,
+				7A1A9816170432C500A2FB63 /* Optimization.m */,
+				D948BAE41701B69E0077EBF3 /* StationCline.h */,
+				D948BAE51701B69E0077EBF3 /* StationCline.m */,
+			);
+			name = "Robot-Client";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D930257C16B3CA3B0026A6AE /* Robot-Simul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D930259B16B3CA3C0026A6AE /* Build configuration list for PBXNativeTarget "Robot-Simul" */;
+			buildPhases = (
+				D930257916B3CA3B0026A6AE /* Sources */,
+				D930257A16B3CA3B0026A6AE /* Frameworks */,
+				D930257B16B3CA3B0026A6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Robot-Simul";
+			productName = "Robot-Simul";
+			productReference = D930257D16B3CA3B0026A6AE /* Robot-Simul.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D930257416B3CA3B0026A6AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = D930257716B3CA3B0026A6AE /* Build configuration list for PBXProject "Robot-Simul" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D930257216B3CA3A0026A6AE;
+			productRefGroup = D930257E16B3CA3B0026A6AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D930257C16B3CA3B0026A6AE /* Robot-Simul */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D930257B16B3CA3B0026A6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D930258C16B3CA3C0026A6AE /* InfoPlist.strings in Resources */,
+				D930259216B3CA3C0026A6AE /* Credits.rtf in Resources */,
+				D930259816B3CA3C0026A6AE /* MainMenu.xib in Resources */,
+				D94DC37016BBB01A00DBF588 /* Robot-Simul.plist in Resources */,
+				D9BF90A316D0F725003B73BA /* SingleStation.xib in Resources */,
+				D9386BEA16D4557500C57ABA /* StationUnit.xib in Resources */,
+				C5A78F6B186A60C800D33508 /* Setting.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D930257916B3CA3B0026A6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D930258E16B3CA3C0026A6AE /* main.m in Sources */,
+				D930259516B3CA3C0026A6AE /* Robot_SimulAppDelegate.m in Sources */,
+				D9BF90A716D0F76E003B73BA /* SingleStation.m in Sources */,
+				D956346616D1EA0F00B3B298 /* StationUnit.m in Sources */,
+				D948BAE61701B69E0077EBF3 /* StationCline.m in Sources */,
+				D9B4EDF31702ED3C00389B67 /* RobotServer.m in Sources */,
+				7A1A9817170432C500A2FB63 /* Optimization.m in Sources */,
+				B243797E186BCC000040251C /* LogManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D930258A16B3CA3C0026A6AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D930258B16B3CA3C0026A6AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D930259016B3CA3C0026A6AE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D930259116B3CA3C0026A6AE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D930259616B3CA3C0026A6AE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D930259716B3CA3C0026A6AE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D930259916B3CA3C0026A6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		D930259A16B3CA3C0026A6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D930259C16B3CA3C0026A6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Robot-Simul/Robot-Simul-Prefix.pch";
+				INFOPLIST_FILE = "Robot-Simul/Robot-Simul-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D930259D16B3CA3C0026A6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Robot-Simul/Robot-Simul-Prefix.pch";
+				INFOPLIST_FILE = "Robot-Simul/Robot-Simul-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D930257716B3CA3B0026A6AE /* Build configuration list for PBXProject "Robot-Simul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D930259916B3CA3C0026A6AE /* Debug */,
+				D930259A16B3CA3C0026A6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D930259B16B3CA3C0026A6AE /* Build configuration list for PBXNativeTarget "Robot-Simul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D930259C16B3CA3C0026A6AE /* Debug */,
+				D930259D16B3CA3C0026A6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D930257416B3CA3B0026A6AE /* Project object */;
+}

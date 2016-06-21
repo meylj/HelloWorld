@@ -1,0 +1,6 @@
+framework module CppOrbPost {
+  umbrella header "CppOrbPost.h"
+
+  export *
+  module * { export * }
+}

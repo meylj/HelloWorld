@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleFATool\bin\Debug\ConsoleFATool.exe
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleFATool\bin\Debug\ConsoleFATool.pdb
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleFATool\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleFATool\obj\Debug\ConsoleFATool.exe
+C:\Users\Administrator\Documents\Visual Studio 2005\Projects\ConsoleFATool\ConsoleFATool\obj\Debug\ConsoleFATool.pdb

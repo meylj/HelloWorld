@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QCR_Accout</key>
+	<dict>
+		<key>PassWord</key>
+		<string>lei12345</string>
+		<key>UserName</key>
+		<string>rachel_xu</string>
+	</dict>
+	<key>QCR_URL</key>
+	<dict>
+		<key>URL</key>
+		<string>http://17.239.228.36/cgi-bin/WebObjects/QCR</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72A3AC415F042A800E390D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A3AC315F042A800E390D9 /* Cocoa.framework */; };
+		A72A3ACE15F042A800E390D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A72A3ACC15F042A800E390D9 /* InfoPlist.strings */; };
+		A72A3AD015F042A800E390D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A3ACF15F042A800E390D9 /* main.m */; };
+		A72A3AD415F042A800E390D9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A72A3AD215F042A800E390D9 /* Credits.rtf */; };
+		A72A3AD715F042A800E390D9 /* Lable_PrintAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A3AD615F042A800E390D9 /* Lable_PrintAppDelegate.m */; };
+		A72A3ADA15F042A800E390D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72A3AD815F042A800E390D9 /* MainMenu.xib */; };
+		A72A3AE215F042A800E390D9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A3AE115F042A800E390D9 /* SenTestingKit.framework */; };
+		A72A3AE315F042A800E390D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A3AC315F042A800E390D9 /* Cocoa.framework */; };
+		A72A3AEB15F042A800E390D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A72A3AE915F042A800E390D9 /* InfoPlist.strings */; };
+		A72A3AED15F042A800E390D9 /* Lable_PrintTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A72A3AEC15F042A800E390D9 /* Lable_PrintTests.h */; };
+		A72A3AEF15F042A800E390D9 /* Lable_PrintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A3AEE15F042A800E390D9 /* Lable_PrintTests.m */; };
+		A72A3AFD15F042ED00E390D9 /* AMSerialFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A3AFC15F042ED00E390D9 /* AMSerialFramework.framework */; };
+		A72A3B1815F0505A00E390D9 /* AMSerialFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A72A3AFC15F042ED00E390D9 /* AMSerialFramework.framework */; };
+		A777A8121612D5DB006CC6D1 /* controlPrinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777A8111612D5DB006CC6D1 /* controlPrinter.framework */; };
+		A777A8131612D5E0006CC6D1 /* controlPrinter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A777A8111612D5DB006CC6D1 /* controlPrinter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72A3AE415F042A800E390D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72A3AB615F042A700E390D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72A3ABE15F042A800E390D9;
+			remoteInfo = "Lable Print";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A72A3B1715F0504D00E390D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A72A3B1815F0505A00E390D9 /* AMSerialFramework.framework in CopyFiles */,
+				A777A8131612D5E0006CC6D1 /* controlPrinter.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A72A3ABF15F042A800E390D9 /* Lable Print.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lable Print.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72A3AC315F042A800E390D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A72A3AC615F042A800E390D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A72A3AC715F042A800E390D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A72A3AC815F042A800E390D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A72A3ACB15F042A800E390D9 /* Lable Print-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lable Print-Info.plist"; sourceTree = "<group>"; };
+		A72A3ACD15F042A800E390D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A72A3ACF15F042A800E390D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A72A3AD115F042A800E390D9 /* Lable Print-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lable Print-Prefix.pch"; sourceTree = "<group>"; };
+		A72A3AD315F042A800E390D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A72A3AD515F042A800E390D9 /* Lable_PrintAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lable_PrintAppDelegate.h; sourceTree = "<group>"; };
+		A72A3AD615F042A800E390D9 /* Lable_PrintAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lable_PrintAppDelegate.m; sourceTree = "<group>"; };
+		A72A3AD915F042A800E390D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A72A3AE015F042A800E390D9 /* Lable PrintTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lable PrintTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72A3AE115F042A800E390D9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A72A3AE815F042A800E390D9 /* Lable PrintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lable PrintTests-Info.plist"; sourceTree = "<group>"; };
+		A72A3AEA15F042A800E390D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A72A3AEC15F042A800E390D9 /* Lable_PrintTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lable_PrintTests.h; sourceTree = "<group>"; };
+		A72A3AEE15F042A800E390D9 /* Lable_PrintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lable_PrintTests.m; sourceTree = "<group>"; };
+		A72A3AFC15F042ED00E390D9 /* AMSerialFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSerialFramework.framework; sourceTree = "<group>"; };
+		A777A8111612D5DB006CC6D1 /* controlPrinter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = controlPrinter.framework; path = ../../../../Frameworks/controlPrinter.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72A3ABC15F042A800E390D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3AC415F042A800E390D9 /* Cocoa.framework in Frameworks */,
+				A72A3AFD15F042ED00E390D9 /* AMSerialFramework.framework in Frameworks */,
+				A777A8121612D5DB006CC6D1 /* controlPrinter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72A3ADC15F042A800E390D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3AE215F042A800E390D9 /* SenTestingKit.framework in Frameworks */,
+				A72A3AE315F042A800E390D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72A3AB415F042A700E390D9 = {
+			isa = PBXGroup;
+			children = (
+				A72A3AC915F042A800E390D9 /* Lable Print */,
+				A72A3AE615F042A800E390D9 /* Lable PrintTests */,
+				A72A3AC215F042A800E390D9 /* Frameworks */,
+				A72A3AC015F042A800E390D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A72A3AC015F042A800E390D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3ABF15F042A800E390D9 /* Lable Print.app */,
+				A72A3AE015F042A800E390D9 /* Lable PrintTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72A3AC215F042A800E390D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A777A8111612D5DB006CC6D1 /* controlPrinter.framework */,
+				A72A3AFC15F042ED00E390D9 /* AMSerialFramework.framework */,
+				A72A3AC315F042A800E390D9 /* Cocoa.framework */,
+				A72A3AE115F042A800E390D9 /* SenTestingKit.framework */,
+				A72A3AC515F042A800E390D9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72A3AC515F042A800E390D9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3AC615F042A800E390D9 /* AppKit.framework */,
+				A72A3AC715F042A800E390D9 /* CoreData.framework */,
+				A72A3AC815F042A800E390D9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A72A3AC915F042A800E390D9 /* Lable Print */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3AD515F042A800E390D9 /* Lable_PrintAppDelegate.h */,
+				A72A3AD615F042A800E390D9 /* Lable_PrintAppDelegate.m */,
+				A72A3AD815F042A800E390D9 /* MainMenu.xib */,
+				A72A3ACA15F042A800E390D9 /* Supporting Files */,
+			);
+			path = "Lable Print";
+			sourceTree = "<group>";
+		};
+		A72A3ACA15F042A800E390D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3ACB15F042A800E390D9 /* Lable Print-Info.plist */,
+				A72A3ACC15F042A800E390D9 /* InfoPlist.strings */,
+				A72A3ACF15F042A800E390D9 /* main.m */,
+				A72A3AD115F042A800E390D9 /* Lable Print-Prefix.pch */,
+				A72A3AD215F042A800E390D9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A72A3AE615F042A800E390D9 /* Lable PrintTests */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3AEC15F042A800E390D9 /* Lable_PrintTests.h */,
+				A72A3AEE15F042A800E390D9 /* Lable_PrintTests.m */,
+				A72A3AE715F042A800E390D9 /* Supporting Files */,
+			);
+			path = "Lable PrintTests";
+			sourceTree = "<group>";
+		};
+		A72A3AE715F042A800E390D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72A3AE815F042A800E390D9 /* Lable PrintTests-Info.plist */,
+				A72A3AE915F042A800E390D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72A3ABE15F042A800E390D9 /* Lable Print */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72A3AF215F042A800E390D9 /* Build configuration list for PBXNativeTarget "Lable Print" */;
+			buildPhases = (
+				A72A3ABB15F042A800E390D9 /* Sources */,
+				A72A3ABC15F042A800E390D9 /* Frameworks */,
+				A72A3ABD15F042A800E390D9 /* Resources */,
+				A72A3B1715F0504D00E390D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lable Print";
+			productName = "Lable Print";
+			productReference = A72A3ABF15F042A800E390D9 /* Lable Print.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A72A3ADF15F042A800E390D9 /* Lable PrintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72A3AF515F042A800E390D9 /* Build configuration list for PBXNativeTarget "Lable PrintTests" */;
+			buildPhases = (
+				A72A3ADB15F042A800E390D9 /* Sources */,
+				A72A3ADC15F042A800E390D9 /* Frameworks */,
+				A72A3ADD15F042A800E390D9 /* Resources */,
+				A72A3ADE15F042A800E390D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72A3AE515F042A800E390D9 /* PBXTargetDependency */,
+			);
+			name = "Lable PrintTests";
+			productName = "Lable PrintTests";
+			productReference = A72A3AE015F042A800E390D9 /* Lable PrintTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72A3AB615F042A700E390D9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A72A3AB915F042A700E390D9 /* Build configuration list for PBXProject "Lable Print" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A72A3AB415F042A700E390D9;
+			productRefGroup = A72A3AC015F042A800E390D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72A3ABE15F042A800E390D9 /* Lable Print */,
+				A72A3ADF15F042A800E390D9 /* Lable PrintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72A3ABD15F042A800E390D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3ACE15F042A800E390D9 /* InfoPlist.strings in Resources */,
+				A72A3AD415F042A800E390D9 /* Credits.rtf in Resources */,
+				A72A3ADA15F042A800E390D9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72A3ADD15F042A800E390D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3AEB15F042A800E390D9 /* InfoPlist.strings in Resources */,
+				A72A3AED15F042A800E390D9 /* Lable_PrintTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A72A3ADE15F042A800E390D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72A3ABB15F042A800E390D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3AD015F042A800E390D9 /* main.m in Sources */,
+				A72A3AD715F042A800E390D9 /* Lable_PrintAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72A3ADB15F042A800E390D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72A3AEF15F042A800E390D9 /* Lable_PrintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72A3AE515F042A800E390D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72A3ABE15F042A800E390D9 /* Lable Print */;
+			targetProxy = A72A3AE415F042A800E390D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A72A3ACC15F042A800E390D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72A3ACD15F042A800E390D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A72A3AD215F042A800E390D9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72A3AD315F042A800E390D9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A72A3AD815F042A800E390D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72A3AD915F042A800E390D9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A72A3AE915F042A800E390D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72A3AEA15F042A800E390D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72A3AF015F042A800E390D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		A72A3AF115F042A800E390D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		A72A3AF315F042A800E390D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lable Print/Lable Print-Prefix.pch";
+				INFOPLIST_FILE = "Lable Print/Lable Print-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A72A3AF415F042A800E390D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lable Print/Lable Print-Prefix.pch";
+				INFOPLIST_FILE = "Lable Print/Lable Print-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A72A3AF615F042A800E390D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lable Print.app/Contents/MacOS/Lable Print";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lable Print/Lable Print-Prefix.pch";
+				INFOPLIST_FILE = "Lable PrintTests/Lable PrintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A72A3AF715F042A800E390D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lable Print.app/Contents/MacOS/Lable Print";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lable Print/Lable Print-Prefix.pch";
+				INFOPLIST_FILE = "Lable PrintTests/Lable PrintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72A3AB915F042A700E390D9 /* Build configuration list for PBXProject "Lable Print" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72A3AF015F042A800E390D9 /* Debug */,
+				A72A3AF115F042A800E390D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72A3AF215F042A800E390D9 /* Build configuration list for PBXNativeTarget "Lable Print" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72A3AF315F042A800E390D9 /* Debug */,
+				A72A3AF415F042A800E390D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72A3AF515F042A800E390D9 /* Build configuration list for PBXNativeTarget "Lable PrintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72A3AF615F042A800E390D9 /* Debug */,
+				A72A3AF715F042A800E390D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72A3AB615F042A700E390D9 /* Project object */;
+}
