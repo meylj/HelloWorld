@@ -50,10 +50,12 @@ int main(int Argc, char *Argv[]) {
     Methods.TxData = Serial_WriteBytes;
     Methods.RxData = Serial_ReadBytes;
 
+     /* 
+      * Step1. Open UART serail 
+      */
     Status = Serial_Open(Argv[1], &SerialContext.Fd, 230400);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
-
     
     if (Status < 0) {
         printf("1.Serial_Open():Status < 0\n");
@@ -68,8 +70,10 @@ int main(int Argc, char *Argv[]) {
 
     }
     
+    /* 
+     * Step2. Setup the Ezlink with diags
+     */
     ftime(&start);
-    
     char *arg = Argv[2];
     string aa= arg;
     string cmd = "\n" + aa + "\r\n";
@@ -78,7 +82,6 @@ int main(int Argc, char *Argv[]) {
     read(SerialContext.Fd,ReadBuf,2050);
     printf(ReadBuf);
     
-    /* 1. Setup the Ezlink with diags */
     Status = EzLink_Setup(&EzLinkInfo, &Methods, &SerialContext);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
@@ -96,9 +99,10 @@ int main(int Argc, char *Argv[]) {
 
     }
 
+    /* 
+     * Step3. Receive the provisioning request from diags
+     */
     ftime(&start);
-    
-    /* Phase 1 - Receive the provisioning request from diags */
     Status = EzLink_RecvData(&EzLinkInfo, (void **)&RxBuf, &RxBufSize, 2000, &ErrorInfo);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
@@ -116,14 +120,17 @@ int main(int Argc, char *Argv[]) {
 
     }
     
-    
+    /*
+     * Step3.5 Call python
+     */
     ftime(&start);
     
     //Null terminate the Rx buffer
     RxBuf[RxBufSize] = '\0';
     printf("RxBuf = Received %u bytes = %s\n", RxBufSize, RxBuf);
-    // clear buf
+    
     char tx_buf[5000] = {0};
+    //strcat(tx_buf, "python /Users/rmg/Desktop/EzLinkProject-FinallyNew/JMET.py '");
     strcat(tx_buf, "python /vault/JMET.py '");
     strcat(tx_buf, (char *)RxBuf);
     strcat(tx_buf, "'\0");
@@ -141,7 +148,15 @@ int main(int Argc, char *Argv[]) {
     printf("buf = B02 %s ####\n", buf);
     pclose(fp);
     
-        /* Phase 2 - Send the provisioning info from JMET to diags */
+    ftime(&end);
+    costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
+    printf("3.5 python script\n");
+    printf("The cost time of step 3.5 is %.4fs.\n\n", costTime);
+    
+    /*
+     * Step4. Send the provisioning info from JMET to diag
+     */
+    ftime(&start);
     Status = EzLink_SendData(&EzLinkInfo, buf, sizeof(buf), 1000, &ErrorInfo);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
@@ -160,15 +175,16 @@ int main(int Argc, char *Argv[]) {
 
     }
     
+    /*
+     * Step5. Get the provioning response back from diags
+     */
     ftime(&start);
-    
     
     // Zero out the tx_buf, so I can see what Diags is handing up.
     for (i = 0; i < RxBufSize; i++) {
         RxBuf[i] = 0;
     }
     
-    /* Phase 3 - Get the provioning response back from diags */
     Status = EzLink_RecvData(&EzLinkInfo, (void **)&RxBuf, &RxBufSize, 2000, &ErrorInfo);
     ftime(&end);
     costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
@@ -187,10 +203,13 @@ int main(int Argc, char *Argv[]) {
 
     }
     
-    
-    
+    /*
+     * Step6. Call python
+     */
+    ftime(&start);
     tx_buf[0]='\0';
     
+    //strcat(tx_buf, "python /Users/rmg/Desktop/EzLinkProject-FinallyNew/JMET.py '");
     strcat(tx_buf, "python /vault/JMET.py '");
     strcat(tx_buf, (char *)RxBuf);
     strcat(tx_buf, "'\0");
@@ -207,6 +226,12 @@ int main(int Argc, char *Argv[]) {
     char buf1[2048];
     fgets(buf1, sizeof(buf1), fp1);
     
-    printf("Received %u bytes\n", RxBufSize);
+    printf("Received string: %s\n Size is %lu bytes\n", buf1,sizeof(buf1));
+    pclose(fp1);
+    ftime(&end);
+    costTime = (end.time-start.time) + (double)(end.millitm-start.millitm)/1000;
+    printf("The cost time of step 6, second python call, is %.4fs.\n\n", costTime);
+    
+    
     return 0;
 }
