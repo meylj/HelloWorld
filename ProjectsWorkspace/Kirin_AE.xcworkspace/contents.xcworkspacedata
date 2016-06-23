@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../Kirin_AE/Code/Muifa/Muifa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Kirin_AE/Code/FunnyZone/FunnyZone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Kirin_AE/Code/PEGA_ATS_UART/PEGA_ATS_UART.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Kirin_AE/Code/TestPudding/TestPudding.xcodeproj">
+   </FileRef>
+</Workspace>
