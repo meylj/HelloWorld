@@ -1,0 +1,24 @@
+tell application "Mail"
+activate
+set newMessage to make new outgoing message with properties {visible:true}
+tell application "System Events"
+tell process "Mail"
+set focused of UI element 1 of scroll area 1 of window 1 to true
+keystroke "v" using command down
+end tell
+end tell
+end tell
+
+tell application "Mail"
+tell newMessage
+repeat with i from 1 to count addressList
+make new to recipient at end of to recipients with properties {address:item i of addressList}
+end repeat
+repeat with thisRecipient in ccrecipients as list
+make new cc recipient at end of cc recipients with properties {address:thisRecipient}
+end repeat
+set subject to theSubject
+make new to recipient with properties {address:addressList}
+end tell
+end tell
+
