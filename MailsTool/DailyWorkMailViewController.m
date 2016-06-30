@@ -158,6 +158,8 @@
     {
         NSLog(@"Script have be compiled, and waiting excuate");
         [AppleScript executeAndReturnError:&errorInfo];
+        NSLog(@"%@",errorInfo);
+
     }
     
     else
