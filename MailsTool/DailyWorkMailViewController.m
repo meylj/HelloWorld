@@ -137,10 +137,8 @@
         [AppleScriptContent appendString:MailAddress];
     
     [AppleScriptContent appendFormat:@"set theSubject to \"%@\"\n",MailSubject];
-
-    NSString * otherCC =@"\"Zhuansheng_Li@pegatroncorp.com\",\"Mario_Sun@pegatroncorp.com\",\"Shuai5_Li@pegatroncorp.com\"";
     
-    [AppleScriptContent appendFormat:@"set ccrecipients to {\"%@\",%@}\n",[_tfCCMail stringValue],otherCC];
+    [AppleScriptContent appendFormat:@"set ccrecipients to {\"%@\"}\n",[_tfCCMail stringValue]];
 
     [AppleScriptContent appendString:[NSString stringWithContentsOfFile: strAppleScriptPath encoding:NSUTF8StringEncoding error:nil]];
     [AppleScriptContent appendString:Str_AppleScript_Send];
