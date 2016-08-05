@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01DC330A1D12AAC300F82D16 /* DebugWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DC33081D12AAC300F82D16 /* DebugWindowController.m */; };
+		01DC330B1D12AAC300F82D16 /* DebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DC33091D12AAC300F82D16 /* DebugWindowController.xib */; };
+		01DD0A191D006E540051672A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0A181D006E540051672A /* AppDelegate.m */; };
+		01DD0A1C1D006E540051672A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0A1B1D006E540051672A /* main.m */; };
+		01DD0A1E1D006E540051672A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DD0A1D1D006E540051672A /* Assets.xcassets */; };
+		01DD0A211D006E540051672A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DD0A1F1D006E540051672A /* MainMenu.xib */; };
+		01DD0A2C1D05AF4D0051672A /* NSDateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0A291D05AF4C0051672A /* NSDateCategory.m */; };
+		01DD0A2D1D05AF4D0051672A /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0A2B1D05AF4C0051672A /* NSStringCategory.m */; };
+		01DD0A301D05AF980051672A /* NSPanelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0A2F1D05AF980051672A /* NSPanelCategory.m */; };
+		01DD0A321D05B1390051672A /* Muifa.icns in Resources */ = {isa = PBXBuildFile; fileRef = 01DD0A311D05B1390051672A /* Muifa.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01DC33071D12AAC300F82D16 /* DebugWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugWindowController.h; sourceTree = "<group>"; };
+		01DC33081D12AAC300F82D16 /* DebugWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugWindowController.m; sourceTree = "<group>"; };
+		01DC33091D12AAC300F82D16 /* DebugWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugWindowController.xib; sourceTree = "<group>"; };
+		01DD0A141D006E530051672A /* ILoveMuifa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ILoveMuifa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01DD0A171D006E540051672A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01DD0A181D006E540051672A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01DD0A1B1D006E540051672A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01DD0A1D1D006E540051672A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01DD0A201D006E540051672A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		01DD0A221D006E540051672A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DD0A281D05AF4C0051672A /* NSDateCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateCategory.h; sourceTree = "<group>"; };
+		01DD0A291D05AF4C0051672A /* NSDateCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateCategory.m; sourceTree = "<group>"; };
+		01DD0A2A1D05AF4C0051672A /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategory.h; sourceTree = "<group>"; };
+		01DD0A2B1D05AF4C0051672A /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
+		01DD0A2E1D05AF980051672A /* NSPanelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPanelCategory.h; sourceTree = "<group>"; };
+		01DD0A2F1D05AF980051672A /* NSPanelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPanelCategory.m; sourceTree = "<group>"; };
+		01DD0A311D05B1390051672A /* Muifa.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Muifa.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01DD0A111D006E530051672A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01DD0A0B1D006E530051672A = {
+			isa = PBXGroup;
+			children = (
+				01DD0A161D006E530051672A /* ILoveMuifa */,
+				01DD0A151D006E530051672A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01DD0A151D006E530051672A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01DD0A141D006E530051672A /* ILoveMuifa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01DD0A161D006E530051672A /* ILoveMuifa */ = {
+			isa = PBXGroup;
+			children = (
+				01DD0A171D006E540051672A /* AppDelegate.h */,
+				01DD0A181D006E540051672A /* AppDelegate.m */,
+				01DD0A281D05AF4C0051672A /* NSDateCategory.h */,
+				01DD0A291D05AF4C0051672A /* NSDateCategory.m */,
+				01DD0A2A1D05AF4C0051672A /* NSStringCategory.h */,
+				01DD0A2B1D05AF4C0051672A /* NSStringCategory.m */,
+				01DD0A2E1D05AF980051672A /* NSPanelCategory.h */,
+				01DD0A2F1D05AF980051672A /* NSPanelCategory.m */,
+				01DC33071D12AAC300F82D16 /* DebugWindowController.h */,
+				01DC33081D12AAC300F82D16 /* DebugWindowController.m */,
+				01DD0A1D1D006E540051672A /* Assets.xcassets */,
+				01DD0A1F1D006E540051672A /* MainMenu.xib */,
+				01DC33091D12AAC300F82D16 /* DebugWindowController.xib */,
+				01DD0A221D006E540051672A /* Info.plist */,
+				01DD0A1A1D006E540051672A /* Supporting Files */,
+			);
+			path = ILoveMuifa;
+			sourceTree = "<group>";
+		};
+		01DD0A1A1D006E540051672A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01DD0A311D05B1390051672A /* Muifa.icns */,
+				01DD0A1B1D006E540051672A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01DD0A131D006E530051672A /* ILoveMuifa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01DD0A251D006E540051672A /* Build configuration list for PBXNativeTarget "ILoveMuifa" */;
+			buildPhases = (
+				01DD0A101D006E530051672A /* Sources */,
+				01DD0A111D006E530051672A /* Frameworks */,
+				01DD0A121D006E530051672A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ILoveMuifa;
+			productName = ILoveMuifa;
+			productReference = 01DD0A141D006E530051672A /* ILoveMuifa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01DD0A0C1D006E530051672A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Yaya8_liu;
+				TargetAttributes = {
+					01DD0A131D006E530051672A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 01DD0A0F1D006E530051672A /* Build configuration list for PBXProject "ILoveMuifa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01DD0A0B1D006E530051672A;
+			productRefGroup = 01DD0A151D006E530051672A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01DD0A131D006E530051672A /* ILoveMuifa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01DD0A121D006E530051672A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DD0A321D05B1390051672A /* Muifa.icns in Resources */,
+				01DC330B1D12AAC300F82D16 /* DebugWindowController.xib in Resources */,
+				01DD0A1E1D006E540051672A /* Assets.xcassets in Resources */,
+				01DD0A211D006E540051672A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01DD0A101D006E530051672A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DD0A301D05AF980051672A /* NSPanelCategory.m in Sources */,
+				01DC330A1D12AAC300F82D16 /* DebugWindowController.m in Sources */,
+				01DD0A1C1D006E540051672A /* main.m in Sources */,
+				01DD0A191D006E540051672A /* AppDelegate.m in Sources */,
+				01DD0A2C1D05AF4D0051672A /* NSDateCategory.m in Sources */,
+				01DD0A2D1D05AF4D0051672A /* NSStringCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01DD0A1F1D006E540051672A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01DD0A201D006E540051672A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01DD0A231D006E540051672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01DD0A241D006E540051672A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01DD0A261D006E540051672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ILoveMuifa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pegatroncorp.ILoveMuifa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01DD0A271D006E540051672A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ILoveMuifa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pegatroncorp.ILoveMuifa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01DD0A0F1D006E530051672A /* Build configuration list for PBXProject "ILoveMuifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DD0A231D006E540051672A /* Debug */,
+				01DD0A241D006E540051672A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01DD0A251D006E540051672A /* Build configuration list for PBXNativeTarget "ILoveMuifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DD0A261D006E540051672A /* Debug */,
+				01DD0A271D006E540051672A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01DD0A0C1D006E530051672A /* Project object */;
+}
