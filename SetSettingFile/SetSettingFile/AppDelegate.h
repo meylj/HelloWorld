@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NSStringCategory.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate>
 {

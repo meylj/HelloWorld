@@ -58,6 +58,7 @@
 //    [alert release];
     
     [self PasswordCheckWindow];
+    //[self CheckSettingFileExistOrNot];
 }
 
 - (void)PasswordCheckWindow
@@ -79,8 +80,8 @@
         [txtPassword setStringValue:@""];
         [scrWindow orderOut:nil];
         [NSApp endSheet:scrWindow];
-        [NSApp runModalForWindow:_window];
         [self CheckSettingFileExistOrNot];
+        [NSApp runModalForWindow:_window];
         [scrWindow release];
     }
     else
@@ -364,6 +365,34 @@
                     [dicOriginalSetting setObject:[NSString stringWithFormat:@"%@",[NSNumber numberWithInt:2]] forKey:@"DeleteProcessLogBeforeDays"];
                 }
             }
+            if ([[m_btnQuickSetting titleOfSelectedItem] isEqualToString:@"Add QueryPType"])
+            {
+                if(![[dicOriginalSetting allKeys] containsObject:@"QueryPType"])
+                {
+                    NSMutableArray *arrQueryPType = [[NSMutableArray alloc]init];
+                    [arrQueryPType insertObject:@"config" atIndex:0];
+                    [arrQueryPType insertObject:@"hwconfig" atIndex:0];
+                    [arrQueryPType insertObject:@"nand_size" atIndex:0];
+                    [arrQueryPType insertObject:@"mlbsn" atIndex:0];
+                    [arrQueryPType insertObject:@"MPN" atIndex:0];
+                    [arrQueryPType insertObject:@"REGION_CODE" atIndex:0];
+                    [arrQueryPType insertObject:@"front_nvm_barcode" atIndex:0];
+                    [arrQueryPType insertObject:@"back_nvm_barcode" atIndex:0];
+                    [arrQueryPType insertObject:@"lcm_sn" atIndex:0];
+                    [arrQueryPType insertObject:@"lcg_sn" atIndex:0];
+                    
+                    [dicOriginalSetting setObject:arrQueryPType forKey:@"QueryPType"];
+                    [arrQueryPType release];
+                }
+            }
+            if ([[m_btnQuickSetting titleOfSelectedItem] isEqualToString:@"Remove QueryPType"])
+            {
+                if([[dicOriginalSetting allKeys] containsObject:@"QueryPType"])
+                {
+                    [dicOriginalSetting removeObjectForKey:@"QueryPType"];
+                }
+            }
+            
             [dicOriginalSetting writeToFile:kMuifaPlistPath atomically:YES];
         }
         else
