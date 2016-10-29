@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9E208EC79B4DE62C9E925B3E112DE3D8F830B31B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9E208EC79B4DE62C9E925B3E112DE3D8F830B31B" : 0,
+    "C52D5C39E70872916C10341D9D0B48384F0568D0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08F3F48A-205F-4BEE-8E6D-C59154C6156B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9E208EC79B4DE62C9E925B3E112DE3D8F830B31B" : "Other_Code\/",
+    "C52D5C39E70872916C10341D9D0B48384F0568D0" : "Kirin_AE\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Kirin_AE",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ProjectsWorkspace\/Kirin_AE.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.28.144.98:8181\/scm\/git\/Other_Code",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9E208EC79B4DE62C9E925B3E112DE3D8F830B31B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.28.144.98:8181\/scm\/git\/Kirin_AE",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C52D5C39E70872916C10341D9D0B48384F0568D0"
+    }
+  ]
+}
