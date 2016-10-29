@@ -4,13 +4,13 @@
 <dict>
 	<key>UserConfiguration</key>
 	<dict>
-		<key>allen</key>
-		<string>/Git_Repostory/</string>
+		<key>scott</key>
+		<string>/Users/scott/Git</string>
 	</dict>
 	<key>ProjectMapping</key>
 	<dict>
-		<key>Kirin</key>
-		<string>D10</string>
+		<key>Jedi_QTx</key>
+		<string>D20</string>
 	</dict>
 </dict>
 </plist>

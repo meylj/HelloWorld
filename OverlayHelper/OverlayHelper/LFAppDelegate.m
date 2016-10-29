@@ -49,7 +49,7 @@
 //        strOverlayPath = [NSString stringWithFormat:@"%@/%@/Station/CSD Stations/",strGitPath,[strProjectSelect subByRegex:@"^(.*)-CSD" name:nil error:nil]];
 //	else
     
-    strOverlayPath = [NSString stringWithFormat:@"%@/%@_QTx/Station/ATS Stations/",strGitPath,[[popProjects selectedItem] title]];
+    strOverlayPath = [NSString stringWithFormat:@"%@/%@/Station/ATS Stations/",strGitPath,[[popProjects selectedItem] title]];
 	if ([fileManager fileExistsAtPath:strOverlayPath])
 	{
 		NSArray * arrayStations = [fileManager contentsOfDirectoryAtPath:strOverlayPath error:nil];
@@ -212,7 +212,7 @@
 			// Build the application
 			[txtCheckSum setStringValue:@"开始build代码了，耐心等待哟"];
 			NSMutableString * strError = [NSMutableString new];
-			NSString * strWorkspaceFolder = [NSString stringWithFormat:@"%@/Other/ProjectsWorkspace",strP4Path];
+			NSString * strWorkspaceFolder = [NSString stringWithFormat:@"%@/Other_Code/ProjectsWorkspace",strP4Path];
 			if (![self BuildApplicaiton:strWorkspaceFolder	ErrorDescription:strError])
 			{
 				[txtCheckSum setStringValue:@"他妈的,workspace没有build成功，快去检查下！"];
@@ -490,10 +490,8 @@
 - (BOOL)Modify_ATS_Muifa:(NSString *)strFilePath
                 LiveJson:(NSString *)strJsonPath
 {
-     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSMutableDictionary *dicMufiaSetting = [NSMutableDictionary dictionaryWithContentsOfFile:strFilePath];
     if ([isOffline state]==1) {
-        [dicMufiaSetting setObject:[NSNumber numberWithBool:YES] forKey:@"OfflineDisablePudding"];
         [dicMufiaSetting setObject:[NSNumber numberWithBool:YES] forKey:@"ValidationDisablePudding"];
         
     }
@@ -507,30 +505,11 @@
     if ([isNoLiveControl state]==1) {
         [dicMufiaSetting setObject:[NSNumber numberWithBool:YES] forKey:@"NoLiveControl"];
     }
-    if ([isDefaultLivePath state] ==1) {
-        NSString *strStation = [[dicMufiaSetting objectForKey:@"ScriptInfo"]objectForKey:@"ScriptFileName"];
-        NSString *strStationName = [strStation SubTo:@".plist" include:NO];
-        NSString *strDefaultLivePath = [NSString stringWithFormat:@"~/Library/Preferences/%@_LIVE.json",strStationName];
-        [dicMufiaSetting setObject:strDefaultLivePath forKey:@"DefaultLivePath"];
-        
-        //copy json file
-        if (![fileManager fileExistsAtPath:strJsonPath]) {
-            [txtCheckSum setStringValue:@"Can not find json file"];
-            return false;
-        }
-       // NSArray *arrTemp = [strFilePath pathComponents];
-        NSString *strtarget = [NSString stringWithFormat:@"%@/%@",[strFilePath stringByDeletingLastPathComponent],[strJsonPath lastPathComponent]];
-        if(![fileManager copyItemAtPath:strJsonPath toPath:strtarget error:nil])
-        {
-            [txtCheckSum setStringValue:@"Copy json file"];
-            return false;
-        }
-    }
     if ([isDisableSignature state]==1) {
         [dicMufiaSetting setObject:[NSNumber numberWithBool:YES] forKey:@"DisableSignature"];
     }
-    [dicMufiaSetting writeToFile:strFilePath atomically:YES];
-    return true;
+    BOOL bRet = [dicMufiaSetting writeToFile:strFilePath atomically:YES];
+    return bRet;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
