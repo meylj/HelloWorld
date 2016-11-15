@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420C6F521DDB40D000F712A7 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420C6F511DDB40D000F712A7 /* LibXL.framework */; };
+		420C6F531DDB433000F712A7 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 420C6F511DDB40D000F712A7 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD6F8B241B9F263600D998CA /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B1F1B9F263600D998CA /* NSStringCategory.m */; };
 		AD6F8B251B9F263600D998CA /* tabledatasave.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B211B9F263600D998CA /* tabledatasave.m */; };
 		AD6F8B261B9F263600D998CA /* tabledatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B231B9F263600D998CA /* tabledatasource.m */; };
@@ -15,9 +17,6 @@
 		ADD1AE121B9F23A40056AA27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD1AE111B9F23A40056AA27 /* Images.xcassets */; };
 		ADD1AE151B9F23A40056AA27 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD1AE131B9F23A40056AA27 /* MainMenu.xib */; };
 		ADD1AE211B9F23A40056AA27 /* ExelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1AE201B9F23A40056AA27 /* ExelTests.m */; };
-		ADD1AE2B1B9F241E0056AA27 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1AE2A1B9F241E0056AA27 /* LibXL.framework */; };
-		ADD1AE2D1B9F24970056AA27 /* LibXL.framework in Resources */ = {isa = PBXBuildFile; fileRef = ADD1AE2C1B9F24970056AA27 /* LibXL.framework */; };
-		ADD1AE301B9F24FE0056AA27 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADD1AE2F1B9F24FE0056AA27 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +36,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ADD1AE301B9F24FE0056AA27 /* LibXL.framework in CopyFiles */,
+				420C6F531DDB433000F712A7 /* LibXL.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		420C6F511DDB40D000F712A7 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
 		AD6F8B1E1B9F263600D998CA /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategory.h; sourceTree = "<group>"; };
 		AD6F8B1F1B9F263600D998CA /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
 		AD6F8B201B9F263600D998CA /* tabledatasave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabledatasave.h; sourceTree = "<group>"; };
@@ -60,9 +60,6 @@
 		ADD1AE1A1B9F23A40056AA27 /* ExelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD1AE1F1B9F23A40056AA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD1AE201B9F23A40056AA27 /* ExelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExelTests.m; sourceTree = "<group>"; };
-		ADD1AE2A1B9F241E0056AA27 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LibXL.framework; path = ../LibXL.framework; sourceTree = "<group>"; };
-		ADD1AE2C1B9F24970056AA27 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
-		ADD1AE2F1B9F24FE0056AA27 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD1AE2B1B9F241E0056AA27 /* LibXL.framework in Frameworks */,
+				420C6F521DDB40D000F712A7 /* LibXL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +84,7 @@
 		ADD1ADFE1B9F23A30056AA27 = {
 			isa = PBXGroup;
 			children = (
-				ADD1AE2F1B9F24FE0056AA27 /* LibXL.framework */,
-				ADD1AE2C1B9F24970056AA27 /* LibXL.framework */,
-				ADD1AE2A1B9F241E0056AA27 /* LibXL.framework */,
+				420C6F511DDB40D000F712A7 /* LibXL.framework */,
 				ADD1AE091B9F23A40056AA27 /* Exel */,
 				ADD1AE1D1B9F23A40056AA27 /* ExelTests */,
 				ADD1AE081B9F23A40056AA27 /* Products */,
@@ -230,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD1AE2D1B9F24970056AA27 /* LibXL.framework in Resources */,
 				ADD1AE121B9F23A40056AA27 /* Images.xcassets in Resources */,
 				ADD1AE151B9F23A40056AA27 /* MainMenu.xib in Resources */,
 			);
@@ -372,9 +366,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jane6_chen/Desktop/xcode,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Exel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Exel",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,9 +387,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jane6_chen/Desktop/xcode,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Exel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Exel",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
