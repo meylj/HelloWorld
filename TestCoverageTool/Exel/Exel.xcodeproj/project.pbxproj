@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420C6F521DDB40D000F712A7 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420C6F511DDB40D000F712A7 /* LibXL.framework */; };
-		420C6F531DDB433000F712A7 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 420C6F511DDB40D000F712A7 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4233BBC81DDA39E100F3EE86 /* NSStringCategoryOfficial.m in Sources */ = {isa = PBXBuildFile; fileRef = 4233BBC71DDA39E100F3EE86 /* NSStringCategoryOfficial.m */; };
+		7DD542C41C24FC4B00D2877B /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DD542C31C24FC4B00D2877B /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7DD542C51C24FC5C00D2877B /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD542C31C24FC4B00D2877B /* LibXL.framework */; };
 		AD6F8B241B9F263600D998CA /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B1F1B9F263600D998CA /* NSStringCategory.m */; };
 		AD6F8B251B9F263600D998CA /* tabledatasave.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B211B9F263600D998CA /* tabledatasave.m */; };
 		AD6F8B261B9F263600D998CA /* tabledatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F8B231B9F263600D998CA /* tabledatasource.m */; };
@@ -36,14 +37,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				420C6F531DDB433000F712A7 /* LibXL.framework in CopyFiles */,
+				7DD542C41C24FC4B00D2877B /* LibXL.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		420C6F511DDB40D000F712A7 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
+		4233BBC61DDA39E100F3EE86 /* NSStringCategoryOfficial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategoryOfficial.h; sourceTree = "<group>"; };
+		4233BBC71DDA39E100F3EE86 /* NSStringCategoryOfficial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategoryOfficial.m; sourceTree = "<group>"; };
+		7DD542C31C24FC4B00D2877B /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LibXL.framework; sourceTree = "<group>"; };
 		AD6F8B1E1B9F263600D998CA /* NSStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringCategory.h; sourceTree = "<group>"; };
 		AD6F8B1F1B9F263600D998CA /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
 		AD6F8B201B9F263600D998CA /* tabledatasave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabledatasave.h; sourceTree = "<group>"; };
@@ -67,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420C6F521DDB40D000F712A7 /* LibXL.framework in Frameworks */,
+				7DD542C51C24FC5C00D2877B /* LibXL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +87,7 @@
 		ADD1ADFE1B9F23A30056AA27 = {
 			isa = PBXGroup;
 			children = (
-				420C6F511DDB40D000F712A7 /* LibXL.framework */,
+				7DD542C31C24FC4B00D2877B /* LibXL.framework */,
 				ADD1AE091B9F23A40056AA27 /* Exel */,
 				ADD1AE1D1B9F23A40056AA27 /* ExelTests */,
 				ADD1AE081B9F23A40056AA27 /* Products */,
@@ -105,6 +108,8 @@
 			children = (
 				AD6F8B1E1B9F263600D998CA /* NSStringCategory.h */,
 				AD6F8B1F1B9F263600D998CA /* NSStringCategory.m */,
+				4233BBC61DDA39E100F3EE86 /* NSStringCategoryOfficial.h */,
+				4233BBC71DDA39E100F3EE86 /* NSStringCategoryOfficial.m */,
 				AD6F8B201B9F263600D998CA /* tabledatasave.h */,
 				AD6F8B211B9F263600D998CA /* tabledatasave.m */,
 				AD6F8B221B9F263600D998CA /* tabledatasource.h */,
@@ -246,6 +251,7 @@
 			files = (
 				ADD1AE101B9F23A40056AA27 /* main.m in Sources */,
 				ADD1AE0E1B9F23A40056AA27 /* AppDelegate.m in Sources */,
+				4233BBC81DDA39E100F3EE86 /* NSStringCategoryOfficial.m in Sources */,
 				AD6F8B241B9F263600D998CA /* NSStringCategory.m in Sources */,
 				AD6F8B251B9F263600D998CA /* tabledatasave.m in Sources */,
 				AD6F8B261B9F263600D998CA /* tabledatasource.m in Sources */,
@@ -370,11 +376,6 @@
 				);
 				INFOPLIST_FILE = Exel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Exel",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -391,11 +392,6 @@
 				);
 				INFOPLIST_FILE = Exel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Exel",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -26,6 +26,8 @@
         t_textfield = [[NSMutableString alloc]init];
         m_orgary = [[NSMutableArray alloc]init];
         m_neededdata = [[NSMutableArray alloc]init];
+        name_and_time = [[NSMutableArray alloc]init];
+        boolLoadCSV = NO;
     }
     return self;
 }
@@ -176,11 +178,11 @@
     
     redformat = xlBookAddFormatA(book, 0);
     xlFormatSetFont(redformat,titleFont);
-    xlFormatSetPatternForegroundColor(redformat, COLOR_ROSE);
+    xlFormatSetPatternForegroundColor(redformat, COLOR_RED);
     xlFormatSetFillPattern(redformat, FILLPATTERN_SOLID);
     
     deepredformat = xlBookAddFormatA(book, 0);
-    xlFormatSetPatternForegroundColor(deepredformat, COLOR_RED);
+    xlFormatSetPatternForegroundColor(deepredformat, COLOR_DARKRED);
     xlFormatSetFont(deepredformat,titleFont);
     xlFormatSetFillPattern(deepredformat, FILLPATTERN_SOLID);
     
@@ -189,7 +191,7 @@
     
     purpleformat = xlBookAddFormatA(book, 0);
     xlFormatSetFont(purpleformat,titleFont);
-    xlFormatSetPatternBackgroundColorA(purpleformat, COLOR_PLUM);
+    xlFormatSetPatternBackgroundColorA(purpleformat, COLOR_DARKPURPLE_CF);
     xlFormatSetFillPattern(purpleformat, FILLPATTERN_SOLID);
     
     titleFormat = xlBookAddFormat(book, 0);
@@ -330,8 +332,9 @@
         xlSheetWriteStrA(sheet, 13, 3, [@"Target" UTF8String], paleblueformat);
         xlSheetWriteStrA(sheet, 13, 4, [@"Diags Commands" UTF8String], paleblueformat);
         xlSheetWriteStrA(sheet, 13, 5, [@"Diags Response" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 6, [@"Radar No" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 13, 6, [@"Testtime" UTF8String], paleblueformat);
         xlSheetWriteStrA(sheet, 13, 7, [@"Issue Description" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 13, 8, [@"Radar No" UTF8String], paleblueformat);
         //xlSheetInsertRowA(sheet, 0, 100000);
         //xlSheetInsertColA(sheet, 0, 100000);
         BOOL itemcheck = '\0';
@@ -354,6 +357,12 @@
             NSString *item = [[m_datasource.m_showdata objectAtIndex:i]objectForKey:@"item"];
             const char *m_item = (char*)malloc(6000);
             m_item = [item UTF8String];
+            NSString *testtime;
+            const char *m_testtime = (char*)malloc(6000);
+            if (name_and_time.count!=0) {
+                testtime = [[m_datasource.m_showdata objectAtIndex:i]objectForKey:@"TestTime"];
+                m_testtime = [testtime UTF8String];
+            }
             if([m_orgary count]!=0)
             {
                 for (int k =0; k<[m_orgary count]; k++) {
@@ -441,6 +450,9 @@
                 xlSheetWriteStr(sheet, i+14, 3, m_target, titleFormat);
                 xlSheetWriteStr(sheet, i+14, 1,m_item,titleFormat);
                 xlSheetWriteStr(sheet, i+14, 2,m_spec,titleFormat);
+                if (testtime!=nil&&![testtime isEqual:@""]) {
+                     xlSheetWriteStr(sheet,i+14,6,m_testtime,titleFormat);
+                }
             }
 //            SheetHandle sheet1;
 //            sheet1 = xlBookGetSheetA(book, 0);
@@ -501,11 +513,17 @@
                         {
                             xlSheetSetMergeA(sheet,i+14, i+j+13, 1, 1);
                             xlSheetSetMergeA(sheet,i+14, i+j+13, 2, 2);
+                            if (testtime!=nil&&![testtime isEqual:@""]) {
+                                xlSheetSetMergeA(sheet,i+14, i+j+13, 6, 6);
+                            }
                         }
                         else
                         {
                             xlSheetSetMergeA(sheet,i+14, i+j+13, 2, 2);
                             xlSheetSetMergeA(sheet,i+14, i+j+13, 1, 1);
+                            if (testtime!=nil&&![testtime isEqual:@""]) {
+                                xlSheetSetMergeA(sheet,i+14, i+j+13, 6, 6);
+                            }
                         }
                         break;
                     }
@@ -569,6 +587,16 @@
 
 -(IBAction)Load:(id)sender
 {
+    if (!boolLoadCSV)
+    {
+        NSAlert *alert = [[NSAlert alloc]init];
+        alert.messageText = @"警告(Warning)";
+        alert.informativeText = @"先加载CSV文件。(Please laod CSV file firstly!)";
+        [alert addButtonWithTitle:@"确认(OK)"];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert runModal];
+    }
+    else{
     [m_datasource.m_showdata removeAllObjects];
     [m_tableview reloadData];
     NSMutableDictionary *m_dic;
@@ -608,9 +636,20 @@
                             i=k;
                             m_dic = [[NSMutableDictionary alloc]init];
                             NSString *m_spec = [c_str catchStringBeginWith:@"," endWith:@""];
-                            NSString *m_item = [c_str catchStringBeginWith:@"Item Name:" endWith:@","];
+//                            NSString *m_item = [c_str catchStringBeginWith:@"Item Name:" endWith:@","];
+                            NSString *m_item = [c_str subByRegex:@"Item Name:(.*?)," name:nil error:nil];
                             if (l<2) {
-                                m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
+                                if ([name_and_time count]!=0) {
+                                    for (int m = 0; m<name_and_time.count; m++) {
+                                        if ([[[name_and_time objectAtIndex:m]objectForKey:@"ITEM"]isEqualToString:m_item]) {
+                                            m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",[[name_and_time objectAtIndex:m]objectForKey:@"TestTime"],@"TestTime",nil];
+                                        }
+                                    }
+                                }
+                                else{
+                                    m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
+                                }
+
                                 [m_datasource addObject:m_dic];
                                 i=k;
                                 break;
@@ -619,31 +658,52 @@
                             {
                                 for (int j = k-l+1; j<k; j++) {
                                     c_str = [m_arry objectAtIndex:j];
-                                    if ([c_str containsString:@"RX ==> ["])
+                                    if ([c_str containsString:@"TX ==> ["])
                                     {
-                                        strrxresponse = [[NSMutableString alloc]init];
-                                        //get target and command
-                                        strrxtarget = [c_str catchStringBeginWith:@"RX ==> [" endWith:@"])"];
-                                        strrxcommand = [c_str catchStringBeginWith:@"]):" endWith:@""];
-                                        if (![strrxtarget isEqualTo:@""])
-                                        {
-                                            [strrxresponse appendFormat:@"%@\n",strrxcommand];
-                                            for(int m=j+1;m<k;m++)
-                                            {
-                                                m_dic = [[NSMutableDictionary alloc]init];
-                                                c_str = [m_arry objectAtIndex:m];
-                                                if ([c_str containsString:@":-)"]||[c_str containsString:@"@_@"]) {
-                                                    [strrxresponse appendFormat:@"%@\n",c_str];
-                                                    j=m;
+                                        NSString *response = [[c_str catchStringBeginWith:@"]" endWith:@""]stringByReplacingOccurrencesOfString:@"TX" withString:@"RX"];
+                                        for (int n = j+1; n<k; n++) {
+                                            c_str = [m_arry objectAtIndex:n];
+                                            if ([c_str containsString:response]) {
+                                                strrxresponse = [[NSMutableString alloc]init];
+                                                //get target and command
+                                                strrxtarget = [c_str catchStringBeginWith:@"RX ==> [" endWith:@"])"];
+                                                strrxcommand = [response catchStringBeginWith:@"]):" endWith:@""];
+                                                if (![strrxtarget isEqualTo:@""])
+                                                {
+                                                    [strrxresponse appendFormat:@"%@\n",[c_str catchStringBeginWith:@"]):" endWith:@""]];
+                                                    for(int m=n+1;m<k;m++)
+                                                    {
+                                                        m_dic = [[NSMutableDictionary alloc]init];
+                                                        c_str = [m_arry objectAtIndex:m];
+                                                        if ([c_str containsString:@":-)"]||[c_str containsString:@"@_@"]) {
+                                                            [strrxresponse appendFormat:@"%@\n",c_str];
+                                                            j=j+1;
+                                                            NSLog(@"%@",strrxcommand);
+                                                            break;
+                                                        }
+                                                        else
+                                                        {
+                                                            [strrxresponse appendFormat:@"%@\n",c_str];
+                                                        }
+                                                    }
+                                                    if ([m_item containsString:@","]) {
+                                                        m_item = [m_item catchStringBeginWith:@"" endWith:@","];
+                                                    }
+                                                    if ([name_and_time count]!=0) {
+                                                        for (int m = 0; m<name_and_time.count; m++) {
+                                                            if ([[[name_and_time objectAtIndex:m]objectForKey:@"ITEM"]isEqualToString:m_item]) {
+                                                                m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",[[name_and_time objectAtIndex:m]objectForKey:@"TestTime"],@"TestTime",nil];
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
+                                                    }
+                                                    [m_datasource addObject:m_dic];
                                                     break;
                                                 }
-                                                else
-                                                {
-                                                    [strrxresponse appendFormat:@"%@\n",c_str];
-                                                }
                                             }
-                                            m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
-                                            [m_datasource addObject:m_dic];
                                         }
                                     }
                                 }
@@ -659,6 +719,46 @@
     }
     m_neededdata = [m_datasource.m_showdata mutableCopy];
     [m_tableview reloadData];
+    }
+}
+
+-(IBAction)LoadCSV:(id)sender
+{
+    boolLoadCSV = NO;
+    name_and_time = [[NSMutableArray alloc]init];
+    NSMutableArray *m_csvary ;
+    NSOpenPanel *panel = [NSOpenPanel openPanel];           //使用NSopenpanel类读取文件路径
+    //[panel setDirectoryURL:NSHomeDirectory()];
+    [panel setAllowsMultipleSelection:NO];
+    [panel setCanChooseDirectories:YES];
+    [panel setCanChooseFiles:YES];
+    [panel setAllowedFileTypes:@[@"csv"]];
+    [panel setAllowsOtherFileTypes:YES];
+    if ([panel runModal] == NSFileHandlingPanelOKButton)
+    {
+        CSVpath = [panel.URLs.firstObject path];
+        [m_csvpath setStringValue:CSVpath];
+        NSString *csvdetail = [[NSString alloc]initWithContentsOfFile:CSVpath encoding:NSUTF8StringEncoding error:nil];
+        csvdetail = [[csvdetail stringByReplacingOccurrencesOfString:@"\r\n" withString:@"\n"]stringByReplacingOccurrencesOfString:@"\n\r" withString:@"\n"];
+        m_csvary = [[NSMutableArray alloc]initWithArray:[csvdetail componentsSeparatedByString:@"\n"]];
+        [m_csvary removeObject:@""];
+        for (int i=0; i<m_csvary.count; i++)
+        {
+            if ([[m_csvary objectAtIndex:i]containsString:@"\""]) {
+                NSString *step1 = [[m_csvary objectAtIndex:i]catchStringBeginWith:@"\"" endWith:@","];
+//                NSString *testtime = [[m_csvary objectAtIndex:i] catchStringBeginWith:step1 endWith:@""];
+                NSString *testtime = [[m_csvary objectAtIndex:i]subByRegex:@",([0-9.]+)$" name:nil error:nil];
+//                NSString *testitem = [[m_csvary objectAtIndex:i]catchStringBeginWith:@"\"" endWith:@"\","];
+                NSString *testitem = [[m_csvary objectAtIndex:i]subByRegex:@"\"(.*?)\"" name:nil error:nil];
+//                testitem = [testitem catchStringBeginWith:@"" endWith:@"\","];
+                testtime = [testtime stringByReplacingOccurrencesOfString:@"," withString:@""];
+                NSDictionary *m_dic = [[NSDictionary alloc]initWithObjectsAndKeys:testitem,@"ITEM",testtime,@"TestTime", nil];
+                [name_and_time addObject:m_dic];
+            }
+        }
+        boolLoadCSV =YES;
+    }
+    NSLog(@"%@",name_and_time);
 }
 
 -(IBAction)Openoriginal:(NSButton*)sender
@@ -736,7 +836,17 @@
                                                     [strrxresponse appendFormat:@"%@\n",c_str];
                                                 }
                                             }
-                                            m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
+                                            if ([name_and_time count]!=0) {
+                                                for (int m = 0; m<name_and_time.count; m++) {
+                                                    if ([[[name_and_time objectAtIndex:m]objectForKey:@"ITEM"]isEqualToString:m_item]) {
+                                                        m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",[[name_and_time objectAtIndex:m]objectForKey:@"TestTime"],@"TestTime",nil];
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                 m_dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:m_item, @"item",strrxcommand,@"Command",strrxresponse,@"Response",m_spec,@"Spec",strrxtarget,@"Target",nil];
+                                            }
                                             [m_orgary addObject:m_dic];
                                         }
                                     }

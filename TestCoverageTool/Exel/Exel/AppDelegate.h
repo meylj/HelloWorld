@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "NSStringCategory.h"
+#import "NSStringCategoryOfficial.h"
 #import "tabledatasave.h"
 #import "tabledatasource.h"
 @interface AppDelegate : NSObject
@@ -24,7 +25,7 @@
     NSMutableString *m_file;                                //路径字符
     NSMutableString *t_textfield;                           //用于存放文本的字符串
     IBOutlet NSView *m_view;                                //自定义UI
-     NSString *path;
+    NSString *path;
     NSMutableArray *m_orgary;
     NSMutableArray *m_neededdata;
     IBOutlet NSButton *nf;
@@ -32,9 +33,15 @@
     IBOutlet NSButton *OnlyMobile;
     IBOutlet NSButton *OnlyFixture;
     IBOutlet NSButton *Separate;
+    IBOutlet NSTextField *m_csvpath;
+    NSString *CSVpath;
+    NSMutableArray *name_and_time;
+    BOOL     boolLoadCSV;
 }
 
 
+
+-(IBAction)LoadCSV:(id)sender;
 -(IBAction)MobileorFixture:(id)sender;
 -(IBAction)Load:(id)sender;                                 //载入文件
 -(IBAction)Save:(id)sender;                                 //保存文件
