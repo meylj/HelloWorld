@@ -42,11 +42,11 @@
     NSFont *font = [NSFont fontWithName:@"Lucida Grande" size:13.0];
     [btnCopy setFont:font];
     [btnCopy setBezelStyle:NSThickerSquareBezelStyle];
-    [nf setState:0];
+    [nf setState:1];
     [of setState:0];
     [OnlyMobile setState:1];
     [OnlyFixture setState:1];
-    [Separate setState:0];
+    [Separate setState:1];
 //    [btnCopy setAction:@selector(presscopy:)];
 }
 
@@ -59,7 +59,7 @@
     [m_datasource.m_showdata removeAllObjects];
     if (ischoosemobile&&!ischoosefixture) {
         for (int i = 0; i<[m_neededdata count]; i++) {
-            if ([[[m_neededdata objectAtIndex:i]objectForKey:@"Target"]isEqualToString:@"MOBILE"]) {
+            if ([[[m_neededdata objectAtIndex:i]objectForKey:@"Target"]isEqualToString:@"MOBILE"]||[[[m_neededdata objectAtIndex:i]objectForKey:@"Target"]isEqualToString:@"TASK"]) {
                 [m_datasource.m_showdata addObject:[m_neededdata objectAtIndex:i]];
             }
                  else
@@ -109,6 +109,7 @@
     FormatHandle titleFormat;
     FormatHandle headerFormat;
     FormatHandle descriptionFormat;
+    FormatHandle commandandresponseFormat;
     FormatHandle amountFormat;
     FormatHandle totalLabelFormat;
     FormatHandle totalFormat;
@@ -228,6 +229,15 @@
     xlFormatSetAlignV(descriptionFormat,ALIGNV_TOP);
     xlFormatSetAlignH(descriptionFormat,ALIGNH_LEFT);
     xlFormatSetFont(descriptionFormat,titleFont);
+    
+    commandandresponseFormat = xlBookAddFormat(book, 0);
+    xlFormatSetBorder(commandandresponseFormat, BORDERSTYLE_THIN);
+    xlFormatSetAlignV(commandandresponseFormat,ALIGNV_TOP);
+    xlFormatSetAlignH(commandandresponseFormat,ALIGNH_LEFT);
+//    xlSheetRowHeightA(sheet, 20);
+    xlFormatSetWrapA(commandandresponseFormat,1);
+//    xlFormatSetShrinkToFitA(commandandresponseFormat,5);
+    xlFormatSetFont(commandandresponseFormat,titleFont);
     
     descriptionchangeFormat = xlBookAddFormat(book, 0);
     xlFormatSetBorder(descriptionchangeFormat, BORDERSTYLE_THIN);
@@ -364,7 +374,11 @@
         BOOL commandcheck = '\0';
         for (int i =0; i<[m_datasource.m_showdata count]; i++)
         {
-            xlSheetSetColA(sheet, 4, 4, 100, 0, 0);
+            xlSheetSetColA(sheet, 1, 1, 28, 0, 0);
+            xlSheetSetColA(sheet, 4, 4, 36, 0, 0);
+            xlSheetSetColA(sheet, 6, 6, 10, 0, 0);
+            xlSheetSetColA(sheet, 9, 9, 60, 0, 0);
+            xlSheetSetRowA(sheet, i+2, 12, 0, 0);
             NSString *response = [[m_datasource.m_showdata objectAtIndex:i] objectForKey:@"Response"];
             const char *m_response = (char*)malloc(6000);
             m_response = [response UTF8String];
@@ -420,10 +434,10 @@
                 if (itemcheck==YES) {
                     xlSheetWriteStr(sheet, i+2, 1,m_item,descriptionFormat);
                     //status
-                    xlSheetWriteStr(sheet, i+2, 0,nil,descriptionFormat);
-                    xlSheetWriteStr(sheet, i+2, 5,nil,greenformat);
-                    xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],descriptionFormat);
-                    xlSheetWriteStr(sheet, i+2, 7,m_item,descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 0,"",descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 5,"",greenformat);
+                    xlSheetWriteStr(sheet, i+2, 6,[@"" UTF8String],descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 7,"",descriptionFormat);
                     xlSheetWriteStr(sheet, i+2, 8,"",descriptionFormat);
 
                 }
@@ -432,10 +446,10 @@
                     if (ischoosento) {
                         xlSheetWriteStr(sheet, i+2, 1,m_item,descriptionchangeFormat);
                         //status
-                        xlSheetWriteStr(sheet, i+2, 0,nil,descriptionchangeFormat);
-                        xlSheetWriteStr(sheet, i+2, 5,nil,descriptionchangeFormat);
-                        xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],descriptionchangeFormat);
-                        xlSheetWriteStr(sheet, i+2, 7,m_item,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 0,"",descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 5,"",descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 6,[@"" UTF8String],descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 7,"",descriptionchangeFormat);
                         xlSheetWriteStr(sheet, i+2, 8,"",descriptionchangeFormat);
 
 
@@ -443,10 +457,10 @@
                     if (ischooseotn) {
                         xlSheetWriteStr(sheet, i+2, 1,m_item,deleteFormat);
                         //status
-                        xlSheetWriteStr(sheet, i+2, 0,nil,deleteFormat);
-                        xlSheetWriteStr(sheet, i+2, 5,nil,deleteFormat);
-                        xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],deleteFormat);
-                        xlSheetWriteStr(sheet, i+2, 7,m_item,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 0,"",deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 5,"",deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 6,[@"" UTF8String],deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 7,"",deleteFormat);
                         xlSheetWriteStr(sheet, i+2, 8,"",deleteFormat);
 
                     }
@@ -466,34 +480,39 @@
                     
                 }
                 if (commandcheck ==YES) {
-                    xlSheetWriteStr(sheet, i+2, 4, m_command, descriptionFormat);
-                    xlSheetWriteStr(sheet, i+2, 9, m_response, descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 4, m_command, commandandresponseFormat);
+//                    xlSheetWriteStr(sheet, i+2, 9, m_response, descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 9, m_response, commandandresponseFormat);
                 }
                 else if (commandcheck ==NO)
                 {
                     if (ischoosento) {
-                        xlSheetWriteStr(sheet, i+2, 4, m_command,descriptionchangeFormat);
-                        xlSheetWriteStr(sheet, i+2, 9, m_response,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 4, m_command,commandandresponseFormat);
+//                        xlSheetWriteStr(sheet, i+2, 9, m_response,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 9, m_response,commandandresponseFormat);
                     }
                     else if (ischooseotn)
                     {
-                        xlSheetWriteStr(sheet, i+2, 4, m_command,deleteFormat);
-                        xlSheetWriteStr(sheet, i+2, 9, m_response,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 4, m_command,commandandresponseFormat);
+//                        xlSheetWriteStr(sheet, i+2, 9, m_response,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 9, m_response,commandandresponseFormat);
                     }
                 }
 //                xlSheetWriteStr(sheet, i+2, 3, m_target, titleFormat);
             }
             if ([m_orgary count]==0) {
-                if ([target isEqualToString:@"FIXTURE"]) {
-                    xlSheetWriteStr(sheet, i+2, 4, m_command,isseparated?fixtureFormat:titleFormat);
-                    xlSheetWriteStr(sheet, i+2, 9, m_response,isseparated?fixtureFormat:titleFormat);
+                if ([target isEqualToString:@"FIXTURE"]||[target isEqualToString:@"TARGET"]) {
+                    xlSheetWriteStr(sheet, i+2, 4, m_command,isseparated?fixtureFormat:commandandresponseFormat);
+//                    xlSheetWriteStr(sheet, i+2, 9, m_response,isseparated?fixtureFormat:titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 9, m_response,isseparated?fixtureFormat:commandandresponseFormat);
                 }
                 else
                 {
-                    xlSheetWriteStr(sheet, i+2, 4, m_command,titleFormat);
-                     xlSheetWriteStr(sheet, i+2, 9, m_response,titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 4, m_command,commandandresponseFormat);
+//                    xlSheetWriteStr(sheet, i+2, 9, m_response,titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 9, m_response,commandandresponseFormat);
                 }
-//                xlSheetWriteStr(sheet, i+2, 3, m_target, titleFormat);
+//                xlSheetWriteStr(sheet, i+2, 3, m_testtime, titleFormat);
                 xlSheetWriteStr(sheet, i+2, 1,m_item,titleFormat);
                 xlSheetWriteStr(sheet, i+2, 2,m_spec,titleFormat);
                 //status
@@ -509,7 +528,7 @@
             }
 
             if(i<[m_datasource.m_showdata count]-1){
-                for (int j=1; j<[m_datasource.m_showdata count]-1; j++) {
+                for (int j=1; j<=[m_datasource.m_showdata count]-i-1; j++) {
                     if([[[m_datasource.m_showdata objectAtIndex:i] objectForKey:@"item"]isEqualTo:[[m_datasource.m_showdata objectAtIndex:i+j] objectForKey:@"item"]])
                     {
                         continue;
@@ -518,18 +537,20 @@
                     {
                         if(i+j<[m_datasource.m_showdata count])
                         {
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 0, 0);
                             xlSheetSetMergeA(sheet,i+2, i+j+1, 1, 1);
                             xlSheetSetMergeA(sheet,i+2, i+j+1, 2, 2);
                             if (testtime!=nil&&![testtime isEqual:@""]) {
-                                xlSheetSetMergeA(sheet,i+2, i+j+1, 6, 6);
+                                xlSheetSetMergeA(sheet,i+2, i+j+1, 3, 3);
                             }
                         }
                         else
                         {
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 0, 0);
                             xlSheetSetMergeA(sheet,i+2, i+j+1, 2, 2);
                             xlSheetSetMergeA(sheet,i+2, i+j+1, 1, 1);
                             if (testtime!=nil&&![testtime isEqual:@""]) {
-                                xlSheetSetMergeA(sheet,i+2, i+j+1, 6, 6);
+                                xlSheetSetMergeA(sheet,i+2, i+j+1, 3, 3);
                             }
                         }
                         break;
@@ -537,7 +558,9 @@
                 }
             }
         }
-        xlSheetRowHeightA(sheet, 20);
+        xlSheetColWidthA(sheet, 50);
+        xlSheetRowHeightA(sheet, 22);
+        
     }
     NSString *m_path;
     NSSavePanel *s_panel = [NSSavePanel savePanel];                 //利用NSSavepanel类保存文件
@@ -604,6 +627,7 @@
         NSString *data =[[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];                //读取文件 将内容载入字符串
         if ([data length]>0) {
             NSString *str = [[data stringByReplacingOccurrencesOfString:@"\r\n" withString:@"\n"]stringByReplacingOccurrencesOfString:@"\n\r" withString:@"\n"];                                           //将换行统一表示为\n
+            str = [[str stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"] stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];                                          //将空行统一表示为\n
             NSArray *r_ary = [str componentsSeparatedByString:@"\n"];
             NSMutableArray *m_arry = [[NSMutableArray alloc]initWithArray:r_ary];
             [m_arry removeObject:@""];
@@ -646,14 +670,15 @@
                             }
                             else
                             {
-                                for (int j = k-l+1; j<k; j++) {
+                                for (int j = k-l; j<k; j++) {
                                     c_str = [m_arry objectAtIndex:j];
                                     if ([c_str containsString:@"TX ==> ["])
                                     {
                                         NSString *response = [[c_str catchStringBeginWith:@"]" endWith:@""]stringByReplacingOccurrencesOfString:@"TX" withString:@"RX"];
                                         for (int n = j+1; n<k; n++) {
                                             c_str = [m_arry objectAtIndex:n];
-                                            if ([c_str containsString:response]) {
+                                            if ([c_str containsString:response])
+                                            {
                                                 strrxresponse = [[NSMutableString alloc]init];
                                                 //get target and command
                                                 strrxtarget = [c_str catchStringBeginWith:@"RX ==> [" endWith:@"])"];
@@ -665,7 +690,7 @@
                                                     {
                                                         m_dic = [[NSMutableDictionary alloc]init];
                                                         c_str = [m_arry objectAtIndex:m];
-                                                        if ([c_str containsString:@":-)"]||[c_str containsString:@"@_@"]) {
+                                                        if ([c_str containsString:@":-)"]||[c_str containsString:@"@_@"]||[c_str containsString:@"B431-16A>"]||[c_str containsString:@"root#"]) {
                                                             [strrxresponse appendFormat:@"%@\n",c_str];
                                                             j=j+1;
                                                             NSLog(@"%@",strrxcommand);
