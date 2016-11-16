@@ -681,14 +681,14 @@
         <window title="FIieRead" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="857" height="577"/>
+            <rect key="contentRect" x="335" y="390" width="885" height="579"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="857" height="577"/>
+                <rect key="frame" x="0.0" y="0.0" width="885" height="579"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNZ-uu-YrO">
-                        <rect key="frame" x="321" y="530" width="71" height="32"/>
+                        <rect key="frame" x="321" y="532" width="71" height="32"/>
                         <buttonCell key="cell" type="push" title="Load" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1JE-Pv-UZO">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -698,7 +698,7 @@
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68Y-mk-Xxi">
-                        <rect key="frame" x="34" y="535" width="283" height="21"/>
+                        <rect key="frame" x="34" y="537" width="283" height="21"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="e3x-DF-dA3">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -706,7 +706,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-XK-122">
-                        <rect key="frame" x="770" y="529" width="61" height="32"/>
+                        <rect key="frame" x="770" y="531" width="61" height="32"/>
                         <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l3F-Lm-2tb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -716,7 +716,7 @@
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FX3-MV-fiI">
-                        <rect key="frame" x="618" y="535" width="143" height="22"/>
+                        <rect key="frame" x="618" y="537" width="143" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="YO4-IM-f2W">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -724,7 +724,7 @@
                         </textFieldCell>
                     </textField>
                     <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-d9-897">
-                        <rect key="frame" x="34" y="30" width="381" height="215"/>
+                        <rect key="frame" x="34" y="32" width="381" height="215"/>
                         <clipView key="contentView" ambiguous="YES" id="MQq-ib-tbB">
                             <rect key="frame" x="1" y="1" width="379" height="213"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -752,14 +752,14 @@
                         </scroller>
                     </scrollView>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygH-uX-Iw1">
-                        <rect key="frame" x="447" y="356" width="94" height="27"/>
+                        <rect key="frame" x="447" y="358" width="94" height="27"/>
                         <buttonCell key="cell" type="check" title="New first" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KdV-Nz-bVD">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-tf-0Lk">
-                        <rect key="frame" x="321" y="497" width="71" height="32"/>
+                        <rect key="frame" x="321" y="499" width="71" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vbh-dD-or6">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -769,7 +769,7 @@
                         </connections>
                     </button>
                     <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-R9-LZi">
-                        <rect key="frame" x="593" y="358" width="61" height="38"/>
+                        <rect key="frame" x="593" y="360" width="61" height="38"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         <size key="cellSize" width="61" height="18"/>
                         <size key="intercellSpacing" width="4" height="2"/>
@@ -791,7 +791,7 @@
                         </cells>
                     </matrix>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1HA-bd-HRi">
-                        <rect key="frame" x="443" y="411" width="141" height="32"/>
+                        <rect key="frame" x="443" y="413" width="141" height="32"/>
                         <buttonCell key="cell" type="push" title="Create Excel file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xFW-Ty-Emp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -801,7 +801,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgS-Kc-R8v">
-                        <rect key="frame" x="443" y="444" width="143" height="32"/>
+                        <rect key="frame" x="443" y="446" width="143" height="32"/>
                         <buttonCell key="cell" type="push" title="Open original txt" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oqk-FE-mIc">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -811,14 +811,14 @@
                         </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37N-WC-JEr">
-                        <rect key="frame" x="447" y="313" width="94" height="27"/>
+                        <rect key="frame" x="447" y="315" width="94" height="27"/>
                         <buttonCell key="cell" type="check" title="Old first" bezelStyle="regularSquare" imagePosition="left" inset="2" id="K8w-4i-HoM">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXj-hf-W2y">
-                        <rect key="frame" x="555" y="491" width="96" height="27"/>
+                        <rect key="frame" x="555" y="493" width="96" height="27"/>
                         <buttonCell key="cell" type="check" title="Only Mobile" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="mKq-BI-dPe">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -828,14 +828,14 @@
                         </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqt-PF-v17">
-                        <rect key="frame" x="674" y="495" width="153" height="18"/>
+                        <rect key="frame" x="674" y="497" width="153" height="18"/>
                         <buttonCell key="cell" type="check" title="Separate Commands" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ohf-Cx-NdO">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4LI-xy-K92">
-                        <rect key="frame" x="449" y="240" width="283" height="21"/>
+                        <rect key="frame" x="449" y="242" width="283" height="21"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="BgK-I2-2we">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -843,7 +843,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AEv-Ve-Me9">
-                        <rect key="frame" x="443" y="195" width="168" height="32"/>
+                        <rect key="frame" x="443" y="197" width="168" height="32"/>
                         <buttonCell key="cell" type="push" title="Path to load CSV file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yMm-JI-opa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -853,7 +853,7 @@
                         </connections>
                     </button>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi3-F8-drm">
-                        <rect key="frame" x="34" y="284" width="381" height="205"/>
+                        <rect key="frame" x="34" y="286" width="381" height="205"/>
                         <clipView key="contentView" ambiguous="YES" id="fB6-t4-WhE">
                             <rect key="frame" x="1" y="0.0" width="379" height="204"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -949,7 +949,7 @@
                         </tableHeaderView>
                     </scrollView>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNv-em-Tby">
-                        <rect key="frame" x="428" y="491" width="96" height="27"/>
+                        <rect key="frame" x="428" y="493" width="96" height="27"/>
                         <buttonCell key="cell" type="check" title="Only Fixture" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pPt-L4-hHQ">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -959,7 +959,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-Uo-awx">
-                        <rect key="frame" x="517" y="529" width="76" height="32"/>
+                        <rect key="frame" x="517" y="531" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Clean" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h7l-Cm-Kby">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -970,7 +970,7 @@
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="404.5" y="345.5"/>
+            <point key="canvasLocation" x="418.5" y="346.5"/>
         </window>
     </objects>
 </document>

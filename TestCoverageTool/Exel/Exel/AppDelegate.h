@@ -24,6 +24,7 @@
     tabledatasource *m_datasource;                          //调用tabledatasource类
     NSMutableString *m_file;                                //路径字符
     NSMutableString *t_textfield;                           //用于存放文本的字符串
+    NSMutableString *m_strStationName;
     IBOutlet NSView *m_view;                                //自定义UI
     NSString *path;
     NSMutableArray *m_orgary;

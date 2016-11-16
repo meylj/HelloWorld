@@ -24,6 +24,7 @@
         m_datasource = [[tabledatasource alloc]init];
         m_file = [[NSMutableString alloc]init];
         t_textfield = [[NSMutableString alloc]init];
+        m_strStationName = [[NSMutableString alloc] init];
         m_orgary = [[NSMutableArray alloc]init];
         m_neededdata = [[NSMutableArray alloc]init];
         name_and_time = [[NSMutableArray alloc]init];
@@ -116,6 +117,7 @@
     FormatHandle deleteFormat;
     FormatHandle fixtureFormat;
     FormatHandle greenformat;
+    FormatHandle greenstatusformat;
     FormatHandle yellowformat;
     FormatHandle redformat;
     FormatHandle deepredformat;
@@ -162,6 +164,15 @@
     xlFormatSetFont(greenformat,titleFont);
     xlFormatSetPatternForegroundColor(greenformat, COLOR_GREEN);
     xlFormatSetFillPattern(greenformat, FILLPATTERN_SOLID);
+    
+    greenstatusformat = xlBookAddFormatA(book, 0);
+    xlFormatSetBorderA(greenstatusformat, BORDERSTYLE_THIN);
+    xlFormatSetAlignHA(greenstatusformat, ALIGNH_LEFT);
+    xlFormatSetAlignV(greenstatusformat,ALIGNV_TOP);
+    xlFormatSetFontA(greenstatusformat, palebluefont);
+    xlFormatSetPatternForegroundColorA(greenstatusformat, COLOR_GREEN);
+    xlFormatSetFillPattern(greenstatusformat, FILLPATTERN_SOLID);
+
     
     paleblueformat = xlBookAddFormatA(book, 0);
     xlFormatSetBorderA(paleblueformat, BORDERSTYLE_THIN);
@@ -261,10 +272,12 @@
     signatureFormat = xlBookAddFormat(book, 0);
     xlFormatSetAlignH(signatureFormat, ALIGNH_CENTER);
     xlFormatSetBorderTop(signatureFormat, BORDERSTYLE_THIN);
-    
-    sheet = xlBookAddSheet(book, "Invoice", 0);
+
+    const char *cStationName = [m_strStationName UTF8String];
+    sheet = xlBookAddSheet(book, cStationName, 0);
     if(sheet)
     {
+/*for color define
         NSString *nul = @"";
         const char*m_nul = [nul UTF8String];
         NSString *row1 = @"Color define for Status";
@@ -324,23 +337,33 @@
         xlSheetWriteStrA(sheet, 11, 0, m_nul, deepredformat);
         xlSheetWriteStrA(sheet, 11, 1, m_row10, deepredformat1);
         xlSheetSetMergeA(sheet, 11, 11, 1, 4);
+*/
         
-        
-        xlSheetWriteStrA(sheet, 13, 0, [@"Category" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 1, [@"Related Test Item" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 2, [@"Spec" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 3, [@"Target" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 4, [@"Diags Commands" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 5, [@"Diags Response" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 6, [@"Testtime" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 7, [@"Issue Description" UTF8String], paleblueformat);
-        xlSheetWriteStrA(sheet, 13, 8, [@"Radar No" UTF8String], paleblueformat);
-        //xlSheetInsertRowA(sheet, 0, 100000);
+//        xlSheetWriteStrA(sheet, 13, 0, [@"Category" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 1, [@"Related Test Item" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 2, [@"Spec" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 3, [@"Target" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 4, [@"Diags Commands" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 5, [@"Diags Response" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 6, [@"Testtime" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 7, [@"Issue Description" UTF8String], paleblueformat);
+//        xlSheetWriteStrA(sheet, 13, 8, [@"Radar No" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 0, [@"Category" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 1, [@"Related Test Item" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 2, [@"Spec" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 3, [@"Testtime" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 4, [@"Diags Commands" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 5, [@"Status" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 6, [@"Radar No" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 7, [@"Remark" UTF8String], paleblueformat);
+        xlSheetWriteStrA(sheet, 1, 8, [@"Judgement" UTF8String], paleblueformat);        //xlSheetInsertRowA(sheet, 0, 100000);
+        xlSheetWriteStrA(sheet, 1, 9, [@"Diags Response" UTF8String], paleblueformat);        //xlSheetInsertRowA(sheet, 0, 100000);
         //xlSheetInsertColA(sheet, 0, 100000);
         BOOL itemcheck = '\0';
         BOOL speccheck = '\0';
         BOOL commandcheck = '\0';
-        for (int i =0; i<[m_datasource.m_showdata count]; i++) {
+        for (int i =0; i<[m_datasource.m_showdata count]; i++)
+        {
             xlSheetSetColA(sheet, 4, 4, 100, 0, 0);
             NSString *response = [[m_datasource.m_showdata objectAtIndex:i] objectForKey:@"Response"];
             const char *m_response = (char*)malloc(6000);
@@ -393,114 +416,98 @@
                     else
                         commandcheck = NO;
                 }
+                //item
                 if (itemcheck==YES) {
-                     xlSheetWriteStr(sheet, i+14, 1,m_item,descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 1,m_item,descriptionFormat);
+                    //status
+                    xlSheetWriteStr(sheet, i+2, 0,nil,descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 5,nil,greenformat);
+                    xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 7,m_item,descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 8,"",descriptionFormat);
+
                 }
                 else if (itemcheck==NO)
                 {
                     if (ischoosento) {
-                         xlSheetWriteStr(sheet, i+14, 1,m_item,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 1,m_item,descriptionchangeFormat);
+                        //status
+                        xlSheetWriteStr(sheet, i+2, 0,nil,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 5,nil,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 7,m_item,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 8,"",descriptionchangeFormat);
+
+
                     }
                     if (ischooseotn) {
-                         xlSheetWriteStr(sheet, i+14, 1,m_item,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 1,m_item,deleteFormat);
+                        //status
+                        xlSheetWriteStr(sheet, i+2, 0,nil,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 5,nil,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 6,[@"11" UTF8String],deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 7,m_item,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 8,"",deleteFormat);
+
                     }
                 }
                 if (speccheck ==YES) {
-                    xlSheetWriteStr(sheet, i+14, 2, m_spec, descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 2, m_spec, descriptionFormat);
                 }
                 else if(speccheck ==NO)
                 {
                     if (ischoosento) {
-                        xlSheetWriteStr(sheet, i+14, 2,m_spec,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 2,m_spec,descriptionchangeFormat);
                     }
                     else if (ischooseotn)
                     {
-                        xlSheetWriteStr(sheet, i+14, 2,m_spec,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 2,m_spec,deleteFormat);
                     }
                     
                 }
                 if (commandcheck ==YES) {
-                    xlSheetWriteStr(sheet, i+14, 4, m_command, descriptionFormat);
-                    xlSheetWriteStr(sheet, i+14, 5, m_response, descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 4, m_command, descriptionFormat);
+                    xlSheetWriteStr(sheet, i+2, 9, m_response, descriptionFormat);
                 }
                 else if (commandcheck ==NO)
                 {
                     if (ischoosento) {
-                        xlSheetWriteStr(sheet, i+14, 4, m_command,descriptionchangeFormat);
-                        xlSheetWriteStr(sheet, i+14, 5, m_response,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 4, m_command,descriptionchangeFormat);
+                        xlSheetWriteStr(sheet, i+2, 9, m_response,descriptionchangeFormat);
                     }
                     else if (ischooseotn)
                     {
-                        xlSheetWriteStr(sheet, i+14, 4, m_command,deleteFormat);
-                        xlSheetWriteStr(sheet, i+14, 5, m_response,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 4, m_command,deleteFormat);
+                        xlSheetWriteStr(sheet, i+2, 9, m_response,deleteFormat);
                     }
                 }
-                xlSheetWriteStr(sheet, i+14, 3, m_target, titleFormat);
+//                xlSheetWriteStr(sheet, i+2, 3, m_target, titleFormat);
             }
             if ([m_orgary count]==0) {
                 if ([target isEqualToString:@"FIXTURE"]) {
-                    xlSheetWriteStr(sheet, i+14, 4, m_command,isseparated?fixtureFormat:titleFormat);
-                    xlSheetWriteStr(sheet, i+14, 5, m_response,isseparated?fixtureFormat:titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 4, m_command,isseparated?fixtureFormat:titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 9, m_response,isseparated?fixtureFormat:titleFormat);
                 }
                 else
                 {
-                    xlSheetWriteStr(sheet, i+14, 4, m_command,titleFormat);
-                     xlSheetWriteStr(sheet, i+14, 5, m_response,titleFormat);
+                    xlSheetWriteStr(sheet, i+2, 4, m_command,titleFormat);
+                     xlSheetWriteStr(sheet, i+2, 9, m_response,titleFormat);
                 }
-                xlSheetWriteStr(sheet, i+14, 3, m_target, titleFormat);
-                xlSheetWriteStr(sheet, i+14, 1,m_item,titleFormat);
-                xlSheetWriteStr(sheet, i+14, 2,m_spec,titleFormat);
+//                xlSheetWriteStr(sheet, i+2, 3, m_target, titleFormat);
+                xlSheetWriteStr(sheet, i+2, 1,m_item,titleFormat);
+                xlSheetWriteStr(sheet, i+2, 2,m_spec,titleFormat);
+                //status
+                xlSheetWriteStr(sheet, i+2, 0,"",descriptionFormat);
+                xlSheetWriteStr(sheet, i+2, 5,nil,greenstatusformat);
+                xlSheetWriteStr(sheet, i+2, 6,"",descriptionFormat);
+                xlSheetWriteStr(sheet, i+2, 7,"",descriptionFormat);
+                xlSheetWriteStr(sheet, i+2, 8,"",descriptionFormat);
+
                 if (testtime!=nil&&![testtime isEqual:@""]) {
-                     xlSheetWriteStr(sheet,i+14,6,m_testtime,titleFormat);
+                     xlSheetWriteStr(sheet,i+2,3,m_testtime,titleFormat);
                 }
             }
-//            SheetHandle sheet1;
-//            sheet1 = xlBookGetSheetA(book, 0);
-//            int adrow = 0;
-//            for (int k=0; k<[m_orgary count]; k++) {
-//                NSString *orgitem = [[m_orgary objectAtIndex:k]objectForKey:@"item"];
-//                const char*n_origitem = (char*)malloc(666);
-//                n_origitem = [orgitem UTF8String];
-//                for (int l = 1; l<[m_datasource.m_showdata count]+adrow; l++) {
-//                    NSString *o_item = [[NSString alloc]initWithBytes:xlSheetReadStrA(sheet1, l, 1, &descriptionFormat) length:strlen(xlSheetReadStrA(sheet1, l, 1, &descriptionFormat) ) encoding:1];
-//                    if (![o_item isEqualToString:orgitem]) {
-//                        for (int m=1;k+m<[m_orgary count]; m++) {
-//                            for (int n =1; n<[m_datasource.m_showdata count]+adrow; n++) {
-//                                NSString *n_item = [[NSString alloc]initWithBytes:xlSheetReadStrA(sheet1, n, 1, &descriptionFormat) length:strlen(xlSheetReadStrA(sheet1, n, 1, &descriptionFormat) ) encoding:1];
-//                                if ([n_item isEqualToString:orgitem]) {
-//                                    xlSheetInsertRowA(sheet1, n-1, n);
-//                                    xlSheetWriteStrA(sheet1, n-1, 1, n_origitem, deleteFormat);
-//                                    adrow++;
-//                                    break;
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            for (int k=0; k<[m_orgary count]; k++) {
-//                NSString *orgcommand = [[m_orgary objectAtIndex:k]objectForKey:@"Command"];
-//                NSString *orgresponse = [[m_orgary objectAtIndex:k]objectForKey:@"Response"];
-//                const char*n_orgresponse = (char*)malloc(666);
-//                const char*n_orgcommand = (char*)malloc(666);
-//                n_orgresponse = [orgresponse UTF8String];
-//                n_orgcommand = [orgcommand UTF8String];
-//                for (int l = 0; l<[m_datasource.m_showdata count]; l++) {
-//                    if (![[[m_datasource.m_showdata objectAtIndex:l]objectForKey:@"Command"]isEqualToString:orgcommand]) {
-//                        for (int m=1;k+m<[m_orgary count]; m++) {
-//                            for (int n =0; n<[m_datasource.m_showdata count]; n++) {
-//                                NSString *n_item = [[m_datasource.m_showdata objectAtIndex:n]objectForKey:@"Command"];
-//                                if ([[[m_orgary objectAtIndex:m+k]objectForKey:@"Command"]isEqualToString:n_item]) {
-//                                    xlSheetInsertRowA(sheet, n-1, n);
-//                                    xlSheetWriteStrA(sheet, n-1, 4, n_orgcommand, deleteFormat);
-//                                    xlSheetWriteStrA(sheet, n-1, 5, n_orgresponse, deleteFormat);
-//                                    break;
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
+
             if(i<[m_datasource.m_showdata count]-1){
                 for (int j=1; j<[m_datasource.m_showdata count]-1; j++) {
                     if([[[m_datasource.m_showdata objectAtIndex:i] objectForKey:@"item"]isEqualTo:[[m_datasource.m_showdata objectAtIndex:i+j] objectForKey:@"item"]])
@@ -511,18 +518,18 @@
                     {
                         if(i+j<[m_datasource.m_showdata count])
                         {
-                            xlSheetSetMergeA(sheet,i+14, i+j+13, 1, 1);
-                            xlSheetSetMergeA(sheet,i+14, i+j+13, 2, 2);
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 1, 1);
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 2, 2);
                             if (testtime!=nil&&![testtime isEqual:@""]) {
-                                xlSheetSetMergeA(sheet,i+14, i+j+13, 6, 6);
+                                xlSheetSetMergeA(sheet,i+2, i+j+1, 6, 6);
                             }
                         }
                         else
                         {
-                            xlSheetSetMergeA(sheet,i+14, i+j+13, 2, 2);
-                            xlSheetSetMergeA(sheet,i+14, i+j+13, 1, 1);
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 2, 2);
+                            xlSheetSetMergeA(sheet,i+2, i+j+1, 1, 1);
                             if (testtime!=nil&&![testtime isEqual:@""]) {
-                                xlSheetSetMergeA(sheet,i+14, i+j+13, 6, 6);
+                                xlSheetSetMergeA(sheet,i+2, i+j+1, 6, 6);
                             }
                         }
                         break;
@@ -531,23 +538,6 @@
             }
         }
         xlSheetRowHeightA(sheet, 20);
-//        xlSheetWriteStr(sheet, 2, 1, "Invoice No. 3568", titleFormat);
-//        xlSheetWriteStr(sheet, 5, 1, "Address: San Ramon, CA 94583 USA", 0);
-//        
-//        xlSheetWriteStr(sheet, 7, 1, "Description", headerFormat);
-//        xlSheetWriteStr(sheet, 7, 2, "Amount", headerFormat);
-//        
-//        xlSheetWriteStr(sheet, 8, 1, "Ball-Point Pens", descriptionFormat);
-//        xlSheetWriteNum(sheet, 8, 2, 85, amountFormat);
-//        xlSheetWriteStr(sheet, 9, 1, "T-Shirts", descriptionFormat);
-//        xlSheetWriteNum(sheet, 9, 2, 150, amountFormat);
-//        xlSheetWriteStr(sheet, 10, 1, "Tea cups", descriptionFormat);
-//        xlSheetWriteNum(sheet, 10, 2, 45, amountFormat);
-//        
-//        xlSheetWriteStr(sheet, 11, 1, "Total:", totalLabelFormat);
-//        xlSheetWriteFormula(sheet, 11, 2, "=SUM(C9:C11)", totalFormat);
-//        
-//        xlSheetWriteStr(sheet, 14, 2, "Signature", signatureFormat);
     }
     NSString *m_path;
     NSSavePanel *s_panel = [NSSavePanel savePanel];                 //利用NSSavepanel类保存文件
@@ -739,6 +729,8 @@
         CSVpath = [panel.URLs.firstObject path];
         [m_csvpath setStringValue:CSVpath];
         NSString *csvdetail = [[NSString alloc]initWithContentsOfFile:CSVpath encoding:NSUTF8StringEncoding error:nil];
+        m_strStationName = [csvdetail subByRegex:@"\"START_TEST_(.*?)\"" name:nil error:nil];
+        
         csvdetail = [[csvdetail stringByReplacingOccurrencesOfString:@"\r\n" withString:@"\n"]stringByReplacingOccurrencesOfString:@"\n\r" withString:@"\n"];
         m_csvary = [[NSMutableArray alloc]initWithArray:[csvdetail componentsSeparatedByString:@"\n"]];
         [m_csvary removeObject:@""];
